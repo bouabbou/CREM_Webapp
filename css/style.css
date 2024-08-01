@@ -11819,3 +11819,21 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
 .shop-ad-height {
   height:200px;
 }
+
+
+/* researc platform text respnsive*/
+
+.responsive-text {
+  font-size: 2rem; /* Large font size */
+  font-weight: bold; /* Bold text */
+  color: #000; /* Default text color */
+  line-height: 1.5; /* Default space between lines */
+  transition: color 0.3s ease, line-height 0.3s ease; /* Smooth transitions */
+  display: block; /* Ensures the link takes full width and wraps text */
+}
+
+/* Hover effect */
+.responsive-text:hover {
+  color: #fff; /* Change text color to white on hover */
+  line-height: 2; /* Increase space between lines on hover */
+}
