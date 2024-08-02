@@ -128,7 +128,7 @@
                   <!-- LOGO -->
                   <div class="logo-container-2">
                     <div class="logo-2">
-                      <a href="Home" class="clearfix">
+                      <a href="{% url 'home' %}" >
                         <img
                           src="../static/images/logo-white.png"
                           class="logo-img"
@@ -166,7 +166,7 @@
                         <ul id="nav-onepage" class="nav navbar-nav">
                           <!-- MENU ITEM -->
                           <li class="current">
-                            <a href="#index-link">
+                            <a href="{% url 'home' %}" >
                               <div class="main-menu-title">HOME</div>
                             </a>
                           </li>
@@ -185,8 +185,8 @@
                             </a>
                             <ul class="sub">
                               <li>
-                                <a href="index_FA_EN.html"
-                                  >ADDITIVE/SUBSTRACTIVE MANUFACTURING AND
+                                <a href="{% url 'index' %}" >
+                                  ADDITIVE/SUBSTRACTIVE MANUFACTURING AND
                                   PROTOTYPING</a
                                 >
                               </li>
@@ -222,7 +222,7 @@
 
                           <!-- MENU ITEM -->
                           <li>
-                            <a href="#contact-link">
+                            <a href="{% url 'contact' %}" >
                               <div class="main-menu-title">CONTACT</div>
                             </a>
                           </li>
@@ -363,42 +363,51 @@
         <div class="port-view-more-cont-dark">
           <a
             class="port-view-more-dark1 responsive-text"
-            href="Contact_FA_EN.html"
-            >MATERIALS, SYNTHESIS AND CHARACTERIZATION</a
+            href="{% url 'contact' %}"
+              >MATERIALS, SYNTHESIS AND CHARACTERIZATION</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark2 responsive-text" href="contact.html"
-            >BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING</a
+          <a class="port-view-more-dark2 responsive-text"
+          href="{% url 'contact' %}"
+          >BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark3 responsive-text" href="contact.html"
+          <a class="port-view-more-dark3 responsive-text"
+          href="{% url 'contact' %}"
+
             >PROCESS ENGINEERING AND CIVIL ENGINEERING</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark4 responsive-text" href="contact.html"
+          <a class="port-view-more-dark4 responsive-text"
+          href="{% url 'contact' %}"
+
             >SENSORS AND INSTRUMENTATIONS</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark5 responsive-text" href="contact.html"
+          <a class="port-view-more-dark5 responsive-text"
+          href="{% url 'contact' %}"
+
             >AI AND DIGITALE ENGINEERING</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark6 responsive-text" href="contact.html"
+          <a class="port-view-more-dark6 responsive-text" 
+          href="{% url 'contact' %}"
+
             >RENEWABLE ENERGIES, STORAGE AND ENERGY EFFICIENCY</a
           >
         </div>
