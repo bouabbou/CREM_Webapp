@@ -264,19 +264,21 @@
             <!-- END header-wrapper -->
           </header>
           <!-- STATIC MEDIA IMAGE -->
-          <div
-            id="index-link"
-            class="sm-video-bg"
-            style="
-              background-image: url(images/static-media/landing-video-bg.jpg);
-            "
-          >
+          <div id="index-link" class="sm-video-bg">
             <div class="container sm-content-cont js-height-fullscr">
               <!-- VIDEO BG -->
               <!-- If you want to change video - replace video files in folder "video" -->
               <div class="sm-video-wrapper">
-                <div class="sm-video bg-dark-alfa-50"></div>
+                <div class="sm-video bg-dark-alfa-50">
+                  <video autoplay muted loop id="bg-video" class="video-background">
+                    <source src="../static/video/SSR.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
               </div>
+            </div>
+          </div>
+          
               <div class="sm-cont-middle">
                 <!-- LAYER NR. 1 -->
                 <h1
@@ -567,8 +569,10 @@
                 <ul class="links-list a-text-cont">
                   <li><a href="#">HOME</a></li>
                   <li><a href="#about-us-link">ABOUT US</a></li>
-                  <li><a href="index_FA_EN.html">RESEARCH PLATFORMS</a></li>
-                  <li><a href="CONTACT_FA_EN.html">CONTACT</a></li>
+                  <li><a          href="{% url 'index' %}"
+                    >RESEARCH PLATFORMS</a></li>
+                  <li><a           href="{% url 'contact' %}"
+                    >CONTACT</a></li>
                 </ul>
               </div>
 
