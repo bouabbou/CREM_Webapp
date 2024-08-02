@@ -64,6 +64,7 @@
     <!-- <script src="js/modernizr.js"></script> -->
     <style>
       #index-link {
+        position: relative; /* Ensure this container can be used as a reference for absolute positioning */
         width: 400%;
         height: 100vh; /* Full viewport height */
         background-size: cover; /* Cover the container */
@@ -71,26 +72,37 @@
         background-repeat: no-repeat; /* Prevent repeating */
       }
 
-      .sm-video-bg {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-      }
-
       .sm-video-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 150%;
-        height: 150%;
-      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150%;
+      height: 150%;
+    }
 
-      .sm-video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensure the video covers the container */
-      }
+    .sm-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the video covers the container */
+    }
+
+    .sm-cont-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  position: absolute; /* Position it relative to the #index-link container */
+  top: 50%; /* Adjust this if needed */
+  left: 50%; /* Adjust this if needed */
+  transform: translate(-50%, -50%); /* Adjust for exact center */
+  text-align: center; /* Center text within each item */
+  color: #fff; /* Text color to ensure visibility */
+  width: 100%; /* Ensure the container takes full width for centering */
+}
+
+.text-item {
+  margin: 5px 0; /* Adjust the space between items as needed */
+}
     </style>
   </head>
   <body>
@@ -294,43 +306,33 @@
             <!-- END header-wrapper -->
           </header>
           <!-- STATIC MEDIA IMAGE -->
-          <div
-            id="index-link"
-            class="sm-video-bg"
-            style="background-image: url(../static/video/FA.mp4)"
-          >
+          <div id="index-link" class="sm-video-bg">
             <div class="container sm-content-cont js-height-fullscr">
               <!-- VIDEO BG -->
               <!-- If you want to change video - replace video files in folder "video" -->
               <div class="sm-video-wrapper">
                 <div class="sm-video bg-dark-alfa-50">
-                  <video
-                    autoplay
-                    muted
-                    loop
-                    id="bg-video"
-                    class="video-background"
-                  >
-                    <source src="../static/video/FA.mp4" type="video/mp4" />
+                  <video autoplay muted loop id="bg-video" class="video-background">
+                    <source src="../static/video/SSR.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                          
               </div>
+            </div>
+          </div>
+          
               <div class="sm-cont-middle">
                 <!-- LAYER NR. 1 -->
-                <h1
-                  class="cd-headline zoom light-72-wide font-white sm-mt-20 sm-mb-20 relative text-center-xxs"
-                >
-                  <span>Euromed </span>
-                  <span class="cd-words-wrapper waiting">
-                    <b class="is-visible">Research</b>
-                    <b>Innovation</b>
-                    <b>Advanced technologies</b>
-                    <b>Excellence</b>
-                  </span>
-                  <span>Center </span>
-                </h1>
+                <h1 class="cd-headline zoom light-72-wide font-white sm-mt-20 sm-mb-20 relative text-center-xxs">
+    <span class="headline-part">Euromed</span>
+    <span class="cd-words-wrapper waiting">
+      <b class="is-visible headline-part">Research</b>
+      <b class="headline-part">Innovation</b>
+      <b class="headline-part">Advanced technologies</b>
+      <b class="headline-part">Excellence</b>
+    </span>
+    <span class="headline-part">Center</span>
+  </h1>
               </div>
             </div>
             <!-- SCROLL ICON
@@ -608,8 +610,10 @@
                 <ul class="links-list a-text-cont">
                   <li><a href="#">HOME</a></li>
                   <li><a href="#about-us-link">ABOUT US</a></li>
-                  <li><a href="index_FA_EN.html">RESEARCH PLATFORMS</a></li>
-                  <li><a href="CONTACT_FA_EN.html">CONTACT</a></li>
+                  <li><a          href="{% url 'index' %}"
+                    >RESEARCH PLATFORMS</a></li>
+                  <li><a           href="{% url 'contact' %}"
+                    >CONTACT</a></li>
                 </ul>
               </div>
 
