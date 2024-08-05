@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "front_app",  # Your app
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -117,3 +118,5 @@ STATICFILES_DIRS = [BASE_DIR / "static"]  # Add your static files directory here
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+

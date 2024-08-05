@@ -88,13 +88,10 @@
 			<div class="grey-bg"> <!-- Grey BG  -->
       <div class="header-transporent-bg-black">
 				<!-- HEADER -->
-        <div class="header-transporent-bg-black">
-          <!-- HEADER -->
-          {% include 'includes/header.html' %}
+<!-- index_FA_EN.html -->
+{% include 'includes/index_header.html' with logo_url=logo_url menu_items=menu_items %}
+          
 
-            </div>
-            <!-- END header-wrapper -->
-          </header>
         <!-- STATIC MEDIA IMAGE -->
         <div class="sm-video-bg">
   <div class="sm-content-cont js-height-fullscr container text-left">
@@ -160,7 +157,7 @@ Our platform integrates both subtractive and additive manufacturing techniques t
         <!-- FEATURES 7 -->
         <div class="page-section grey-light-bg clearfix">
           <div class="fes7-img-cont col-md-5">
-            <div class="fes7-img"  style="background-image: url(images/fes7.jpg)" ></div>
+            <div class="fes7-img"  style="background-image: url(../static/images/fes7.jpg)" ></div>
           </div>
 
           <div class="container">
