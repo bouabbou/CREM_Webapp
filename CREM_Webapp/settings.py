@@ -35,13 +35,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-<<<<<<< HEAD
     "front_app",  # Your app
     'contact',
-=======
-    "front_app",  
-    "instrumentation",
->>>>>>> fda7b49341112df2bdee11b895317e9ae3686546
 ]
 
 MIDDLEWARE = [
