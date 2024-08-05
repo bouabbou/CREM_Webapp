@@ -65,7 +65,7 @@
     <style>
       #index-link {
         position: relative; /* Ensure this container can be used as a reference for absolute positioning */
-        width: 400%;
+        width: 100%;
         height: 100vh; /* Full viewport height */
         background-size: cover; /* Cover the container */
         background-position: center center; /* Center the background image */
@@ -76,8 +76,9 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 150%;
+      width: 100%;
       height: 150%;
+      overflow: hidden;
     }
 
     .sm-video {
@@ -98,10 +99,15 @@
   text-align: center; /* Center text within each item */
   color: #fff; /* Text color to ensure visibility */
   width: 100%; /* Ensure the container takes full width for centering */
+  height: 100%;
 }
 
 .text-item {
   margin: 5px 0; /* Adjust the space between items as needed */
+}
+
+.headline-part{
+  margin: 10px 0;
 }
     </style>
   </head>
@@ -163,150 +169,8 @@
         <![endif]-->
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
-<<<<<<< HEAD
-          <header id="nav" class="header header-1 black-header">
-            <div class="header-wrapper">
-              <div class="container-m-30 clearfix">
-                <div class="logo-row">
-                  <!-- LOGO -->
-                  <div class="logo-container-2">
-                    <div class="logo-2">
-                      <a href="{% url 'home' %}">
-                        <img
-                          src="../static/images/logo-white.png"
-                          class="logo-img"
-                          alt="Logo"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <!-- BUTTON -->
-                  <div class="menu-btn-respons-container">
-                    <button
-                      type="button"
-                      class="navbar-toggle btn-navbar collapsed"
-                      data-toggle="collapse"
-                      data-target="#main-menu .navbar-collapse"
-                    >
-                      <span
-                        aria-hidden="true"
-                        class="icon_menu hamb-mob-icon"
-                      ></span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- MAIN MENU CONTAINER -->
-              <div class="main-menu-container">
-                <div class="container-m-30 clearfix">
-                  <!-- MAIN MENU -->
-                  <div id="main-menu">
-                    <div class="navbar navbar-default" role="navigation">
-                      <!-- MAIN MENU LIST -->
-                      <nav
-                        class="collapse collapsing navbar-collapse right-1024"
-                      >
-                        <ul id="nav-onepage" class="nav navbar-nav">
-                          <!-- MENU ITEM -->
-                          <li class="current">
-                            <a href="{% url 'home' %}">
-                              <div class="main-menu-title">HOME</div>
-                            </a>
-                          </li>
-                          <!-- MENU ITEM -->
-                          <li>
-                            <a href="#about-us-link">
-                              <div class="main-menu-title">ABOUT US</div>
-                            </a>
-                          </li>
-                          <!-- MENU ITEM -->
-                          <li class="parent">
-                            <a href="#">
-                              <div class="main-menu-title">
-                                RESEARCH PLATFORMS
-                              </div>
-                            </a>
-                            <ul class="sub">
-                              <li>
-                                <a href="{% url 'index' %}">
-                                  ADDITIVE/SUBSTRACTIVE MANUFACTURING AND
-                                  PROTOTYPING</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  >MATERIALS, SYNTHESIS AND CHARACTERIZATION</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  >BIOTECHNOLOGY AND BIOMEDICAL ENGINEERING</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  >PROCESS ENGINEERING AND CIVIL ENGINEERING</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#">SENSORS AND INSTRUMENTATIONS</a>
-                              </li>
-                              <li>
-                                <a href="#">AI AND DIGITAL ENGINEERING</a>
-                              </li>
-                              <li>
-                                <a href="#"
-                                  >RENEWABLE ENERGY, STORAGE AND ENERGY
-                                  EFFICIENCY</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-
-                          <!-- MENU ITEM -->
-                          <li>
-                            <a href="{% url 'contact' %}">
-                              <div class="main-menu-title">CONTACT</div>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                  <!-- END main-menu -->
-                </div>
-                <!-- END container-m-30 -->
-              </div>
-              <!-- END main-menu-container -->
-              <!-- SEARCH READ DOCUMENTATION -->
-              <ul class="cd-header-buttons">
-                <li>
-                  <a class="cd-search-trigger" href="#cd-search"
-                    ><span></span
-                  ></a>
-                </li>
-              </ul>
-              <!-- cd-header-buttons -->
-              <div id="cd-search" class="cd-search">
-                <form
-                  class="form-search"
-                  id="searchForm"
-                  action="page-search-results.html"
-                  method="get"
-                >
-                  <input
-                    type="text"
-                    value=""
-                    name="q"
-                    id="q"
-                    placeholder="Search..."
-                  />
-                </form>
-              </div>
-=======
           {% include 'includes/header.html' %}
 
->>>>>>> 70d384d0a4496d581df5f825fe9f07add8ef85b7
             </div>
             <!-- END header-wrapper -->
           </header>
@@ -326,18 +190,26 @@
             </div>
           </div>
           
+              <div class="container sm-content-cont js-height-fullscr">
+              <!-- VIDEO BG -->
+              <!-- If you want to change video - replace video files in folder "video" -->
+              <div class="sm-video-wrapper">
+                <div class="sm-video bg-dark-alfa-50"></div>
+              </div>
               <div class="sm-cont-middle">
                 <!-- LAYER NR. 1 -->
-                <h1 class="cd-headline zoom light-72-wide font-white sm-mt-20 sm-mb-20 relative text-center-xxs">
-    <span class="headline-part">Euromed</span>
-    <span class="cd-words-wrapper waiting">
-      <b class="is-visible headline-part">Research</b>
-      <b class="headline-part">Innovation</b>
-      <b class="headline-part">Advanced technologies</b>
-      <b class="headline-part">Excellence</b>
-    </span>
-    <span class="headline-part">Center</span>
-  </h1>
+                <h1
+                  class="cd-headline zoom light-72-wide font-white sm-mt-20 sm-mb-20 relative text-center-xxs"
+                >
+                  <span>Euromed </span>
+                  <span class="cd-words-wrapper waiting">
+                    <b class="is-visible">Research</b>
+                    <b>Innovation</b>
+                    <b>Advanced technologies</b>
+                    <b>Excellence</b>
+                  </span>
+                  <span>Center </span>
+                </h1>
               </div>
             </div>
             <!-- SCROLL ICON
@@ -666,3 +538,11 @@
     <!-- JS end -->
   </body>
 </html>
+
+
+
+
+
+
+
+
