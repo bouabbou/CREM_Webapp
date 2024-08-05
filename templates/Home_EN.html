@@ -120,28 +120,22 @@
           </div>
         <![endif]-->
         <div class="header-transporent-bg-black">
-          <!-- HEADER -->
-          {% include 'includes/header.html' %}
+         {% include "includes/header.html"  %}
 
-            </div>
-            <!-- END header-wrapper -->
-          </header>
           <!-- STATIC MEDIA IMAGE -->
-          <div id="index-link" class="sm-video-bg">
+          <div
+            id="index-link"
+            class="sm-video-bg"
+            style="
+              background-image: url(images/static-media/landing-video-bg.jpg);
+            "
+          >
             <div class="container sm-content-cont js-height-fullscr">
               <!-- VIDEO BG -->
               <!-- If you want to change video - replace video files in folder "video" -->
               <div class="sm-video-wrapper">
-                <div class="sm-video bg-dark-alfa-50">
-                  <video autoplay muted loop id="bg-video" class="video-background">
-                    <source src="../static/video/SSR.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
+                <div class="sm-video bg-dark-alfa-50"></div>
               </div>
-            </div>
-          </div>
-          
               <div class="sm-cont-middle">
                 <!-- LAYER NR. 1 -->
                 <h1
@@ -224,51 +218,42 @@
         <div class="port-view-more-cont-dark">
           <a
             class="port-view-more-dark1 responsive-text"
-            href="{% url 'contact' %}"
-              >MATERIALS, SYNTHESIS AND CHARACTERIZATION</a
+            href="Contact_FA_EN.html"
+            >MATERIALS, SYNTHESIS AND CHARACTERIZATION</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark2 responsive-text"
-          href="{% url 'contact' %}"
-          >BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING</a
+          <a class="port-view-more-dark2 responsive-text" href="contact.html"
+            >BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark3 responsive-text"
-          href="{% url 'contact' %}"
-
+          <a class="port-view-more-dark3 responsive-text" href="contact.html"
             >PROCESS ENGINEERING AND CIVIL ENGINEERING</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark4 responsive-text"
-          href="{% url 'contact' %}"
-
+          <a class="port-view-more-dark4 responsive-text" href="contact.html"
             >SENSORS AND INSTRUMENTATIONS</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark5 responsive-text"
-          href="{% url 'contact' %}"
-
+          <a class="port-view-more-dark5 responsive-text" href="contact.html"
             >AI AND DIGITALE ENGINEERING</a
           >
         </div>
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark6 responsive-text" 
-          href="{% url 'contact' %}"
-
+          <a class="port-view-more-dark6 responsive-text" href="contact.html"
             >RENEWABLE ENERGIES, STORAGE AND ENERGY EFFICIENCY</a
           >
         </div>
@@ -396,8 +381,120 @@
         </div>
         <!-- CONTACT INFO SECTION 1 -->
         <!-- FOOTER 1 -->
-        {% include 'includes/footer.html' %}
+        <footer id="footer" class="page-section pt-80 pb-50 footer2-black">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-3 widget">
+                <div class="logo-footer-cont">
+                  <a href="Index_FA.html">
+                    <img
+                      class="logo-footer"
+                      src="../static/images/logo-white.png"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+                <div class="footer-2-text-cont">
+                  <address>
+                    Eco-Campus UEMF<br />
+                    Rond-point Bensouda, <br />
+                    Route de Meknes, Fez
+                  </address>
+                </div>
+                <div class="footer-2-text-cont">
+                  053890-9000<br />
+                  053890-1010
+                </div>
+                <div class="footer-2-text-cont">
+                  <a class="a-text" href="crem-contact@ueuromed.org"
+                    >crem-contact@ueuromed.org</a
+                  >
+                </div>
+              </div>
 
+              <div class="col-md-3 col-sm-3 widget">
+                <h4>CREM</h4>
+                <ul class="links-list a-text-cont">
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#about-us-link">ABOUT US</a></li>
+                  <li><a href="index_FA_EN.html">RESEARCH PLATFORMS</a></li>
+                  <li><a href="CONTACT_FA_EN.html">CONTACT</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-6 col-sm-3 widget">
+                <h4>NAVIGATION</h4>
+                <ul class="links-list bold a-text-cont">
+                  <li>
+                    <a ahref="index_FA_EN.html"
+                      >ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING</a
+                    >
+                  </li>
+                  <li>
+                    <a ahref="Index_FA.html"
+                      >MATERIALS, SYNTHESIS AND CHARACTERIZATION</a
+                    >
+                  </li>
+                  <li>
+                    <a ahref="Index_FA.html"
+                      >BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING</a
+                    >
+                  </li>
+                  <li>
+                    <a ahref="Index_FA.html"
+                      >PROCESS ENGINEERING AND CIVIL ENGINEERING</a
+                    >
+                  </li>
+                  <li>
+                    <a ahref="Index_FA.html">SENSORS AND INSTRUMENTATIONS</a>
+                  </li>
+                  <li>
+                    <a ahref="Index_FA.html">AI AND DIGITALE ENGINEERING</a>
+                  </li>
+                  <li>
+                    <a ahref="Index_FA.html"
+                      >RENEWABLE ENERGIES, STORAGE AND ENERGY EFFICIENCY</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-2-copy-cont clearfix">
+              <!-- Social Links -->
+              <div class="footer-2-soc-a right">
+                <a href="#" title="Facebook" target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a href="#" title="Twitter" target="_blank"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a href="#" title="Youtube" target="_blank"
+                  ><i class="fa fa-youtube"></i
+                ></a>
+                <a href="#" title="LinkedIn+" target="_blank"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <a href="#" title="Instagram" target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </div>
+              <!-- Copyright -->
+              <div class="left">
+                <a
+                  class="footer-2-copy"
+                  href="https://www.ueuromed.org"
+                  target="_blank"
+                  >&copy; Ueuromed-2024</a
+                >
+              </div>
+            </div>
+            <p id="back-top">
+              <a href="#top" title="Back to Top"
+                ><span class="icon icon-arrows-up"></span
+              ></a>
+            </p>
+          </div>
+        </footer>
         <!-- BACK TO TOP -->
       </div>
       <!-- End BG -->

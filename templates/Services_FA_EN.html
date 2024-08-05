@@ -38,11 +38,10 @@
 				<!-- HEADER 1 NO-TRANSPARENT -->
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
-          {% include 'includes/header.html' %}
+          {% include 'includes/contact_header.html'  %}
 
-            </div>
-            <!-- END header-wrapper -->
-          </header>
+          <!-- HEADER -->
+
         <!-- PAGE TITLE SMALL -->
         <div class="page-title-cont page-title-small grey-light-bg">
           <div class="align-left container relative">
@@ -54,7 +53,8 @@
                  </div>
                 <div class="col-md-4">
                 <div class="breadcrumbs">
-                  <a href="Index_FA_EN.html">Home</a><span class="slash-divider">/</span><span class="bread-current">SERVICES</span>
+                  <a href="{% url 'index' %}">  
+                    Home</a><span class="slash-divider">/</span><span class="bread-current">SERVICES</span>
                 </div>
               </div>
             </div>

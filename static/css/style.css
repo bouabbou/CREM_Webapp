@@ -11837,3 +11837,13 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   color: #fff; /* Change text color to white on hover */
   line-height: 2; /* Increase space between lines on hover */
 }
+
+.port-filter {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  overflow-x: auto; /* Adds horizontal scroll if needed */
+}
+
+.filter {
+  margin-right: 20px; /* Adds space between items */
+}

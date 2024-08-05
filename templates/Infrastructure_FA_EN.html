@@ -10,33 +10,33 @@
 		<meta name="author" content="AB">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<!-- FAVICONS -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon.ico">
-    <link rel="icon" sizes="192x192" href="images/favicon/favicon.ico">
+    <link rel="shortcut icon" href="../static/../static/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="../static/../static/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="../static/../static/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="../static/../static/images/favicon/favicon.ico">
+    <link rel="icon" sizes="192x192" href="../static/../static/images/favicon/favicon.ico">
 <!-- CSS -->
     <!--  GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link href="../static/../static/https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">
 
     <!-- REVOSLIDER CSS SETTINGS -->
 
     <!-- REVOLUTION STYLE SHEETS -->
-    <link href="revo-slider-5/css/settings.css" rel="stylesheet" type="text/css">
+    <link href="../static/revo-slider-5/css/settings.css" rel="stylesheet" type="text/css">
         <!-- REVOLUTION NAVIGATION STYLES -->
-    <link rel="stylesheet" type="text/css" href="revo-slider-5/css/navigation-skins/hermes-custom.css">
+    <link rel="stylesheet" type="text/css" href="../static/revo-slider-5/css/navigation-skins/hermes-custom.css">
         <!--  BOOTSTRAP -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/css/bootstrap.min.css">
 	    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->
-  		<link rel="stylesheet" href="css/icons-fonts.css" >
+  		<link rel="stylesheet" href="../static/css/icons-fonts.css" >
 	    <!--  CSS THEME -->
-		<link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" type="text/css" href="css/flexslider.css"  >
+		<link rel="stylesheet" href="../static/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="../static/css/flexslider.css"  >
 
 
 
 	    <!-- ANIMATE -->
-		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="../static/css/animate.min.css">
 		</head>
 	<body>
 	<!-- LOADER -->
@@ -45,13 +45,9 @@
     </div>
 		<div id="wrap" class="boxed">
 			<div class="container-p-75-2"> <!-- Grey BG  -->
-        <div class="header-transporent-bg-black">
-          <!-- HEADER -->
-          {% include 'includes/header.html' %}
+				
 
-            </div>
-            <!-- END header-wrapper -->
-          </header>
+            {% include 'includes/contact_header.html'  %}
 
 
         <!-- SLIDER Revo 2 -->
@@ -65,7 +61,7 @@
                         <!-- SLIDE  -->
                         <li data-index="rs-672" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="images/revo-slider/infra.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                            <img src="../static/images/revo-slider/infra.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
@@ -144,7 +140,7 @@
                 <ul class="slides">
 
                   <!-- SLIDE 1 -->
-                  <li style="background:url(images/flexslider/AMLAB1.jpg) no-repeat;background-position:50% 0">
+                  <li style="background:url(../static/images/flexslider/AMLAB1.jpg) no-repeat;background-position:50% 0">
 
                     <div class="container">
                       <div class="sixteen columns contain">
@@ -153,7 +149,7 @@
                     </div><!-- End Container -->
 
                     <!-- SLIDE 2 -->
-                  <li style="background:url(images/flexslider/AMLAB2.png) no-repeat;background-position:50% 0">
+                  <li style="background:url(../static/images/flexslider/AMLAB2.png) no-repeat;background-position:50% 0">
 
                     <div class="container">
                       <div class="sixteen columns contain">
@@ -162,7 +158,7 @@
                     </div><!-- End Container -->
 
                     <!-- SLIDE 3 -->
-                  <li style="background:url(images/flexslider/AMLAB3.jpg) no-repeat;background-position:50% 0">
+                  <li style="background:url(../static/images/flexslider/AMLAB3.jpg) no-repeat;background-position:50% 0">
 
                     <div class="container">
                       <div class="sixteen columns contain">
@@ -177,7 +173,8 @@
             </div>
 
           </div><!-- End slider -->
-
+          <hr>
+          
         </div>
         <!-- PORTFOLIO SECTION (3 COLS, WIDE) -->
         <div id="portfolio-link" class="page-section gray-bg">
@@ -185,7 +182,6 @@
 
             <div class="container-3 container">
               <div class="pt-80-b-30-cont">
-
                 <!-- TITLE -->
               	<div class="mb-15 mb-xs-15">
               	  <h2 class="section-title2 p-0 text-center">OUR SCIENTIFIC INSTRUMENTATION</h2>
@@ -210,7 +206,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\AM\sls.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\AM\sls.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -227,7 +223,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\AM\pro x300.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\AM\pro x300.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -243,7 +239,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\AM\3DSProJet.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\AM\3DSProJet.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -259,7 +255,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\AM\slm.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\AM\slm.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -276,7 +272,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\AM\KUDO3D.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\AM\KUDO3D.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -296,7 +292,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\AM\volumic.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\AM\volumic.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -313,7 +309,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\AM\upmini.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\AM\upmini.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -330,7 +326,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\AM\intramsys.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\AM\intramsys.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -350,7 +346,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\SM\cnc5axe.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\SM\cnc5axe.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -368,7 +364,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\SM\cnc4axe.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\SM\cnc4axe.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -386,7 +382,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\SM\TL1.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\SM\TL1.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -404,7 +400,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\SM\my1224.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\SM\my1224.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -422,7 +418,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\SM\OPTIMUMTU2406V.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\SM\OPTIMUMTU2406V.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -439,7 +435,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\SM\OPTIMUMBF.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\SM\OPTIMUMBF.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -456,7 +452,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CM\Mark2.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CM\Mark2.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -473,7 +469,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CM\sigmax.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CM\sigmax.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -492,7 +488,7 @@
 
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CM\ADMAFLEX.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CM\ADMAFLEX.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -508,7 +504,7 @@
                <li role="button" class="port-item mix CM">
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CM\Autoclave-sm.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CM\Autoclave-sm.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -525,7 +521,7 @@
                <li role="button" class="port-item mix CM">
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CM\furnace.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CM\furnace.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -541,7 +537,7 @@
                <li role="button" class="port-item mix CH">
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CH\drx.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CH\drx.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -557,7 +553,7 @@
                <li role="button" class="port-item mix CH">
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CH\camsizer.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CH\camsizer.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -573,7 +569,7 @@
                <li role="button" class="port-item mix CH">
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CH\TRACTION_MTS.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CH\TRACTION_MTS.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -593,7 +589,7 @@
                <li role="button" class="port-item mix CH">
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CH\MOPAO4S.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CH\MOPAO4S.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -609,7 +605,7 @@
                <li role="button" class="port-item mix CH">
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CH\waw.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CH\waw.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -627,7 +623,7 @@
                <li role="button" class="port-item mix CH">
                 <a href="#">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images\Infrastructure\CH\UNIPOL-820.png" alt="img" >
+                    <img class="port-main-img" src="../static/images\Infrastructure\CH\UNIPOL-820.png" alt="img" >
                   </div>
                 </a>
                 <div class="port-overlay-cont">
@@ -648,8 +644,71 @@
         <!-- VIEW MORE PROJECTS  -->
 
         <!-- FOOTER 4 BLACK -->
-        {% include 'includes/footer.html' %}
+        <footer id="footer" class="page-section pt-80 pb-50 footer2-black">
+          <div class="container">
+            <div class="row">
+               <div class="col-md-3 col-sm-3 widget">
+                <div class="logo-footer-cont">
+                  <a href="../static/Index_FA_EN.html">
+                    <img class="logo-footer" src="../static/images/logo-white.png" alt="logo">
+                  </a>
+                </div>
+                <div class="footer-2-text-cont">
+                  <address>
+                    Address : ROUTE NATIONALE FÈS<br>
+                    MEKNÈS FÈS
+                  </address>
+                </div>
+                <div class="footer-2-text-cont">
+                  Phone : 053890-9000<br>
+                  053890-1010
+                </div>
+                <div class="footer-2-text-cont">
+                  <a class="a-text" href="../static/crem@ueuromed.org">crem@ueuromed.org</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 widget">
+                <h4>CREM</h4>
+                <ul class="links-list a-text-cont" >
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="../static/Contact_FA_EN.html">CONTACT</a></li>
+                </ul>
+              </div>
 
+              <div class="col-md-6 col-sm-3 widget">
+                 <h4>NAVIGATION</h4>
+                 <ul class="links-list bold a-text-cont">
+                    <li><a href="../static/Index_FA_EN.html">ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING</a></li>
+                    <li><a href="../static/Index_MSC_EN.html">MATERIALS, SYNTHESIS AND CHARACTERIZATION</a></li>
+                    <li><a href="../static/Index_BIO_EN.html">BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING</a></li>
+                    <li><a href="../static/Index_GPGC_EN.html">PROCESS ENGINEERING AND CIVIL ENGINEERING</a></li>
+                    <li><a href="../static/Index_CI_EN.html">SENSORS AND INSTRUMENTATIONS</a></li>
+                    <li><a href="../static/Index_IDAI_EN.html">AI AND DIGITALE ENGINEERING</a></li>
+                    <li><a href="../static/Index_EREE_EN.html">RENEWABLE ENERGIES, STORAGE AND ENERGY EFFICIENCY</a></li>
+
+                 </ul>
+              </div>
+
+
+            <div class="footer-2-copy-cont clearfix">
+              <!-- Social Links -->
+              <div class="footer-2-soc-a right">
+                <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+              </div>
+
+              <!-- Copyright -->
+              <div class="left">
+                <a class="footer-2-copy" href="../static/https://www.ueuromed.org" target="_blank">&copy; ueuromed-2024</a>
+              </div>
+
+            </div>
+
+          </div>
+        </footer>
 
 				<!-- BACK TO TOP -->
 				<p id="back-top">
@@ -662,47 +721,47 @@
 <!-- JS begin -->
 
 		<!-- jQuery  -->
-		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="../static/js/jquery-1.11.2.min.js"></script>
 
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
 
 		<!-- MAGNIFIC POPUP -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="../static/js/jquery.magnific-popup.min.js"></script>
 
     <!-- PORTFOLIO SCRIPTS -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="../static/js/isotope.pkgd.min.js"></script>
+    <script src="../static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../static/js/masonry.pkgd.min.js"></script>
 
     <!-- APPEAR -->
-    <script src="js/jquery.appear.js"></script>
+    <script src="../static/js/jquery.appear.js"></script>
 
     <!-- JQUERY TWEETS -->
-		<script src="js/twitter/jquery.tweet.js"></script>
+		<script src="../static/js/twitter/jquery.tweet.js"></script>
 
 		<!-- OWL CAROUSEL -->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
 
     <!-- MAIN SCRIPT -->
-		<script src="js/main.js"></script>
+		<script src="../static/js/main.js"></script>
 
 		<!-- REVOSLIDER SCRIPTS  -->
-    <script src="revo-slider-5/js/jquery.themepunch.tools.min.js"></script>
-    <script src="revo-slider-5/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../static/revo-slider-5/js/jquery.themepunch.tools.min.js"></script>
+    <script src="../static/revo-slider-5/js/jquery.themepunch.revolution.min.js"></script>
 
     <!-- SLIDER REVOLUTION 5.0 EXTENSIONS
       (Load Extensions only on Local File Systems !
       The following part can be removed on Server for On Demand Loading) -->
-    <script src="revo-slider-5/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="revo-slider-5/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="revo-slider-5/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="revo-slider-5/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="revo-slider-5/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="revo-slider-5/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="revo-slider-5/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="revo-slider-5/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="revo-slider-5/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="../static/revo-slider-5/js/extensions/revolution.extension.video.min.js"></script>
 
     <!-- SLIDER REVOLUTION INITIALIZATION  -->
     <script>
@@ -752,8 +811,8 @@
     </script>
 
     <!-- FLEX SLIDER SCRIPTS  -->
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/flex-slider.js"></script>
+    <script src="../static/js/jquery.flexslider-min.js"></script>
+    <script src="../static/js/flex-slider.js"></script>
 <!-- JS end -->
 
 	</body>
