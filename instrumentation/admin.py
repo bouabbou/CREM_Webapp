@@ -1,18 +1,12 @@
 from django.contrib import admin
-from .models import Category, Product
+from .models import Category, Product, Platform
 
 class CategoryAdmin(admin.ModelAdmin):
-    # Define which fields to display in the list view
     list_display = ('name', 'abbreviation', 'platform')
-    # Define which fields can be searched in the search bar
-    search_fields = ('name', 'abbreviation', 'platform')
-    # Define which fields can be edited in the admin form
+    search_fields = ('name', 'abbreviation', 'platform__name')
     fields = ('name', 'abbreviation', 'platform')
-    # Optional: Define how to filter categories in the admin interface
-    list_filter = ('name', 'platform')
+    list_filter = ('platform',)
 
-# Register the Category model with the custom CategoryAdmin class
 admin.site.register(Category, CategoryAdmin)
-
-# Register the Product model with default admin interface
 admin.site.register(Product)
+admin.site.register(Platform)

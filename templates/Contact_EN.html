@@ -203,11 +203,12 @@
                     </div>       
                     <!-- CONTACT FORM -->
                     <div>
-                      <form id="contact-form" action="php/contact-form.php" method="POST">
+                      <form method="POST" action="{% url 'contact' %}">
+                      {% csrf_token %}
                       <div class="row">
                           <div class="col-md-12 mb-30">
                             <!-- <label>Your name *</label> -->
-                            <input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="controled" name="name" id="name" placeholder="NAME" required>
+                            <input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="controled" name="name" id="fname" placeholder="NAME" required>
                           </div>
                         </div>
                         
