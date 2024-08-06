@@ -26,5 +26,6 @@ urlpatterns = [
     path('infrastructure/', views.infrastructure, name='infrastructure'),
     path('innovation/', views.innovation, name='innovation'),
     path('services/', views.services, name='services'),
-    path('contact/',include('contact.urls')),
+    path('',include('contact.urls')),
+    
 ]

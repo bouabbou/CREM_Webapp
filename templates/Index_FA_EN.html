@@ -65,7 +65,9 @@
             width: 100%;
             height: 100vh; /* Full viewport height */
             cursor: pointer; /* Indicate it's clickable */
+            object-fit: cover;
         }
+        
 
         #close-button {
             position: absolute;
@@ -99,7 +101,7 @@
     <div class="sm-video-wrapper">
       <div class="sm-video">
         <video autoplay muted loop playsinline class="video-background">
-          <source src="video/Fa.mp4" type="video/mp4">
+          <source src="../static/video/FA.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -234,7 +236,7 @@ Additive manufacturing is a production technology that builds objects layer by l
                 <div id="video-container">
                     <button id="close-button">X</button>
                     <video id="video-player" controls>
-                        <source src="../static/Video/SSR.mp4" type="video/mp4">
+                        <source src="../static/video/SSR.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -435,8 +437,8 @@ Additive manufacturing is a production technology that builds objects layer by l
                 "align": "centerXY",
                 "width": 1920,
                 "height": 1080,
-                "path": "video/",
-                "filename": "fa3d", // FILE NAME of your video
+                "path": "static/video/",
+                "filename": "FA", // FILE NAME of your video
                 "types": ["mp4"],
                 "autoplay": true,
                 "loop": true

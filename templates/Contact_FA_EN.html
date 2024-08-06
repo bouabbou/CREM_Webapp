@@ -36,6 +36,7 @@
 
     <!-- ANIMATE -->	
 		<link rel='stylesheet' href="../static/css/animate.min.css">
+
 		
 	</head>
 	<body>
@@ -159,11 +160,10 @@
 				   </div>
 				  <!-- END header-wrapper -->
 				</header>
-              <!-- END header-wrapper -->
-            </header>
+          <header id="nav" class="header header-1 no-transparent mobile-no-transparent">
+            {% include 'includes/contact_header.html'  %}
 
-            {% include 'includes/contact_header.html' %}
-              <!-- END header-wrapper -->
+				</header>
         <!-- PAGE TITLE -->
         <div class="page-title-cont page-title-big grey-light-bg">
           <div class="align-left container relative">
@@ -201,36 +201,45 @@
                     <div class="mb-40">
                       <h2 class="section-title">CONTACT <span class="bold">US</span></h2>
                     </div>       
-                     <form method="post" action="{% url 'contact' %}">
-                        {% csrf_token %}
-                        
-                        <div class="form-group">
-                          <label for="fname">Your Name</label>
-                          {{ form.name }}
+                    <!-- CONTACT FORM -->
+                    <div>
+                      <form method="POST">
+                      {% csrf_token %}
+                      <div class="row">
+                          <div class="col-md-12 mb-30">
+                            <!-- <label>Your name *</label> -->
+                            <input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="controled" name="name" id="fname" placeholder="NAME" required>
+                          </div>
                         </div>
                         
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Email address</label>
-                          {{ form.email }}
+                        <div class="row">    
+                          <div class="col-md-12 mb-30">
+                            <!-- <label>Your email address *</label> -->
+                            <input type="email" value="" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" maxlength="100" class="controled" name="email" id="email" placeholder="EMAIL" required>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                          <div class="col-md-12 mb-40">
+                            <!-- <label>Message *</label> -->
+                            <textarea maxlength="5000" data-msg-required="Please enter your message" rows="3" class="controled" name="message" id="message" placeholder="MESSAGE" required></textarea>
+                          </div>
                         </div>
                         
-                        <div class="form-group">
-                          <label for="subject">Subject</label>
-                          {{ form.subject }}
+                        <div class="row">
+                          <div class="col-md-12 text-center-xxs">
+                            <input type="submit" value="SEND MESSAGE" class="button medium gray" data-loading-text="Loading...">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="checkbox small">
+                              <label><input type="checkbox" value="privacy" data-msg-required="Please accept the terms" id="agree" name="agree" class="checkbox" required>I agree to the terms of service</label>
+                            </div>
+                          </div>
                         </div>
                         
-                        <div class="form-group text-center-xxs">
-                          {{ form.agree }}
-                          <label for="agree">I agree to the terms of service</label>
-                        </div>
-                        
-                        <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-                        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-
-                        <div class="form-group text-center-xxs">
-                          <input type="submit" value="SEND MESSAGE" class="button medium gray">
-                        </div>
-                      </form>
+                      </form>	
                       <div class="alert alert-success animated fadeIn hidden" id="contactSuccess" >
                         Thanks, your message has been sent to us.
                       </div>
