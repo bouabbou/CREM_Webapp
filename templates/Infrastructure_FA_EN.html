@@ -208,7 +208,7 @@
 
       
               {% for product in products %}
-              <li role="button" class="port-item mix {{ product.category.abbreviation }}">
+              <li role="button" class="port-item mix {{ product.category.abbreviation }} {{ product.category.platform.name|lower }}">
                   <a href="#">
                       <div class="port-img-overlay">
                           <img class="port-main-img" src="{{ product.image.url }}" alt="{{ product.name }}">

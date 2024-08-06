@@ -3,13 +3,13 @@ from .models import Category, Product
 
 class CategoryAdmin(admin.ModelAdmin):
     # Define which fields to display in the list view
-    list_display = ('name', 'abbreviation')
+    list_display = ('name', 'abbreviation', 'platform')
     # Define which fields can be searched in the search bar
-    search_fields = ('name', 'abbreviation')
+    search_fields = ('name', 'abbreviation', 'platform')
     # Define which fields can be edited in the admin form
-    fields = ('name', 'abbreviation')
+    fields = ('name', 'abbreviation', 'platform')
     # Optional: Define how to filter categories in the admin interface
-    list_filter = ('name',)
+    list_filter = ('name', 'platform')
 
 # Register the Category model with the custom CategoryAdmin class
 admin.site.register(Category, CategoryAdmin)
