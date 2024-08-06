@@ -194,9 +194,12 @@
                  <!--- dunamic category handler-->
                  <div class="port-filter">
                   {% for category in categories %}
-                      <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
+                      {% if category.platform.name == "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING" %}
+                          <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
+                      {% endif %}
                   {% endfor %}
               </div>
+              
               
               
               </div>
