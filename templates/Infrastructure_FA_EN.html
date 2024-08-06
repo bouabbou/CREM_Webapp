@@ -194,9 +194,12 @@
                  <!--- dunamic category handler-->
                  <div class="port-filter">
                   {% for category in categories %}
-                      <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
+                      {% if category.platform.name == "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING" %}
+                          <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
+                      {% endif %}
                   {% endfor %}
               </div>
+              
               
               
               </div>
@@ -208,7 +211,7 @@
 
       
               {% for product in products %}
-              <li role="button" class="port-item mix {{ product.category.abbreviation }}">
+              <li role="button" class="port-item mix {{ product.category.abbreviation }} {{ product.category.platform.name|lower }}">
                   <a href="#">
                       <div class="port-img-overlay">
                           <img class="port-main-img" src="{{ product.image.url }}" alt="{{ product.name }}">

@@ -1,0 +1,17 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3305,
+      "driver": "MariaDB",
+      "name": "crem_webadpp",
+      "database": "crem_webadpp",
+      "username": "root"
+    }
+  ]
+}
