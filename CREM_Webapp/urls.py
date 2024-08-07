@@ -4,8 +4,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from contact.views import Contact, contact
 
 urlpatterns = [
+    path('', contact, name='contact'),
     # Admin site URL
     path('admin/', admin.site.urls),
 
@@ -15,4 +17,4 @@ urlpatterns = [
     # URLs for 'instrumentation'
     path('instrumentation/', include('instrumentation.urls')),  # URLs for 'instrumentation' app
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
