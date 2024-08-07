@@ -11,8 +11,8 @@ urlpatterns = [
     # Home page URL
     path('', views.home, name='home'),
 
-    # Index page URL
-    path('index/', views.index, name='index'),
+    # ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING page URL
+    path('AMP/', views.AMP, name='AMP'),
 
     # Contact page URL
     path('contact/', views.contact, name='contact'),
