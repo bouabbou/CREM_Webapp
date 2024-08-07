@@ -90,8 +90,8 @@ DATABASES = {
         'NAME': 'crem_webadpp',
         'USER': 'root',
         'PASSWORD': '2002',
-        'HOST': 'localhost',  # Or the IP address of your MariaDB server
-        'PORT': '3305',       # Default MariaDB port
+        'HOST': 'localhost', 
+        'PORT': '3305',       
     }
 }
 

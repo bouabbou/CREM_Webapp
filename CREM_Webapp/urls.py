@@ -7,7 +7,6 @@ from django.conf.urls.static import static
 from contact.views import Contact, contact
 
 urlpatterns = [
-    path('', contact, name='contact'),
     # Admin site URL
     path('admin/', admin.site.urls),
 

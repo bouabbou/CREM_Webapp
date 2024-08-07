@@ -21,7 +21,7 @@ def innovation(request):
     return render(request, 'Innovation_FA_EN.html')
 def services(request):
     return render(request, 'Services_FA_EN.html')
-def AMP(request):
-    return render(request, 'AMP_platform.html')
+def index(request):
+    return render(request, 'index_FA_EN.html')
 def presentation(request):
-    return render(request, 'AMP_platform.html')
+    return render(request, 'index_FA_EN.html')
