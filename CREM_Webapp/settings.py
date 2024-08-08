@@ -86,14 +86,15 @@ WSGI_APPLICATION = "CREM_Webapp.wsgi.application"
 
 DATABASES = {
     "default": {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'crem_webadpp',
-        'USER': 'root',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'crem_webapp',
+        'USER': 'noyl',
         'PASSWORD': '2002',
-        'HOST': 'localhost', 
-        'PORT': '3305',       
+        'HOST': 'localhost',  
+        'PORT': '5432',       
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
