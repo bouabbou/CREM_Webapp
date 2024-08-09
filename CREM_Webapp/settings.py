@@ -87,11 +87,11 @@ WSGI_APPLICATION = "CREM_Webapp.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'crem_webapp',
-        'USER': 'noyl',
-        'PASSWORD': '2002',
-        'HOST': 'localhost',  
-        'PORT': '5432',       
+        'NAME': 'postgres',
+        'USER': 'postgres.gbblasxmcvumfinbunbe',
+        'PASSWORD': '@crem_webapp',
+        'HOST': 'aws-0-eu-west-2.pooler.supabase.com',  
+        'PORT': '6543',       
     }
 }
 
