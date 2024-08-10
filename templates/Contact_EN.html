@@ -204,49 +204,47 @@
                     <!-- CONTACT FORM -->
                     <div>
                       <form method="POST" action="{% url 'contact' %}">
-                      {% csrf_token %}
-                      <div class="row">
-                          <div class="col-md-12 mb-30">
-                            <!-- <label>Your name *</label> -->
-                            <input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="controled" name="name" id="fname" placeholder="NAME" required>
-                          </div>
-                        </div>
-                        
-                        <div class="row">    
-                          <div class="col-md-12 mb-30">
-                            <!-- <label>Your email address *</label> -->
-                            <input type="email" value="" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" maxlength="100" class="controled" name="email" id="email" placeholder="EMAIL" required>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                          <div class="col-md-12 mb-40">
-                            <!-- <label>Message *</label> -->
-                            <textarea maxlength="5000" data-msg-required="Please enter your message" rows="3" class="controled" name="message" id="message" placeholder="MESSAGE" required></textarea>
-                          </div>
-                        </div>
-                        
-                        <div class="row">
-                          <div class="col-md-12 text-center-xxs">
-                            <input type="submit" value="SEND MESSAGE" class="button medium gray" data-loading-text="Loading...">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="checkbox small">
-                              <label><input type="checkbox" value="privacy" data-msg-required="Please accept the terms" id="agree" name="agree" class="checkbox" required>I agree to the terms of service</label>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </form>	
-                      <div class="alert alert-success animated fadeIn hidden" id="contactSuccess" >
-                        Thanks, your message has been sent to us.
-                      </div>
-                    
-                      <div class="alert alert-danger animated shake hidden" id="contactError">
-                        <strong>Error!</strong> There was an error sending your message.
-                      </div>
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-12 mb-30">
+                                        <input type="text" class="controled" name="name" id="fname" placeholder="NAME" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">    
+                                    <div class="col-md-12 mb-30">
+                                        <input type="email" class="controled" name="email" id="email" placeholder="EMAIL" required>
+                                    </div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="col-md-12 mb-40">
+                                        <textarea rows="3" class="controled" name="message" id="message" placeholder="MESSAGE" required></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 text-center-xxs">
+                                        <input type="submit" value="SEND MESSAGE" class="button medium gray" data-loading-text="Loading...">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="checkbox small">
+                                            <label><input type="checkbox" name="agree" class="checkbox" required>I agree to the terms of service</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                      {% if request.GET.status == 'success' %}
+                                <div class="alert alert-success animated fadeIn">
+                                    Thanks, your message has been sent to us.
+                                </div>
+                            {% elif request.GET.status == 'error' %}
+                                <div class="alert alert-danger animated shake">
+                                    <strong>Error!</strong> There was an error sending your message.
+                                </div>
+                            {% endif %}
                     </div>
                   </div>
                 </div>
