@@ -33,6 +33,15 @@ urlpatterns = [
     path('SAI_infrastructure/', views.SAI_infrastructure, name='SAI_infrastructure'),
     
     #dynamic url from platform's presentation 
+    path('services/', views.services, name='services'),
+    path('AAD_services/', views.AAD_services, name='AAD_services'),
+    path('BABE_services/', views.BABE_services, name='BABE_services'),
+    path('MSAC_services/', views.MSAC_services, name='MSAC_services'),
+    path('PEACE_services/', views.PEACE_services, name='PEACE_services'),
+    path('RESAN_services/', views.RESAN_services, name='RESAN_services'),
+    path('SAI_services/', views.SAI_services, name='SAI_services'),
+
+    #dynamic url from platform's services
     path('index/', views.index, name='index'),
     path('AAD_index/', views.AAD_index, name='AAD_index'),
     path('BABE_index/', views.BABE_index, name='BABE_index'),

@@ -134,7 +134,7 @@ def MSAC_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
-        #'services_url': reverse('MSAC_services'),
+        'services_url': reverse('MSAC_services'),
         'index_url': reverse('MSAC_index'),
         'infrastructure_url': reverse('MSAC_infrastructure'),
        #'innovation_url': reverse('MSAC_innovation'),
@@ -180,7 +180,7 @@ def PEACE_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
-        #'services_url': reverse('PEACE_services'),
+        'services_url': reverse('PEACE_services'),
         'index_url': reverse('PEACE_index'),
         'infrastructure_url': reverse('PEACE_infrastructure'),
         #'innovation_url': reverse('PEACE_innovation'),
@@ -226,7 +226,7 @@ def RESAN_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
-        #'services_url': reverse('RESAN_services'),
+        'services_url': reverse('RESAN_services'),
         'index_url': reverse('RESAN_index'),
         'infrastructure_url': reverse('RESAN_infrastructure'),
         #'innovation_url': reverse('RESAN_innovation'),
@@ -273,7 +273,7 @@ def SAI_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
-        #'services_url': reverse('SAI_services'),
+        'services_url': reverse('SAI_services'),
         'index_url': reverse('SAI_index'),
         'infrastructure_url': reverse('SAI_infrastructure'),
         #'innovation_url': reverse('SAI_innovation'),
@@ -319,7 +319,7 @@ def AAD_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
 
         #header : 
-        #'services_url': reverse('AAD_services'),
+        'services_url': reverse('AAD_services'),
         'index_url': reverse('AAD_index'),
         'infrastructure_url': reverse('AAD_infrastructure'),
         #'innovation_url': reverse('AAD_innovation'),
@@ -344,20 +344,333 @@ def innovation(request):
         'innovation_url': reverse('innovation'),
     }
     return render( request ,'Innovation_FA_EN.html',context)
+
+# platfrom's services
+
 def services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
+        #header
         'services_url': reverse('services'),
         'index_url': reverse('index'),
         'infrastructure_url': reverse('infrastructure'),
         'innovation_url': reverse('innovation'),
 
- 
+        # Sections
+        'sections': {
+        'section_1': {
+            'title_line1': '3D',
+            'title_line2': 'DESIGN',
+            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+          
+            
+        },
+        'section_2': {
+            'title_line1': 'ADDITIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.'
+        },
+        'section_3': {
+            'title_line1': 'SUBTRACTIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.'
+        },
+        'section_4': {
+            'title_line1': 'COMPOSITE',
+            'title_line2': 'MATERIALS',
+            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.'
+        },
+        'section_5': {
+            'title_line1': 'MATERIALS AND MECHANICAL',
+            'title_line2': 'CHARACTERIZATION',
+            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.'
+        },
+        'section_6': {
+            'title_line1': 'R&D',
+            'title_line2': 'SPECIFIC',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.'
+        },
+    },
     }
     return render( request ,'Services_FA_EN.html',context)
+def AAD_services(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        
+        #header
+        'services_url': reverse('AAD_services'),
+        'index_url': reverse('AAD_index'),
+        'infrastructure_url': reverse('AAD_infrastructure'),
+        #'innovation_url': reverse('AAD_innovation'),
 
+        # Sections
+        'sections': {
+        'section_1': {
+            'title_line1': 'title_line_1',
+            'title_line2': 'title_line2',
+            'text': 'Description of section 1'
+        },
+        'section_2': {
+            'title_line1': 'Section 2 Title Line 1',
+            'title_line2': 'Section 2 Title Line 2',
+            'text': 'Description of section 2'
+        },
+        'section_3': {
+            'title_line1': 'Section 3 Title Line 1',
+            'title_line2': 'Section 3 Title Line 2',
+            'text': 'Description of section 3'
+        },
+        'section_4': {
+            'title_line1': 'Section 4 Title Line 1',
+            'title_line2': 'Section 4 Title Line 2',
+            'text': 'Description of section 4'
+        },
+        'section_5': {
+            'title_line1': 'Section 5 Title Line 1',
+            'title_line2': 'Section 5 Title Line 2',
+            'text': 'Description of section 5'
+        },
+        'section_6': {
+            'title_line1': 'Section 6 Title Line 1',
+            'title_line2': 'Section 6 Title Line 2',
+            'text': 'Description of section 6'
+        },
+    },
+    }
+    return render( request ,'platforms/aad/AAD_services.html',context)
+def BABE_services(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        
+        #header
+        'services_url': reverse('BABE_services'),
+        'index_url': reverse('BABE_index'),
+        'infrastructure_url': reverse('BABE_infrastructure'),
+        'innovation_url': reverse('BABE_innovation'),
+
+        # Sections
+        'sections': {
+        'section_1': {
+            'title_line1': 'Section 1 Title Line 1',
+            'title_line2': 'Section 1 Title Line 2',
+            'text': 'Description of section 1'
+        },
+        'section_2': {
+            'title_line1': 'Section 2 Title Line 1',
+            'title_line2': 'Section 2 Title Line 2',
+            'text': 'Description of section 2'
+        },
+        'section_3': {
+            'title_line1': 'Section 3 Title Line 1',
+            'title_line2': 'Section 3 Title Line 2',
+            'text': 'Description of section 3'
+        },
+        'section_4': {
+            'title_line1': 'Section 4 Title Line 1',
+            'title_line2': 'Section 4 Title Line 2',
+            'text': 'Description of section 4'
+        },
+        'section_5': {
+            'title_line1': 'Section 5 Title Line 1',
+            'title_line2': 'Section 5 Title Line 2',
+            'text': 'Description of section 5'
+        },
+        'section_6': {
+            'title_line1': 'Section 6 Title Line 1',
+            'title_line2': 'Section 6 Title Line 2',
+            'text': 'Description of section 6'
+        },
+    },
+    }
+    return render( request ,'platforms/babe/BABE_services.html',context)
+def MSAC_services(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        
+        #header
+        'services_url': reverse('services'),
+        'index_url': reverse('index'),
+        'infrastructure_url': reverse('infrastructure'),
+        'innovation_url': reverse('innovation'),
+
+        # Sections
+        'sections': {
+        'section_1': {
+            'title_line1': 'Section 1 Title Line 1',
+            'title_line2': 'Section 1 Title Line 2',
+            'text': 'Description of section 1'
+        },
+        'section_2': {
+            'title_line1': 'Section 2 Title Line 1',
+            'title_line2': 'Section 2 Title Line 2',
+            'text': 'Description of section 2'
+        },
+        'section_3': {
+            'title_line1': 'Section 3 Title Line 1',
+            'title_line2': 'Section 3 Title Line 2',
+            'text': 'Description of section 3'
+        },
+        'section_4': {
+            'title_line1': 'Section 4 Title Line 1',
+            'title_line2': 'Section 4 Title Line 2',
+            'text': 'Description of section 4'
+        },
+        'section_5': {
+            'title_line1': 'Section 5 Title Line 1',
+            'title_line2': 'Section 5 Title Line 2',
+            'text': 'Description of section 5'
+        },
+        'section_6': {
+            'title_line1': 'Section 6 Title Line 1',
+            'title_line2': 'Section 6 Title Line 2',
+            'text': 'Description of section 6'
+        },
+    },
+    }
+    return render( request ,'Services_FA_EN.html',context)
+def PEACE_services(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        
+        #header
+        'services_url': reverse('services'),
+        'index_url': reverse('index'),
+        'infrastructure_url': reverse('infrastructure'),
+        'innovation_url': reverse('innovation'),
+
+        # Sections
+        'sections': {
+        'section_1': {
+            'title_line1': 'Section 1 Title Line 1',
+            'title_line2': 'Section 1 Title Line 2',
+            'text': 'Description of section 1'
+        },
+        'section_2': {
+            'title_line1': 'Section 2 Title Line 1',
+            'title_line2': 'Section 2 Title Line 2',
+            'text': 'Description of section 2'
+        },
+        'section_3': {
+            'title_line1': 'Section 3 Title Line 1',
+            'title_line2': 'Section 3 Title Line 2',
+            'text': 'Description of section 3'
+        },
+        'section_4': {
+            'title_line1': 'Section 4 Title Line 1',
+            'title_line2': 'Section 4 Title Line 2',
+            'text': 'Description of section 4'
+        },
+        'section_5': {
+            'title_line1': 'Section 5 Title Line 1',
+            'title_line2': 'Section 5 Title Line 2',
+            'text': 'Description of section 5'
+        },
+        'section_6': {
+            'title_line1': 'Section 6 Title Line 1',
+            'title_line2': 'Section 6 Title Line 2',
+            'text': 'Description of section 6'
+        },
+    },
+    }
+    return render( request ,'Services_FA_EN.html',context)
+def RESAN_services(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        
+        #header
+        'services_url': reverse('services'),
+        'index_url': reverse('index'),
+        'infrastructure_url': reverse('infrastructure'),
+        'innovation_url': reverse('innovation'),
+
+        # Sections
+        'sections': {
+        'section_1': {
+            'title_line1': 'Section 1 Title Line 1',
+            'title_line2': 'Section 1 Title Line 2',
+            'text': 'Description of section 1'
+        },
+        'section_2': {
+            'title_line1': 'Section 2 Title Line 1',
+            'title_line2': 'Section 2 Title Line 2',
+            'text': 'Description of section 2'
+        },
+        'section_3': {
+            'title_line1': 'Section 3 Title Line 1',
+            'title_line2': 'Section 3 Title Line 2',
+            'text': 'Description of section 3'
+        },
+        'section_4': {
+            'title_line1': 'Section 4 Title Line 1',
+            'title_line2': 'Section 4 Title Line 2',
+            'text': 'Description of section 4'
+        },
+        'section_5': {
+            'title_line1': 'Section 5 Title Line 1',
+            'title_line2': 'Section 5 Title Line 2',
+            'text': 'Description of section 5'
+        },
+        'section_6': {
+            'title_line1': 'Section 6 Title Line 1',
+            'title_line2': 'Section 6 Title Line 2',
+            'text': 'Description of section 6'
+        },
+    },
+    }
+    return render( request ,'Services_FA_EN.html',context)
+def SAI_services(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        
+        #header
+        'services_url': reverse('services'),
+        'index_url': reverse('index'),
+        'infrastructure_url': reverse('infrastructure'),
+        'innovation_url': reverse('innovation'),
+
+        # Sections
+        'sections': {
+        'section_1': {
+            'title_line1': 'Section 1 Title Line 1',
+            'title_line2': 'Section 1 Title Line 2',
+            'text': 'Description of section 1'
+        },
+        'section_2': {
+            'title_line1': 'Section 2 Title Line 1',
+            'title_line2': 'Section 2 Title Line 2',
+            'text': 'Description of section 2'
+        },
+        'section_3': {
+            'title_line1': 'Section 3 Title Line 1',
+            'title_line2': 'Section 3 Title Line 2',
+            'text': 'Description of section 3'
+        },
+        'section_4': {
+            'title_line1': 'Section 4 Title Line 1',
+            'title_line2': 'Section 4 Title Line 2',
+            'text': 'Description of section 4'
+        },
+        'section_5': {
+            'title_line1': 'Section 5 Title Line 1',
+            'title_line2': 'Section 5 Title Line 2',
+            'text': 'Description of section 5'
+        },
+        'section_6': {
+            'title_line1': 'Section 6 Title Line 1',
+            'title_line2': 'Section 6 Title Line 2',
+            'text': 'Description of section 6'
+        },
+    },
+    }
+    return render( request ,'Services_FA_EN.html',context)
 
 
 # platforms presentation
@@ -594,7 +907,7 @@ def MSAC_index(request):
         }
     },
      #header : 
-        #'services_url': reverse('MSAC_services'),
+        'services_url': reverse('MSAC_services'),
         'index_url': reverse('MSAC_index'),
         'infrastructure_url': reverse('MSAC_infrastructure'),
         #'innovation_url': reverse('MSAC_innovation'),
@@ -676,7 +989,7 @@ def PEACE_index(request):
         }
     },
      #header : 
-      #  #'services_url': reverse('PEACE_services'),
+      #  'services_url': reverse('PEACE_services'),
         'index_url': reverse('PEACE_index'),
         'infrastructure_url': reverse('PEACE_infrastructure'),
       #  #'innovation_url': reverse('PEACE_innovation'),
@@ -756,7 +1069,7 @@ def RESAN_index(request):
         }
     },
      #header : 
-        #'services_url': reverse('RESAN_services'),
+        'services_url': reverse('RESAN_services'),
         'index_url': reverse('RESAN_index'),
         'infrastructure_url': reverse('RESAN_infrastructure'),
         #'innovation_url': reverse('RESAN_innovation'),
@@ -838,7 +1151,7 @@ def SAI_index(request):
         }
     },
      #header : 
-        ##'services_url': reverse('SAI_services'),
+        'services_url': reverse('SAI_services'),
         'index_url': reverse('SAI_index'),
         'infrastructure_url': reverse('SAI_infrastructure'),
         ##'innovation_url': reverse('SAI_innovation'),
@@ -920,7 +1233,7 @@ def AAD_index(request):
         }
     },
      #header : 
-        ##'services_url': reverse('AAD_services'),
+        'services_url': reverse('AAD_services'),
         'index_url': reverse('AAD_index'),
         'infrastructure_url': reverse('AAD_infrastructure'),
        # 'innovation_url': reverse('AAD_innovation'),
