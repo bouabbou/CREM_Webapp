@@ -216,9 +216,7 @@
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
         <div class="port-view-more-cont-dark">
-          <a
-            class="port-view-more-dark1 responsive-text"
-            href="Contact_FA_EN.html"
+          <a class="port-view-more-dark1 responsive-text" href="Contact_EN.html"
             >MATERIALS, SYNTHESIS AND CHARACTERIZATION</a
           >
         </div>
@@ -295,36 +293,25 @@
                   </div>
                   <!-- CONTACT FORM -->
                   <div class="">
-                    <form
-                      id="contact-form"
-                      action="php/contact-form.php"
-                      method="POST"
-                    >
+                    <form method="POST" action="{% url 'contact' %}">
+                      {% csrf_token %}
                       <div class="row">
                         <div class="col-md-12 mb-30">
-                          <!-- <label>Your name *</label> -->
                           <input
                             type="text"
-                            value=""
-                            data-msg-required="Please enter your name"
-                            maxlength="100"
                             class="controled"
                             name="name"
-                            id="name"
+                            id="fname"
                             placeholder="NAME"
                             required
                           />
                         </div>
                       </div>
+
                       <div class="row">
                         <div class="col-md-12 mb-30">
-                          <!-- <label>Your email address *</label> -->
                           <input
                             type="email"
-                            value=""
-                            data-msg-required="Please enter your email address"
-                            data-msg-email="Please enter a valid email address"
-                            maxlength="100"
                             class="controled"
                             name="email"
                             id="email"
@@ -333,12 +320,10 @@
                           />
                         </div>
                       </div>
+
                       <div class="row">
                         <div class="col-md-12 mb-40">
-                          <!-- <label>Message *</label> -->
                           <textarea
-                            maxlength="5000"
-                            data-msg-required="Please enter your message"
                             rows="3"
                             class="controled"
                             name="message"
@@ -348,6 +333,7 @@
                           ></textarea>
                         </div>
                       </div>
+
                       <div class="row">
                         <div class="col-md-12 text-center-xxs">
                           <input
@@ -358,21 +344,31 @@
                           />
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="checkbox small">
+                            <label
+                              ><input
+                                type="checkbox"
+                                name="agree"
+                                class="checkbox"
+                                required
+                              />I agree to the terms of service</label
+                            >
+                          </div>
+                        </div>
+                      </div>
                     </form>
-                    <div
-                      class="alert alert-success hidden animated fadeIn"
-                      id="contactSuccess"
-                    >
-                      <strong>Success!</strong> Your message has been sent to
-                      us.
+                    {% if request.GET.status == 'success' %}
+                    <div class="alert alert-success animated fadeIn">
+                      Thanks, your message has been sent to us.
                     </div>
-                    <div
-                      class="alert alert-danger hidden animated shake"
-                      id="contactError"
-                    >
+                    {% elif request.GET.status == 'error' %}
+                    <div class="alert alert-danger animated shake">
                       <strong>Error!</strong> There was an error sending your
                       message.
                     </div>
+                    {% endif %}
                   </div>
                 </div>
               </div>
