@@ -6,7 +6,7 @@
           <div class="logo-container-2">
   <div class="logo-2">
     <a href="{% url 'home' %}">
-      <img src="../../static/images/logo-white.png" class="logo-img" alt="Logo">
+      <img src={{logo}} class="logo-img" alt="Logo">
     </a>
   </div>
 </div>
@@ -28,7 +28,7 @@
                       <nav class="collapsing navbar-collapse right-1024 collapse">
                         <ul class="nav navbar-nav">
         <!-- MENU ITEM -->
-        <li class="parent current">
+        <li class="parent ">
             <a href="{% url 'index' %}">
                 <div class="main-menu-title">PRESENTATION</div></a>
           </li>
@@ -123,4 +123,20 @@
       </div>
     </div>
     <!-- END header-wrapper -->
+     
   </header>
+
+  <style>
+    :root {
+        --link-color: {{ link_color }};
+        --link-hover-color: {{ link_hover_color }};
+    }
+
+    .header a {
+        color: var(--link-color) !important;
+    }
+
+    .header a:hover {
+        color: var(--link-hover-color) !important;
+    }
+</style>

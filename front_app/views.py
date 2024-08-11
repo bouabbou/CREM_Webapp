@@ -14,14 +14,42 @@ def infrastructure(request):
     products = Product.objects.all()
     context = {
         'categories': categories,
-        'products': products
+        'products': products,
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+
+
     }
     return render(request, 'Infrastructure_FA_EN.html', context)
 def innovation(request):
-    return render(request, 'Innovation_FA_EN.html')
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+
+ 
+    }
+    return render(request, 'Innovation_FA_EN.html',context)
 def services(request):
-    return render(request, 'Services_FA_EN.html')
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+
+ 
+    }
+    return render(request, 'Services_FA_EN.html',context)
 def index(request):
-    return render(request, 'index_FA_EN.html')
+    context = {
+        'logo': '../static/images/logo-white.png',
+        'link_color': 'white', 
+
+ 
+    }
+    return render(request, 'index_FA_EN.html',context)
 def presentation(request):
-    return render(request, 'index_FA_EN.html')
+    context = {
+        'logo': '../static/images/logo-white.png',
+        'link_color': 'white', 
+
+ 
+    }
+    return render(request, 'index_FA_EN.html',context)
