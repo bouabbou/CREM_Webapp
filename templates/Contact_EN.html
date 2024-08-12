@@ -36,7 +36,17 @@
 
     <!-- ANIMATE -->	
 		<link rel='stylesheet' href="../static/css/animate.min.css">
-
+  <style>
+    @media (max-width: 768px) {
+        .page-title-cont {
+            margin-top: 80px; /* Adjust this value based on your navbar height */
+        }
+    }
+    .header {
+        z-index: 1000; /* or higher if needed */
+        position: relative;
+    }
+  </style>
 		
 	</head>
 	<body>
@@ -76,10 +86,7 @@
 				   </div>
 				  <!-- END header-wrapper -->
 				</header>
-          <header id="nav" class="header header-1 no-transparent mobile-no-transparent">
-            {% include 'includes/contact_header.html'  %}
-
-				</header>
+          
         <!-- PAGE TITLE -->
         <div class="page-title-cont page-title-big grey-light-bg">
           <div class="align-left container relative">
