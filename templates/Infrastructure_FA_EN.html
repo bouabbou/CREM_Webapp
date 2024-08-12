@@ -47,7 +47,7 @@
 			<div class="container-p-75-2"> <!-- Grey BG  -->
 				
 
-            {% include 'includes/contact_header.html'  %}
+        {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
 
 
         <!-- SLIDER Revo 2 -->
@@ -61,7 +61,7 @@
                         <!-- SLIDE  -->
                         <li data-index="rs-672" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="../static/images/revo-slider/infra.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                            <img src="{{header_img}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
@@ -81,7 +81,7 @@
                             data-x="['center','center','center','center']"
                             data-hoffset="['0','0','0','0']"
                             data-y="['center','center','center','center']"
-                            data-voffset="['0','0','0','0']"><span class="bold">Our advanced manufacturing platform</span></div>
+                            data-voffset="['0','0','0','0']"><span class="bold">{{image_header}}</span></div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-2" style="z-index: 8; white-space: nowrap;"
                             data-fontsize="['20','20','20','20']"
@@ -100,8 +100,8 @@
                             data-hoffset="['0','0','0','0']"
                             data-y="['center','center','center','center']"
                             data-voffset="['85','80','65','65']">
-                              ADDITIVE MANUFACTURING<span class="slash-divider-10">|</span>CNC MACHINING<span class="slash-divider-10">|</span>COMPOSITES<span class="slash-divider-10">|</span>CHARACTERIZATION
-                            </div>
+                            {{ image_descriptions.part1 }}<span class="slash-divider-10">|</span>{{ image_descriptions.part2 }}<span class="slash-divider-10">|</span>{{ image_descriptions.part3 }}<span class="slash-divider-10">|</span>{{ image_descriptions.part4 }}
+                        </div>
 
                           </li>
                         </ul>
@@ -109,6 +109,7 @@
                 </div>
             </div>
             <!-- END REVOLUTION SLIDER -->
+
 
           <!-- SCROLL ICON -->
           <div class="local-scroll-cont font-white">
@@ -140,30 +141,30 @@
                 <ul class="slides">
 
                   <!-- SLIDE 1 -->
-                  <li style="background:url(../static/images/flexslider/AMLAB1.jpg) no-repeat;background-position:50% 0">
+                  <li style="background:url({{ slider_image_url_1 }}) no-repeat;background-position:50% 0">
 
                     <div class="container">
                       <div class="sixteen columns contain">
-                        <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot" >Powder-Based<br><span class="bold">Additive Manufacturing</span></h2>
-                      </div>
+                        <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot">{{ gallery_texts.section_1.title }}<br><span class="bold">{{ gallery_texts.section_1.subtitle }}</span></h2>
+                    </div>
                     </div><!-- End Container -->
 
                     <!-- SLIDE 2 -->
-                  <li style="background:url(../static/images/flexslider/AMLAB2.png) no-repeat;background-position:50% 0">
+                    <li style="background:url({{ slider_image_url_2 }}) no-repeat;background-position:50% 0">
 
                     <div class="container">
                       <div class="sixteen columns contain">
-                        <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot" >Fused deposition modeling<br><span class="bold">Additive Manufacturing</span></h2>
-                      </div>
+                        <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot">{{ gallery_texts.section_2.title }}<br><span class="bold">{{ gallery_texts.section_2.subtitle }}</span></h2>
+                    </div>
                     </div><!-- End Container -->
 
                     <!-- SLIDE 3 -->
-                  <li style="background:url(../static/images/flexslider/AMLAB3.jpg) no-repeat;background-position:50% 0">
+                    <li style="background:url({{ slider_image_url_3 }}) no-repeat;background-position:50% 0">
 
                     <div class="container">
                       <div class="sixteen columns contain">
-                        <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot" >CNC Machinning<br><span class="bold">Substractive Manufacturing</span></h2>
-                      </div>
+                        <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot">{{ gallery_texts.section_3.title }}<br><span class="bold">{{ gallery_texts.section_3.subtitle }}</span></h2>
+                    </div>
                     </div><!-- End Container -->
 
                   </li><!-- End item -->
@@ -192,13 +193,11 @@
            			<!-- PORTFOLIO FILTER -->
                  <hr>
                  <!--- dunamic category handler-->
-                 <div class="port-filter">
-                  {% for category in categories %}
-                      {% if category.platform.name == "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING" %}
-                          <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
-                      {% endif %}
-                  {% endfor %}
-              </div>
+                 {% for category in categories %}
+                 {% if category.platform.name == platform_name %}
+                     <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
+                 {% endif %}
+             {% endfor %}
               
               
               
@@ -233,71 +232,7 @@
         <!-- VIEW MORE PROJECTS  -->
 
         <!-- FOOTER 4 BLACK -->
-        <footer id="footer" class="page-section pt-80 pb-50 footer2-black">
-          <div class="container">
-            <div class="row">
-               <div class="col-md-3 col-sm-3 widget">
-                <div class="logo-footer-cont">
-                  <a href="../static/Index_FA_EN.html">
-                    <img class="logo-footer" src="../static/images/logo-white.png" alt="logo">
-                  </a>
-                </div>
-                <div class="footer-2-text-cont">
-                  <address>
-                    Address : ROUTE NATIONALE FÈS<br>
-                    MEKNÈS FÈS
-                  </address>
-                </div>
-                <div class="footer-2-text-cont">
-                  Phone : 053890-9000<br>
-                  053890-1010
-                </div>
-                <div class="footer-2-text-cont">
-                  <a class="a-text" href="../static/crem@ueuromed.org">crem@ueuromed.org</a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-3 widget">
-                <h4>CREM</h4>
-                <ul class="links-list a-text-cont" >
-                  <li><a href="#">HOME</a></li>
-                  <li><a href="../static/Contact_FA_EN.html">CONTACT</a></li>
-                </ul>
-              </div>
-
-              <div class="col-md-6 col-sm-3 widget">
-                 <h4>NAVIGATION</h4>
-                 <ul class="links-list bold a-text-cont">
-                    <li><a href="../static/Index_FA_EN.html">ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING</a></li>
-                    <li><a href="../static/Index_MSC_EN.html">MATERIALS, SYNTHESIS AND CHARACTERIZATION</a></li>
-                    <li><a href="../static/Index_BIO_EN.html">BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING</a></li>
-                    <li><a href="../static/Index_GPGC_EN.html">PROCESS ENGINEERING AND CIVIL ENGINEERING</a></li>
-                    <li><a href="../static/Index_CI_EN.html">SENSORS AND INSTRUMENTATIONS</a></li>
-                    <li><a href="../static/Index_IDAI_EN.html">AI AND DIGITALE ENGINEERING</a></li>
-                    <li><a href="../static/Index_EREE_EN.html">RENEWABLE ENERGIES, STORAGE AND ENERGY EFFICIENCY</a></li>
-
-                 </ul>
-              </div>
-
-
-            <div class="footer-2-copy-cont clearfix">
-              <!-- Social Links -->
-              <div class="footer-2-soc-a right">
-                <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
-                <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-              </div>
-
-              <!-- Copyright -->
-              <div class="left">
-                <a class="footer-2-copy" href="../static/https://www.ueuromed.org" target="_blank">&copy; ueuromed-2024</a>
-              </div>
-
-            </div>
-
-          </div>
-        </footer>
+        {% include 'includes/footer.html' %}
 
 				<!-- BACK TO TOP -->
 				<p id="back-top">

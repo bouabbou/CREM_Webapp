@@ -38,187 +38,179 @@
 				<!-- HEADER 1 NO-TRANSPARENT -->
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
-          {% include 'includes/contact_header.html'  %}
+{% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
 
           <!-- HEADER -->
 
         <!-- PAGE TITLE SMALL -->
         <div class="page-title-cont page-title-small grey-light-bg">
-          <div class="align-left container relative">
-            <div class="row">
-              <div class="col-md-8">
-                <div class="fes4-box wow fadeIn">
-                  <h2 class="section-title">OUR <span class="bold">SERVICES</span></h2>
+            <div class="align-left container relative">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="fes4-box wow fadeIn">
+                            <h2 class="section-title">OUR <span class="bold">SERVICES</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="breadcrumbs">
+                            <a href="{% url 'index' %}">Home</a><span class="slash-divider">/</span><span class="bread-current">SERVICES</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="breadcrumbs">
-                  <a href="{% url 'index' %}">Home</a><span class="slash-divider">/</span><span class="bread-current">SERVICES</span>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-
+        
         <!-- CONTENT CONTAINER -->
+        <!-- FEATURES 1 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_1.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_1.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-70"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_1.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes1-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <!-- FEATURES 2 -->
         <div class="page-section">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                <div class="fes2-main-text-cont">
-                  <div class="title-fs-45">
-                    3D  <br>
-                    <span class="bold">DESIGN</span>
-                  </div>
-                  <div class="line-3-70"></div>
-                  <div class="fes2-text-cont">
-                    Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
+            <div class="container-fluid">
                 <div class="row">
-                  <div class="fes1-img equal-height" style="background-color: #FFFFFF;"></div>
+                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_2.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_2.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_2.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-50">
+                        <div class="row">
+                            <div class="fes2-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
             </div>
-          </div>
         </div>
+        
         <!-- FEATURES 3 -->
         <div class="page-section">
-          <div class="container-fluid">
-            <div class="row">
-
-              <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                <div class="fes2-main-text-cont">
-                  <div class="title-fs-45">
-                    ADDITIVE  <br>
-                    <span class="bold">MANUFACTURING</span>
-                  </div>
-                  <div class="line-3-100"></div>
-                  <div class="fes2-text-cont">Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 right-50">
+            <div class="container-fluid">
                 <div class="row">
-                  <div class="fes2-img equal-height" style="background-color: #FFFFFF;"></div>
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_3.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_3.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_3.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes4-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
             </div>
-          </div>
         </div>
-
-        <!------------------------------------------------------->
+        
+        <!-- FEATURES 4 -->
         <div class="page-section">
-          <div class="container-fluid">
-            <div class="row">
-
-              <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                <div class="fes2-main-text-cont">
-                  <div class="title-fs-45">
-                    SUBTRACTIVE<br>
-                    <span class="bold">MANUFACTURING</span>
-                  </div>
-                  <div class="line-3-100"></div>
-                  <div class="fes2-text-cont">Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
+            <div class="container-fluid">
                 <div class="row">
-                  <div class="fes4-img equal-height" style="background-color: #FFFFFF;"></div>
+                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_4.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_4.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-70"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_4.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-50">
+                        <div class="row">
+                            <div class="fes5-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
             </div>
-          </div>
         </div>
-        <!----------------------------------------------------------------------------------->
+        
+        <!-- FEATURES 5 -->
         <div class="page-section">
-          <div class="container-fluid">
-            <div class="row">
-
-              <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                <div class="fes2-main-text-cont">
-                  <div class="title-fs-45">
-                    COMPOSITE <br>
-                    <span class="bold">MATERIALS</span>
-                  </div>
-                  <div class="line-3-70"></div>
-                  <div class="fes2-text-cont">Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 right-50">
+            <div class="container-fluid">
                 <div class="row">
-                  <div class="fes5-img equal-height" style="background-color: #FFFFFF;"></div>
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_5.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_5.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_5.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
             </div>
-          </div>
         </div>
-
-        <!------------------------------------------------------->
+        
+        <!-- FEATURES 6 -->
         <div class="page-section">
-          <div class="container-fluid">
-            <div class="row">
-
-              <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                <div class="fes2-main-text-cont">
-                  <div class="title-fs-45">
-                    MATERIALS AND MECHANICAL<br>
-                    <span class="bold">CHARACTERIZATION</span>
-                  </div>
-                  <div class="line-3-100"></div>
-                  <div class="fes2-text-cont">Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
+            <div class="container-fluid">
                 <div class="row">
-                  <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
+                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_6.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_6.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-70"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_6.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-50">
+                        <div class="row">
+                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
             </div>
-          </div>
         </div>
-
-        <!----------------------------------------------------------------------------------->
-        <div class="page-section">
-          <div class="container-fluid">
-            <div class="row">
-
-              <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                <div class="fes2-main-text-cont">
-                  <div class="title-fs-45">
-                    R&D<br>
-                    <span class="bold">SPECIFIC</span>
-                  </div>
-                  <div class="line-3-70"></div>
-                  <div class="fes2-text-cont">
-                    Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 right-50">
-                <div class="row">
-                  <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
+        
         <!-- FOOTER 2 -->
         {% include 'includes/footer.html' %}
 

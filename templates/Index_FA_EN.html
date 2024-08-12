@@ -91,7 +91,7 @@
       <div class="header-transporent-bg-black">
 				<!-- HEADER -->
 <!-- index_FA_EN.html -->
-{% include 'includes/index_header.html' with logo_url=logo_url menu_items=menu_items %}
+{% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
           
 
         <!-- STATIC MEDIA IMAGE -->
@@ -101,7 +101,7 @@
     <div class="sm-video-wrapper">
       <div class="sm-video">
         <video autoplay muted loop playsinline class="video-background">
-          <source src="../static/video/FA.mp4" type="video/mp4">
+          <source src="{{header.video}}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -110,13 +110,12 @@
       <!-- LAYER NR. 1 -->
       <span class="bold"></span>
       <div class="font-white light-72-wide sm-mb-15 sm-mt-20 relative">
-        <span class="bold">ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM</span>
+        <span class="bold">{{header.title}}</span>
       </div>
 
       <!-- LAYER NR. 2 -->
       <div class="font-white norm-32-wide hide-0-736 sm-mb-50 relative">
-        Advanced technologies, materials expertise, and practical knowledge in one place.
-      </div>
+{{header.description}}      </div>
     </div>
   </div>
   <!-- SCROLL ICON -->
@@ -138,8 +137,7 @@
 								</div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
                   <p>
-                    Our additive and subtractive manufacturing platform offers versatility, enabling rapid production of prototypes and functional parts across industries such as aerospace, automotive, and biomedical. We are committed to advancing materials science and shaping the future of manufacturing.
-                  </p>
+{{about.text_1}}                  </p>
                   </blockquote>
 							</div>
               <div class="col-md-6 pb-4">
@@ -148,8 +146,7 @@
 								</div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
                   <p>
-Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete.                  </p>
-                  </blockquote>
+{{about.text_2}}                  </blockquote>
 							</div>
               <!-- FEATURES -->
 						</div>
@@ -159,23 +156,22 @@ Our platform integrates both subtractive and additive manufacturing techniques t
         <!-- FEATURES 7 -->
         <div class="page-section grey-light-bg clearfix">
           <div class="fes7-img-cont col-md-5">
-            <div class="fes7-img"  style="background-image: url(../static/images/fes7.jpg)" ></div>
+            <div class="fes7-img"  style="background-image: url({{third_section.image}})" ></div>
           </div>
 
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1><span class="font-light">Additive Manufacturing Advantages</span></h1>
+                <h1><span class="font-light">{{third_section.title}}</span></h1>
                 <p class="mb-60">
-Additive manufacturing is a production technology that builds objects layer by layer from materials, typically plastics, metals, or composites. This technology enables the fabrication of complex geometries that were previously impossible to achieve with traditional manufacturing methods.                </p>
-                <div class="row">
+{{third_section.description}}                <div class="row">
                   <div class="col-md-6 col-sm-6">
                     <div class="fes7-box wow fadeIn" >
                       <div class="fes7-box-icon">
                         <div class="icon icon-arrows-rotate"></div>
                       </div>
-                      <h3>Geometric Complexity</h3>
-                      <p>It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods.</p>
+                      <h3>{{third_section.point_1.title}}</h3>
+                      <p>{{third_section.point_1.description}}</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -183,8 +179,8 @@ Additive manufacturing is a production technology that builds objects layer by l
                       <div class="fes7-box-icon">
                         <div class="icon icon-basic-lightbulb"></div>
                       </div>
-                      <h3>Personalization</h3>
-                      <p>It enables the production of customized and unique objects tailored to the specific needs of each user or application.</p>
+                      <h3>{{third_section.point_2.title}}</h3>
+                      <p>{{third_section.point_2.description}}</p>
                     </div>
                   </div>
                 </div>
@@ -194,8 +190,8 @@ Additive manufacturing is a production technology that builds objects layer by l
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-graph-decrease"></div>
                       </div>
-                      <h3>Material Diversity</h3>
-                      <p>Using a diverse range of materials, including plastics, metals, and composites, AM provides flexibility in material selection for creating innovative objects.</p>
+                      <h3>{{third_section.point_3.title}}</h3>
+                      <p>{{third_section.point_3.description}}</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -203,8 +199,8 @@ Additive manufacturing is a production technology that builds objects layer by l
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-dollar"></div>
                       </div>
-                      <h3>Rapid Prototyping</h3>
-                      <p>3D printing allows for rapid prototyping, which accelerates the product development process, thus minimizing the associated costs.</p>
+                      <h3>{{third_section.point_4.title}}</h3>
+                      <p>{{third_section.point_4.description}}</p>
                     </div>
                   </div>
 
@@ -227,146 +223,104 @@ Additive manufacturing is a production technology that builds objects layer by l
 				<div class="page-section video-ads-bg">
     <div class="container">
         <div class="video-ads-text-cont clearfix">
-            <span class="video-ads-text">ADDITIVE</span>
+            <span class="video-ads-text">{{video.title_l}}</span>
             <span class="video-ads-a">
                 <!-- Clickable image that will trigger the video -->
-                <img id="video-thumbnail" src="../static/images/play.png" alt="Video Thumbnail" style="cursor: pointer; width: 5%; height: auto;">
+                <img id="video-thumbnail" src={{video.bg_img}} alt="Video Thumbnail" style="cursor: pointer; width: 5%; height: auto;">
                 
                 <!-- Hidden video container with close button -->
                 <div id="video-container">
                     <button id="close-button">X</button>
                     <video id="video-player" controls>
-                        <source src="../static/video/SSR.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                        <source src={{video.video}} type="video/mp4">
+{{                        Your browser does not support the video tag.
+}}                    </video>
                 </div>
             </span>
-            <span class="video-ads-text">MANUFACTURING</span>
+            <span class="video-ads-text">{{video.title_r}}</span>
         </div>
     </div>
 </div>
 
+<!-- details_section-->
 
-        <div class="mb-100 container">
+<div class="mb-100 container">
+  <div class="mt-60 mb-80">
+    <h3 class="section-title">{{ details_section.title }}</h3>
+    <p>{{ details_section.description}}</p>
 
-          <div>
-            <div class="mt-60 mb-80">
-                  <h3 class="section-title">DRIVING INNOVATION ACROSS INDUSTRIES</h3>
-                  <p>
-                    At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:
-                  </p>
-            </div>
+  </div>
 
-            <div class="tabs-3">
-              <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
-                <li class="active">
-                  <a href="#one" data-toggle="tab">AEROSPACE</a>
-                </li>
-                <li>
-                  <a href="#two" data-toggle="tab">AUTOMOTIVE</a>
-                </li>
-                <li>
-                  <a href="#three" data-toggle="tab">MEDICAL TECHNOLOGY</a>
-                </li>
-                <li>
-                  <a href="#four" data-toggle="tab">OTHER INDUSTRIES</a>
-                </li>
-              </ul>
-              <!-- END nav tabs -->
+  <div class="tabs-3">
+    <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
+      <li class="active">
+        <a href="#one" data-toggle="tab">{{ details_section.tab_1.header }}</a>
+      </li>
+      <li>
+        <a href="#two" data-toggle="tab">{{ details_section.tab_2.header }}</a>
+      </li>
+      <li>
+        <a href="#three" data-toggle="tab">{{ details_section.tab_3.header }}</a>
+      </li>
+      <li>
+        <a href="#four" data-toggle="tab">{{ details_section.tab_4.header }}</a>
+      </li>
+    </ul>
+    <!-- END nav tabs -->
 
-              <!-- Tab panes -->
+    <!-- Tab panes -->
+    <div class="tab-content">
 
-
-              <div class="tab-content">
-
-                  <div class="tab-pane fade in active" id="one">
-                    <!-- Add Review -->
-                    <div class="grey-light-bg leave-comment-cont">
-                      <!-- TITLE -->
-                      <h3 class="blog-page-title mt-50 mb-25">A New Era of Creation</h3>
-                      <p>Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.
-                      <p>From lightweight components to rocket engines, the potential for innovation is limitless.</p>
-                    </div>
-                    <!-- COTENT CONTAINER -->
-                    <div class="p-140-cont container">
-
-                      <div class="row mb-40">
-
-                        <div class="twentytwenty-container">
-                          <img src="../static/images/static-media/Turbine1.jpg">
-                          <img src="../static/images/static-media/Turbine2.jpg">
-                        </div>
-
-                      </div>
-
-                    </div>
-
-
-                  </div>
-
-
-                  <div class="tab-pane fade" id="two">
-
-
-                    <!-- Add Review -->
-                    <div class="grey-light-bg leave-comment-cont">
-                      <!-- TITLE -->
-                      <h3 class="blog-page-title mt-50 mb-25">Transofrming Automotive Manufacturing</h3>
-                      <p>
-                          From polymer-based composites tailored for specific automotive structures to customized metal 
-                          parts made through 3D printing, modern manufacturing advancements enable part customization, 
-                          cost and lead time reduction, as well as the creation of lighter structures and innovative geometries.
-                      </p>
-                    </div>
-
-
-                  </div>
-
-                  <div class="tab-pane fade" id="three">
-
-                    <!-- Add Review -->
-                    <div class="grey-light-bg leave-comment-cont">
-                      <!-- TITLE -->
-                      <h3 class="blog-page-title mt-50 mb-25">Precision Healthcare: Custom Solutions with Additive Manufacturing</h3>
-                      <p>
-                        Additive manufacturing is revolutionizing healthcare, through personalized medical solutions, 
-                        from tailored implants to custom prosthetics.
-                      </p>
-                      <p>By leveraging this innovative technology, healthcare providers can now fabricate customized implants, 
-                         prosthetics and other medical devices that are meticulously designed to meet the unique requirements of each patient, driving enhanced outcomes.
-                      </p>
-                      </p>
-                    </div>
-                    <!-- End Add Review -->
-                  </div>
-                  <div class="tab-pane fade" id="four">
-
-                    <!-- Add Review -->
-                    <div class="grey-light-bg leave-comment-cont">
-                      <!-- TITLE -->
-                      <h3 class="blog-page-title mt-50 mb-25">The Diverse Applications of Additive Manufacturing Across Industries</h3>
-                      <p>
-                         From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 
-                         3D printing is revolutionizing a multitude of industries.
-                      </p>
-                      <p>
-                        The versatility of additive manufacturing is driving innovation by empowering businesses and artists 
-                        to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, 
-                        and redefine the standards within their industries.
-                      </p>
-
-                    </div>
-                    <!-- End Add Review -->
-                  </div>
-
-
-                  </div>
-              </div>
-              <!-- END tab panes -->
-            </div>
+      <!-- Tab 1 -->
+      <div class="tab-pane fade in active" id="one">
+        <div class="grey-light-bg leave-comment-cont">
+          <!-- TITLE -->
+          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_1.title }}</h3>
+          <p>{{ details_section.tab_1.description }}</p>
         </div>
-            <!-- END tabs  -->
+        <!-- CONTENT CONTAINER -->
+        <div class="p-140-cont container">
+          <div class="row mb-40">
+            <div class="twentytwenty-container">
+              <img src="{{ details_section.tab_1.img_before }}" alt="Before Image">
+              <img src="{{ details_section.tab_1.img_after }}" alt="After Image">
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Tab 2 -->
+      <div class="tab-pane fade" id="two">
+        <div class="grey-light-bg leave-comment-cont">
+          <!-- TITLE -->
+          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_2.title }}</h3>
+          <p>{{ details_section.tab_2.description }}</p>
+        </div>
+      </div>
+
+      <!-- Tab 3 -->
+      <div class="tab-pane fade" id="three">
+        <div class="grey-light-bg leave-comment-cont">
+          <!-- TITLE -->
+          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_3.title }}</h3>
+          <p>{{ details_section.tab_3.description }}</p>
+        </div>
+      </div>
+
+      <!-- Tab 4 -->
+      <div class="tab-pane fade" id="four">
+        <div class="grey-light-bg leave-comment-cont">
+          <!-- TITLE -->
+          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_4.title }}</h3>
+          <p>{{ details_section.tab_4.description }}</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- END tab panes -->
+  </div>
+</div>
+<!-- END tabs -->
 
         <!-- CALL TO ACTION  -->
         <div class="port-view-more-cont-dark">

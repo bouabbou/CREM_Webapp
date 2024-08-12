@@ -13,5 +13,6 @@
       "database": "crem_webadpp",
       "username": "root"
     }
-  ]
+  ],
+  "liveServer.settings.port": 5502
 }
