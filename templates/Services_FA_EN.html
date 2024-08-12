@@ -27,19 +27,16 @@
     <!-- ANIMATE -->
 		<link rel='stylesheet' href="../static/css/animate.min.css">
 		</head>
-	<body>
+	
 		<!-- LOADER -->
 		<div id="loader-overflow">
       <div id="loader3">Please enable JS</div>
     </div>
-		<div id="wrap" class="boxed">
-			<div class="grey-bg"> <!-- Grey BG  -->
+		
+            {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
 
-				<!-- HEADER 1 NO-TRANSPARENT -->
-        <div class="header-transporent-bg-black">
+
           <!-- HEADER -->
-{% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
-
           <!-- HEADER -->
 
         <!-- PAGE TITLE SMALL -->
