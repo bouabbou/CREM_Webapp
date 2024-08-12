@@ -924,7 +924,7 @@ def PEACE_index(request):
         
         "header": {
         "video": "../static/video/FA.mp4",
-        "title": "PEACE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
+        "title": "noyl",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
