@@ -88,7 +88,7 @@ def BABE_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
         #header : 
-       # 'services_url': reverse('BABE_services'),
+        'services_url': reverse('BABE_services'),
         'index_url': reverse('BABE_index'),
         'infrastructure_url': reverse('BABE_infrastructure'),
         #'innovation_url': reverse('BABE_innovation'),
@@ -98,7 +98,7 @@ def BABE_infrastructure(request):
 
     }
 
-    return render( request ,'platforms/babe/Infrastructure_FA_EN.html', context)
+    return render( request ,'platforms/babe/BABE_infrastructure.html', context)
 def MSAC_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -450,7 +450,7 @@ def BABE_services(request):
         'services_url': reverse('BABE_services'),
         'index_url': reverse('BABE_index'),
         'infrastructure_url': reverse('BABE_infrastructure'),
-        'innovation_url': reverse('BABE_innovation'),
+        #'innovation_url': reverse('BABE_innovation'),
 
         # Sections
         'sections': {
@@ -532,7 +532,7 @@ def MSAC_services(request):
         },
     },
     }
-    return render( request ,'Services_FA_EN.html',context)
+    return render( request ,'platforms/msac/MSAC_services.html',context)
 def PEACE_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
@@ -578,7 +578,7 @@ def PEACE_services(request):
         },
     },
     }
-    return render( request ,'Services_FA_EN.html',context)
+    return render( request ,'platforms/peace/PEACE_services.html',context)
 def RESAN_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
@@ -624,7 +624,7 @@ def RESAN_services(request):
         },
     },
     }
-    return render( request ,'Services_FA_EN.html',context)
+    return render( request ,'platforms/resan/RESAN_services.html',context)
 def SAI_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
@@ -670,7 +670,7 @@ def SAI_services(request):
         },
     },
     }
-    return render( request ,'Services_FA_EN.html',context)
+    return render( request ,'platforms/sai/SAI_services.html',context)
 
 
 # platforms presentation
@@ -750,7 +750,7 @@ def index(request):
         'index_url': reverse('index'),
         'infrastructure_url': reverse('infrastructure'),
         'innovation_url': reverse('innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../static/images/logo-white.png',
 }
 
     
@@ -828,10 +828,9 @@ def BABE_index(request):
         }
     },
      #header : 
-       
+        'services_url': reverse('BABE_services'),
         'index_url': reverse('BABE_index'),
         'infrastructure_url': reverse('BABE_infrastructure'),
-        'logo': '../../static/images/logo-grey.png',
 }
     return render( request ,'platforms/babe/BABE_index.html', context)
 
@@ -1073,7 +1072,6 @@ def RESAN_index(request):
         'index_url': reverse('RESAN_index'),
         'infrastructure_url': reverse('RESAN_infrastructure'),
         #'innovation_url': reverse('RESAN_innovation'),
-        'logo': '../../static/images/logo-grey.png',
 }
 
     
