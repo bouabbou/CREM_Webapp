@@ -39,7 +39,7 @@
             <nav class="collapsing navbar-collapse right-1024 collapse">
               <ul id="nav-onepage" class="nav navbar-nav">
                 <!-- MENU ITEM -->
-                <li class="current">
+                <li>
                   <a href="{% url 'home' %}">
                     <div class="main-menu-title">HOME</div>
                   </a>
@@ -61,18 +61,40 @@
                         ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING
                       </a>
                     </li>
-                    <li><a href="{% url 'MSAC_infrastructure' %}">MATERIALS, SYNTHESIS AND CHARACTERIZATION</a></li>
-                      <li><a href="{% url 'BABE_index' %}">BIOTECHNOLOGY AND BIOMEDICAL ENGINEERING</a></li>
-                      <li><a href="{% url 'PEACE_index' %}">PROCESS ENGINEERING AND CIVIL ENGINEERING</a></li>
-                      <li><a href="{% url 'SAI_index' %}">SENSORS AND INSTRUMENTATION</a></li>
-                      <li><a href="{% url 'AAD_index' %}">AI AND DIGITAL ENGINEERING</a></li>
-                      <li><a href="{% url 'RESAN_index' %}">
-                        RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY</a>
-                      </li>
+                    <li>
+                      <a href="{% url 'MSAC_infrastructure' %}"
+                        >MATERIALS, SYNTHESIS AND CHARACTERIZATION</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'BABE_index' %}"
+                        >BIOTECHNOLOGY AND BIOMEDICAL ENGINEERING</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'PEACE_index' %}"
+                        >PROCESS ENGINEERING AND CIVIL ENGINEERING</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'SAI_index' %}"
+                        >SENSORS AND INSTRUMENTATION</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'AAD_index' %}"
+                        >AI AND DIGITAL ENGINEERING</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'RESAN_index' %}">
+                        RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <!-- MENU ITEM -->
-                <li>
+                <li class="current">
                   <a href="{% url 'contact' %}">
                     <div class="main-menu-title">CONTACT</div>
                   </a>
