@@ -364,33 +364,43 @@ def services(request):
             'title_line1': '3D',
             'title_line2': 'DESIGN',
             'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
-          
+            'fest1_img': 'fes1-img'
             
         },
         'section_2': {
             'title_line1': 'ADDITIVE',
             'title_line2': 'MANUFACTURING',
-            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.'
+            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'fest2_img': 'fes2-img'
+
         },
         'section_3': {
             'title_line1': 'SUBTRACTIVE',
             'title_line2': 'MANUFACTURING',
-            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.'
+            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'fest4_img': 'fes4-img'
+
         },
         'section_4': {
             'title_line1': 'COMPOSITE',
             'title_line2': 'MATERIALS',
-            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.'
+            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'fest5_img': 'fes5-img'
+
         },
         'section_5': {
             'title_line1': 'MATERIALS AND MECHANICAL',
             'title_line2': 'CHARACTERIZATION',
-            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.'
+            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'fest6_img': 'fes6-img'
+
         },
         'section_6': {
             'title_line1': 'R&D',
             'title_line2': 'SPECIFIC',
-            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.'
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'fest7_img': 'fes7-img'
+
         },
     },
     }
