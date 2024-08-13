@@ -65,9 +65,7 @@
             width: 100%;
             height: 100vh; /* Full viewport height */
             cursor: pointer; /* Indicate it's clickable */
-            object-fit: cover;
         }
-        
 
         #close-button {
             position: absolute;
@@ -101,7 +99,7 @@
     <div class="sm-video-wrapper">
       <div class="sm-video">
         <video autoplay muted loop playsinline class="video-background">
-          <source src="{{header.video}}" type="video/mp4">
+          <source src="video/Fa.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -110,12 +108,13 @@
       <!-- LAYER NR. 1 -->
       <span class="bold"></span>
       <div class="font-white light-72-wide sm-mb-15 sm-mt-20 relative">
-        <span class="bold">{{header.title}}</span>
+        <span class="bold"> Virtual Reality and Collaborative Robotics AI Platform</span>
       </div>
 
       <!-- LAYER NR. 2 -->
       <div class="font-white norm-32-wide hide-0-736 sm-mb-50 relative">
-{{header.description}}      </div>
+        Empowering innovation through immersive technologies and intelligent collaboration.
+      </div>
     </div>
   </div>
   <!-- SCROLL ICON -->
@@ -137,7 +136,8 @@
 								</div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
                   <p>
-{{about.text_1}}                  </p>
+                    Our digital platform integrates three essential components, each meticulously designed to meet the highest standards of modern industry. First, our AI infrastructure is purpose-built to deliver exceptional computational power, crucial for running deep learning algorithms efficiently. Second, our virtual and augmented reality lab enables the development of immersive programs tailored to various sectors, from education to industrial training. Lastly, our robotics lab allows for the programming and simulation of diverse types of robots, including humanoids, paving the way for innovative human-machine collaboration.
+                  </p>
                   </blockquote>
 							</div>
               <div class="col-md-6 pb-4">
@@ -146,7 +146,7 @@
 								</div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
                   <p>
-{{about.text_2}}                  </blockquote>
+Our platform seamlessly integrates advanced artificial intelligence, virtual reality, and collaborative robotics to revolutionize various industrial sectors. We specialize in leveraging cutting-edge AI algorithms, creating immersive VR and AR experiences, and developing sophisticated robotics solutions, including humanoids. Our multidisciplinary approach ensures that we deliver innovative, practical, and impactful solutions tailored to meet the specific needs of each industry.                  </blockquote>
 							</div>
               <!-- FEATURES -->
 						</div>
@@ -156,22 +156,22 @@
         <!-- FEATURES 7 -->
         <div class="page-section grey-light-bg clearfix">
           <div class="fes7-img-cont col-md-5">
-            <div class="fes7-img"  style="background-image: url({{third_section.image}})" ></div>
+            <div class="fes7-img"  style="background-image: url(../static/images/fes7.jpg)" ></div>
           </div>
 
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1><span class="font-light">{{third_section.title}}</span></h1>
+                <h1><span class="font-light">Artificial intelligence and robotics</span></h1>
                 <p class="mb-60">
-{{third_section.description}}                <div class="row">
+Artificial intelligence and robotics are transformative technologies that enhance automation, decision-making, and human-robot interaction across various industries. These technologies provide unprecedented capabilities in processing data, creating immersive experiences, and developing sophisticated robotic systems.                <div class="row">
                   <div class="col-md-6 col-sm-6">
                     <div class="fes7-box wow fadeIn" >
                       <div class="fes7-box-icon">
                         <div class="icon icon-arrows-rotate"></div>
                       </div>
-                      <h3>{{third_section.point_1.title}}</h3>
-                      <p>{{third_section.point_1.description}}</p>
+                      <h3>Enhanced Decision-Making  </h3>
+                      <p>AI enables the analysis of vast amounts of data to make informed decisions, optimizing processes and improving efficiency.</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -179,8 +179,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-basic-lightbulb"></div>
                       </div>
-                      <h3>{{third_section.point_2.title}}</h3>
-                      <p>{{third_section.point_2.description}}</p>
+                      <h3>Immersive Experiences</h3>
+                      <p>Virtual and augmented reality technologies create immersive environments that enhance training, education, and user engagement.</p>
                     </div>
                   </div>
                 </div>
@@ -190,8 +190,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-graph-decrease"></div>
                       </div>
-                      <h3>{{third_section.point_3.title}}</h3>
-                      <p>{{third_section.point_3.description}}</p>
+                      <h3>Human-Robot Collaboration</h3>
+                      <p>Collaborative robotics, or cobots, work alongside humans, increasing productivity and safety in the workplace by handling repetitive or hazardous tasks.</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -199,8 +199,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-dollar"></div>
                       </div>
-                      <h3>{{third_section.point_4.title}}</h3>
-                      <p>{{third_section.point_4.description}}</p>
+                      <h3>Advanced Simulation and Prototyping</h3>
+                      <p>Robotics and AI facilitate advanced simulation and prototyping, accelerating the development process and reducing costs by allowing virtual testing and iteration before physical implementation.</p>
                     </div>
                   </div>
 
@@ -223,110 +223,166 @@
 				<div class="page-section video-ads-bg">
     <div class="container">
         <div class="video-ads-text-cont clearfix">
-            <span class="video-ads-text">{{video.title_l}}</span>
+            <span class="video-ads-text">ADDITIVE</span>
             <span class="video-ads-a">
                 <!-- Clickable image that will trigger the video -->
-                <img id="video-thumbnail" src={{video.bg_img}} alt="Video Thumbnail" style="cursor: pointer; width: 5%; height: auto;">
+                <img id="video-thumbnail" src="../static/images/play.png" alt="Video Thumbnail" style="cursor: pointer; width: 5%; height: auto;">
                 
                 <!-- Hidden video container with close button -->
                 <div id="video-container">
                     <button id="close-button">X</button>
                     <video id="video-player" controls>
-                        <source src={{video.video}} type="video/mp4">
-{{                        Your browser does not support the video tag.
-}}                    </video>
+                        <source src="../static/Video/SSR.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </span>
-            <span class="video-ads-text">{{video.title_r}}</span>
+            <span class="video-ads-text">MANUFACTURING</span>
         </div>
     </div>
 </div>
 
-<!-- details_section-->
 
-<div class="mb-100 container">
-  <div class="mt-60 mb-80">
-    <h3 class="section-title">{{ details_section.title }}</h3>
-    <p>{{ details_section.description}}</p>
+        <div class="mb-100 container">
 
-  </div>
-
-  <div class="tabs-3">
-    <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
-      <li class="active">
-        <a href="#one" data-toggle="tab">{{ details_section.tab_1.header }}</a>
-      </li>
-      <li>
-        <a href="#two" data-toggle="tab">{{ details_section.tab_2.header }}</a>
-      </li>
-      <li>
-        <a href="#three" data-toggle="tab">{{ details_section.tab_3.header }}</a>
-      </li>
-      <li>
-        <a href="#four" data-toggle="tab">{{ details_section.tab_4.header }}</a>
-      </li>
-    </ul>
-    <!-- END nav tabs -->
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-
-      <!-- Tab 1 -->
-      <div class="tab-pane fade in active" id="one">
-        <div class="grey-light-bg leave-comment-cont">
-          <!-- TITLE -->
-          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_1.title }}</h3>
-          <p>{{ details_section.tab_1.description }}</p>
-        </div>
-        <!-- CONTENT CONTAINER -->
-        <div class="p-140-cont container">
-          <div class="row mb-40">
-            <div class="twentytwenty-container">
-              <img src="{{ details_section.tab_1.img_before }}" alt="Before Image">
-              <img src="{{ details_section.tab_1.img_after }}" alt="After Image">
+          <div>
+            <div class="mt-60 mb-80">
+                  <h3 class="section-title">DRIVING INNOVATION ACROSS INDUSTRIES</h3>
+                  <p>
+                    At our platform, we leverage cutting-edge technologies to drive progress and innovation across various industrial sectors:
+                  </p>
             </div>
-          </div>
+
+            <div class="tabs-3">
+              <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
+                <li class="active">
+                  <a href="#one" data-toggle="tab">Automotive / Aerospace</a>
+                </li>
+                <li>
+                  <a href="#two" data-toggle="tab">Medical Technology</a>
+                </li>
+                <li>
+                  <a href="#three" data-toggle="tab">Manufacturing</a>
+                </li>
+                <li>
+                  <a href="#four" data-toggle="tab">Logistics</a>
+                </li>
+                <li>
+                  <a href="#five" data-toggle="tab">Education and Training</a>
+                </li>
+                <li>
+                  <a href="#six" data-toggle="tab">Entertainment</a>
+                </li>
+              </ul>
+              <!-- END nav tabs -->
+
+              <!-- Tab panes -->
+
+
+              <div class="tab-content">
+
+                  <div class="tab-pane fade in active" id="one">
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">Revolutionizing Manufacturing</h3>
+                      <p>Our AI and robotics solutions enhance precision and efficiency in the automotive/aerospace sector, enabling the production of complex parts and improving assembly line automation.</p>
+                    </div>
+                    <!-- COTENT CONTAINER -->
+                    <div class="p-140-cont container">
+
+                      <div class="row mb-40">
+
+                        <div class="twentytwenty-container">
+                          <img src="../static/images/static-media/Turbine1.jpg">
+                          <img src="../static/images/static-media/Turbine2.jpg">
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="tab-pane fade" id="two">
+
+
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">Advancing Healthcare</h3>
+                      <p>
+                        Our platform supports the creation of customized medical devices and prosthetics, as well as the development of immersive training programs for healthcare professionals.
+                      </p>
+                    </div>
+
+
+                  </div>
+
+                  <div class="tab-pane fade" id="three">
+
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">Optimizing Production</h3>
+                      <p>
+                        In manufacturing, our technologies streamline processes, improve quality control, and enable the development of innovative products through advanced prototyping and automation.
+                      </p>
+                      </p>
+                    </div>
+                    <!-- End Add Review -->
+                  </div>
+                  <div class="tab-pane fade" id="four">
+
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">Enhancing Efficiency</h3>
+                      <p>
+                        Our AI-driven solutions optimize logistics and supply chain management, ensuring timely deliveries and reducing operational costs.
+                      </p>
+
+                    </div>
+                    <!-- End Add Review -->
+                  </div>
+
+                  <div class="tab-pane fade" id="five">
+
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">Immersive Learning: </h3>
+                      <p>
+                        Our virtual and augmented reality technologies create immersive educational experiences, enhancing learning outcomes and providing realistic training simulations.
+                      </p>
+
+                    </div>
+                    <!-- End Add Review -->
+                  </div>
+
+                  <div class="tab-pane fade" id="six">
+
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">Transforming Experiences</h3>
+                      <p>
+                        Our AI and VR/AR technologies revolutionize the entertainment industry, creating interactive and immersive experiences for audiences worldwide.
+                      </p>
+
+                    </div>
+                    <!-- End Add Review -->
+                  </div>
+
+
+                  </div>
+              </div>
+              <!-- END tab panes -->
+            </div>
         </div>
-      </div>
-
-      <!-- Tab 2 -->
-      <div class="tab-pane fade" id="two">
-        <div class="grey-light-bg leave-comment-cont">
-          <!-- TITLE -->
-          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_2.title }}</h3>
-          <p>{{ details_section.tab_2.description }}</p>
-        </div>
-      </div>
-
-      <!-- Tab 3 -->
-      <div class="tab-pane fade" id="three">
-        <div class="grey-light-bg leave-comment-cont">
-          <!-- TITLE -->
-          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_3.title }}</h3>
-          <p>{{ details_section.tab_3.description }}</p>
-        </div>
-      </div>
-
-      <!-- Tab 4 -->
-      <div class="tab-pane fade" id="four">
-        <div class="grey-light-bg leave-comment-cont">
-          <!-- TITLE -->
-          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_4.title }}</h3>
-          <p>{{ details_section.tab_4.description }}</p>
-        </div>
-      </div>
-
-    </div>
-    <!-- END tab panes -->
-  </div>
-</div>
-<!-- END tabs -->
-
-        <!-- CALL TO ACTION  -->
-       
-
-        <!-- NEWS LETTER -->
-      
+            <!-- END tabs  -->
         <!-- FOOTER 4 BLACK -->
         {% include 'includes/footer.html' %}
 
@@ -374,8 +430,8 @@
                 "align": "centerXY",
                 "width": 1920,
                 "height": 1080,
-                "path": "static/video/",
-                "filename": "FA", // FILE NAME of your video
+                "path": "video/",
+                "filename": "fa3d", // FILE NAME of your video
                 "types": ["mp4"],
                 "autoplay": true,
                 "loop": true

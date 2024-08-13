@@ -65,42 +65,8 @@
             width: 100%;
             height: 100vh; /* Full viewport height */
             cursor: pointer; /* Indicate it's clickable */
-            object-fit: cover;
         }
-        
 
-<<<<<<< HEAD
-      .video-background {
-        background-image: url("images/play.png"); /* Update path as needed */
-        background-size: cover; /* Ensure the image covers the entire container */
-        background-position: center; /* Center the image */
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-        cursor: pointer; /* Indicate it's clickable */
-        object-fit: cover;
-      }
-
-      #close-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-      }
-      #about {
-        margin-top: 20px; /* Adjust this value as needed */
-      }
-
-      /* Responsive styles for smaller screens */
-      @media (max-width: 768px) {
-        #about {
-          margin-top: 60px; /* Increase this value to add more space on smaller screens */
-        }
-      }
-=======
         #close-button {
             position: absolute;
             top: 10px;
@@ -111,7 +77,6 @@
             font-size: 24px;
             cursor: pointer;
         }
->>>>>>> 1ccffb91d8dfe9b09a40a198822b2985d887d4f8
     </style>
 	</head>
 	<body>
@@ -124,7 +89,7 @@
       <div class="header-transporent-bg-black">
 				<!-- HEADER -->
 <!-- index_FA_EN.html -->
-{% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+{% include 'includes/index_header.html' with logo_url=logo_url menu_items=menu_items %}
           
 
         <!-- STATIC MEDIA IMAGE -->
@@ -134,7 +99,7 @@
     <div class="sm-video-wrapper">
       <div class="sm-video">
         <video autoplay muted loop playsinline class="video-background">
-          <source src="{{header.video}}" type="video/mp4">
+          <source src="video/Fa.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -143,12 +108,13 @@
       <!-- LAYER NR. 1 -->
       <span class="bold"></span>
       <div class="font-white light-72-wide sm-mb-15 sm-mt-20 relative">
-        <span class="bold">{{header.title}}</span>
+        <span class="bold"> Virtual Reality and Collaborative Robotics AI Platform</span>
       </div>
 
       <!-- LAYER NR. 2 -->
       <div class="font-white norm-32-wide hide-0-736 sm-mb-50 relative">
-{{header.description}}      </div>
+        Empowering innovation through immersive technologies and intelligent collaboration.
+      </div>
     </div>
   </div>
   <!-- SCROLL ICON -->
@@ -170,7 +136,8 @@
 								</div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
                   <p>
-{{about.text_1}}                  </p>
+                    Our digital platform integrates three essential components, each meticulously designed to meet the highest standards of modern industry. First, our AI infrastructure is purpose-built to deliver exceptional computational power, crucial for running deep learning algorithms efficiently. Second, our virtual and augmented reality lab enables the development of immersive programs tailored to various sectors, from education to industrial training. Lastly, our robotics lab allows for the programming and simulation of diverse types of robots, including humanoids, paving the way for innovative human-machine collaboration.
+                  </p>
                   </blockquote>
 							</div>
               <div class="col-md-6 pb-4">
@@ -179,7 +146,7 @@
 								</div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
                   <p>
-{{about.text_2}}                  </blockquote>
+Our platform seamlessly integrates advanced artificial intelligence, virtual reality, and collaborative robotics to revolutionize various industrial sectors. We specialize in leveraging cutting-edge AI algorithms, creating immersive VR and AR experiences, and developing sophisticated robotics solutions, including humanoids. Our multidisciplinary approach ensures that we deliver innovative, practical, and impactful solutions tailored to meet the specific needs of each industry.                  </blockquote>
 							</div>
               <!-- FEATURES -->
 						</div>
@@ -189,22 +156,23 @@
         <!-- FEATURES 7 -->
         <div class="page-section grey-light-bg clearfix">
           <div class="fes7-img-cont col-md-5">
-            <div class="fes7-img"  style="background-image: url({{third_section.image}})" ></div>
+            <div class="fes7-img"  style="background-image: url(../static/images/fes7.jpg)" ></div>
           </div>
 
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1><span class="font-light">{{third_section.title}}</span></h1>
+                <h1><span class="font-light">Additive Manufacturing Advantages</span></h1>
                 <p class="mb-60">
-{{third_section.description}}                <div class="row">
+Additive manufacturing is a production technology that builds objects layer by layer from materials, typically plastics, metals, or composites. This technology enables the fabrication of complex geometries that were previously impossible to achieve with traditional manufacturing methods.                </p>
+                <div class="row">
                   <div class="col-md-6 col-sm-6">
                     <div class="fes7-box wow fadeIn" >
                       <div class="fes7-box-icon">
                         <div class="icon icon-arrows-rotate"></div>
                       </div>
-                      <h3>{{third_section.point_1.title}}</h3>
-                      <p>{{third_section.point_1.description}}</p>
+                      <h3>Geometric Complexity</h3>
+                      <p>It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods.</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -212,8 +180,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-basic-lightbulb"></div>
                       </div>
-                      <h3>{{third_section.point_2.title}}</h3>
-                      <p>{{third_section.point_2.description}}</p>
+                      <h3>Personalization</h3>
+                      <p>It enables the production of customized and unique objects tailored to the specific needs of each user or application.</p>
                     </div>
                   </div>
                 </div>
@@ -223,8 +191,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-graph-decrease"></div>
                       </div>
-                      <h3>{{third_section.point_3.title}}</h3>
-                      <p>{{third_section.point_3.description}}</p>
+                      <h3>Material Diversity</h3>
+                      <p>Using a diverse range of materials, including plastics, metals, and composites, AM provides flexibility in material selection for creating innovative objects.</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -232,8 +200,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-dollar"></div>
                       </div>
-                      <h3>{{third_section.point_4.title}}</h3>
-                      <p>{{third_section.point_4.description}}</p>
+                      <h3>Rapid Prototyping</h3>
+                      <p>3D printing allows for rapid prototyping, which accelerates the product development process, thus minimizing the associated costs.</p>
                     </div>
                   </div>
 
@@ -256,134 +224,160 @@
 				<div class="page-section video-ads-bg">
     <div class="container">
         <div class="video-ads-text-cont clearfix">
-            <span class="video-ads-text">{{video.title_l}}</span>
+            <span class="video-ads-text">ADDITIVE</span>
             <span class="video-ads-a">
                 <!-- Clickable image that will trigger the video -->
-                <img id="video-thumbnail" src={{video.bg_img}} alt="Video Thumbnail" style="cursor: pointer; width: 5%; height: auto;">
+                <img id="video-thumbnail" src="../static/images/play.png" alt="Video Thumbnail" style="cursor: pointer; width: 5%; height: auto;">
                 
                 <!-- Hidden video container with close button -->
                 <div id="video-container">
-<<<<<<< HEAD
-                  <button id="close-button">X</button>
-                  <video id="video-player" controls>
-                    <source src="{{video.video}}" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-
-                  <button id="close-button">X</button>
-                  <video id="video-player" controls>
-                    <source src="{{video.video}}" type="video/mp4" />
-                    {{ Your browser does not support the video tag. }}
-                  </video>
-=======
                     <button id="close-button">X</button>
                     <video id="video-player" controls>
-                        <source src={{video.video}} type="video/mp4">
-{{                        Your browser does not support the video tag.
-}}                    </video>
->>>>>>> 1ccffb91d8dfe9b09a40a198822b2985d887d4f8
+                        <source src="../static/Video/SSR.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </span>
-            <span class="video-ads-text">{{video.title_r}}</span>
+            <span class="video-ads-text">MANUFACTURING</span>
         </div>
     </div>
 </div>
 
-<!-- details_section-->
 
-<div class="mb-100 container">
-  <div class="mt-60 mb-80">
-    <h3 class="section-title">{{ details_section.title }}</h3>
-    <p>{{ details_section.description}}</p>
+        <div class="mb-100 container">
 
-  </div>
-
-  <div class="tabs-3">
-    <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
-      <li class="active">
-        <a href="#one" data-toggle="tab">{{ details_section.tab_1.header }}</a>
-      </li>
-      <li>
-        <a href="#two" data-toggle="tab">{{ details_section.tab_2.header }}</a>
-      </li>
-      <li>
-        <a href="#three" data-toggle="tab">{{ details_section.tab_3.header }}</a>
-      </li>
-      <li>
-        <a href="#four" data-toggle="tab">{{ details_section.tab_4.header }}</a>
-      </li>
-    </ul>
-    <!-- END nav tabs -->
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-
-      <!-- Tab 1 -->
-      <div class="tab-pane fade in active" id="one">
-        <div class="grey-light-bg leave-comment-cont">
-          <!-- TITLE -->
-          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_1.title }}</h3>
-          <p>{{ details_section.tab_1.description }}</p>
-        </div>
-        <!-- CONTENT CONTAINER -->
-        <div class="p-140-cont container">
-          <div class="row mb-40">
-            <div class="twentytwenty-container">
-              <img src="{{ details_section.tab_1.img_before }}" alt="Before Image">
-              <img src="{{ details_section.tab_1.img_after }}" alt="After Image">
+          <div>
+            <div class="mt-60 mb-80">
+                  <h3 class="section-title">DRIVING INNOVATION ACROSS INDUSTRIES</h3>
+                  <p>
+                    At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:
+                  </p>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Tab 2 -->
-      <div class="tab-pane fade" id="two">
-        <div class="grey-light-bg leave-comment-cont">
-          <!-- TITLE -->
-          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_2.title }}</h3>
-          <p>{{ details_section.tab_2.description }}</p>
-        </div>
-      </div>
+            <div class="tabs-3">
+              <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
+                <li class="active">
+                  <a href="#one" data-toggle="tab">AEROSPACE</a>
+                </li>
+                <li>
+                  <a href="#two" data-toggle="tab">AUTOMOTIVE</a>
+                </li>
+                <li>
+                  <a href="#three" data-toggle="tab">MEDICAL TECHNOLOGY</a>
+                </li>
+                <li>
+                  <a href="#four" data-toggle="tab">OTHER INDUSTRIES</a>
+                </li>
+              </ul>
+              <!-- END nav tabs -->
 
-      <!-- Tab 3 -->
-      <div class="tab-pane fade" id="three">
-        <div class="grey-light-bg leave-comment-cont">
-          <!-- TITLE -->
-          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_3.title }}</h3>
-          <p>{{ details_section.tab_3.description }}</p>
-        </div>
-      </div>
+              <!-- Tab panes -->
 
-      <!-- Tab 4 -->
-      <div class="tab-pane fade" id="four">
-        <div class="grey-light-bg leave-comment-cont">
-          <!-- TITLE -->
-          <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_4.title }}</h3>
-          <p>{{ details_section.tab_4.description }}</p>
-        </div>
-      </div>
 
-    </div>
-    <!-- END tab panes -->
-  </div>
-</div>
-<!-- END tabs -->
+              <div class="tab-content">
+
+                  <div class="tab-pane fade in active" id="one">
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">A New Era of Creation</h3>
+                      <p>Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.
+                      <p>From lightweight components to rocket engines, the potential for innovation is limitless.</p>
+                    </div>
+                    <!-- COTENT CONTAINER -->
+                    <div class="p-140-cont container">
+
+                      <div class="row mb-40">
+
+                        <div class="twentytwenty-container">
+                          <img src="../static/images/static-media/Turbine1.jpg">
+                          <img src="../static/images/static-media/Turbine2.jpg">
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="tab-pane fade" id="two">
+
+
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">Transofrming Automotive Manufacturing</h3>
+                      <p>
+                          From polymer-based composites tailored for specific automotive structures to customized metal 
+                          parts made through 3D printing, modern manufacturing advancements enable part customization, 
+                          cost and lead time reduction, as well as the creation of lighter structures and innovative geometries.
+                      </p>
+                    </div>
+
+
+                  </div>
+
+                  <div class="tab-pane fade" id="three">
+
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">Precision Healthcare: Custom Solutions with Additive Manufacturing</h3>
+                      <p>
+                        Additive manufacturing is revolutionizing healthcare, through personalized medical solutions, 
+                        from tailored implants to custom prosthetics.
+                      </p>
+                      <p>By leveraging this innovative technology, healthcare providers can now fabricate customized implants, 
+                         prosthetics and other medical devices that are meticulously designed to meet the unique requirements of each patient, driving enhanced outcomes.
+                      </p>
+                      </p>
+                    </div>
+                    <!-- End Add Review -->
+                  </div>
+                  <div class="tab-pane fade" id="four">
+
+                    <!-- Add Review -->
+                    <div class="grey-light-bg leave-comment-cont">
+                      <!-- TITLE -->
+                      <h3 class="blog-page-title mt-50 mb-25">The Diverse Applications of Additive Manufacturing Across Industries</h3>
+                      <p>
+                         From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 
+                         3D printing is revolutionizing a multitude of industries.
+                      </p>
+                      <p>
+                        The versatility of additive manufacturing is driving innovation by empowering businesses and artists 
+                        to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, 
+                        and redefine the standards within their industries.
+                      </p>
+
+                    </div>
+                    <!-- End Add Review -->
+                  </div>
+
+
+                  </div>
+              </div>
+              <!-- END tab panes -->
+            </div>
+        </div>
+            <!-- END tabs  -->
+
 
         <!-- CALL TO ACTION  -->
-     <!--   <div class="port-view-more-cont-dark">
+        <div class="port-view-more-cont-dark">
           <a class="port-view-more-dark" href="#">LET'S WORK TOGETHER</a>
         </div>
-      -->
 
-        <!-- NEWS LETTER
+        <!-- NEWS LETTER -->
         <div class="page-section nl-cont">
           <div class="container">
             <div class="relative" >
               <div id="mc_embed_signup" class="nl-form-container clearfix">
-                <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform validate" target="_blank" novalidate>   <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL)
-                  
+                <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform validate" target="_blank" novalidate>   <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
                   <input type="email" value="" name="EMAIL" class="email nl-email-input" id="mce-EMAIL" placeholder="Enter your email" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;"><input type="text" name="b_ba37086d08bdc9f56f3592af0_e38247f7cc" tabindex="-1" value=""></div>
 
                   <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button medium gray">
@@ -393,18 +387,6 @@
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        <!-- END tabs -->
-
-        <!-- CALL TO ACTION  -->
-
-        <!-- CALL TO ACTION  -->
-
-        <!-- NEWS LETTER -->
-
-=======
-      -->
->>>>>>> 1ccffb91d8dfe9b09a40a198822b2985d887d4f8
         <!-- FOOTER 4 BLACK -->
         {% include 'includes/footer.html' %}
 
@@ -452,8 +434,8 @@
                 "align": "centerXY",
                 "width": 1920,
                 "height": 1080,
-                "path": "static/video/",
-                "filename": "FA", // FILE NAME of your video
+                "path": "video/",
+                "filename": "fa3d", // FILE NAME of your video
                 "types": ["mp4"],
                 "autoplay": true,
                 "loop": true

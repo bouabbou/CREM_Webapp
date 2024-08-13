@@ -50,4 +50,9 @@ urlpatterns = [
     path('RESAN_index/', views.RESAN_index, name='RESAN_index'),
     path('SAI_index/', views.SAI_index, name='SAI_index'),
 
+     #dynamic url from platform's innovation
+    path('innovation/', views.innovation, name='innovation'),
+    path('AAD_innovation/', views.AAD_innovation, name='AAD_innovation'),
+    
+  
 ]
