@@ -98,7 +98,7 @@ def BABE_infrastructure(request):
 
     }
 
-    return render( request ,'platforms/babe/Infrastructure_FA_EN.html', context)
+    return render( request ,'platforms/babe/BABE_infrastructure.html', context)
 def MSAC_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
