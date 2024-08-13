@@ -102,6 +102,16 @@
         font-size: 24px;
         cursor: pointer;
       }
+      #about {
+        margin-top: 20px; /* Adjust this value as needed */
+      }
+
+      /* Responsive styles for smaller screens */
+      @media (max-width: 768px) {
+        #about {
+          margin-top: 60px; /* Increase this value to add more space on smaller screens */
+        }
+      }
     </style>
   </head>
   <body>
@@ -275,7 +285,6 @@
 
                 <!-- Hidden video container with close button -->
                 <div id="video-container">
-
                   <button id="close-button">X</button>
                   <video id="video-player" controls>
                     <source src="{{video.video}}" type="video/mp4" />
@@ -287,7 +296,6 @@
                     <source src="{{video.video}}" type="video/mp4" />
                     {{ Your browser does not support the video tag. }}
                   </video>
-
                 </div>
               </span>
               <span class="video-ads-text">{{video.title_r}}</span>
@@ -397,10 +405,9 @@
         <!-- CALL TO ACTION  -->
 
         <!-- CALL TO ACTION  -->
-       
 
         <!-- NEWS LETTER -->
-      
+
         <!-- FOOTER 4 BLACK -->
         {% include 'includes/footer.html' %}
 

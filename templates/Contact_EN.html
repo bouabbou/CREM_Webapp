@@ -37,11 +37,16 @@
     <!-- ANIMATE -->	
 		<link rel='stylesheet' href="../static/css/animate.min.css">
   <style>
-    @media (max-width: 768px) {
-        .page-title-cont {
-            margin-top: 80px; /* Adjust this value based on your navbar height */
-        }
+    .page-title-cont {
+    margin-top: 0; /* Default margin, keep it as it was originally */
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+    .page-title-cont {
+        margin-top: 80px !important; /* Use !important to ensure this margin is applied on small screens */
     }
+}
     .header {
         z-index: 1000; /* or higher if needed */
         position: relative;
