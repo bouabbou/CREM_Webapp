@@ -356,6 +356,65 @@ def AAD_innovation(request):
     return render( request ,'platforms/aad/AAD_innovation.html',context)
 
 
+def RESAN_innovation(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        'services_url': reverse('RESAN_services'),
+        'index_url': reverse('RESAN_index'),
+        'infrastructure_url': reverse('RESAN_infrastructure'),
+        'innovation_url': reverse('RESAN_innovation'),
+    }
+    return render( request ,'platforms/resan/RESAN_innovation.html',context)
+
+
+def BABE_innovation(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        'services_url': reverse('BABE_services'),
+        'index_url': reverse('BABE_index'),
+        'infrastructure_url': reverse('BABE_infrastructure'),
+        'innovation_url': reverse('BABE_innovation'),
+    }
+    return render( request ,'platforms/babe/BABE_innovation.html',context)
+
+
+def MSAC_innovation(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        'services_url': reverse('MSAC_services'),
+        'index_url': reverse('MSAC_index'),
+        'infrastructure_url': reverse('MSAC_infrastructure'),
+        'innovation_url': reverse('MSAC_innovation'),
+    }
+    return render( request ,'platforms/msac/MSAC_innovation.html',context)
+
+
+def PEACE_innovation(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        'services_url': reverse('PEACE_services'),
+        'index_url': reverse('PEACE_index'),
+        'infrastructure_url': reverse('PEACE_infrastructure'),
+        'innovation_url': reverse('PEACE_innovation'),
+    }
+    return render( request ,'platforms/peace/PEACE_innovation.html',context)
+
+
+def SAI_innovation(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        'services_url': reverse('SAI_services'),
+        'index_url': reverse('SAI_index'),
+        'infrastructure_url': reverse('SAI_infrastructure'),
+        'innovation_url': reverse('SAI_innovation'),
+    }
+    return render( request ,'platforms/sai/SAI_innovation.html',context)
+
 # platfrom's services
 
 def services(request):
@@ -852,6 +911,8 @@ def BABE_index(request):
         'services_url': reverse('BABE_services'),
         'index_url': reverse('BABE_index'),
         'infrastructure_url': reverse('BABE_infrastructure'),
+        'innovation_url': reverse('BABE_innovation'),
+
 }
     return render( request ,'platforms/babe/BABE_index.html', context)
 
@@ -931,7 +992,7 @@ def MSAC_index(request):
         'index_url': reverse('MSAC_index'),
         'infrastructure_url': reverse('MSAC_infrastructure'),
         'innovation_url': reverse('MSAC_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-white.png',
 }
 
     
@@ -1012,8 +1073,8 @@ def PEACE_index(request):
       #  'services_url': reverse('PEACE_services'),
         'index_url': reverse('PEACE_index'),
         'infrastructure_url': reverse('PEACE_infrastructure'),
-      #  'innovation_url': reverse('PEACE_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'innovation_url': reverse('PEACE_innovation'),
+        'logo': '../../static/images/logo-white.png',
 }
     return render( request ,'platforms/peace//PEACE_index.html', context)
 
@@ -1174,7 +1235,7 @@ def SAI_index(request):
         'index_url': reverse('SAI_index'),
         'infrastructure_url': reverse('SAI_infrastructure'),
         'innovation_url': reverse('SAI_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-white.png',
 }
 
     
@@ -1191,7 +1252,7 @@ def AAD_index(request):
         'index_url': reverse('AAD_index'),
         'infrastructure_url': reverse('AAD_infrastructure'),
         'innovation_url': reverse('AAD_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-white.png',
 }
 
     

@@ -53,6 +53,12 @@ urlpatterns = [
      #dynamic url from platform's innovation
     path('innovation/', views.innovation, name='innovation'),
     path('AAD_innovation/', views.AAD_innovation, name='AAD_innovation'),
+    path('BABE_innovation/', views.BABE_innovation, name='BABE_innovation'),
+    path('MSAC_innovation/', views.MSAC_innovation, name='MSAC_innovation'),
+    path('PEACE_innovation/', views.PEACE_innovation, name='PEACE_innovation'),
+    path('RESAN_innovation/', views.RESAN_innovation, name='RESAN_innovation'),
+    path('SAI_innovation/', views.SAI_innovation, name='SAI_innovation'),
+    
     
   
 ]
