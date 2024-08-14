@@ -56,62 +56,66 @@
     <!-- ANIMATE -->
     <link rel="stylesheet" href="../static/css/animate.min.css" />
     <style>
-      /* Additional styles */
+            /* Additional styles */
 
-      /* Additional styles */
-      #video-thumbnail {
-          width: 100%; /* Adjust to fit container */
-          height: auto; /* Maintain aspect ratio */
-      }
+            /* Additional styles */
+            #video-thumbnail {
+                width: 100%; /* Adjust to fit container */
+                height: auto; /* Maintain aspect ratio */
+            }
 
-      #video-container {
-          display: none;
-          position: fixed; /* Position fixed to cover the screen */
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background: rgba(0, 0, 0, 0.8);
-          padding: 10px;
-          border-radius: 5px;
-          z-index: 1000; /* Ensure it's above other content */
-          border: none; /* Remove borders */
-      }
+            #video-container {
+                display: none;
+                position: fixed; /* Position fixed to cover the screen */
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+                z-index: 1000; /* Ensure it's above other content */
+                border: none; /* Remove borders */
+            }
 
-      #video-player {
-          width: 90%; /* Adjust width as needed */
-          height: auto;
-      }
+            #video-player {
+                width: 90%; /* Adjust width as needed */
+                height: auto;
+            }
 
-      .video-background {
-          background-image: url('images/play.png'); /* Update path as needed */
-          background-size: cover; /* Ensure the image covers the entire container */
-          background-position: center; /* Center the image */
-          width: 100%;
-          height: 100vh; /* Full viewport height */
-          cursor: pointer; /* Indicate it's clickable */
-          object-fit: cover;
-      }
+            .video-background {
+                background-image: url('images/play.png'); /* Update path as needed */
+                background-size: cover; /* Ensure the image covers the entire container */
+                background-position: center; /* Center the image */
+                width: 100%;
+                height: 100vh; /* Full viewport height */
+                cursor: pointer; /* Indicate it's clickable */
+                object-fit: cover;
+            }
 
 
-      #close-button {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          background: none;
-          border: none;
-          color: white;
-          font-size: 24px;
-          cursor: pointer;
-      }
-      :root {
-          --link-color: {{ link_color }};
-          --link-hover-color: {{ link_hover_color }};
-      }
-      .header .main-menu-container .nav a {
-          color: var(--link-color);
-      }
-      .header.sticky .main-menu-container .nav a {
-          color: black;
+            #close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            :root {
+                --link-color: {{ link_color }};
+                --link-hover-color: {{ link_hover_color }};
+            }
+            .header .main-menu-container .nav a {
+                color: var(--link-color);
+            }
+            .header.sticky .main-menu-container .nav a {
+                color: black;
+            }
+            .header.sticky {
+          background-color: black; /* Change to black */
+          transition: background-color 0.3s ease; /* Smooth transition */
       }
     </style>
   </head>
@@ -126,8 +130,7 @@
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
           <!-- index_FA_EN.html -->
-        {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
-
+          {% include 'includes/index_header.html'%}
 
           <!-- STATIC MEDIA IMAGE -->
           <div class="sm-video-bg">
@@ -287,7 +290,7 @@
                   <button id="close-button">X</button>
                   <video id="video-player" controls>
                     <source src="{{video.video}}" type="video/mp4" />
-                 Your browser does not support the video tag. 
+                    Your browser does not support the video tag.
                   </video>
                 </div>
               </span>

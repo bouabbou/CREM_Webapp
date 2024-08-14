@@ -38,7 +38,7 @@
 				<!-- HEADER 1 NO-TRANSPARENT -->
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
-{% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+            {% include 'includes/index_header.html' %}
 
           <!-- HEADER -->
 
@@ -68,12 +68,11 @@
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                {{ sections.section_1.title_line1 }} <br>
-                                <span class="bold">{{ sections.section_1.title_line2 }}</span>
+                                Tensile Testing: <br>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-                                {{ sections.section_1.text }}
+                                 Measures tensile strength, elongation, and elasticity.
                             </div>
                         </div>
                     </div>
@@ -93,12 +92,11 @@
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                {{ sections.section_2.title_line1 }} <br>
-                                <span class="bold">{{ sections.section_2.title_line2 }}</span>
+                                Compression Testing: <br>
                             </div>
                             <div class="line-3-100"></div>
                             <div class="fes2-text-cont">
-                                {{ sections.section_2.text }}
+                                 Assesses compressive strength and deformation.
                             </div>
                         </div>
                     </div>
@@ -118,12 +116,11 @@
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                {{ sections.section_3.title_line1 }} <br>
-                                <span class="bold">{{ sections.section_3.title_line2 }}</span>
+                                Flexural Testing: <br>
                             </div>
                             <div class="line-3-100"></div>
                             <div class="fes2-text-cont">
-                                {{ sections.section_3.text }}
+                                Determines flexural strength and modulus. 
                             </div>
                         </div>
                     </div>
@@ -143,12 +140,11 @@
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                {{ sections.section_4.title_line1 }} <br>
-                                <span class="bold">{{ sections.section_4.title_line2 }}</span>
+                                Fatigue Testing: <br>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-                                {{ sections.section_4.text }}
+                                Analyzes material durability under cyclic loading. 
                             </div>
                         </div>
                     </div>
@@ -168,13 +164,9 @@
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                {{ sections.section_5.title_line1 }} <br>
-                                <span class="bold">{{ sections.section_5.title_line2 }}</span>
+                                Hardness Testing <br>
                             </div>
                             <div class="line-3-100"></div>
-                            <div class="fes2-text-cont">
-                                {{ sections.section_5.text }}
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -193,12 +185,11 @@
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                {{ sections.section_6.title_line1 }} <br>
-                                <span class="bold">{{ sections.section_6.title_line2 }}</span>
+                                Rockwell: <br>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-                                {{ sections.section_6.text }}
+                                Measures hardness using specific loads and indenters. 
                             </div>
                         </div>
                     </div>
@@ -210,6 +201,176 @@
                 </div>
             </div>
         </div>
+
+        <!-- FEATURES 7 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                Vickers:  <br>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                Assesses hardness with a diamond pyramid indenter.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FEATURES 8 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                Resilience Testing:  <br>
+                            </div>
+                            <div class="line-3-70"></div>
+                            <div class="fes2-text-cont">
+                                Measures impact resistance and toughness.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-50">
+                        <div class="row">
+                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURES 9 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                Particle Size Analysis:  <br>
+                                <span class="bold">Measures size distribution using Revolution Powder Analyzer and Camsizer X2 Grundgerät.</span>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_5.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FEATURES 10 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                Density Measurement:  <br>
+                            </div>
+                            <div class="line-3-70"></div>
+                            <div class="fes2-text-cont">
+                                Determines powder density using Gas and Helium Pycnometers.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-50">
+                        <div class="row">
+                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURES 11 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                Granulometry: <br>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                Analyzes particle size and shape with Sieve Shakers and Granulometers. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FEATURES 12 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                Revolution Powder Analysis: <br>
+                            </div>
+                            <div class="line-3-70"></div>
+                            <div class="fes2-text-cont">
+                                Assesses powder handling characteristics with Revolution Powder Analyzer.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-50">
+                        <div class="row">
+                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURES 13 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                Gas Density Measurement: <br>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                Measures density with Pycnometers for Gas Density Measurement.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
         
         <!-- FOOTER 2 -->
         {% include 'includes/footer.html' %}
