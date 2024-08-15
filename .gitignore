@@ -7,4 +7,3 @@ CREM_Webapp/_pycache_/*
 contact/_pycache_/*
 .vscode
 instrumentation/_pycache_/*
-git rm --cached *.pyc
