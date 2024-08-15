@@ -2,3 +2,8 @@ videos/
 server/env_site
 venv
 *.pyc
+front_app\__pycache__
+CREM_Webapp\__pycache__
+contact\__pycache__
+.vscode
+instrumentation\__pycache__
