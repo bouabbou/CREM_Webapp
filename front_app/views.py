@@ -28,7 +28,7 @@ def infrastructure(request):
 
     # Render the template with the context data
     return render(request, 'Infrastructure_FA_EN.html', context)
-def BABE_infrastructure(request):
+def BIO_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
 
@@ -64,18 +64,18 @@ def BABE_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
         #header : 
-        'services_url': reverse('BABE_services'),
-        'index_url': reverse('BABE_index'),
-        'infrastructure_url': reverse('BABE_infrastructure'),
-        'innovation_url': reverse('BABE_innovation'),
+        'services_url': reverse('BIO_services'),
+        'index_url': reverse('BIO_index'),
+        'infrastructure_url': reverse('BIO_infrastructure'),
+        'innovation_url': reverse('BIO_innovation'),
         'logo': '../../static/images/logo-grey.png',
         
 
 
     }
 
-    return render( request ,'platforms/babe/BABE_infrastructure.html', context)
-def MSAC_infrastructure(request):
+    return render( request ,'platforms/BIO/BIO_infrastructure.html', context)
+def MSC_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
     context = {
@@ -110,17 +110,17 @@ def MSAC_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
-        'services_url': reverse('MSAC_services'),
-        'index_url': reverse('MSAC_index'),
-        'infrastructure_url': reverse('MSAC_infrastructure'),
-        'innovation_url': reverse('MSAC_innovation'),
+        'services_url': reverse('MSC_services'),
+        'index_url': reverse('MSC_index'),
+        'infrastructure_url': reverse('MSC_infrastructure'),
+        'innovation_url': reverse('MSC_innovation'),
         'logo': '../../static/images/logo-grey.png',
  
 
     }
 
-    return render( request ,'platforms/msac/MSAC_infrastructure.html', context)
-def PEACE_infrastructure(request):
+    return render( request ,'platforms/MSC/MSC_infrastructure.html', context)
+def PCE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
 
@@ -156,17 +156,17 @@ def PEACE_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
-        'services_url': reverse('PEACE_services'),
-        'index_url': reverse('PEACE_index'),
-        'infrastructure_url': reverse('PEACE_infrastructure'),
-        'innovation_url': reverse('PEACE_innovation'),
+        'services_url': reverse('PCE_services'),
+        'index_url': reverse('PCE_index'),
+        'infrastructure_url': reverse('PCE_infrastructure'),
+        'innovation_url': reverse('PCE_innovation'),
         'logo': '../../static/images/logo-grey.png',
  
 
     }
 
-    return render( request ,'platforms/peace/PEACE_infrastructure.html', context)
-def RESAN_infrastructure(request):
+    return render( request ,'platforms/PCE/PCE_infrastructure.html', context)
+def RESEE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
 
@@ -176,7 +176,7 @@ def RESAN_infrastructure(request):
         'image_header': "Image Header",
         'image_descriptions': {
             'part1': "Description Part 1",
-            'part2': "resan Part 2",
+            'part2': "RESEE Part 2",
             'part3': "Description Part 3",
             'part4': "Description Part 4",
         },
@@ -202,17 +202,17 @@ def RESAN_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
-        'services_url': reverse('RESAN_services'),
-        'index_url': reverse('RESAN_index'),
-        'infrastructure_url': reverse('RESAN_infrastructure'),
-        'innovation_url': reverse('RESAN_innovation'),
+        'services_url': reverse('RESEE_services'),
+        'index_url': reverse('RESEE_index'),
+        'infrastructure_url': reverse('RESEE_infrastructure'),
+        'innovation_url': reverse('RESEE_innovation'),
         'logo': '../../static/images/logo-grey.png',
 
 
 
     }
 
-    return render( request ,'platforms/resan/RESAN_infrastructure.html', context)
+    return render( request ,'platforms/RESEE/RESEE_infrastructure.html', context)
 def SAI_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -259,7 +259,7 @@ def SAI_infrastructure(request):
     }
 
     return render( request ,'platforms/sai/SAI_infrastructure.html', context)
-def AAD_infrastructure(request):
+def AIDE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
 
@@ -295,15 +295,15 @@ def AAD_infrastructure(request):
         'logo': '../../static/images/logo-grey.png',
 
         #header : 
-        'services_url': reverse('AAD_services'),
-        'index_url': reverse('AAD_index'),
-        'infrastructure_url': reverse('AAD_infrastructure'),
-        'innovation_url': reverse('AAD_innovation'),
+        'services_url': reverse('AIDE_services'),
+        'index_url': reverse('AIDE_index'),
+        'infrastructure_url': reverse('AIDE_infrastructure'),
+        'innovation_url': reverse('AIDE_innovation'),
         'logo': '../../static/images/logo-grey.png',
 
     }
 
-    return render( request ,'platforms/aad/AAD_infrastructure.html', context)
+    return render( request ,'platforms/AIDE/AIDE_infrastructure.html', context)
 
 
 def home(request):
@@ -320,64 +320,64 @@ def innovation(request):
         'innovation_url': reverse('innovation'),
     }
     return render( request ,'Innovation_FA_EN.html',context)
-def AAD_innovation(request):
+def AIDE_innovation(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
-        'services_url': reverse('AAD_services'),
-        'index_url': reverse('AAD_index'),
-        'infrastructure_url': reverse('AAD_infrastructure'),
-        'innovation_url': reverse('AAD_innovation'),
+        'services_url': reverse('AIDE_services'),
+        'index_url': reverse('AIDE_index'),
+        'infrastructure_url': reverse('AIDE_infrastructure'),
+        'innovation_url': reverse('AIDE_innovation'),
     }
-    return render( request ,'platforms/aad/AAD_innovation.html',context)
+    return render( request ,'platforms/AIDE/AIDE_innovation.html',context)
 
 
-def RESAN_innovation(request):
+def RESEE_innovation(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
-        'services_url': reverse('RESAN_services'),
-        'index_url': reverse('RESAN_index'),
-        'infrastructure_url': reverse('RESAN_infrastructure'),
-        'innovation_url': reverse('RESAN_innovation'),
+        'services_url': reverse('RESEE_services'),
+        'index_url': reverse('RESEE_index'),
+        'infrastructure_url': reverse('RESEE_infrastructure'),
+        'innovation_url': reverse('RESEE_innovation'),
     }
-    return render( request ,'platforms/resan/RESAN_innovation.html',context)
+    return render( request ,'platforms/RESEE/RESEE_innovation.html',context)
 
 
-def BABE_innovation(request):
+def BIO_innovation(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
-        'services_url': reverse('BABE_services'),
-        'index_url': reverse('BABE_index'),
-        'infrastructure_url': reverse('BABE_infrastructure'),
-        'innovation_url': reverse('BABE_innovation'),
+        'services_url': reverse('BIO_services'),
+        'index_url': reverse('BIO_index'),
+        'infrastructure_url': reverse('BIO_infrastructure'),
+        'innovation_url': reverse('BIO_innovation'),
     }
-    return render( request ,'platforms/babe/BABE_innovation.html',context)
+    return render( request ,'platforms/BIO/BIO_innovation.html',context)
 
 
-def MSAC_innovation(request):
+def MSC_innovation(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
-        'services_url': reverse('MSAC_services'),
-        'index_url': reverse('MSAC_index'),
-        'infrastructure_url': reverse('MSAC_infrastructure'),
-        'innovation_url': reverse('MSAC_innovation'),
+        'services_url': reverse('MSC_services'),
+        'index_url': reverse('MSC_index'),
+        'infrastructure_url': reverse('MSC_infrastructure'),
+        'innovation_url': reverse('MSC_innovation'),
     }
-    return render( request ,'platforms/msac/MSAC_innovation.html',context)
+    return render( request ,'platforms/MSC/MSC_innovation.html',context)
 
 
-def PEACE_innovation(request):
+def PCE_innovation(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
-        'services_url': reverse('PEACE_services'),
-        'index_url': reverse('PEACE_index'),
-        'infrastructure_url': reverse('PEACE_infrastructure'),
-        'innovation_url': reverse('PEACE_innovation'),
+        'services_url': reverse('PCE_services'),
+        'index_url': reverse('PCE_index'),
+        'infrastructure_url': reverse('PCE_infrastructure'),
+        'innovation_url': reverse('PCE_innovation'),
     }
-    return render( request ,'platforms/peace/PEACE_innovation.html',context)
+    return render( request ,'platforms/PCE/PCE_innovation.html',context)
 
 
 def SAI_innovation(request):
@@ -451,16 +451,16 @@ def services(request):
     },
     }
     return render( request ,'Services_FA_EN.html',context)
-def AAD_services(request):
+def AIDE_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('AAD_services'),
-        'index_url': reverse('AAD_index'),
-        'infrastructure_url': reverse('AAD_infrastructure'),
-        'innovation_url': reverse('AAD_innovation'),
+        'services_url': reverse('AIDE_services'),
+        'index_url': reverse('AIDE_index'),
+        'infrastructure_url': reverse('AIDE_infrastructure'),
+        'innovation_url': reverse('AIDE_innovation'),
 
         # Sections
         'sections': {
@@ -496,17 +496,17 @@ def AAD_services(request):
         },
     },
     }
-    return render( request ,'platforms/aad/AAD_services.html',context)
-def BABE_services(request):
+    return render( request ,'platforms/AIDE/AIDE_services.html',context)
+def BIO_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('BABE_services'),
-        'index_url': reverse('BABE_index'),
-        'infrastructure_url': reverse('BABE_infrastructure'),
-        'innovation_url': reverse('BABE_innovation'),
+        'services_url': reverse('BIO_services'),
+        'index_url': reverse('BIO_index'),
+        'infrastructure_url': reverse('BIO_infrastructure'),
+        'innovation_url': reverse('BIO_innovation'),
 
         # Sections
         'sections': {
@@ -542,54 +542,8 @@ def BABE_services(request):
         },
     },
     }
-    return render( request ,'platforms/babe/BABE_services.html',context)
-def MSAC_services(request):
-    context = {
-        'logo': '../static/images/logo-grey.png',
-        'link_color': 'grey', 
-        
-        #header
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
-
-        # Sections
-        'sections': {
-        'section_1': {
-            'title_line1': 'Section 1 Title Line 1',
-            'title_line2': 'Section 1 Title Line 2',
-            'text': 'Description of section 1'
-        },
-        'section_2': {
-            'title_line1': 'Section 2 Title Line 1',
-            'title_line2': 'Section 2 Title Line 2',
-            'text': 'Description of section 2'
-        },
-        'section_3': {
-            'title_line1': 'Section 3 Title Line 1',
-            'title_line2': 'Section 3 Title Line 2',
-            'text': 'Description of section 3'
-        },
-        'section_4': {
-            'title_line1': 'Section 4 Title Line 1',
-            'title_line2': 'Section 4 Title Line 2',
-            'text': 'Description of section 4'
-        },
-        'section_5': {
-            'title_line1': 'Section 5 Title Line 1',
-            'title_line2': 'Section 5 Title Line 2',
-            'text': 'Description of section 5'
-        },
-        'section_6': {
-            'title_line1': 'Section 6 Title Line 1',
-            'title_line2': 'Section 6 Title Line 2',
-            'text': 'Description of section 6'
-        },
-    },
-    }
-    return render( request ,'platforms/msac/MSAC_services.html',context)
-def PEACE_services(request):
+    return render( request ,'platforms/BIO/BIO_services.html',context)
+def MSC_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
@@ -634,8 +588,8 @@ def PEACE_services(request):
         },
     },
     }
-    return render( request ,'platforms/peace/PEACE_services.html',context)
-def RESAN_services(request):
+    return render( request ,'platforms/MSC/MSC_services.html',context)
+def PCE_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
@@ -680,7 +634,53 @@ def RESAN_services(request):
         },
     },
     }
-    return render( request ,'platforms/resan/RESAN_services.html',context)
+    return render( request ,'platforms/PCE/PCE_services.html',context)
+def RESEE_services(request):
+    context = {
+        'logo': '../static/images/logo-grey.png',
+        'link_color': 'grey', 
+        
+        #header
+        'services_url': reverse('services'),
+        'index_url': reverse('index'),
+        'infrastructure_url': reverse('infrastructure'),
+        'innovation_url': reverse('innovation'),
+
+        # Sections
+        'sections': {
+        'section_1': {
+            'title_line1': 'Section 1 Title Line 1',
+            'title_line2': 'Section 1 Title Line 2',
+            'text': 'Description of section 1'
+        },
+        'section_2': {
+            'title_line1': 'Section 2 Title Line 1',
+            'title_line2': 'Section 2 Title Line 2',
+            'text': 'Description of section 2'
+        },
+        'section_3': {
+            'title_line1': 'Section 3 Title Line 1',
+            'title_line2': 'Section 3 Title Line 2',
+            'text': 'Description of section 3'
+        },
+        'section_4': {
+            'title_line1': 'Section 4 Title Line 1',
+            'title_line2': 'Section 4 Title Line 2',
+            'text': 'Description of section 4'
+        },
+        'section_5': {
+            'title_line1': 'Section 5 Title Line 1',
+            'title_line2': 'Section 5 Title Line 2',
+            'text': 'Description of section 5'
+        },
+        'section_6': {
+            'title_line1': 'Section 6 Title Line 1',
+            'title_line2': 'Section 6 Title Line 2',
+            'text': 'Description of section 6'
+        },
+    },
+    }
+    return render( request ,'platforms/RESEE/RESEE_services.html',context)
 def SAI_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
@@ -812,14 +812,14 @@ def index(request):
     
     return render( request ,'index_FA_EN.html',context)
 
-def BABE_index(request):
+def BIO_index(request):
     context = {
         'logo': '../static/images/logo-white.png',
         'link_color': 'white', 
         
         "header": {
         "video": "../static/video/FA.mp4",
-        "title": "babe/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
+        "title": "BIO/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
@@ -884,15 +884,15 @@ def BABE_index(request):
         }
     },
      #header : 
-        'services_url': reverse('BABE_services'),
-        'index_url': reverse('BABE_index'),
-        'infrastructure_url': reverse('BABE_infrastructure'),
-        'innovation_url': reverse('BABE_innovation'),
+        'services_url': reverse('BIO_services'),
+        'index_url': reverse('BIO_index'),
+        'infrastructure_url': reverse('BIO_infrastructure'),
+        'innovation_url': reverse('BIO_innovation'),
 
 }
-    return render( request ,'platforms/babe/BABE_index.html', context)
+    return render( request ,'platforms/BIO/BIO_index.html', context)
 
-def MSAC_index(request):
+def MSC_index(request):
     context = {
         'logo': '../static/images/logo-white.png',
         'link_color': 'white', 
@@ -964,17 +964,17 @@ def MSAC_index(request):
         }
     },
      #header : 
-        'services_url': reverse('MSAC_services'),
-        'index_url': reverse('MSAC_index'),
-        'infrastructure_url': reverse('MSAC_infrastructure'),
-        'innovation_url': reverse('MSAC_innovation'),
+        'services_url': reverse('MSC_services'),
+        'index_url': reverse('MSC_index'),
+        'infrastructure_url': reverse('MSC_infrastructure'),
+        'innovation_url': reverse('MSC_innovation'),
         'logo': '../../static/images/logo-white.png',
 }
 
     
-    return render( request ,'platforms/msac/MSAC_index.html',context)
+    return render( request ,'platforms/MSC/MSC_index.html',context)
 
-def PEACE_index(request):
+def PCE_index(request):
     context = {
         'logo': '../static/images/logo-white.png',
         'link_color': 'white', 
@@ -1046,15 +1046,15 @@ def PEACE_index(request):
         }
     },
      #header : 
-      #  'services_url': reverse('PEACE_services'),
-        'index_url': reverse('PEACE_index'),
-        'infrastructure_url': reverse('PEACE_infrastructure'),
-        'innovation_url': reverse('PEACE_innovation'),
+      #  'services_url': reverse('PCE_services'),
+        'index_url': reverse('PCE_index'),
+        'infrastructure_url': reverse('PCE_infrastructure'),
+        'innovation_url': reverse('PCE_innovation'),
         'logo': '../../static/images/logo-white.png',
 }
-    return render( request ,'platforms/peace//PEACE_index.html', context)
+    return render( request ,'platforms/PCE//PCE_index.html', context)
 
-def RESAN_index(request):
+def RESEE_index(request):
     context = {
         'logo': '../static/images/logo-white.png',
         'link_color': 'white', 
@@ -1126,14 +1126,14 @@ def RESAN_index(request):
         }
     },
      #header : 
-        'services_url': reverse('RESAN_services'),
-        'index_url': reverse('RESAN_index'),
-        'infrastructure_url': reverse('RESAN_infrastructure'),
-        'innovation_url': reverse('RESAN_innovation'),
+        'services_url': reverse('RESEE_services'),
+        'index_url': reverse('RESEE_index'),
+        'infrastructure_url': reverse('RESEE_infrastructure'),
+        'innovation_url': reverse('RESEE_innovation'),
 }
 
     
-    return render( request ,'platforms/resan/RESAN_index.html',context)
+    return render( request ,'platforms/RESEE/RESEE_index.html',context)
 
 def SAI_index(request):
     context = {
@@ -1217,22 +1217,22 @@ def SAI_index(request):
     
     return render( request , 'platforms/sai/SAI_index.html',context)
 
-def AAD_index(request):
+def AIDE_index(request):
     context = {
         'logo': '../static/images/logo-white.png',
         'link_color': 'white', 
         
        
      #header : 
-        'services_url': reverse('AAD_services'),
-        'index_url': reverse('AAD_index'),
-        'infrastructure_url': reverse('AAD_infrastructure'),
-        'innovation_url': reverse('AAD_innovation'),
+        'services_url': reverse('AIDE_services'),
+        'index_url': reverse('AIDE_index'),
+        'infrastructure_url': reverse('AIDE_infrastructure'),
+        'innovation_url': reverse('AIDE_innovation'),
         'logo': '../../static/images/logo-white.png',
 }
 
     
-    return render( request , 'platforms/aad/AAD_index.html',context)
+    return render( request , 'platforms/AIDE/AIDE_index.html',context)
 
 def presentation(request):
     context = {
