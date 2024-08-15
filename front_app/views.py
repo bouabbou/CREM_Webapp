@@ -11,46 +11,22 @@ from instrumentation.models import Category, Product
 #platfroms infrustructures
 
 def infrastructure(request):
+    # Fetch categories and products from the database
     categories = Category.objects.all()
     products = Product.objects.all()
+
+    # Context data to pass to the template
     context = {
         'categories': categories,
         'products': products,
-        'logo': '../static/images/logo-grey.png',
-        'link_color': 'grey', 
-        'image_header': "Our advanced manufacturing platform",
-        'image_descriptions': {
-            'part1': "ADDITIVE MANUFACTURING",
-            'part2': "CNC MACHINING",
-            'part3': "COMPOSITES",
-            'part4': "CHARACTERIZATION",
-        },
-        'header_img': "../static/images/revo-slider/infra.jpg",
-        'gallery_texts': {
-            'section_1': {
-                'title': "Powder-Based",
-                'subtitle': "Additive Manufacturing",
-            },
-            'section_2': {
-                'title': "Fused deposition modeling",
-                'subtitle': "Additive Manufacturing",
-            },
-            'section_3': {
-                'title': "CNC Machinning",
-                'subtitle': "Subtitle for Section 3",
-            },
-        },
-        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB1.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
-        #header
         'services_url': reverse('services'),
         'index_url': reverse('index'),
         'infrastructure_url': reverse('infrastructure'),
         'innovation_url': reverse('innovation'),
         'logo': '../../static/images/logo-grey.png',
     }
+
+    # Render the template with the context data
     return render(request, 'Infrastructure_FA_EN.html', context)
 def BABE_infrastructure(request):
     categories = Category.objects.all()
