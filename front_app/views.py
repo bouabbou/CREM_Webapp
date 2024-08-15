@@ -10,7 +10,7 @@ from instrumentation.models import Category, Product
 
 #platfroms infrustructures
 
-def infrastructure(request):
+def ASMP_infrastructure(request):
     # Fetch categories and products from the database
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -19,15 +19,15 @@ def infrastructure(request):
     context = {
         'categories': categories,
         'products': products,
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'Infrastructre_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
         'logo': '../../static/images/logo-grey.png',
     }
 
     # Render the template with the context data
-    return render(request, 'Infrastructure_FA_EN.html', context)
+    return render(request, 'platforms/ASMP/ASMP_Infrastructure_FA_EN.html', context)
 def BIO_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -310,16 +310,16 @@ def home(request):
     return render( request ,'Home_EN.html')
 def contact(request):
     return render( request ,'Contact_EN.html')
-def innovation(request):
+def ASMP_innovation(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
     }
-    return render( request ,'Innovation_FA_EN.html',context)
+    return render( request ,'platforms/ASMP/ASMP_Innovation_FA_EN.html',context)
 def AIDE_innovation(request):
     context = {
         'logo': '../static/images/logo-grey.png',
@@ -393,16 +393,16 @@ def SAI_innovation(request):
 
 # platfrom's services
 
-def services(request):
+def ASMP_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
 
         # Sections
         'sections': {
@@ -450,7 +450,7 @@ def services(request):
         },
     },
     }
-    return render( request ,'Services_FA_EN.html',context)
+    return render( request ,'platforms/ASMP/ASMP_Services_FA_EN.html',context)
 def AIDE_services(request):
     context = {
         'logo': '../static/images/logo-grey.png',
@@ -730,7 +730,7 @@ def SAI_services(request):
 
 
 # platforms presentation
-def index(request):
+def ASMP_index(request):
     context = {
         'link_color': 'white', 
         
@@ -802,15 +802,15 @@ def index(request):
     },
     
      #header : 
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
         'logo': '../static/images/logo-white.png',
 }
 
     
-    return render( request ,'index_FA_EN.html',context)
+    return render( request ,'platforms/ASMP/ASMP_index_FA_EN.html',context)
 
 def BIO_index(request):
     context = {
