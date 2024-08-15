@@ -51,6 +51,10 @@
         z-index: 1000; /* or higher if needed */
         position: relative;
     }
+    .current {
+    border-bottom: none !important; /* Remove underline */
+    text-decoration: none !important; /* Remove any text underline */
+}
   </style>
 		
 	</head>
@@ -66,7 +70,7 @@
           <!-- HEADER -->
           <div class="header-transporent-bg-black">
             <!-- HEADER -->
-            {% include 'includes/header.html' %}
+            {% include 'includes/contact_header.html' %}
   
               </div>
              </div>
@@ -104,7 +108,9 @@
               </div>
               <div class="col-md-4">
                 <div class="breadcrumbs">
-                  <a href="Index_FA_EN.html">Home</a><span class="slash-divider">/</span><span class="bread-current">CONTACT</span>
+                  <a href="Index_FA_EN.html">Home</a>
+                  <span class="slash-divider">/</span>
+                  <span class="bread-current">CONTACT</span>
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@ from django.db import models
 class Platform(models.Model):
     name = models.CharField(max_length=255)
 
-    def __str__(self):
+    def _str_(self):
         return self.name
 
 class Category(models.Model):
@@ -11,7 +11,7 @@ class Category(models.Model):
     abbreviation = models.CharField(max_length=10)
     platform = models.ForeignKey(Platform, on_delete=models.CASCADE, related_name='categories')
 
-    def __str__(self):
+    def _str_(self):
         return self.name
 
 class Product(models.Model):
@@ -20,5 +20,5 @@ class Product(models.Model):
     image = models.ImageField(upload_to='product_images/')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')
 
-    def __str__(self):
+    def _str_(self):
         return self.name

@@ -130,7 +130,10 @@
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
           <!-- index_FA_EN.html -->
-          {% include 'includes/index_header.html'%}
+          {% include 'includes/index_header.html' with logo=logo index=index_url
+          innovation=innovation_url infrastructure=infrastructure_url
+          services=services_url contact=contact_url link_color=link_color
+          link_hover_color=link_hover_color %}
 
           <!-- STATIC MEDIA IMAGE -->
           <div class="sm-video-bg">
