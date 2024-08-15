@@ -24,6 +24,7 @@ def ASMP_infrastructure(request):
         'Infrastructre_url': reverse('ASMP_infrastructure'),
         'innovation_url': reverse('ASMP_innovation'),
         'logo': '../../static/images/logo-grey.png',
+        'platform_name' : "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM"
     }
 
     # Render the template with the context data
