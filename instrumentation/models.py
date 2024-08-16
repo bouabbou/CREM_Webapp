@@ -17,7 +17,7 @@ class Category(models.Model):
         return self.name
 
 class Product(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)  # Added max_length here
     description = models.TextField()
     image = models.ImageField(upload_to='infrastructure/', null=True, blank=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')
@@ -31,5 +31,7 @@ class Product(models.Model):
         return os.path.join(folder_name, filename)
 
     def save(self, *args, **kwargs):
-        self.image.field.upload_to = self.get_image_upload_path(self.image.name)
+        # Ensure the upload_to path is set correctly
+        if self.image and self.image.name:
+            self.image.field.upload_to = self.get_image_upload_path(self.image.name)
         super(Product, self).save(*args, **kwargs)
