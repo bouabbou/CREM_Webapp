@@ -768,7 +768,7 @@ def ASMP_index(request):
     "video": {
         "title_l": "ADDITIVE",
         "title_r": "MANUFACTURING",
-        "video": "../static/video/SSR.mp4",
+        "video": "../static/video/ASMP_PLATFORM.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
