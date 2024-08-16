@@ -115,10 +115,8 @@
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
           <!-- index_FA_EN.html -->
-          {% include 'includes/index_header.html' with logo=logo index=index_url
-          innovation=innovation_url infrastructure=infrastructure_url
-          services=services_url contact=contact_url link_color=link_color
-          link_hover_color=link_hover_color %}
+          {% include 'includes/index_header.html' %}
+
           <!-- STATIC MEDIA IMAGE -->
           <div class="sm-video-bg">
             <div class="sm-content-cont js-height-fullscr container text-left">
@@ -277,7 +275,7 @@
                   <button id="close-button">X</button>
                   <video id="video-player" controls>
                     <source src="{{video.video}}" type="video/mp4" />
-                    {{ Your browser does not support the video tag. }}
+                    Your browser does not support the video tag.
                   </video>
                 </div>
               </span>

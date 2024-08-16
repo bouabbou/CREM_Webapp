@@ -550,10 +550,10 @@ def MSC_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
+        'services_url': reverse('MSC_services'),
+        'index_url': reverse('MSC_index'),
+        'infrastructure_url': reverse('MSC_infrastructure'),
+        'innovation_url': reverse('MSC_innovation'),
 
         # Sections
         'sections': {
@@ -596,10 +596,10 @@ def PCE_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
+        'services_url': reverse('PCE_services'),
+        'index_url': reverse('PCE_index'),
+        'infrastructure_url': reverse('PCE_infrastructure'),
+        'innovation_url': reverse('PCE_innovation'),
 
         # Sections
         'sections': {
@@ -642,10 +642,10 @@ def RESEE_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
+        'services_url': reverse('RESEE_services'),
+        'index_url': reverse('RESEE_index'),
+        'infrastructure_url': reverse('RESEE_infrastructure'),
+        'innovation_url': reverse('RESEE_innovation'),
 
         # Sections
         'sections': {
@@ -688,10 +688,10 @@ def SAI_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('services'),
-        'index_url': reverse('index'),
-        'infrastructure_url': reverse('infrastructure'),
-        'innovation_url': reverse('innovation'),
+        'services_url': reverse('SAI_services'),
+        'index_url': reverse('SAI_index'),
+        'infrastructure_url': reverse('SAI_infrastructure'),
+        'innovation_url': reverse('SAI_innovation'),
 
         # Sections
         'sections': {
