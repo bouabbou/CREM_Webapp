@@ -159,17 +159,48 @@
 </header>
 
 <style>
-  :root {
-      --link-color: {{ link_color }};
-      --link-hover-color: {{ link_hover_color }};
+    :root {
+        --link-color: {{ link_color }};
+        --link-hover-color: {{ link_hover_color }};
+    }
+
+    .header a {
+        color: var(--link-color) !important;
+    }
+
+    .header a:hover {
+        color: var(--link-hover-color) !important;
+    }
+    /* Default styles for larger screens */
+    .header.transparent {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
   }
 
-  .header a {
-      color: var(--link-color) !important;
+  .header.scrolled {
+    background-color: white; /* Adjust as needed */
   }
 
-  .header a:hover {
-      color: var(--link-hover-color) !important;
+  /* Ensure links and buttons adjust color appropriately */
+  .header.scrolled a {
+    color: #333 !important; /* Adjust as needed */
   }
-  /* Default styles for larger screens */
+
+  .header.scrolled .btn-navbar {
+    color: #333 !important; /* Adjust as needed */
+  }
 </style>
+<script>
+  window.onscroll = function () {
+    var header = document.getElementById("nav");
+    var logo = document.querySelector(".logo-img");
+
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+      logo.src = "../static/images/logo-black.png"; // Change to the path of your black logo
+    } else {
+      header.classList.remove("scrolled");
+      logo.src = "../static/images/logo-white.png"; // Change to the path of your white logo
+    }
+  };
+</script>
