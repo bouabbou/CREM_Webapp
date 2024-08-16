@@ -297,6 +297,8 @@
                 <!-- PORTFOLIO FILTER -->
                 <hr>
 <!-- Dynamic category handler -->
+<div class="port-filter">
+
 {% for category in categories %}
     {% if category.platform.name == platform_name %}
         <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
