@@ -57,6 +57,7 @@ class CategoryAdmin(admin.ModelAdmin):
             allowed_platform = USER_PLATFORM_MAPPING.get(request.user.username)
             kwargs["queryset"] = Platform.objects.filter(name=allowed_platform)
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
+    
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'description', 'category')
