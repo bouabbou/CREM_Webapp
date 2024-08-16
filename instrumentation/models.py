@@ -17,21 +17,21 @@ class Category(models.Model):
         return self.name
 
 class Product(models.Model):
-    name = models.CharField(max_length=255)  # Added max_length here
+    name = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to='infrastructure/', null=True, blank=True)
+    image = models.ImageField(upload_to='', null=True, blank=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')
 
     def __str__(self):
         return self.name
 
     def get_image_upload_path(self, filename):
-        platform_name = self.category.platform.name
-        folder_name = f'infrastructure/{platform_name}/'
+        platform_abrv = self.category.platform.abbreviation
+        folder_name = f'infrastructure/{platform_abrv}/'
         return os.path.join(folder_name, filename)
 
     def save(self, *args, **kwargs):
-        # Ensure the upload_to path is set correctly
-        if self.image and self.image.name:
-            self.image.field.upload_to = self.get_image_upload_path(self.image.name)
+        if self.image:
+            # Update the upload_to path before saving
+            self.image.name = self.get_image_upload_path(self.image.name)
         super(Product, self).save(*args, **kwargs)
