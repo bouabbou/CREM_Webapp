@@ -84,10 +84,7 @@
       <div class="container-p-75-2">
         <!-- Grey BG  -->
 
-        {% include 'includes/index_header.html' with logo=logo index=index_url
-        innovation=innovation_url infrastructure=infrastructure_url
-        services=services_url contact=contact_url link_color=link_color
-        link_hover_color=link_hover_color %}
+        {% include 'includes/index_header.html' %}
 
         <!-- SLIDER Revo 2 -->
         <div class="indent-header relative" style="overflow: hidden">
@@ -298,47 +295,42 @@
 
                 <!-- PORTFOLIO FILTER -->
                 <hr />
-                <!--- dunamic category handler-->
-                {% for category in categories %} {% if category.platform.name ==
-                platform_name %}
-                <a
-                  href="#"
-                  class="filter"
-                  data-filter=".{{ category.abbreviation }}"
-                  >{{ category.name }}</a
-                >
-                {% endif %} {% endfor %}
               </div>
             </div>
 
             <!-- ITEMS GRID -->
-            <ul
-              class="port-grid display-hover-on-mobile masonry clearfix"
-              id="items-grid"
-            >
-              {% for product in products %}
-              <li
-                role="button"
-                class="port-item mix {{ product.category.abbreviation }} {{ product.category.platform.name|lower }}"
-              >
-                <a href="#">
-                  <div class="port-img-overlay">
-                    <img
-                      class="port-main-img"
-                      src="{{ product.image.url }}"
-                      alt="{{ product.name }}"
-                    />
-                  </div>
-                </a>
-                <div class="port-overlay-cont">
-                  <div class="port-title-cont">
-                    <h3><a href="#">{{ product.name }}</a></h3>
-                    <span>{{ product.description }}</span>
-                  </div>
-                </div>
-              </li>
+            <div class="port-filter">
+
+              {% for category in categories %}
+                  {% if category.platform.name == platform_name%}
+                      <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
+                  {% endif %}
               {% endfor %}
-            </ul>
+              
+              </div>
+              </div>
+              
+              <!-- ITEMS GRID -->
+              <ul class="port-grid display-hover-on-mobile masonry clearfix" id="items-grid">
+                {% for product in products %}
+                    {% if product.category.platform.name == platform_name %}
+                        <li role="button" class="port-item mix {{ product.category.abbreviation }} {{ product.category.platform.abbreviation|lower }}">
+                            <a href="#">
+                                <div class="port-img-overlay">
+                                    <img class="port-main-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </div>
+                            </a>
+                            <div class="port-overlay-cont">
+                                <div class="port-title-cont">
+                                    <h3><a href="#">{{ product.name }}</a></h3>
+                                    <span>{{ product.description }}</span>
+                                </div>
+                            </div>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+              </ul>
+              
           </div>
         </div>
         <!-- VIEW MORE PROJECTS  -->
