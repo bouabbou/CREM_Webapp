@@ -27,7 +27,8 @@ class Product(models.Model):
 
     def get_image_upload_path(self, filename):
         platform_abrv = self.category.platform.abbreviation
-        folder_name = f'infrastructure/{platform_abrv}/'
+        category_abrv = self.category.abbreviation
+        folder_name = f'infrastructure/{platform_abrv}/{category_abrv}/'
         return os.path.join(folder_name, filename)
 
     def save(self, *args, **kwargs):

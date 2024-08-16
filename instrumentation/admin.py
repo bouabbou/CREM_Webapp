@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 
 # Mapping of users to their allowed platforms
 USER_PLATFORM_MAPPING = {
-    'noyl': 'ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM',
+    'noyla': 'ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM',
     'crem': 'BIO/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM',
     # Add other users and their respective platforms here
     'user1': 'RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY',
