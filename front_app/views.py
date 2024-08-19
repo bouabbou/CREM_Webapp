@@ -58,8 +58,8 @@ def BIO_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
+        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
+        'slider_image_url_1': "../static/images/flexslider/zAMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
         'logo': '../../static/images/logo-grey.png',
@@ -104,7 +104,7 @@ def MSC_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "Materials, Synthesis, and Characterization Platform",
+        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
@@ -150,7 +150,7 @@ def PCE_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "	PROCESS ENGINEERING AND CIVIL ENGINEERING",
+        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
@@ -196,7 +196,7 @@ def RESEE_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY",
+        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
@@ -243,7 +243,7 @@ def SAI_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "SENSORS AND INSTRUMENTATION",
+        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
@@ -289,7 +289,7 @@ def AIDE_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "AI AND DIGITAL ENGINEERING",
+        'platform_name': "Virtual Reality and Collaborative Robotics AI Platform",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
@@ -736,7 +736,7 @@ def ASMP_index(request):
         'link_color': 'white', 
         
         "header": {
-        "video": "../static/video/FA.mp4",
+        "video": "../static/video/ASMP.mp4",
         "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
@@ -768,7 +768,7 @@ def ASMP_index(request):
     "video": {
         "title_l": "ADDITIVE",
         "title_r": "MANUFACTURING",
-        "video": "../static/video/SSR.mp4",
+        "video": "../static/video/ASMP_PLATFORM.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
@@ -819,7 +819,7 @@ def BIO_index(request):
         'link_color': 'white', 
         
         "header": {
-        "video": "../static/video/FA.mp4",
+        "video": "../static/video/BIO.mp4",
         "title": "BIO/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
@@ -851,7 +851,7 @@ def BIO_index(request):
     "video": {
         "title_l": "ADDITIVE",
         "title_r": "MANUFACTURING",
-        "video": "../static/video/SSR.mp4",
+        "video": "../static/video/BIO.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
@@ -899,7 +899,7 @@ def MSC_index(request):
         'link_color': 'white', 
         
         "header": {
-        "video": "../static/video/FA.mp4",
+        "video": "../static/video/MSC.mp4",
         "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
@@ -931,7 +931,7 @@ def MSC_index(request):
     "video": {
         "title_l": "ADDITIVE",
         "title_r": "MANUFACTURING",
-        "video": "../static/video/SSR.mp4",
+        "video": "../static/video/MSC.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
@@ -981,7 +981,7 @@ def PCE_index(request):
         'link_color': 'white', 
         
         "header": {
-        "video": "../static/video/FA.mp4",
+        "video": "../static/video/PCE.mp4",
         "title": "noyl",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
@@ -1013,7 +1013,7 @@ def PCE_index(request):
     "video": {
         "title_l": "ADDITIVE",
         "title_r": "MANUFACTURING",
-        "video": "../static/video/SSR.mp4",
+        "video": "../static/video/PCE.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
@@ -1061,7 +1061,7 @@ def RESEE_index(request):
         'link_color': 'white', 
         
         "header": {
-        "video": "../static/video/FA.mp4",
+        "video": "../static/video/RESEE.mp4",
         "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
@@ -1093,7 +1093,7 @@ def RESEE_index(request):
     "video": {
         "title_l": "ADDITIVE",
         "title_r": "MANUFACTURING",
-        "video": "../static/video/SSR.mp4",
+        "video": "../static/video/RESEE.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
@@ -1142,7 +1142,7 @@ def SAI_index(request):
         'link_color': 'white', 
         
         "header": {
-        "video": "../static/video/FA.mp4",
+        "video": "../static/video/SAI.mp4",
         "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
@@ -1174,7 +1174,7 @@ def SAI_index(request):
     "video": {
         "title_l": "ADDITIVE",
         "title_r": "MANUFACTURING",
-        "video": "../static/video/SSR.mp4",
+        "video": "../static/video/SAI.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
