@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="../static/css/icons-fonts.css" >	
 
     <!-- IMAGES COMPARE -->
-    <link rel="stylesheet" type="text/css" href="../static/css/twentytwenty.css">
+
 
     <!-- ANIMATE -->
 		<link rel="stylesheet" href="../static/css/animate.min.css">
@@ -96,19 +96,19 @@
   <div class="sm-content-cont js-height-fullscr container text-left">
     <!-- VIDEO BG -->
     <div class="sm-video-wrapper">
-      <div class="sm-video">
-        <video
-          autoplay
-          muted
-          loop
-          playsinline
-          class="video-background"
-        >
-          <source src="{{header.video}}" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div class="sm-video">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="video-background"
+          >
+            <source src="{{header.video}}" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-    </div>
     <div class="sm-cont-middle">
       <!-- LAYER NR. 1 -->
       <span class="bold"></span>
@@ -294,18 +294,7 @@ Artificial intelligence and robotics are transformative technologies that enhanc
                       <p>Our AI and robotics solutions enhance precision and efficiency in the automotive/aerospace sector, enabling the production of complex parts and improving assembly line automation.</p>
                     </div>
                     <!-- COTENT CONTAINER -->
-                    <div class="p-140-cont container">
-
-                      <div class="row mb-40">
-
-                        <div class="twentytwenty-container">
-                          <img src="../static/images/static-media/Turbine1.jpg">
-                          <img src="../static/images/static-media/Turbine2.jpg">
-                        </div>
-
-                      </div>
-
-                    </div>
+                    
 
 
                   </div>
@@ -455,12 +444,7 @@ Artificial intelligence and robotics are transformative technologies that enhanc
 
     <!-- IMAGES COMPARE -->
     <script src="../static/js/jquery.event.move.js"></script>
-    <script src="../static/js/jquery.twentytwenty.js"></script>
-    <script>
-    $(function(){
-      $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
-    });
-    </script>
+    
 <script>
 document.getElementById('video-thumbnail').addEventListener('click', function() {
         var videoContainer = document.getElementById('video-container');
