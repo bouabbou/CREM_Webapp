@@ -41,7 +41,8 @@
 		<![endif]-->
 		<!-- Modernizr -->
     <!-- <script src="js/modernizr.js"></script> -->
-		</head>
+	</head>
+
 	<body>
 		<!-- LOADER -->
 		<div id="loader-overflow">
@@ -52,7 +53,7 @@
 
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
-{% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+            {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
           <!-- HEADER -->
 
 
@@ -77,21 +78,18 @@
 				<div class="page-section"  style="background-color: #FFFFFF;">
 					<div class="container-fluid">
 						<div class="row">
-              <div class="mb-50"  style="background-color: #FFFFFF;">
-                <h2 class="section-title-2 pl-0 pr-0 text-center">Powder Characterization</h2>
-              </div>
+              
               <!-- DIVIDER -->
               <hr class="mt-0 mb-0"  style="background-color: #FFFFFF;">
                 <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                     <div class="lpbf-main-text-cont">
                         <div class="title-fs-45">
-                            Enhanced Particle Size Analysis: <br>
+                          Innovation in Materials science: <br>
                         </div>
                         <div class="line-3-70"></div>
                         <div class="lpbf-text-cont">
-                            <ul>
-                            Improve precision in measuring particle size distributions.
-Equipment: Camsizer X2 Grundgerät, Revolution Powder Analyzer.                        </div>
+                              At the forefront of material science, our platform leverages cutting-edge technology to deliver precise, reliable measurements across diverse applications. We drive innovation through advanced instruments and software solutions, enabling researchers and industries to push the boundaries of material characterization.
+                        </div>
                     </div>
                 </div>
 
@@ -101,28 +99,29 @@ Equipment: Camsizer X2 Grundgerät, Revolution Powder Analyzer.                 
                         </div>
 					</div>
 				</div>
-                <div class="row">
+        
+          <div class="row">
 
-                <div class="col-md-6 left-50 wow fadeInRight equal-height">
-                    <div class="rt-main-text-cont">
-                        <div class="title-fs-45">
-                        Powder Behavior Under Environmental Conditions:   <br>
+                  <div class="col-md-6 left-50 wow fadeInRight equal-height">
+                      <div class="rt-main-text-cont">
+                          <div class="title-fs-45">
+                            Unparalleled Precision With NMR:   <br>
+                          </div>
+                          <div class="line-3-100"></div>
+                          <div class="rt-text-cont">
+                            Our NMR capabilities are unmatched, featuring a 600 MHz high-field spectrometer and state-of-the-art probes. Whether analyzing liquid or solid samples, our platform ensures high sensitivity, resolution, and versatility, making it indispensable for pharmaceutical, polymer, and complex material studies.
                         </div>
-                        <div class="line-3-100"></div>
-                        <div class="rt-text-cont">
-                            <ul>
-Analyze how powders react to different environmental conditions. Equipment: Camsizer X2 Grundgerät, Revolution Powder Analyzer, HX204 Humidity Analyzer.                        </div>
-                    </div>
-                </div>
+                      </div>
+                  </div>
 
-                <div class="col-md-6 right-50">
-                    <div class="row">
-                    <div class="rt-img equal-height" >
-                    </div>
-                    </div>
-                </div>
+                  <div class="col-md-6 right-50">
+                      <div class="row">
+                      <div class="rt-img equal-height" >
+                      </div>
+                      </div>
+                  </div>
+          </div>
 
-            </div>
 			</div>
 		</div>
 	</div>
@@ -132,7 +131,7 @@ Analyze how powders react to different environmental conditions. Equipment: Cams
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0">
         <!-- WORK PROCESS 1 -->
-				<div class="page-section work-proc-1-bg" >
+				<div class="page-section work-proc-1-bg-MSC" >
 					<div class="fes4-cont container">
 						<div class="row">
 
@@ -147,22 +146,16 @@ Analyze how powders react to different environmental conditions. Equipment: Cams
         <div class="page-section"  style="background-color: #FFFFFF;"   >
          <div class="container-fluid">
            <div class="row">
-             <div class="mb-50">
-               <h2 class="section-title-2 pl-0 pr-0 text-center">Mechanical Properties</h2>
-             </div>
-             <!-- DIVIDER -->
-             <hr class="mt-0 mb-0">
-
-
+            
              <div class="col-md-6 wow fadeInLeft equal-height"  style="background-color: #FFFFFF;"> 
                <div class="cnc-main-text-cont">
                  <div class="title-fs-45">
-                    High-Performance Material Testing:   <br>
+                  Advanced X-Ray Diffraction (XRD) and Nanomaterial Analysis:   <br>
                  </div>
                  <div class="line-3-70"></div>
                  <div class="cnc-text-cont">
                      <ul>
-Enhancing methods for testing materials under extreme conditions to improve accuracy and durability assessments.                 </div>
+                      Equipped with the D8 DISCOVER diffractometer and SAXS module, our platform excels in crystalline structure and nanomaterial characterization. These technologies provide crucial insights into material properties, essential for research, development, and quality control.                  </div>
                </div>
              </div>
 
@@ -189,12 +182,13 @@ Enhancing methods for testing materials under extreme conditions to improve accu
                 <div class="col-md-6 left-50 wow fadeInRight equal-height">
                     <div class="rt-main-text-cont">
                         <div class="title-fs-45">
-                        Durability and Fatigue Life Prediction:  <br>
+                          Thermal and Thermomechanical Analysis:  <br>
                         </div>
                         <div class="line-3-100"></div>
                         <div class="rt-text-cont">
                             <ul>
-Improving models and testing methods to predict the lifespan and reliability of materials under cyclic loading.                        </div>
+                              Our advanced thermal analysis tools, including TGA, DSC, and DMA, offer precise assessment of material properties under varying conditions. From thermal decomposition to viscoelastic behavior, our platform delivers accurate data crucial for material performance optimization.
+                        </div>
                     </div>
                 </div>
 
@@ -222,7 +216,7 @@ Improving models and testing methods to predict the lifespan and reliability of 
         <hr class="mt-0 mb-0">
 
         <!-- WORK PROCESS 1 -->
-				<div class="page-section work-proc-1-bg" >
+				<div class="page-section work-proc-1-bg-MSC" >
 					<div class="fes4-cont container">
 						<div class="row">
 
@@ -232,6 +226,46 @@ Improving models and testing methods to predict the lifespan and reliability of 
 				    </div>
 					</div>
 				</div>
+
+        <!------------------------------------------------------->
+        <div class="page-section"  style="background-color: #FFFFFF;"   >
+          <div class="container-fluid">
+            <div class="row">
+             
+              <div class="col-md-6 wow fadeInLeft equal-height"  style="background-color: #FFFFFF;"> 
+                <div class="cnc-main-text-cont">
+                  <div class="title-fs-45">
+                    Supporting Innovation Beyond Instruments:   <br>
+                  </div>
+                  <div class="line-3-70"></div>
+                  <div class="cnc-text-cont">
+                      <ul>
+                        Our commitment to innovation extends beyond technology. We provide unparalleled support and expertise to help you navigate the complexities of material characterization. Dr. Hamdoun Ghanem is available to ensure you maximize the potential of our platform.
+                   </div>
+                </div>
+              </div>
+ 
+              <div class="col-md-6"  style="background-color: #FFFFFF;">
+                <div class="row">
+                  <div class="cnc-img equal-height">
+                  </div>
+                </div>
+              </div>
+ 
+            </div>
+          </div>
+        </div>
+ 
+      
+ 
+ 
+            </div>
+          </div>
+ 
+        
+ 
+            </div>
+          </div>
 
           </div>
         </div>
