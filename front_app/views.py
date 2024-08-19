@@ -992,7 +992,7 @@ def PCE_index(request):
     "third_section": {
         "title": "Additive Manufacturing Advantages",
         "description": "Additive manufacturing offers numerous benefits, including the ability to create complex geometries, customize products, and use a variety of materials.",
-        "image": "../static/images/fes7.jpg",
+        "image": "../static/images/platforms/PCE/index_PCE/civil.jpg",
         "point_1": {
             "title": "Geometric Complexity",
             "description": "It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods."
@@ -1011,8 +1011,8 @@ def PCE_index(request):
         }
     },
     "video": {
-        "title_l": "ADDITIVE",
-        "title_r": "MANUFACTURING",
+        "title_l": "PROCESS AND CIVIL",
+        "title_r": "ENGINEERING",
         "video": "../static/video/PCE.mp4",
         "bg_img" : "../static/images/play.png"
     },
