@@ -2761,6 +2761,58 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
   color:#f1f1f1;
 }
+
+.work-proc-1-bg-AIDE {
+  will-change: background-position;
+  margin: 0;
+  padding: 0;
+  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  color:#f1f1f1;
+}
+.work-proc-1-bg-ASMP {
+  will-change: background-position;
+  margin: 0;
+  padding: 0;
+  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  color:#f1f1f1;
+}
+.work-proc-1-bg-BIO {
+  will-change: background-position;
+  margin: 0;
+  padding: 0;
+  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  color:#f1f1f1;
+}
+.work-proc-1-bg-MSC {
+  will-change: background-position;
+  margin: 0;
+  padding: 0;
+  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  color:#f1f1f1;
+}
+.work-proc-1-bg-PCE {
+  will-change: background-position;
+  margin: 0;
+  padding: 0;
+  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  color:#f1f1f1;
+}
+.work-proc-1-bg-RESEE {
+  will-change: background-position;
+  margin: 0;
+  padding: 0;
+  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  color:#f1f1f1;
+}
+.work-proc-1-bg-SAI {
+  will-change: background-position;
+  margin: 0;
+  padding: 0;
+  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  color:#f1f1f1;
+}
+
+
 .work-proc-1-bg h3, .work-proc-1-bg .icon  {
   color:#f1f1f1;
 }
