@@ -6,14 +6,13 @@ logger = logging.getLogger(__name__)
 
 # Mapping of users to their allowed platforms
 USER_PLATFORM_MAPPING = {
-    'noyla': 'ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM',
-    'crem': 'BIO/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM',
-    # Add other users and their respective platforms here
-    'user1': 'RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY',
-    'user2': 'AI AND DIGITAL ENGINEERING',
-    'user3': 'SENSORS AND INSTRUMENTATION',
-    'user4': 'PROCESS ENGINEERING AND CIVIL ENGINEERING',
-    'user5': 'Materials, Synthesis, and Characterization Platform',
+    'asmp': 'ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM',
+    'bio': 'BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING',
+    'resee': 'RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY',
+    'aide': 'AI AND DIGITAL ENGINEERING',
+    'sai': 'SENSORS AND INSTRUMENTATION',
+    'pce': 'PROCESS ENGINEERING AND CIVIL ENGINEERING',
+    'msc': 'Materials, Synthesis, and Characterization Platform',
 }
 
 class PlatformAdmin(admin.ModelAdmin):
@@ -58,6 +57,7 @@ class CategoryAdmin(admin.ModelAdmin):
             allowed_platform = USER_PLATFORM_MAPPING.get(request.user.username)
             kwargs["queryset"] = Platform.objects.filter(name=allowed_platform)
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
+    
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'description', 'category')
