@@ -940,37 +940,35 @@ def BIO_index(request):
 
 def MSC_index(request):
     context = {
-        'logo': '../static/images/logo-white.png',
-        'link_color': 'white', 
         
         "header": {
         "video": "../static/video/MSC.mp4",
-        "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
-        "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
+        "title": "Materials, Synthesis, and Characterization Platform",
+        "description": "",
     },
     "about": {
         "text_1": "Our additive and subtractive manufacturing platform offers versatility, enabling rapid production of prototypes and functional parts across industries such as aerospace, automotive, and biomedical. We are committed to advancing materials science and shaping the future of manufacturing.",
-        "text_2": "Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete."
+        "text_2": "Our platform analyzes various parameters such as crystallinity, specific surface area, morphology, chemical composition, particle size distribution, density, and moisture content. In mechanical characterization, we assess material response to stress, including elasticity, hardness, toughness, and fatigue resistance."
     },
     "third_section": {
-        "title": "Additive Manufacturing Advantages",
-        "description": "Additive manufacturing offers numerous benefits, including the ability to create complex geometries, customize products, and use a variety of materials.",
+        "title": "Innovative Material Characterization",
+        "description": "desctiption",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Geometric Complexity",
-            "description": "It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods."
+            "title": "Precision Measurement",
+            "description": "Our platform integrates cutting-edge technology, offering precise and reliable measurements across a wide range of material applications."
         },
         "point_2": {
-            "title": "Personalization",
-            "description": "It enables the production of customized and unique objects tailored to the specific needs of each user or application."
+            "title": "Advanced Analytical Techniques",
+            "description": "Employing state-of-the-art methods like Nuclear Magnetic Resonance (NMR) and X-Ray Diffraction (XRD), we push the boundaries of material science."
         },
         "point_3": {
-            "title": "Material Diversity",
-            "description": "Using a diverse range of materials, including plastics, metals, and composites, AM provides flexibility in material selection for creating innovative objects."
+            "title": "Comprehensive Support",
+            "description": "Beyond instrumentation, we provide unparalleled support and expertise, ensuring you navigate the complexities of material characterization with ease."
         },
         "point_4": {
-            "title": "Rapid Prototyping",
-            "description": "3D printing allows for rapid prototyping, which accelerates the product development process, thus minimizing the associated costs."
+            "title": "Customized Solutions",
+            "description": "Tailored to meet specific research and industrial needs, our solutions enhance efficiency and drive innovation in material science."
         }
     },
     "video": {
@@ -1014,7 +1012,8 @@ def MSC_index(request):
         'index_url': reverse('MSC_index'),
         'infrastructure_url': reverse('MSC_infrastructure'),
         'innovation_url': reverse('MSC_innovation'),
-        'logo': '../../static/images/logo-white.png',
+        'logo': '../static/images/logo-white.png',
+        'link_color': 'white', 
 }
 
     
