@@ -74,6 +74,64 @@
 
     <!-- ANIMATE -->
     <link rel="stylesheet" href="../static/css/animate.min.css" />
+    <style>
+    .port-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the spacing between items */
+}
+
+.port-item {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust to desired item width, accounting for gaps */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Adjust bottom margin if needed */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .port-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .port-item {
+        flex: 1 1 calc(100% - 20px); /* One item per row */
+        max-width: calc(100% - 20px); /* Ensure items fit within container */
+    }
+}
+.port-main-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container-3 {
+    width: 100%;
+    padding: 0 15px; /* Add padding for better spacing */
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.port-grid {
+    gap: 10px; /* Reduce the gap between items if needed */
+}
+
+.port-item {
+    margin-bottom: 10px; /* Reduce bottom margin if necessary */
+}
+.port-main-img {
+    max-width: 80%; /* Ensure images fit within their containers */
+    height: auto; /* Maintain aspect ratio */
+}
+.container-3 {
+    padding: 0 15px; /* Reduce padding if needed */
+    box-sizing: border-box;
+}
+    </style>
   </head>
   <body>
     <!-- LOADER -->
@@ -309,22 +367,10 @@
 </div>
 
 <!-- ITEMS GRID -->
-<ul class="port-grid display-hover-on-mobile masonry clearfix" id="items-grid">
-  <li role="button" class="port-item mix AM">
-
-    <a href="../static/#">
-      <div class="port-img-overlay">
-        <img class="port-main-img" src="../static/images\Infrastructure\AM\sls.png" alt="img" >
-      </div>
-    </a>
-    <div class="port-overlay-cont">
-
-        <div class="port-title-cont">
-          <h3><a href="../static/#">TPM3D P3200 HL</a></h3>
-          <span><a href="../static/#">Selective laser sintering High-resolution 3D printing machine for Ploymeres</a></span>
-        </div>
-    </div>
-  </li>
+<div class="container-3">
+  
+<ul class="port-grid">
+  
   {% for product in products %}
       {% if product.category.platform.name == platform_name %}
           <li role="button" class="port-item mix {{ product.category.abbreviation }} {{ product.category.platform.abbreviation|lower }}">
@@ -342,7 +388,9 @@
           </li>
       {% endif %}
   {% endfor %}
+
 </ul>
+</div>
 
 <br><br>
         </div>
