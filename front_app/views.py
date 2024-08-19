@@ -11,19 +11,64 @@ from instrumentation.models import Category, Product
 #platfroms infrustructures
 
 def ASMP_infrastructure(request):
+    
+    """
+    View function to render the infrastructure page for the Advanced Manufacturing 
+    Platform (ASMP). Fetches categories and products from the database, prepares context 
+    data, and renders the 'infrastructure.html' template with the provided context.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: Rendered HTML response for the 'infrastructure.html' template.
+    """
     # Fetch categories and products from the database
     categories = Category.objects.all()
     products = Product.objects.all()
 
     # Context data to pass to the template
     context = {
+        
         'categories': categories,
         'products': products,
+        
+        #Data to pass to the template
+        'image_header': "Our advanced manufacturing platform",
+        'image_descriptions': {
+            'part1': "ADDITIVE MANUFACTURING",
+            'part2': "CNC MACHINING",
+            'part3': "COMPOSITES",
+            'part4': "CHARACTERIZATION",
+        },
+        'header_img': "../static/images/revo-slider/infra.jpg",
+        'gallery_texts': {
+            'section_1': {
+                'title': "Powder-Based",
+                'subtitle': "Additive Manufacturing",
+            },
+            'section_2': {
+                'title': "Fused deposition modeling",
+                'subtitle': "Additive Manufacturing",
+            },
+            'section_3': {
+                'title': "CNC Machinning",
+                'subtitle': "Subtitle for Section 3",
+            },
+        },
+        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
+        'slider_image_url_1': "../static/images/flexslider/AMLAB1.jpg",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        
+        #header
         'services_url': reverse('ASMP_services'),
         'index_url': reverse('ASMP_index'),
         'Infrastructre_url': reverse('ASMP_infrastructure'),
         'innovation_url': reverse('ASMP_innovation'),
         'logo': '../../static/images/logo-grey.png',
+        
+        #platform filtration : 
         'platform_name' : "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM"
     }
 
