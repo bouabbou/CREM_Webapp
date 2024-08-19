@@ -102,6 +102,47 @@
         font-size: 24px;
         cursor: pointer;
       }
+      .cd-headline {
+    text-align: left; /* Aligns the main headline to the left */
+}
+
+.cd-words-wrapper {
+    text-align: left; /* Aligns the rotating words to the left */
+    display: inline-block; /* Makes sure the rotating words are displayed inline */
+}
+.cd-words-wrapper b {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+      .cd-headline .cd-words-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+.cd-headline .cd-words-wrapper b {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.cd-headline .cd-words-wrapper b.is-visible {
+    opacity: 1;
+    animation: words-rotation 3s linear infinite;
+}
+
+@keyframes words-rotation {
+    0%, 10% { opacity: 1; }
+    20%, 100% { opacity: 0; }
+}
+
     </style>
   </head>
   <body>
@@ -135,17 +176,23 @@
                   </video>
                 </div>
               </div>
+              
+
               <div class="sm-cont-middle">
                 <!-- LAYER NR. 1 -->
-                <span class="bold"></span>
-                <div
-                  class="font-white light-72-wide sm-mb-15 sm-mt-20 relative"
+                <h1
+                  class="cd-headline zoom light-72-wide font-white sm-mt-20 sm-mb-20 relative text-center-xxs"
                 >
-                  <span class="bold"
-                    >Renewable Energies, Storage and Energy Efficiency
-                    Platform</span
-                  >
-                </div>
+                  <span>Renewable </span>
+                  <span class="cd-words-wrapper waiting">
+                    <b class="is-visible">Energies</b>
+                    <b>Storage</b>
+                    <b>Energy Efficiency</b>
+                  </span>
+                </h1>
+              </div>
+
+              
 
                 <!-- LAYER NR. 2 -->
                 <div
@@ -556,6 +603,43 @@
           videoContainer.style.display = "none";
         });
     </script>
+<script src="../static/js/text-rotator.js"></script>
+<script>
+    $(document).ready(function () {
+        // Text Rotator
+        $(".cd-words-wrapper").each(function () {
+            var delay = $(this).data("delay") || 1500;
+            $(this)
+                .find("b")
+                .first()
+                .addClass("is-visible")
+                .siblings()
+                .removeClass("is-visible");
+
+            var wordsWrapper = $(this),
+                words = wordsWrapper.children("b"),
+                wordsCount = words.length,
+                rotatingWord = words.filter(".is-visible"),
+                wordIndex = rotatingWord.index() + 1;
+
+            setInterval(function () {
+                rotatingWord
+                    .removeClass("is-visible")
+                    .addClass("is-hidden")
+                    .end()
+                    .siblings()
+                    .eq(wordIndex)
+                    .addClass("is-visible")
+                    .removeClass("is-hidden");
+
+                rotatingWord = words.filter(".is-visible");
+                wordIndex = rotatingWord.index() + 1;
+
+                if (wordIndex >= wordsCount) wordIndex = 0;
+            }, delay);
+        });
+    });
+</script>
 
     <!-- JS end -->
   </body>
