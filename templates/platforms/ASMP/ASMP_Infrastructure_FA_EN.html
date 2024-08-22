@@ -17,34 +17,31 @@
     <!-- FAVICONS -->
     <link
       rel="shortcut icon"
-      href="../static/../static/images/favicon/favicon.ico"
+      href="../static/images/favicon/favicon.ico"
     />
     <link
       rel="apple-touch-icon"
-      href="../static/../static/images/favicon/favicon.ico"
+      href=../static/images/favicon/favicon.ico"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="../static/../static/images/favicon/favicon.ico"
+      href="../static/images/favicon/favicon.ico"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="../static/../static/images/favicon/favicon.ico"
+      href="../static/images/favicon/favicon.ico"
     />
     <link
       rel="icon"
       sizes="192x192"
-      href="../static/../static/images/favicon/favicon.ico"
+      href="../static/images/favicon/favicon.ico"
     />
     <!-- CSS -->
     <!--  GOOGLE FONT -->
-    <link
-      href="../static/../static/https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300|Open+Sans:400,300,700&display=swap" rel="stylesheet" type="text/css">
+
 
     <!-- REVOSLIDER CSS SETTINGS -->
 
@@ -74,120 +71,118 @@
 
     <!-- ANIMATE -->
     <link rel="stylesheet" href="../static/css/animate.min.css" />
-  </head>
-  <body>
-    <!-- LOADER -->
-    <div id="loader-overflow">
-      <div id="loader3" class="loader-cont">Please enable JS</div>
-    </div>
-    <div id="wrap" class="boxed">
-      <div class="container-p-75-2">
-        <!-- Grey BG  -->
-
-        {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
-
-
-        <!-- SLIDER Revo 2 -->
-        <div class="indent-header relative" style="overflow: hidden">
-          <div
-            class="rev_slider_wrapper fullscreen-container"
-            id="rev_slider_280_1_wrapper"
-            style="background-color: #fff; padding: 0px"
-          >
-            <!-- START REVOLUTION SLIDER fullscreen mode -->
+    </head>
+    <body>
+      <!-- LOADER -->
+      <div id="loader-overflow">
+        <div id="loader3" class="loader-cont">Please enable JS</div>
+      </div>
+    
+      <div id="wrap" class="boxed">
+        <div class="container-p-75-2">
+          <!-- Grey BG  -->
+          {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+    
+          <!-- SLIDER Revo 2 -->
+          <div class="indent-header relative" style="overflow: hidden;">
             <div
-              id="rev_slider_202_1"
-              class="rev_slider fullscreenbanner"
-              style="display: none"
-              data-version="5.1.1RC"
+              class="rev_slider_wrapper fullscreen-container"
+              id="rev_slider_280_1_wrapper"
+              style="background-color: #fff; padding: 0px; position: relative;"
             >
-              <ul>
-                <!-- SLIDE  -->
-                <li
-                  data-index="rs-672"
-                  data-transition="fade"
-                  data-slotamount="default"
-                  data-easein="default"
-                  data-easeout="default"
-                  data-masterspeed="default"
-                  data-rotate="0"
-                  data-saveperformance="off"
-                  data-description=""
-                >
-                  <!-- MAIN IMAGE -->
-                  <img
-                    src="{{header_img}}"
-                    alt=""
-                    data-bgposition="center center"
-                    data-bgfit="cover"
-                    data-bgrepeat="no-repeat"
-                    data-bgparallax="5"
-                    class="rev-slidebg"
-                    data-no-retina
-                  />
-                  <!-- LAYERS -->
-
-                  <!-- LAYER NR. 1 -->
-                  <div
-                    class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
-                    id="slide-898-layer-1"
-                    style="z-index: 8; white-space: nowrap"
-                    data-fontsize="['80','66','60','60']"
-                    data-height="none"
-                    data-lineheight="['112','82','82','82']"
-                    data-responsive_offset="on"
-                    data-splitin="none"
-                    data-splitout="none"
-                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
-                    data-whitespace="nowrap"
-                    data-width="none"
-                    data-x="['center','center','center','center']"
-                    data-hoffset="['0','0','0','0']"
-                    data-y="['center','center','center','center']"
-                    data-voffset="['0','0','0','0']"
-                  >
-                    <span class="bold">{{image_header}}</span>
-                  </div>
-                  <!-- LAYER NR. 2 -->
-                  <div
-                    class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
-                    id="slide-898-layer-2"
-                    style="z-index: 8; white-space: nowrap"
-                    data-fontsize="['20','20','20','20']"
-                    data-fontweight="400"
-                    data-height="none"
-                    data-lineheight="['40','40','40','40']"
-                    data-responsive_offset="on"
-                    data-splitin="none"
-                    data-splitout="none"
-                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":900,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
-                    data-whitespace="nowrap"
-                    data-width="none"
-                    data-x="['center','center','center','center']"
-                    data-hoffset="['0','0','0','0']"
-                    data-y="['center','center','center','center']"
-                    data-voffset="['85','80','65','65']"
-                  >
-                    {{ image_descriptions.part1 }}<span class="slash-divider-10"
-                      >|</span
-                    >{{ image_descriptions.part2 }}<span
-                      class="slash-divider-10"
-                      >|</span
-                    >{{ image_descriptions.part3 }}<span
-                      class="slash-divider-10"
-                      >|</span
-                    >{{ image_descriptions.part4 }}
-                  </div>
-                </li>
-              </ul>
+              <!-- START REVOLUTION SLIDER fullscreen mode -->
               <div
-                class="tp-bannertimer tp-bottom"
-                style="visibility: hidden !important"
-              ></div>
+                id="rev_slider_202_1"
+                class="rev_slider fullscreenbanner"
+                style="display: none;"
+                data-version="5.1.1RC"
+              >
+                <ul>
+                  <!-- SLIDE  -->
+                  <li
+                    data-index="rs-672"
+                    data-transition="fade"
+                    data-slotamount="default"
+                    data-easein="default"
+                    data-easeout="default"
+                    data-masterspeed="default"
+                    data-rotate="0"
+                    data-saveperformance="off"
+                    data-description=""
+                  >
+                    <!-- MAIN IMAGE -->
+                    <img
+                      src="{{header_img}}"
+                      alt=""
+                      data-bgposition="center center"
+                      data-bgfit="cover"
+                      data-bgrepeat="no-repeat"
+                      data-bgparallax="5"
+                      class="rev-slidebg"
+                      data-no-retina
+                      style="width: 100%; height: auto;"
+                    />
+    
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div
+                      class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
+                      id="slide-898-layer-1"
+                      style="z-index: 8; white-space: nowrap;"
+                      data-fontsize="['80','66','60','40']"
+                      data-height="none"
+                      data-lineheight="['112','82','70','60']"
+                      data-responsive_offset="on"
+                      data-splitin="none"
+                      data-splitout="none"
+                      data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+                      data-whitespace="nowrap"
+                      data-width="none"
+                      data-x="['center','center','center','center']"
+                      data-hoffset="['0','0','0','0']"
+                      data-y="['center','center','center','center']"
+                      data-voffset="['0','0','0','0']"
+                    >
+                      <span class="bold" style="font-size: inherit;">
+                        {{image_header}}
+                      </span>
+                    </div>
+    
+                    <!-- LAYER NR. 2 -->
+                    <div
+                      class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6"
+                      id="slide-898-layer-2"
+                      style="z-index: 8; white-space: nowrap;"
+                      data-fontsize="['20','20','20','20']"
+                      data-fontweight="400"
+                      data-height="none"
+                      data-lineheight="['40','40','40','40']"
+                      data-responsive_offset="on"
+                      data-splitin="none"
+                      data-splitout="none"
+                      data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":900,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+                      data-whitespace="nowrap"
+                      data-width="none"
+                      data-x="['center','center','center','center']"
+                      data-hoffset="['0','0','0','0']"
+                      data-y="['center','center','center','center']"
+                      data-voffset="['85','80','65','65']"
+                    >
+                      {{ image_descriptions.part1 }}
+                      <span class="slash-divider-10">|</span>{{ image_descriptions.part2 }}
+                      <span class="slash-divider-10">|</span>{{ image_descriptions.part3 }}
+                      <span class="slash-divider-10">|</span>{{ image_descriptions.part4 }}
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="tp-bannertimer tp-bottom"
+                  style="visibility: hidden !important;"
+                ></div>
+              </div>
             </div>
           </div>
-          <!-- END REVOLUTION SLIDER -->
-
+    
           <!-- SCROLL ICON -->
           <div class="local-scroll-cont font-white">
             <a href="#about" class="scroll-down smooth-scroll">
@@ -195,19 +190,19 @@
             </a>
           </div>
         </div>
-
+    
         <!-- DIVIDER -->
         <hr class="mt-0 mb-0" />
-
+    
         <div class="mb-50">
           <h2 class="section-title-2 pl-0 pr-0 text-center">
             OUR <span class="bold">INFRASTRUCTURE</span>
           </h2>
         </div>
-
-        <!-- REVO SLIDER OFFSET (Block need for revo slider bottom offset) -->
+    
+        <!-- REVO SLIDER OFFSET (Block needed for revo slider bottom offset) -->
         <div id="rs-offset"></div>
-
+    
         <div class="container-2 container">
           <div class="slider-1 clearfix">
             <div class="flex-container">
@@ -215,7 +210,7 @@
                 <ul class="slides">
                   <!-- SLIDE 1 -->
                   <li
-                    style="background:url({{ slider_image_url_1 }}) no-repeat;background-position:50% 0"
+                    style="background:url({{ slider_image_url_1 }}) no-repeat;background-position:50% 0;"
                   >
                     <div class="container">
                       <div class="sixteen columns contain">
@@ -223,20 +218,17 @@
                           data-toptitle="38%"
                           class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot"
                         >
-                          {{ gallery_texts.section_1.title }}<br /><span
-                            class="bold"
-                            >{{ gallery_texts.section_1.subtitle }}</span
-                          >
+                          {{ gallery_texts.section_1.title }}<br />
+                          <span class="bold">{{ gallery_texts.section_1.subtitle }}</span>
                         </h2>
                       </div>
                     </div>
                     <!-- End Container -->
-
-                    <!-- SLIDE 2 -->
                   </li>
-
+    
+                  <!-- SLIDE 2 -->
                   <li
-                    style="background:url({{ slider_image_url_2 }}) no-repeat;background-position:50% 0"
+                    style="background:url({{ slider_image_url_2 }}) no-repeat;background-position:50% 0;"
                   >
                     <div class="container">
                       <div class="sixteen columns contain">
@@ -244,20 +236,17 @@
                           data-toptitle="38%"
                           class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot"
                         >
-                          {{ gallery_texts.section_2.title }}<br /><span
-                            class="bold"
-                            >{{ gallery_texts.section_2.subtitle }}</span
-                          >
+                          {{ gallery_texts.section_2.title }}<br />
+                          <span class="bold">{{ gallery_texts.section_2.subtitle }}</span>
                         </h2>
                       </div>
                     </div>
                     <!-- End Container -->
-
-                    <!-- SLIDE 3 -->
                   </li>
-
+    
+                  <!-- SLIDE 3 -->
                   <li
-                    style="background:url({{ slider_image_url_3 }}) no-repeat;background-position:50% 0"
+                    style="background:url({{ slider_image_url_3 }}) no-repeat;background-position:50% 0;"
                   >
                     <div class="container">
                       <div class="sixteen columns contain">
@@ -265,16 +254,13 @@
                           data-toptitle="38%"
                           class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot"
                         >
-                          {{ gallery_texts.section_3.title }}<br /><span
-                            class="bold"
-                            >{{ gallery_texts.section_3.subtitle }}</span
-                          >
+                          {{ gallery_texts.section_3.title }}<br />
+                          <span class="bold">{{ gallery_texts.section_3.subtitle }}</span>
                         </h2>
                       </div>
                     </div>
                     <!-- End Container -->
                   </li>
-                  <!-- End item -->
                 </ul>
               </div>
             </div>
@@ -282,57 +268,55 @@
           <!-- End slider -->
           <hr />
         </div>
+    
         <div id="portfolio-link" class="page-section gray-bg">
           <div class="relative">
-
             <div class="container-3 container">
               <div class="pt-80-b-30-cont">
-
                 <!-- TITLE -->
-              	<div class="mb-15 mb-xs-15">
-              	  <h2 class="section-title2 p-0 text-center">OUR SCIENTIFIC INSTRUMENTATION</h2>
-
-
-              	</div>
-
-      
-                  <!-- PORTFOLIO FILTER -->
-                  <hr>
-      
-                  <!-- Dynamic category handler -->
-                  <div class="port-filter">
-                      {% for category in categories %}
-                          {% if category.platform.name == platform_name %}
-                              <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">{{ category.name }}</a>
-                          {% endif %}
-                      {% endfor %}
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-
-<!-- ITEMS GRID -->
-<ul class="port-grid display-hover-on-mobile masonry clearfix" id="items-grid">
-    {% for product in products %}
-        {% if product.category.platform.name == platform_name %}
-            <li role="button" class="port-item mix {{ product.category.abbreviation }} {{ product.category.platform.abbreviation|lower }}">
-                <a href="#">
-                    <div class="port-img-overlay">
-                        <img class="port-main-img" src="{{ product.image.url }}" alt="{{ product.name }}">
-                    </div>
-                </a>
-                <div class="port-overlay-cont">
-                    <div class="port-title-cont">
-                        <h3><a href="#">{{ product.name }}</a></h3>
-                        <span>{{ product.description }}</span>
-                    </div>
+                <div class="mb-15 mb-xs-15">
+                  <h2 class="section-title2 p-0 text-center">
+                    OUR SCIENTIFIC INSTRUMENTATION
+                  </h2>
                 </div>
-            </li>
-        {% endif %}
-    {% endfor %}
-</ul>
-
+    
+                <!-- PORTFOLIO FILTER -->
+                <hr />
+    
+                <!-- Dynamic category handler -->
+                <div class="port-filter">
+                  {% for category in categories %}
+                  {% if category.platform.name == platform_name %}
+                  <a href="#" class="filter" data-filter=".{{ category.abbreviation }}">
+                    {{ category.name }}
+                  </a>
+                  {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+              <ul class="port-grid display-hover-on-mobile masonry clearfix" id="items-grid">
+                {% for product in products %}
+                    {% if product.category.platform.name == platform_name %}
+                        <li role="button" class="port-item mix {{ product.category.abbreviation }} {{ product.category.platform.abbreviation|lower }}">
+                            <a href="#">
+                                <div class="port-img-overlay">
+                                    <img class="port-main-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </div>
+                            </a>
+                            <div class="port-overlay-cont">
+                                <div class="port-title-cont">
+                                    <h3><a href="#">{{ product.name }}</a></h3>
+                                    <span>{{ product.description }}</span>
+                                </div>
+                            </div>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+              </ul>
+              
+            </div>
+          </div>
+        </div>
 
 <br><br>
         </div>
