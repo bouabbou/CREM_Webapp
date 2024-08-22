@@ -364,6 +364,7 @@ def ASMP_innovation(request):
         'index_url': reverse('ASMP_index'),
         'infrastructure_url': reverse('ASMP_infrastructure'),
         'innovation_url': reverse('ASMP_innovation'),
+         'img': '../static/images/logo-grey.png'
     }
     return render( request ,'platforms/ASMP/ASMP_Innovation_FA_EN.html',context)
 def AIDE_innovation(request):
