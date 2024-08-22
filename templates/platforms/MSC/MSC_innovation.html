@@ -41,6 +41,55 @@
 		<![endif]-->
 		<!-- Modernizr -->
     <!-- <script src="js/modernizr.js"></script> -->
+    <style>
+    .text-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust if needed */
+}
+
+.text-content,
+.image-content {
+  flex: 1;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .text-image-container {
+    flex-direction: row; /* Ensure text and image are on the same line */
+  }
+
+  .text-content {
+    margin-bottom: 20px; /* Space between text and image on small screens */
+  }
+}
+.lpbf-main-text-cont, .rt-main-text-cont, .cnc-main-text-cont {
+  padding: 15px; /* Adjust padding if needed */
+}
+
+.title-fs-45 {
+  font-size: 45px; /* Ensure font-size is appropriate */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.line-3-70, .line-3-100 {
+  border-bottom: 2px solid #000; /* Adjust line styling */
+  width: 70%; /* Adjust width for line */
+}
+
+.rt-text-cont, .cnc-text-cont, .lpbf-text-cont {
+  margin-top: 10px; /* Space above text */
+}
+
+@media (max-width: 768px) {
+  .title-fs-45 {
+    font-size: 35px; /* Adjust font-size on small screens */
+  }
+
+  .line-3-70, .line-3-100 {
+    width: 100%; /* Full width on small screens */
+  }
+}
+  </style>
 	</head>
 
 	<body>
@@ -82,15 +131,19 @@
               <!-- DIVIDER -->
               <hr class="mt-0 mb-0"  style="background-color: #FFFFFF;">
                 <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                    <div class="lpbf-main-text-cont">
-                        <div class="title-fs-45">
-                          Innovation in Materials science: <br>
-                        </div>
-                        <div class="line-3-70"></div>
-                        <div class="lpbf-text-cont">
-                              At the forefront of material science, our platform leverages cutting-edge technology to deliver precise, reliable measurements across diverse applications. We drive innovation through advanced instruments and software solutions, enabling researchers and industries to push the boundaries of material characterization.
-                        </div>
+                  <div class="text-image-container">
+                    <div class="text-content">  
+                      <div class="lpbf-main-text-cont">
+                          <div class="title-fs-45">
+                            Innovation in Materials science: <br>
+                          </div>
+                          <div class="line-3-70"></div>
+                          <div class="lpbf-text-cont">
+                                At the forefront of material science, our platform leverages cutting-edge technology to deliver precise, reliable measurements across diverse applications. We drive innovation through advanced instruments and software solutions, enabling researchers and industries to push the boundaries of material characterization.
+                          </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
 
                 <div class="col-md-6"  style="background-color: #FFFFFF;">
