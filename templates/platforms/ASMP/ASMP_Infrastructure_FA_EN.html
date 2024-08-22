@@ -71,6 +71,68 @@
 
     <!-- ANIMATE -->
     <link rel="stylesheet" href="../static/css/animate.min.css" />
+    <style>
+/* Base styles for large screens */
+#slide-898-layer-2 {
+    font-size: 20px !important; /* Default large font size */
+    line-height: 30px !important; /* Default line height */
+}
+
+/* Smaller screens (tablets) */
+@media (max-width: 768px) {
+    #slide-898-layer-2 {
+        font-size: 15px !important; /* Smaller font size */
+        line-height: 22px !important; /* Smaller line height */
+    }
+}
+
+/* Very small screens (phones) */
+@media (max-width: 480px) {
+    #slide-898-layer-2 {
+        font-size: 12px !important; /* Even smaller font size */
+        line-height: 18px !important; /* Even smaller line height */
+    }
+}
+
+/* Title Styles */
+.tp-caption.title {
+    font-size: calc(2vw + 2rem); /* Responsive font size for large screens */
+    line-height: calc(3vw + 3rem); /* Responsive line height for large screens */
+}
+
+/* Description Styles */
+.tp-caption.description {
+    font-size: calc(1vw + 1rem); /* Responsive font size for large screens */
+    line-height: calc(1.5vw + 1.5rem); /* Responsive line height for large screens */
+    max-width: 90%; /* Ensures the text doesn't exceed the container width */
+    white-space: normal; /* Allows text to wrap onto multiple lines */
+    overflow-wrap: break-word; /* Allows text to break and wrap properly */
+    display: -webkit-box; /* For line clamping */
+    -webkit-box-orient: vertical; /* Vertical box orientation */
+    -webkit-line-clamp: 2; /* Responsive line height for large screens */
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .tp-caption.title {
+        font-size: calc(1.5vw + 1.5rem); /* Adjusted size for small screens */
+        line-height: calc(2vw + 2rem); /* Adjusted line height for small screens */
+    }
+
+    .tp-caption.description {
+        font-size: calc(1vw + 0.5rem); /* Slightly smaller size for small screens */
+        line-height: calc(1.2vw + 1rem); /* Slightly smaller line height for small screens */
+        max-width: 95%;
+    }
+}
+@media (max-width: 480px) {
+    .tp-caption.description {
+        font-size: calc(0.8vw + 0.5rem); /* Even smaller font size */
+        line-height: calc(1vw + 0.5rem); /* Even smaller line height */
+        max-width: 95%; /* Ensure proper text wrapping */
+    }
+}
+    </style>
     </head>
     <body>
       <!-- LOADER -->
