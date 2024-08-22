@@ -2911,6 +2911,13 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   padding: 0;
   background:#2c2c2c url(../images/work-proc-bg.jpg) fixed;
 }
+
+.video-ads-bg-PCE {
+  will-change: background-position;
+  margin: 0;
+  padding: 0;
+  background:#2c2c2c url(../images/platforms/PCE/index_PCE/work-proc-bg.jpg) fixed;
+}
 .video-ads-text-cont {
   margin:0 auto;
   padding-top:100px;
