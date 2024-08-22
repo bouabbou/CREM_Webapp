@@ -149,7 +149,7 @@ def MSC_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
+        'platform_name': "Materials, Synthesis, and Characterization Platform",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
