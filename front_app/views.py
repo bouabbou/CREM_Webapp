@@ -103,7 +103,7 @@ def BIO_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
+        'platform_name': "BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING",
         'slider_image_url_1': "../static/images/flexslider/zAMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
@@ -149,7 +149,7 @@ def MSC_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
+        'platform_name': "Materials, Synthesis, and Characterization Platform",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
@@ -195,7 +195,7 @@ def PCE_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
+        'platform_name': "PROCESS ENGINEERING AND CIVIL ENGINEERING",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
@@ -288,7 +288,7 @@ def SAI_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
+        'platform_name': "SENSORS AND INSTRUMENTATION",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
@@ -334,7 +334,7 @@ def AIDE_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "Virtual Reality and Collaborative Robotics AI Platform",
+        'platform_name': "AI AND DIGITAL ENGINEERING",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
@@ -364,6 +364,7 @@ def ASMP_innovation(request):
         'index_url': reverse('ASMP_index'),
         'infrastructure_url': reverse('ASMP_infrastructure'),
         'innovation_url': reverse('ASMP_innovation'),
+         'img': '../static/images/logo-grey.png'
     }
     return render( request ,'platforms/ASMP/ASMP_Innovation_FA_EN.html',context)
 def AIDE_innovation(request):
