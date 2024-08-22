@@ -27,18 +27,25 @@
     <!-- ANIMATE -->
 		<link rel='stylesheet' href="../static/css/animate.min.css">
 		</head>
-	<body>
+	
 		<!-- LOADER -->
 		<div id="loader-overflow">
       <div id="loader3">Please enable JS</div>
     </div>
-		<div id="wrap" class="boxed">
-			<div class="grey-bg"> <!-- Grey BG  -->
+		
 
-				<!-- HEADER 1 NO-TRANSPARENT -->
-        <div class="header-transporent-bg-black">
+            <div id="wrap" class="boxed">
+                <div class="grey-bg"> <!-- Grey BG  -->	       
+                <div class="header-transporent-bg-white">				
+                  <!-- HEADER -->
+                  <div class="header-transporent-bg-black">
+                    <!-- HEADER -->
+                    {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+          
+                      </div>
+                     </div>
+                    </div>
           <!-- HEADER -->
-{% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
           <!-- HEADER -->
 
         <!-- PAGE TITLE SMALL -->
@@ -48,6 +55,11 @@
                     <div class="col-md-8">
                         <div class="fes4-box wow fadeIn">
                             <h2 class="section-title">OUR <span class="bold">SERVICES</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="breadcrumbs">
+                            <a href="{% url 'home' %}">Home</a><span class="slash-divider">/</span><span class="bread-current">SERVICES</span>
                         </div>
                     </div>
                 </div>
@@ -60,25 +72,20 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont" style="padding-top: 0; margin-top: 0px">
+                        <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Solar Energy Solutions <br>
+                                {{ sections.section_1.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_1.title_line2 }}</span>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-                                We specialize in evaluating the performance of photovoltaic and concentrating solar systems. Our services encompass a comprehensive approach to assessing system efficiency, environmental impact, and economic viability.
-                                <br>Core Competencies:
-                                <li> Performance Assessment</li>
-                                <li> Environmental Impact Analysis</li>
-                                <li> Economic Evaluation</li>
-                                <li> Reliability and Durability Testing</li>
-                                <li> Predictive Modeling</li> 
+                                {{ sections.section_1.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="fes1-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_1.fest1_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -90,21 +97,20 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont" style="padding-top: 0; margin-top: 10px">
+                        <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                PV Material Development and Validation <br>
+                                {{ sections.section_2.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_2.title_line2 }}</span>
                             </div>
                             <div class="line-3-100"></div>
                             <div class="fes2-text-cont">
-Our cutting-edge solar simulator provides a controlled environment for comprehensive testing of photovoltaic materials.
-Key Services:
-<li> Rigorous Material Evaluation: Accurately assess the performance of new photovoltaic materials under simulated solar conditions.</li>
-<li> Industry Standard Compliance: Ensure that materials meet stringent industry requirements and certifications.</li>                            </div>
+                                {{ sections.section_2.text }}
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 right-50">
                         <div class="row">
-                            <div class="fes2-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_2.fest2_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -116,21 +122,20 @@ Key Services:
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont" style="padding-top: 0; margin-top: 20px">
+                        <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Energy Storage Solutions <br>
+                                {{ sections.section_3.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_3.title_line2 }}</span>
                             </div>
                             <div class="line-3-100"></div>
                             <div class="fes2-text-cont">
-Our storage research center is equipped with state-of-the-art facilities for comprehensive evaluation of energy storage technologies.
-Key Services:
-<li> VRFB Component Characterization: In-depth analysis of membrane, electrolyte, electrode, and bipolar plate components for vanadium redox flow batteries (VRFBs).</li>
-<li> Battery Performance Testing: Advanced battery testing to assess capacity, internal resistance, temperature, and lifespan of VRFBs and other battery technologies.</li>                            </div>
+                                {{ sections.section_3.text }}
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="fes4-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_3.fest4_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -142,23 +147,20 @@ Key Services:
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont" style="padding-top: 0; margin-top: 10px">
+                        <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Advanced Desalination solutions <br>
+                                {{ sections.section_4.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_4.title_line2 }}</span>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-Our desalination platform is dedicated to enhancing the efficiency and performance of Forward Osmosis (FO), Reverse Osmosis (RO), and Pressure Retarded Osmosis (PRO) desalination systems.
-Key Services:
-<li>Membrane Performance Evaluation</li>
-<li>System Optimization</li>
-<li>Solution Analysis</li>
-<li>Precise Osmolarity Measurement </li>                           </div>
+                                {{ sections.section_4.text }}
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 right-50">
                         <div class="row">
-                            <div class="fes5-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_4.fest5_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -170,19 +172,20 @@ Key Services:
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont" >
+                        <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Thermal Analysis <br>
+                                {{ sections.section_5.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_5.title_line2 }}</span>
                             </div>
                             <div class="line-3-100"></div>
                             <div class="fes2-text-cont">
-We provide thermal characterization and optimization services for thermodynamics and heat transfer applications.
+                                {{ sections.section_5.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_5.fest6_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -194,19 +197,20 @@ We provide thermal characterization and optimization services for thermodynamics
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont" style="padding-top: 0; margin-top: 30px;">
+                        <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Research Consulting <br>
+                                {{ sections.section_6.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_6.title_line2 }}</span>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-We provide expert guidance on research methodology, design, and analysis. We team up with other CREM platform to develop and produce components or prototypes for energy systems or desalination processes, and to perform sample characterization.
+                                {{ sections.section_6.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 right-50">
                         <div class="row">
-                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_6.fest7_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>

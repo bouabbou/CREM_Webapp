@@ -500,276 +500,348 @@ def ASMP_services(request):
     return render( request ,'platforms/ASMP/ASMP_Services_FA_EN.html',context)
 def AIDE_services(request):
     context = {
-        'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('AIDE_services'),
-        'index_url': reverse('AIDE_index'),
-        'infrastructure_url': reverse('AIDE_infrastructure'),
-        'innovation_url': reverse('AIDE_innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
 
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'title_line_1',
-            'title_line2': 'title_line2',
-            'text': 'Description of section 1'
+            'title_line1': '3D',
+            'title_line2': 'DESIGN',
+            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'fest1_img': 'fes1-img'
+            
         },
         'section_2': {
-            'title_line1': 'Section 2 Title Line 1',
-            'title_line2': 'Section 2 Title Line 2',
-            'text': 'Description of section 2'
+            'title_line1': 'ADDITIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'fest2_img': 'fes2-img'
+
         },
         'section_3': {
-            'title_line1': 'Section 3 Title Line 1',
-            'title_line2': 'Section 3 Title Line 2',
-            'text': 'Description of section 3'
+            'title_line1': 'SUBTRACTIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'fest4_img': 'fes4-img'
+
         },
         'section_4': {
-            'title_line1': 'Section 4 Title Line 1',
-            'title_line2': 'Section 4 Title Line 2',
-            'text': 'Description of section 4'
+            'title_line1': 'COMPOSITE',
+            'title_line2': 'MATERIALS',
+            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'fest5_img': 'fes5-img'
+
         },
         'section_5': {
-            'title_line1': 'Section 5 Title Line 1',
-            'title_line2': 'Section 5 Title Line 2',
-            'text': 'Description of section 5'
+            'title_line1': 'MATERIALS AND MECHANICAL',
+            'title_line2': 'CHARACTERIZATION',
+            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'fest6_img': 'fes6-img'
+
         },
         'section_6': {
-            'title_line1': 'Section 6 Title Line 1',
-            'title_line2': 'Section 6 Title Line 2',
-            'text': 'Description of section 6'
+            'title_line1': 'R&D',
+            'title_line2': 'SPECIFIC',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'fest7_img': 'fes7-img'
+
         },
     },
     }
     return render( request ,'platforms/AIDE/AIDE_services.html',context)
 def BIO_services(request):
     context = {
-        'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('BIO_services'),
-        'index_url': reverse('BIO_index'),
-        'infrastructure_url': reverse('BIO_infrastructure'),
-        'innovation_url': reverse('BIO_innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
 
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'Section 1 Title Line 1',
-            'title_line2': 'Section 1 Title Line 2',
-            'text': 'Description of section 1'
+            'title_line1': '3D',
+            'title_line2': 'DESIGN',
+            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'fest1_img': 'fes1-img'
+            
         },
         'section_2': {
-            'title_line1': 'Section 2 Title Line 1',
-            'title_line2': 'Section 2 Title Line 2',
-            'text': 'Description of section 2'
+            'title_line1': 'ADDITIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'fest2_img': 'fes2-img'
+
         },
         'section_3': {
-            'title_line1': 'Section 3 Title Line 1',
-            'title_line2': 'Section 3 Title Line 2',
-            'text': 'Description of section 3'
+            'title_line1': 'SUBTRACTIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'fest4_img': 'fes4-img'
+
         },
         'section_4': {
-            'title_line1': 'Section 4 Title Line 1',
-            'title_line2': 'Section 4 Title Line 2',
-            'text': 'Description of section 4'
+            'title_line1': 'COMPOSITE',
+            'title_line2': 'MATERIALS',
+            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'fest5_img': 'fes5-img'
+
         },
         'section_5': {
-            'title_line1': 'Section 5 Title Line 1',
-            'title_line2': 'Section 5 Title Line 2',
-            'text': 'Description of section 5'
+            'title_line1': 'MATERIALS AND MECHANICAL',
+            'title_line2': 'CHARACTERIZATION',
+            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'fest6_img': 'fes6-img'
+
         },
         'section_6': {
-            'title_line1': 'Section 6 Title Line 1',
-            'title_line2': 'Section 6 Title Line 2',
-            'text': 'Description of section 6'
+            'title_line1': 'R&D',
+            'title_line2': 'SPECIFIC',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'fest7_img': 'fes7-img'
+
         },
     },
     }
     return render( request ,'platforms/BIO/BIO_services.html',context)
 def MSC_services(request):
     context = {
-        'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('MSC_services'),
-        'index_url': reverse('MSC_index'),
-        'infrastructure_url': reverse('MSC_infrastructure'),
-        'innovation_url': reverse('MSC_innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
 
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'Section 1 Title Line 1',
-            'title_line2': 'Section 1 Title Line 2',
-            'text': 'Description of section 1'
+            'title_line1': '3D',
+            'title_line2': 'DESIGN',
+            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'fest1_img': 'fes1-img'
+            
         },
         'section_2': {
-            'title_line1': 'Section 2 Title Line 1',
-            'title_line2': 'Section 2 Title Line 2',
-            'text': 'Description of section 2'
+            'title_line1': 'ADDITIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'fest2_img': 'fes2-img'
+
         },
         'section_3': {
-            'title_line1': 'Section 3 Title Line 1',
-            'title_line2': 'Section 3 Title Line 2',
-            'text': 'Description of section 3'
+            'title_line1': 'SUBTRACTIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'fest4_img': 'fes4-img'
+
         },
         'section_4': {
-            'title_line1': 'Section 4 Title Line 1',
-            'title_line2': 'Section 4 Title Line 2',
-            'text': 'Description of section 4'
+            'title_line1': 'COMPOSITE',
+            'title_line2': 'MATERIALS',
+            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'fest5_img': 'fes5-img'
+
         },
         'section_5': {
-            'title_line1': 'Section 5 Title Line 1',
-            'title_line2': 'Section 5 Title Line 2',
-            'text': 'Description of section 5'
+            'title_line1': 'MATERIALS AND MECHANICAL',
+            'title_line2': 'CHARACTERIZATION',
+            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'fest6_img': 'fes6-img'
+
         },
         'section_6': {
-            'title_line1': 'Section 6 Title Line 1',
-            'title_line2': 'Section 6 Title Line 2',
-            'text': 'Description of section 6'
+            'title_line1': 'R&D',
+            'title_line2': 'SPECIFIC',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'fest7_img': 'fes7-img'
+
         },
     },
     }
     return render( request ,'platforms/MSC/MSC_services.html',context)
 def PCE_services(request):
     context = {
-        'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('PCE_services'),
-        'index_url': reverse('PCE_index'),
-        'infrastructure_url': reverse('PCE_infrastructure'),
-        'innovation_url': reverse('PCE_innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
 
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'Section 1 Title Line 1',
-            'title_line2': 'Section 1 Title Line 2',
-            'text': 'Description of section 1'
+            'title_line1': '3D',
+            'title_line2': 'DESIGN',
+            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'fest1_img': 'fes1-img'
+            
         },
         'section_2': {
-            'title_line1': 'Section 2 Title Line 1',
-            'title_line2': 'Section 2 Title Line 2',
-            'text': 'Description of section 2'
+            'title_line1': 'ADDITIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'fest2_img': 'fes2-img'
+
         },
         'section_3': {
-            'title_line1': 'Section 3 Title Line 1',
-            'title_line2': 'Section 3 Title Line 2',
-            'text': 'Description of section 3'
+            'title_line1': 'SUBTRACTIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'fest4_img': 'fes4-img'
+
         },
         'section_4': {
-            'title_line1': 'Section 4 Title Line 1',
-            'title_line2': 'Section 4 Title Line 2',
-            'text': 'Description of section 4'
+            'title_line1': 'COMPOSITE',
+            'title_line2': 'MATERIALS',
+            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'fest5_img': 'fes5-img'
+
         },
         'section_5': {
-            'title_line1': 'Section 5 Title Line 1',
-            'title_line2': 'Section 5 Title Line 2',
-            'text': 'Description of section 5'
+            'title_line1': 'MATERIALS AND MECHANICAL',
+            'title_line2': 'CHARACTERIZATION',
+            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'fest6_img': 'fes6-img'
+
         },
         'section_6': {
-            'title_line1': 'Section 6 Title Line 1',
-            'title_line2': 'Section 6 Title Line 2',
-            'text': 'Description of section 6'
+            'title_line1': 'R&D',
+            'title_line2': 'SPECIFIC',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'fest7_img': 'fes7-img'
+
         },
     },
     }
     return render( request ,'platforms/PCE/PCE_services.html',context)
 def RESEE_services(request):
     context = {
-        'logo': '../static/images/logo-grey.png',
+      'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('RESEE_services'),
-        'index_url': reverse('RESEE_index'),
-        'infrastructure_url': reverse('RESEE_infrastructure'),
-        'innovation_url': reverse('RESEE_innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
 
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'Section 1 Title Line 1',
-            'title_line2': 'Section 1 Title Line 2',
-            'text': 'Description of section 1'
+            'title_line1': '3D',
+            'title_line2': 'DESIGN',
+            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'fest1_img': 'fes1-img'
+            
         },
         'section_2': {
-            'title_line1': 'Section 2 Title Line 1',
-            'title_line2': 'Section 2 Title Line 2',
-            'text': 'Description of section 2'
+            'title_line1': 'ADDITIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'fest2_img': 'fes2-img'
+
         },
         'section_3': {
-            'title_line1': 'Section 3 Title Line 1',
-            'title_line2': 'Section 3 Title Line 2',
-            'text': 'Description of section 3'
+            'title_line1': 'SUBTRACTIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'fest4_img': 'fes4-img'
+
         },
         'section_4': {
-            'title_line1': 'Section 4 Title Line 1',
-            'title_line2': 'Section 4 Title Line 2',
-            'text': 'Description of section 4'
+            'title_line1': 'COMPOSITE',
+            'title_line2': 'MATERIALS',
+            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'fest5_img': 'fes5-img'
+
         },
         'section_5': {
-            'title_line1': 'Section 5 Title Line 1',
-            'title_line2': 'Section 5 Title Line 2',
-            'text': 'Description of section 5'
+            'title_line1': 'MATERIALS AND MECHANICAL',
+            'title_line2': 'CHARACTERIZATION',
+            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'fest6_img': 'fes6-img'
+
         },
         'section_6': {
-            'title_line1': 'Section 6 Title Line 1',
-            'title_line2': 'Section 6 Title Line 2',
-            'text': 'Description of section 6'
+            'title_line1': 'R&D',
+            'title_line2': 'SPECIFIC',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'fest7_img': 'fes7-img'
+
         },
     },
     }
     return render( request ,'platforms/RESEE/RESEE_services.html',context)
 def SAI_services(request):
     context = {
-        'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('SAI_services'),
-        'index_url': reverse('SAI_index'),
-        'infrastructure_url': reverse('SAI_infrastructure'),
-        'innovation_url': reverse('SAI_innovation'),
+        'services_url': reverse('ASMP_services'),
+        'index_url': reverse('ASMP_index'),
+        'infrastructure_url': reverse('ASMP_infrastructure'),
+        'innovation_url': reverse('ASMP_innovation'),
 
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'Section 1 Title Line 1',
-            'title_line2': 'Section 1 Title Line 2',
-            'text': 'Description of section 1'
+            'title_line1': '3D',
+            'title_line2': 'DESIGN',
+            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'fest1_img': 'fes1-img'
+            
         },
         'section_2': {
-            'title_line1': 'Section 2 Title Line 1',
-            'title_line2': 'Section 2 Title Line 2',
-            'text': 'Description of section 2'
+            'title_line1': 'ADDITIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'fest2_img': 'fes2-img'
+
         },
         'section_3': {
-            'title_line1': 'Section 3 Title Line 1',
-            'title_line2': 'Section 3 Title Line 2',
-            'text': 'Description of section 3'
+            'title_line1': 'SUBTRACTIVE',
+            'title_line2': 'MANUFACTURING',
+            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'fest4_img': 'fes4-img'
+
         },
         'section_4': {
-            'title_line1': 'Section 4 Title Line 1',
-            'title_line2': 'Section 4 Title Line 2',
-            'text': 'Description of section 4'
+            'title_line1': 'COMPOSITE',
+            'title_line2': 'MATERIALS',
+            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'fest5_img': 'fes5-img'
+
         },
         'section_5': {
-            'title_line1': 'Section 5 Title Line 1',
-            'title_line2': 'Section 5 Title Line 2',
-            'text': 'Description of section 5'
+            'title_line1': 'MATERIALS AND MECHANICAL',
+            'title_line2': 'CHARACTERIZATION',
+            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'fest6_img': 'fes6-img'
+
         },
         'section_6': {
-            'title_line1': 'Section 6 Title Line 1',
-            'title_line2': 'Section 6 Title Line 2',
-            'text': 'Description of section 6'
+            'title_line1': 'R&D',
+            'title_line2': 'SPECIFIC',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'fest7_img': 'fes7-img'
+
         },
     },
     }

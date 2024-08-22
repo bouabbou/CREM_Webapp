@@ -27,18 +27,25 @@
     <!-- ANIMATE -->
 		<link rel='stylesheet' href="../static/css/animate.min.css">
 		</head>
-	<body>
+	
 		<!-- LOADER -->
 		<div id="loader-overflow">
       <div id="loader3">Please enable JS</div>
     </div>
-		<div id="wrap" class="boxed">
-			<div class="grey-bg"> <!-- Grey BG  -->
+		
 
-				<!-- HEADER 1 NO-TRANSPARENT -->
-        <div class="header-transporent-bg-black">
+            <div id="wrap" class="boxed">
+                <div class="grey-bg"> <!-- Grey BG  -->	       
+                <div class="header-transporent-bg-white">				
+                  <!-- HEADER -->
+                  <div class="header-transporent-bg-black">
+                    <!-- HEADER -->
+                    {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+          
+                      </div>
+                     </div>
+                    </div>
           <!-- HEADER -->
-{% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
           <!-- HEADER -->
 
         <!-- PAGE TITLE SMALL -->
@@ -48,6 +55,11 @@
                     <div class="col-md-8">
                         <div class="fes4-box wow fadeIn">
                             <h2 class="section-title">OUR <span class="bold">SERVICES</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="breadcrumbs">
+                            <a href="{% url 'home' %}">Home</a><span class="slash-divider">/</span><span class="bread-current">SERVICES</span>
                         </div>
                     </div>
                 </div>
@@ -62,17 +74,18 @@
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                BIOMEDICAL INSTRUMENTATION <br>
+                                {{ sections.section_1.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_1.title_line2 }}</span>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-                                Computer-aided design and manufacturing of biomedical instruments creating precise parts and prototypes with advanced CAD/CAE software.
+                                {{ sections.section_1.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="fes1-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_1.fest1_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -86,14 +99,18 @@
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Cellular and Molecular Analyses <br>
+                                {{ sections.section_2.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_2.title_line2 }}</span>
                             </div>
                             <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_2.text }}
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 right-50">
                         <div class="row">
-                            <div class="fes2-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_2.fest2_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -107,21 +124,18 @@
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Recombinant Protein Production <br>
+                                {{ sections.section_3.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_3.title_line2 }}</span>
                             </div>
                             <div class="line-3-100"></div>
                             <div class="fes2-text-cont">
-                                <li>Gene cloning and optimization in various vectors, including cloning, expression, and multigenic vectors.</li>
-                                <li>Production in heterologous systems and optimization of bio-production conditions.</li>
-                                <li>Protein purification and crystallization.</li>
-                                <li>Packaging of protein preparations.</li>
-
+                                {{ sections.section_3.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="fes4-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_3.fest4_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -135,20 +149,18 @@
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Cell Culture Testing <br>
+                                {{ sections.section_4.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_4.title_line2 }}</span>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-<li>In vitro tests: cell migration & invasion, proliferation, viability, adhesion, and real-time cellular and molecular analysis.</li>
-<li>Measurement of cellular cytotoxicity for organic molecules.</li>
-<li>Determination of antimicrobial activities (antibacterial, antifungal, etc.).</li>
-<li>Optimization of cell culture and molecular screening conditions.</li>
+                                {{ sections.section_4.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 right-50">
                         <div class="row">
-                            <div class="fes5-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_4.fest5_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -162,20 +174,18 @@
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Molecular Diagnostics <br>
+                                {{ sections.section_5.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_5.title_line2 }}</span>
                             </div>
                             <div class="line-3-100"></div>
                             <div class="fes2-text-cont">
-<li>Design of primers and probes for identifying and characterizing bacterial, fungal, and viral pathogens (including COVID-19) using PCR, RT-PCR, and real-time PCR.</li>
-<li>Sample preparation, including RNA extraction and long DNA fragment extraction.</li>
-<li>Construction of genomic libraries.</li>
-<li>DNA sequencing.</li>
+                                {{ sections.section_5.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_5.fest6_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
@@ -189,216 +199,18 @@
                     <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                Biochemical Analysis of Food and Environmental Samples <br>
+                                {{ sections.section_6.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_6.title_line2 }}</span>
                             </div>
                             <div class="line-3-70"></div>
                             <div class="fes2-text-cont">
-<li>Quantification of key organic molecules (amino acids, sugars, lipids, proteins, etc.).</li>
-</li>Quantification of biological activities.</li>
+                                {{ sections.section_6.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 right-50">
                         <div class="row">
-                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont">
-                            <div class="title-fs-45">
-                                Proteomic Analyses <br>
-                            </div>
-                            <div class="line-3-100"></div>
-                            <div class="fes2-text-cont">
-<li>Protein detection through immunoblotting, immunoprecipitation, and peptide/protein quality control.</li>
-<li>Protein quantification using Western blot, ELISA, electrophoresis, and other methods.</li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- FEATURES 6 -->
-        <div class="page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont">
-                            <div class="title-fs-45">
-                                Microbiological Analyses <br>
-                            </div>
-                            <div class="line-3-70"></div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-6 right-50">
-                        <div class="row">
-                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont">
-                            <div class="title-fs-45">
-                                Food and Environmental Product Testing <br>
-                            </div>
-                            <div class="line-3-100"></div>
-                            <div class="fes2-text-cont">
-<li>Detection and identification of pathogenic microorganisms.</li>
-<li>Serotyping of foodborne pathogens.</li>
-<li>Identification of hygiene and quality indicator microorganisms.</li>
-<li>Audits and control of cleaning-disinfection operations (surface, air, and hood control).</li>
-<li>Microbiological quality control of various water types.</li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- FEATURES 6 -->
-        <div class="page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont">
-                            <div class="title-fs-45">
-                                Biochemical Analysis of Food and Environmental Samples <br>
-                            </div>
-                            <div class="line-3-70"></div>
-                            <div class="fes2-text-cont">
-<li>Quantification of key organic molecules (amino acids, sugars, lipids, proteins, etc.).</li>
-</li>Quantification of biological activities.</li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 right-50">
-                        <div class="row">
-                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FEATURES 5 -->
-        <div class="page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont">
-                            <div class="title-fs-45">
-                                Pharmaceutical and Cosmetic Product Testing <br>
-                            </div>
-                            <div class="line-3-100"></div>
-                            <div class="fes2-text-cont">
-<li>Detection, enumeration, and identification of pathogenic microorganisms (bacteria, yeasts, fungi, viruses).</li>
-<li>Verification of antimicrobial efficacy.</li>
-<li>Bacteriological testing of finished products.</li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- FEATURES 6 -->
-        <div class="page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont">
-                            <div class="title-fs-45">
-                                Optimization of Biochemical/Biological Processes <br>
-                            </div>
-                            <div class="line-3-70"></div>
-                            <div class="fes2-text-cont">
-<li>Immobilization and optimization of biocatalysts (cellular and enzymatic).</li>
-<li>Scaling up of biochemical processes (fermentation and enzymatic catalysis).</li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 right-50">
-                        <div class="row">
-                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FEATURES 5 -->
-        <div class="page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont">
-                            <div class="title-fs-45">
-                                Spectroscopic Elucidation of Organic/Biological Molecules <br>
-                            </div>
-                            <div class="line-3-100"></div>
-                            <div class="fes2-text-cont">
-<li>Separation and spectrometric analysis.</li>
-<li>Spectroscopic analyses: HPLC-MS/MS, GC-MS, NMR, FT-IR, XRD, UV-NIR.</li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="fes6-img equal-height" style="background-color: #FFFFFF;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- FEATURES 6 -->
-        <div class="page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
-                        <div class="fes2-main-text-cont">
-                            <div class="title-fs-45">
-                                Continuous Training <br>
-                            </div>
-                            <div class="line-3-70"></div>
-                            <div class="fes2-text-cont">
-<p>Our platform offers comprehensive continuous training programs designed to keep professionals up-to-date with the latest advancements and techniques. We provide tailored workshops and courses to enhance skills and knowledge, ensuring your team remains at the forefront of the industry.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 right-50">
-                        <div class="row">
-                            <div class="fes7-img equal-height" style="background-color: #FFFFFF;"></div>
+                            <div class="{{ sections.section_6.fest7_img }} equal-height" style="background-color: #FFFFFF;"></div>
                         </div>
                     </div>
                 </div>
