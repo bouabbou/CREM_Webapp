@@ -11899,3 +11899,39 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
 .filter {
   margin-right: 20px; /* Adds space between items */
 }
+
+
+/*new*/
+
+/* Default font size */
+.tp-caption {
+  font-size: 80px;
+}
+
+/* Medium devices (tablets, 992px and below) */
+@media (max-width: 992px) {
+  .tp-caption {
+    font-size: 66px;
+  }
+}
+
+/* Small devices (landscape phones, 768px and below) */
+@media (max-width: 768px) {
+  .tp-caption {
+    font-size: 60px;
+  }
+}
+
+/* Extra small devices (portrait phones, 576px and below) */
+@media (max-width: 576px) {
+  .tp-caption {
+    font-size: 50px;
+  }
+}
+
+/* Smaller than 576px */
+@media (max-width: 480px) {
+  .tp-caption {
+    font-size: 40px;
+  }
+}

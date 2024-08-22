@@ -56,51 +56,66 @@
     <!-- ANIMATE -->
     <link rel="stylesheet" href="../static/css/animate.min.css" />
     <style>
-      /* Additional styles */
+            /* Additional styles */
 
-      /* Additional styles */
-      #video-thumbnail {
-        width: 100%; /* Adjust to fit container */
-        height: auto; /* Maintain aspect ratio */
-      }
+            /* Additional styles */
+            #video-thumbnail {
+                width: 100%; /* Adjust to fit container */
+                height: auto; /* Maintain aspect ratio */
+            }
 
-      #video-container {
-        display: none;
-        position: fixed; /* Position fixed to cover the screen */
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.8);
-        padding: 10px;
-        border-radius: 5px;
-        z-index: 1000; /* Ensure it's above other content */
-        border: none; /* Remove borders */
-      }
+            #video-container {
+                display: none;
+                position: fixed; /* Position fixed to cover the screen */
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+                z-index: 1000; /* Ensure it's above other content */
+                border: none; /* Remove borders */
+            }
 
-      #video-player {
-        width: 90%; /* Adjust width as needed */
-        height: auto;
-      }
+            #video-player {
+                width: 90%; /* Adjust width as needed */
+                height: auto;
+            }
 
-      .video-background {
-        background-image: url("images/play.png"); /* Update path as needed */
-        background-size: cover; /* Ensure the image covers the entire container */
-        background-position: center; /* Center the image */
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-        cursor: pointer; /* Indicate it's clickable */
-        object-fit: cover;
-      }
+            .video-background {
+                background-image: url('images/play.png'); /* Update path as needed */
+                background-size: cover; /* Ensure the image covers the entire container */
+                background-position: center; /* Center the image */
+                width: 100%;
+                height: 100vh; /* Full viewport height */
+                cursor: pointer; /* Indicate it's clickable */
+                object-fit: cover;
+            }
 
-      #close-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
+
+            #close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            :root {
+                --link-color: {{ link_color }};
+                --link-hover-color: {{ link_hover_color }};
+            }
+            .header .main-menu-container .nav a {
+                color: var(--link-color);
+            }
+            .header.sticky .main-menu-container .nav a {
+                color: black;
+            }
+            .header.sticky {
+          background-color: black; /* Change to black */
+          transition: background-color 0.3s ease; /* Smooth transition */
       }
     </style>
   </head>
@@ -116,6 +131,7 @@
           <!-- HEADER -->
           <!-- index_FA_EN.html -->
           {% include 'includes/index_header.html' %}
+
           <!-- STATIC MEDIA IMAGE -->
           <div class="sm-video-bg">
             <div class="sm-content-cont js-height-fullscr container text-left">
@@ -140,9 +156,14 @@
                 <div
                   class="font-white light-72-wide sm-mb-15 sm-mt-20 relative"
                 >
-                  <span class="bold"
-                    >Materials, Synthesis, and Characterization Platform</span
-                  >
+                  <span class="bold">{{header.title}}</span>
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div
+                  class="font-white norm-32-wide hide-0-736 sm-mb-50 relative"
+                >
+                  {{header.description}}
                 </div>
               </div>
             </div>
@@ -166,14 +187,7 @@
                   </h2>
                 </div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
-                  <p>
-                    Our characterization platform provides expertise in
-                    chemical, structural, mechanical, physico-chemical, and
-                    metallographic analyses. With four advanced centers, we
-                    drive technological innovation and maintain top performance.
-                    We support collaborative research and offer training for
-                    academic and industrial partners.
-                  </p>
+                  <p>{{about.text_1}}</p>
                 </blockquote>
               </div>
               <div class="col-md-6 pb-4">
@@ -183,14 +197,7 @@
                   </h2>
                 </div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
-                  <p>
-                    Our platform analyzes various parameters such as
-                    crystallinity, specific surface area, morphology, chemical
-                    composition, particle size distribution, density, and
-                    moisture content. In mechanical characterization, we assess
-                    material response to stress, including elasticity, hardness,
-                    toughness, and fatigue resistance.
-                  </p>
+                  <p>{{about.text_2}}</p>
                 </blockquote>
               </div>
               <!-- FEATURES -->
@@ -210,23 +217,16 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1>
-                  <p>Powder Characterization:</p>
-                  <span class="font-light"
-                    >Involves analyzing powders to understand their physical and
-                    chemical properties:
-                  </span>
-                </h1>
+                <h1><span class="font-light">{{third_section.title}}</span></h1>
+                <p class="mb-60">{{third_section.description}}</p>
                 <div class="row">
                   <div class="col-md-6 col-sm-6">
                     <div class="fes7-box wow fadeIn">
                       <div class="fes7-box-icon">
                         <div class="icon icon-arrows-rotate"></div>
                       </div>
-                      <h3>Particle Size:</h3>
-                      <p>
-                        Measures size distribution affecting flow and mixing.
-                      </p>
+                      <h3>{{third_section.point_1.title}}</h3>
+                      <p>{{third_section.point_1.description}}</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -234,11 +234,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-basic-lightbulb"></div>
                       </div>
-                      <h3>Surface Properties:</h3>
-                      <p>
-                        Assesses surface area and texture, influencing
-                        reactivity and adhesion.
-                      </p>
+                      <h3>{{third_section.point_2.title}}</h3>
+                      <p>{{third_section.point_2.description}}</p>
                     </div>
                   </div>
                 </div>
@@ -248,11 +245,17 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-graph-decrease"></div>
                       </div>
-                      <h3>Performance Insights:</h3>
-                      <p>
-                        Evaluates stability and effectiveness, including
-                        moisture content.
-                      </p>
+                      <h3>{{third_section.point_3.title}}</h3>
+                      <p>{{third_section.point_3.description}}</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="fes7-box wow fadeIn" data-wow-delay="600ms">
+                      <div class="fes7-box-icon">
+                        <div class="icon icon-ecommerce-dollar"></div>
+                      </div>
+                      <h3>{{third_section.point_4.title}}</h3>
+                      <p>{{third_section.point_4.description}}</p>
                     </div>
                   </div>
                 </div>
@@ -267,107 +270,6 @@
           </div>
         </div>
         <!--------------------------------------------------------->
-
-        <br /><br />
-
-        <div class="page-section grey-light-bg clearfix">
-          <div class="fes7-img-cont col-md-5">
-            <div
-              class="fes7-img"
-              style="background-image: url({{third_section.image}})"
-            ></div>
-          </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1>
-                  <p>Mechanical Characterization:</p>
-                  <span class="font-light">
-                    Assesses materials response to stress, focusing on
-                    properties like elasticity, hardness, toughness, and fatigue
-                    resistance to gauge performance.
-                  </span>
-                </h1>
-                <div class="row">
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box wow fadeIn">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-arrows-rotate"></div>
-                      </div>
-                      <h3>Material Response to Stress:</h3>
-                      <p>
-                        Assesses how materials react when subjected to various
-                        forces or loads
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box wow fadeIn" data-wow-delay="200ms">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-basic-lightbulb"></div>
-                      </div>
-                      <h3>Elasticity:</h3>
-                      <p>
-                        Measures the materials ability to return to its original
-                        shape after deformation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box wow fadeIn" data-wow-delay="400ms">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-ecommerce-graph-decrease"></div>
-                      </div>
-                      <h3>Hardness:</h3>
-                      <p>
-                        Evaluates the material's resistance to surface
-                        deformation or indentation.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                      <div class="fes7-box wow fadeIn" data-wow-delay="600ms">
-                        <div class="fes7-box-icon">
-                          <div class="icon icon-ecommerce-graph-decrease"></div>
-                        </div>
-                        <h3>Toughness:</h3>
-                        <p>
-                          Determines the material's ability to absorb energy and
-                          withstand impact before fracturing.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box wow fadeIn" data-wow-delay="800ms">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-ecommerce-graph-decrease"></div>
-                      </div>
-                      <h3>Fatigue Resistance:</h3>
-                      <p>
-                        Analyzes how the material endures repeated stress cycles
-                        without failing.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end of row-->
-          </div>
-          <div class="local-scroll-cont font-black">
-            <a href="#cd-timeline" class="scroll-down smooth-scroll">
-              <div class="icon icon-arrows-down"></div>
-            </a>
-          </div>
-        </div>
 
         <!-- VIDEO ADS 1 -->
         <div class="page-section video-ads-bg">
@@ -401,16 +303,31 @@
 
         <div class="mb-100 container">
           <div class="mt-60 mb-80">
-            <h3 class="section-title">Driving Innovation Across Industries</h3>
+            <h3 class="section-title">{{ details_section.title }}</h3>
+            <p>{{ details_section.description}}</p>
           </div>
 
           <div class="tabs-3">
             <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
               <li class="active">
-                <a href="#one" data-toggle="tab">Powder Characterization</a>
+                <a href="#one" data-toggle="tab"
+                  >{{ details_section.tab_1.header }}</a
+                >
               </li>
               <li>
-                <a href="#two" data-toggle="tab">Mechanical Characterization</a>
+                <a href="#two" data-toggle="tab"
+                  >{{ details_section.tab_2.header }}</a
+                >
+              </li>
+              <li>
+                <a href="#three" data-toggle="tab"
+                  >{{ details_section.tab_3.header }}</a
+                >
+              </li>
+              <li>
+                <a href="#four" data-toggle="tab"
+                  >{{ details_section.tab_4.header }}</a
+                >
               </li>
             </ul>
             <!-- END nav tabs -->
@@ -422,32 +339,9 @@
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
                   <h3 class="blog-page-title mt-50 mb-25">
-                    Pharmaceuticals: Measures moisture and density.
+                    {{ details_section.tab_1.title }}
                   </h3>
-                  <p>
-                    Equipment: Moisture Analyzer: HS204, Gas Pycnometer:
-                    CAD-Pycno2
-                  </p>
-
-                  <h3 class="blog-page-title mt-50 mb-25">
-                    Materials Science: Analyzes particle size and density.
-                  </h3>
-                  <p>
-                    Equipment: CAMSIZER X Grundgerät, Gas Pycnometer: CAD-Pycno2
-                  </p>
-
-                  <h3 class="blog-page-title mt-50 mb-25">
-                    Additive Manufacturing: Checks particle size and
-                    flowability.
-                  </h3>
-                  <p>
-                    Equipment: CAMSIZER X Grundgerät, Revolution Powder Analyzer
-                  </p>
-
-                  <h3 class="blog-page-title mt-50 mb-25">
-                    Chemical Processing: Analyzes particle size and shape.
-                  </h3>
-                  <p>Equipment: CAMSIZER X Grundgerät</p>
+                  <p>{{ details_section.tab_1.description }}</p>
                 </div>
                 <!-- CONTENT CONTAINER -->
               </div>
@@ -456,23 +350,10 @@
               <div class="tab-pane fade" id="two">
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
-                  <h3 class="blog-page-title mt-50 mb-25">Aerospace:</h3>
-                  <p>
-                    Tests materials for strength and durability in aircraft and
-                    spacecraft.
-                  </p>
-
-                  <h3 class="blog-page-title mt-50 mb-25">Automotive:</h3>
-                  <p>
-                    Evaluates component materials to ensure reliability and
-                    safety.
-                  </p>
-
-                  <h3 class="blog-page-title mt-50 mb-25">Construction:</h3>
-                  <p>
-                    Assesses materials for structural integrity to meet safety
-                    standards.
-                  </p>
+                  <h3 class="blog-page-title mt-50 mb-25">
+                    {{ details_section.tab_2.title }}
+                  </h3>
+                  <p>{{ details_section.tab_2.description }}</p>
                 </div>
               </div>
 
@@ -502,10 +383,6 @@
           </div>
         </div>
         <!-- END tabs -->
-
-        <!-- CALL TO ACTION  -->
-
-        <!-- NEWS LETTER -->
 
         <!-- FOOTER 4 BLACK -->
         {% include 'includes/footer.html' %}
