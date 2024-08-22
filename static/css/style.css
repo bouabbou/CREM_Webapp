@@ -1098,7 +1098,7 @@ support for no js
 .fes2-text-cont{
 	margin-top:30px;
 }
-.fes2-img {
+.fes-img {
   background: url(../images/Serv/2.jpeg) 50% 50% no-repeat;
   width: 100%;
   display: block;
@@ -1323,7 +1323,7 @@ support for no js
 	line-height: 45px;
 	font-weight: 300;
 }
-.fes1-img {
+.fes-img {
   background: url(../images/Serv/1.png) 50% 50% no-repeat;
   width: 100%;
   display: block;
@@ -1380,7 +1380,7 @@ support for no js
   background-repeat: no-repeat;
   background-position: center center;
 }
-.fes4-img {
+.fes-img {
   background: url(../images/Serv/4.jpeg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
@@ -1408,7 +1408,7 @@ support for no js
   background-repeat: no-repeat;
   background-position: center center;
 }
-.fes5-img {
+.fes-img {
   background: url(../images/Serv/6.jpg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
@@ -1436,7 +1436,7 @@ support for no js
   background-repeat: no-repeat;
   background-position: center center;
 }
-.fes6-img {
+.fes-img {
   background: url(../images/Serv/5.jpg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
@@ -1467,7 +1467,7 @@ support for no js
 }
 
 
-.fes7-img {
+.fes-img {
   background: url(../images/Serv/7.jpeg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
