@@ -26,6 +26,40 @@
 		<link rel="stylesheet" href="../static/css/style.css" >
     <!-- ANIMATE -->
 		<link rel='stylesheet' href="../static/css/animate.min.css">
+        <style>
+body, .grey-bg, .page-section:not(#footer) {
+    background-color: #FFFFFF;
+}
+
+/* CSS for small screens */
+@media (max-width: 767px) {
+    .page-section .container-fluid .row {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .page-section .container-fluid .col-md-6 {
+        margin-top: 30px;
+        margin-bottom: 0; /* Add space between sections */
+        padding: 20px; /* Add padding inside the columns */
+    }
+
+    /* Ensure the image and text have spacing */
+    .page-section .container-fluid .col-md-6:first-child {
+        margin-bottom: 20px; /* Add space below the text */
+    }
+
+    .fes1-img,
+    .fes2-img,
+    .fes4-img,
+    .fes5-img,
+    .fes6-img,
+    .fes7-img {
+        margin: 0 auto; /* Center image */
+        margin-top: 20px; /* Add space above the image */
+    }  
+}
+</style>
 		</head>
 	
 		<!-- LOADER -->
