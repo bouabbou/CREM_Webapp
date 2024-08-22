@@ -2766,28 +2766,28 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  background: #2c2c2c url(../images/platforms/AIDE/innovation_AIDE/Computer\ Vision.jpeg) fixed;
   color:#f1f1f1;
 }
 .work-proc-1-bg-ASMP {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  background: #2c2c2c url(../images/platforms/ASMP/innovation_ASMP/CNC.jpeg) fixed;
   color:#f1f1f1;
 }
 .work-proc-1-bg-BIO {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  background: #2c2c2c url(../images/platforms/BIO/innovation_BIO/work-proc-bg.jpg) fixed;
   color:#f1f1f1;
 }
 .work-proc-1-bg-MSC {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  background: #2c2c2c url(../images/platforms/MSC/innovation_MSC/work-proc-bg.jpg) fixed;
   color:#f1f1f1;
 }
 .work-proc-1-bg-PCE {
@@ -2801,14 +2801,14 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  background: #2c2c2c url(../images/platforms/RESEE/innovation_RESEE/work-proc-bg.jpg) fixed;
   color:#f1f1f1;
 }
 .work-proc-1-bg-SAI {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  background: #2c2c2c url(../images/platforms/sai/innovation_sai/work-proc-bg.jpg) fixed;
   color:#f1f1f1;
 }
 
