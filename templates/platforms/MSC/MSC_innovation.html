@@ -41,7 +41,7 @@
 		<![endif]-->
 		<!-- Modernizr -->
     <!-- <script src="js/modernizr.js"></script> -->
-    <style>
+<style>
     .text-image-container {
   display: flex;
   flex-wrap: wrap;
@@ -90,8 +90,7 @@
   }
 }
   </style>
-	</head>
-
+		</head>
 	<body>
 		<!-- LOADER -->
 		<div id="loader-overflow">
@@ -102,7 +101,8 @@
 
         <div class="header-transporent-bg-black">
           <!-- HEADER -->
-            {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+          {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+
           <!-- HEADER -->
 
 
@@ -116,212 +116,340 @@
                   </div>
                  </div>
                 <div class="col-md-4">
-                
+                <div class="breadcrumbs">
+                  <a href="{% url 'home' %}">
+                    Home</a><span class="slash-divider">/</span><span class="bread-current">INNOVATION</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- COTENT CONTAINER -->
+       
 				<!-- FEATURES 2 -->
 				<div class="page-section"  style="background-color: #FFFFFF;">
 					<div class="container-fluid">
 						<div class="row">
-              
-              <!-- DIVIDER -->
-              <hr class="mt-0 mb-0"  style="background-color: #FFFFFF;">
-                <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-                  <div class="text-image-container">
-                    <div class="text-content">  
-                      <div class="lpbf-main-text-cont">
-                          <div class="title-fs-45">
-                            Innovation in Materials science: <br>
-                          </div>
-                          <div class="line-3-70"></div>
-                          <div class="lpbf-text-cont">
-                                At the forefront of material science, our platform leverages cutting-edge technology to deliver precise, reliable measurements across diverse applications. We drive innovation through advanced instruments and software solutions, enabling researchers and industries to push the boundaries of material characterization.
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="mb-50"  style="background-color: #FFFFFF;">
+                <h2 class="section-title-2 pl-0 pr-0 text-center">{{header1.title_1}} <span class="bold">{{header1.title_2}}</span></h2>
+              </div>
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
 
-                <div class="col-md-6"  style="background-color: #FFFFFF;">
-                    <div class="row">
-                        <div class="lpbf-img equal-height">
-                        </div>
-					</div>
-				</div>
-        
-          <div class="row">
-
-                  <div class="col-md-6 left-50 wow fadeInRight equal-height">
-                      <div class="rt-main-text-cont">
-                          <div class="title-fs-45">
-                            Unparalleled Precision With NMR:   <br>
-                          </div>
-                          <div class="line-3-100"></div>
-                          <div class="rt-text-cont">
-                            Our NMR capabilities are unmatched, featuring a 600 MHz high-field spectrometer and state-of-the-art probes. Whether analyzing liquid or solid samples, our platform ensures high sensitivity, resolution, and versatility, making it indispensable for pharmaceutical, polymer, and complex material studies.
-                        </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-6 right-50">
-                      <div class="row">
-                      <div class="rt-img equal-height" >
-                      </div>
-                      </div>
-                  </div>
-          </div>
-
-			</div>
-		</div>
-	</div>
-
-
-
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0">
-        <!-- WORK PROCESS 1 -->
-				<div class="page-section work-proc-1-bg-MSC" >
-					<div class="fes4-cont container">
-						<div class="row">
-
-							<div class="col-md-4">
-
-					         </div>
-				    </div>
-					</div>
-				</div>
-
-        <!------------------------------------------------------->
-        <div class="page-section"  style="background-color: #FFFFFF;"   >
-         <div class="container-fluid">
-           <div class="row">
-            
-             <div class="col-md-6 wow fadeInLeft equal-height"  style="background-color: #FFFFFF;"> 
-               <div class="cnc-main-text-cont">
-                 <div class="title-fs-45">
-                  Advanced X-Ray Diffraction (XRD) and Nanomaterial Analysis:   <br>
-                 </div>
-                 <div class="line-3-70"></div>
-                 <div class="cnc-text-cont">
-                     <ul>
-                      Equipped with the D8 DISCOVER diffractometer and SAXS module, our platform excels in crystalline structure and nanomaterial characterization. These technologies provide crucial insights into material properties, essential for research, development, and quality control.                  </div>
-               </div>
-             </div>
-
-             <div class="col-md-6"  style="background-color: #FFFFFF;">
-               <div class="row">
-                 <div class="cnc-img equal-height">
-                 </div>
-               </div>
-             </div>
-
-           </div>
-         </div>
+<div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+    <div class="lpbf-main-text-cont">
+        <div class="title-fs-45">
+            {{ sections.section1.title }}<br>
+            <span class="bold">{{ sections.section1.tag }}</span>
         </div>
-
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0">
-         <!----------------------------------------------------------------------------------->
-         <!-- FEATURES 3 -->
-
-        <div class="page-section"  style="background-color: #FFFFFF;">
-          <div class="container-fluid">
-            <div class="row">
-
-                <div class="col-md-6 left-50 wow fadeInRight equal-height">
-                    <div class="rt-main-text-cont">
-                        <div class="title-fs-45">
-                          Thermal and Thermomechanical Analysis:  <br>
-                        </div>
-                        <div class="line-3-100"></div>
-                        <div class="rt-text-cont">
-                            <ul>
-                              Our advanced thermal analysis tools, including TGA, DSC, and DMA, offer precise assessment of material properties under varying conditions. From thermal decomposition to viscoelastic behavior, our platform delivers accurate data crucial for material performance optimization.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 right-50">
-                    <div class="row">
-                    <div class="rt-img equal-height" >
-                    </div>
-                    </div>
-                </div>
-
-            </div>
-          </div>
+        <div class="line-3-70"></div>
+        <div class="lpbf-text-cont">
+            <ul>
+                {{ sections.section1.text }}
+            </ul>
         </div>
+    </div>
+</div>
 
+<div class="col-md-6" style="background-color: #FFFFFF;">
+    <div class="row">
+        <div class="lpbf-img equal-height"  <div class="lpbf-img equal-height" style="background-image: url('{{ sections.section1.img }}');"></div>
 
-           </div>
-         </div>
+            <!-- Image or content goes here -->
+        </div>
+    </div>
+</div>
 
-       
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
 
-           </div>
-         </div>
+<!-- SECTION 2 -->
+<div class="page-section" style="background-color: #FFFFFF;">
+  <div class="container-fluid">
+      <div class="row">
 
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0">
-
-        <!-- WORK PROCESS 1 -->
-				<div class="page-section work-proc-1-bg-MSC" >
-					<div class="fes4-cont container">
-						<div class="row">
-
-							<div class="col-md-4">
-
-					         </div>
-				    </div>
-					</div>
-				</div>
-
-        <!------------------------------------------------------->
-        <div class="page-section"  style="background-color: #FFFFFF;"   >
-          <div class="container-fluid">
-            <div class="row">
-             
-              <div class="col-md-6 wow fadeInLeft equal-height"  style="background-color: #FFFFFF;"> 
-                <div class="cnc-main-text-cont">
+          <div class="col-md-6 left-50 wow fadeInRight equal-height">
+              <div class="rt-main-text-cont">
                   <div class="title-fs-45">
-                    Supporting Innovation Beyond Instruments:   <br>
+                      {{ sections.section2.title }}<br>
+                      <span class="bold">{{ sections.section2.tag }}</span>
                   </div>
-                  <div class="line-3-70"></div>
-                  <div class="cnc-text-cont">
+                  <div class="line-3-100"></div>
+                  <div class="rt-text-cont">
                       <ul>
-                        Our commitment to innovation extends beyond technology. We provide unparalleled support and expertise to help you navigate the complexities of material characterization. Dr. Hamdoun Ghanem is available to ensure you maximize the potential of our platform.
-                   </div>
-                </div>
-              </div>
- 
-              <div class="col-md-6"  style="background-color: #FFFFFF;">
-                <div class="row">
-                  <div class="cnc-img equal-height">
+                          {{ sections.section2.text }}
+                      </ul>
                   </div>
-                </div>
               </div>
- 
-            </div>
-          </div>
-        </div>
- 
-      
- 
- 
-            </div>
-          </div>
- 
-        
- 
-            </div>
           </div>
 
+          <div class="col-md-6 right-50">
+              <div class="row">
+                  <div class="rt-img equal-height"  style="background-image: url('{{ sections.section2.img }}');"></div>
+
+                      <!-- Image or content goes here -->
+                  </div>
+              </div>
           </div>
+
+      </div>
+  </div>
+</div>
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!-- FUSED DEPOSITION MODELING -->
+<div class="page-section" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-6 wow fadeInLeft equal-height">
+                <div class="fdm-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section3.title }}<br>
+                        <span class="bold">{{ sections.section3.tag }}</span>
+                    </div>
+                    <div class="line-3-70"></div>
+                    <div class="fdm-text-cont">
+                        <ul>
+                            {{ sections.section3.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="fdm-img equal-height" style="background-image: url('{{ sections.section3.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
+</div>
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!-- SECTION 4 -->
+<div class="page-section" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-6 left-50 wow fadeInRight equal-height">
+                <div class="rt-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section4.title }}<br>
+                        <span class="bold">{{ sections.section4.tag }}</span>
+                    </div>
+                    <div class="line-3-100"></div>
+                    <div class="rt-text-cont">
+                        <ul>
+                            {{ sections.section4.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 right-50">
+                <div class="row">
+                    <div class="rt-img equal-height" style="background-image: url('{{ sections.section4.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!-- WORK PROCESS 1 -->
+<div class="page-section work-proc-1-bg-MSC">
+    <div class="fes4-cont container">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Content goes here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- seperator-->
+ 
+
+
+<!-- SUBTRACTIVE MANUFACTURING -->
+<div class="page-section" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="mb-50">
+                <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header2.title_1 }}<span class="bold">{{ header2.title_2 }}</span></h2>
+            </div>
+
+            <!-- DIVIDER -->
+            <hr class="mt-0 mb-0">
+
+            <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                <div class="cnc-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section5.title }}<br>
+                        <span class="bold">{{ sections.section5.tag }}</span>
+                    </div>
+                    <div class="line-3-70"></div>
+                    <div class="cnc-text-cont">
+                        <ul>
+                            {{ sections.section5.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="background-color: #FFFFFF;">
+                <div class="row">
+                    <div class="cnc-img equal-height" style="background-image: url('{{ sections.section5.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!--- section 6-->
+<div class="page-section" style="background-color: #FFFFFF;">
+  <div class="container-fluid">
+      <div class="row">
+
+          <div class="col-md-6 left-50 wow fadeInRight equal-height">
+              <div class="rt-main-text-cont">
+                  <div class="title-fs-45">
+                      {{ sections.section6.title }}<br>
+                      <span class="bold">{{ sections.section6.tag }}</span>
+                  </div>
+                  <div class="line-3-100"></div>
+                  <div class="rt-text-cont">
+                      <ul>
+                          {{ sections.section6.text }}
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 right-50">
+              <div class="row">
+                  <div class="rt-img equal-height" style="background-image: url('{{ sections.section6.img }}');"></div>
+
+                      <!-- Image or content goes here -->
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<div class="page-section work-proc-1-bg-MSC">
+  <div class="fes4-cont container">
+      <div class="row">
+          <div class="col-md-4">
+              <!-- Content goes here -->
+          </div>
+      </div>
+  </div>
+</div>
+<!-- COMPOSITE MATERIALS -->
+<div class="page-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="mb-50">
+              <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
+            </div>
+
+            <!-- DIVIDER -->
+            <hr class="mt-0 mb-0">
+
+            <!--- section 7-->
+            <hr class="mt-0 mb-0">
+
+            <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                <div class="cnc-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section5.title }}<br>
+                        <span class="bold">{{ sections.section5.tag }}</span>
+                    </div>
+                    <div class="line-3-70"></div>
+                    <div class="cnc-text-cont">
+                        <ul>
+                            {{ sections.section5.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="background-color: #FFFFFF;">
+                <div class="row">
+                    <div class="cnc-img equal-height" style="background-image: url('{{ sections.section5.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+          <!--section 8-->
+            <div class="col-md-6 left-50 wow fadeInRight equal-height">
+                <div class="tr-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section8.title }}<br>
+                        <span class="bold">{{ sections.section8.tag }}</span>
+                    </div>
+                    <div class="line-3-100"></div>
+                    <div class="tr-text-cont">
+                        <ul>
+                            {{ sections.section8.text1 }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 right-50">
+                <div class="row">
+                    <div class="tr-img equal-height" style="background-image: url('{{ sections.section8.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="page-section work-proc-1-bg-MSC">
+  <div class="fes4-cont container">
+      <div class="row">
+          <div class="col-md-4">
+              <!-- Content goes here -->
+          </div>
+      </div>
+  </div>
+</div>
 
 
         <!-- FOOTER 4 BLACK -->

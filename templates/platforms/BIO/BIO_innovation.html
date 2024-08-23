@@ -126,316 +126,330 @@
         </div>
 
         <!-- COTENT CONTAINER -->
+       
 				<!-- FEATURES 2 -->
 				<div class="page-section"  style="background-color: #FFFFFF;">
 					<div class="container-fluid">
 						<div class="row">
               <div class="mb-50"  style="background-color: #FFFFFF;">
-                <h2 class="section-title-2 pl-0 pr-0 text-center">ADDITIVE <span class="bold">MANUFACTURING</span></h2>
+                <h2 class="section-title-2 pl-0 pr-0 text-center">{{header1.title_1}} <span class="bold">{{header1.title_2}}</span></h2>
               </div>
-              <!-- DIVIDER -->
-              <hr class="mt-0 mb-0"  style="background-color: #FFFFFF;">
-							<div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
-								<div class="lpbf-main-text-cont">
-									<div class="title-fs-45">
-                    Laser Powder Bed Fusion<br>
-										<span class="bold">LPBF</span>
-									</div>
-									<div class="line-3-70"></div>
-									<div class="lpbf-text-cont">
-                    <ul>
-                        Our work in Laser Powder Bed Fusion (LPBF) centers on producing precise metal components. LPBF allows for intricate and customized geometries, enabling limitless innovation, especially in high-demand industries.
-                    </ul>
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
+
+<div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+    <div class="lpbf-main-text-cont">
+        <div class="title-fs-45">
+            {{ sections.section1.title }}<br>
+            <span class="bold">{{ sections.section1.tag }}</span>
+        </div>
+        <div class="line-3-70"></div>
+        <div class="lpbf-text-cont">
+            <ul>
+                {{ sections.section1.text }}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6" style="background-color: #FFFFFF;">
+    <div class="row">
+        <div class="lpbf-img equal-height"  <div class="lpbf-img equal-height" style="background-image: url('{{ sections.section1.img }}');"></div>
+
+            <!-- Image or content goes here -->
+        </div>
+    </div>
+</div>
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
+
+<!-- SECTION 2 -->
+<div class="page-section" style="background-color: #FFFFFF;">
+  <div class="container-fluid">
+      <div class="row">
+
+          <div class="col-md-6 left-50 wow fadeInRight equal-height">
+              <div class="rt-main-text-cont">
+                  <div class="title-fs-45">
+                      {{ sections.section2.title }}<br>
+                      <span class="bold">{{ sections.section2.tag }}</span>
                   </div>
-								</div>
-							</div>
-
-							<div class="col-md-6"  style="background-color: #FFFFFF;">
-								<div class="row">
-									<div class="lpbf-img equal-height">
+                  <div class="line-3-100"></div>
+                  <div class="rt-text-cont">
+                      <ul>
+                          {{ sections.section2.text }}
+                      </ul>
                   </div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+              </div>
+          </div>
 
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0"  style="background-color: #FFFFFF;">
+          <div class="col-md-6 right-50">
+              <div class="row">
+                  <div class="rt-img equal-height"  style="background-image: url('{{ sections.section2.img }}');"></div>
 
-        <!-- FEATURES 3 -->
+                      <!-- Image or content goes here -->
+                  </div>
+              </div>
+          </div>
 
-				<div class="page-section"  style="background-color: #FFFFFF;">
-					<div class="container-fluid">
-						<div class="row">
+      </div>
+  </div>
+</div>
 
-							<div class="col-md-6 left-50 wow fadeInRight equal-height">
-									<div class="sls-main-text-cont">
-                                        <div class="title-fs-45">
-                                            Selective Laser Sintering  <br>
-                                            <span class="bold">SLS</span>
-                                        </div>
-										<div class="line-3-100"></div>
-                    <div class="sls-text-cont">
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!-- FUSED DEPOSITION MODELING -->
+<div class="page-section" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-6 wow fadeInLeft equal-height">
+                <div class="fdm-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section3.title }}<br>
+                        <span class="bold">{{ sections.section3.tag }}</span>
+                    </div>
+                    <div class="line-3-70"></div>
+                    <div class="fdm-text-cont">
                         <ul>
-                            Redefines polymer part manufacturing standards. This technology opens up new possibilities for complex geometries and designs in various industries.
+                            {{ sections.section3.text }}
                         </ul>
                     </div>
-                  </div>
                 </div>
+            </div>
 
-              <div class="col-md-6 right-50">
-								<div class="row">
-									<div class="sls-img equal-height" >
-                  </div>
-								</div>
-							</div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="fdm-img equal-height" style="background-image: url('{{ sections.section3.img }}');"></div>
 
-						</div>
-					</div>
-				</div>
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
 
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0" >
-        <!----------------------------------------------------------------------------------->
-        <div class="page-section"  style="background-color: #FFFFFF;">
-					<div class="container-fluid">
-						<div class="row">
-
-							<div class="col-md-6 wow fadeInLeft equal-height">
-								<div class="fdm-main-text-cont">
-									<div class="title-fs-45">
-										FUSED DEPOSITION MODELING<br>
-										<span class="bold">FDM</span>
-									</div>
-									<div class="line-3-70"></div>
-									<div class="fdm-text-cont">
-                                        <ul>
-                                            This technology efficiently produces thermoplastic parts. Suitable for both conceptual prototypes and functional components. Our work with FDM aims to optimize this popular 3D printing process.
-                                        </ul>
-                  </div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="row">
-									<div class="fdm-img equal-height">
-                  </div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0">
-
-
-
-        <!------------------------------------------------------->
-
-                <!-- FEATURES 3 -->
-
-        				<div class="page-section"  style="background-color: #FFFFFF;">
-        					<div class="container-fluid">
-        						<div class="row">
-
-        							<div class="col-md-6 left-50 wow fadeInRight equal-height">
-        									<div class="sla-main-text-cont">
-                                                <div class="title-fs-45">
-                                                    STEREOLITHOGRAPHY <br>
-                                                    <span class="bold">SLA</span>
-                                                </div>
-        										<div class="line-3-100"></div>
-                            <div class="sla-text-cont">
-                                <ul>
-                                    Stereolithography (SLA) is resin-based 3D printing technologies with unparalleled precision.
-                                    it's used for custom dental prosthetics, detailed designs or any high-precision part.
-                                </ul>
-                            </div>
-                          </div>
-                        </div>
-
-                      <div class="col-md-6 right-50">
-        								<div class="row">
-        									<div class="sla-img equal-height" >
-                          </div>
-        								</div>
-        							</div>
-
-        						</div>
-        					</div>
-        				</div>
-
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0">
-        <!-- WORK PROCESS 1 -->
-				<div class="page-section work-proc-1-bg-BIO" >
-					<div class="fes4-cont container">
-						<div class="row">
-
-							<div class="col-md-4">
-
-					         </div>
-				    </div>
-					</div>
-				</div>
-
-        <!------------------------------------------------------->
-        <div class="page-section"  style="background-color: #FFFFFF;"   >
-         <div class="container-fluid">
-           <div class="row">
-             <div class="mb-50">
-               <h2 class="section-title-2 pl-0 pr-0 text-center">SUBSTRACTIVE <span class="bold">MANUFACTURING</span></h2>
-             </div>
-             <!-- DIVIDER -->
-             <hr class="mt-0 mb-0">
-
-
-             <div class="col-md-6 wow fadeInLeft equal-height"  style="background-color: #FFFFFF;"> 
-               <div class="cnc-main-text-cont">
-                 <div class="title-fs-45">
-                   CNC  <br>
-                   <span class="bold">MACHINING</span>
-                 </div>
-                 <div class="line-3-70"></div>
-                 <div class="cnc-text-cont">
-                     <ul>
-                         Our platform features CNC machining tools that produce metal, plastic, and other material parts with micrometer precision, meeting demanding quality and performance standards.
-
-                     </ul>
-                 </div>
-               </div>
-             </div>
-
-             <div class="col-md-6"  style="background-color: #FFFFFF;">
-               <div class="row">
-                 <div class="cnc-img equal-height">
-                 </div>
-               </div>
-             </div>
-
-           </div>
-         </div>
         </div>
+    </div>
+</div>
 
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0">
-         <!----------------------------------------------------------------------------------->
-         <!-- FEATURES 3 -->
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
 
-        <div class="page-section"  style="background-color: #FFFFFF;">
-          <div class="container-fluid">
-            <div class="row">
+<!-- SECTION 4 -->
+<div class="page-section" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+        <div class="row">
 
-              <div class="col-md-6 left-50 wow fadeInRight equal-height">
-                  <div class="rt-main-text-cont">
+            <div class="col-md-6 left-50 wow fadeInRight equal-height">
+                <div class="rt-main-text-cont">
                     <div class="title-fs-45">
-                      RAPID  <br>
-                      <span class="bold">TOOLING</span>
+                        {{ sections.section4.title }}<br>
+                        <span class="bold">{{ sections.section4.tag }}</span>
                     </div>
                     <div class="line-3-100"></div>
-                     <div class="rt-text-cont">
-                         <ul>
-                             This approach is used for efficient manufacturing by quickly producing molds, dies, or other tooling components.
-                             It uses techniques like 3D printing and CNC machining for faster iterations and cost-effective production.
-                         </ul>
-                     </div>
-                   </div>
-                 </div>
-
-               <div class="col-md-6 right-50">
-                <div class="row">
-                  <div class="rt-img equal-height" >
-                   </div>
+                    <div class="rt-text-cont">
+                        <ul>
+                            {{ sections.section4.text }}
+                        </ul>
+                    </div>
                 </div>
-              </div>
-
             </div>
-          </div>
+
+            <div class="col-md-6 right-50">
+                <div class="row">
+                    <div class="rt-img equal-height" style="background-image: url('{{ sections.section4.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
+</div>
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!-- WORK PROCESS 1 -->
+<div class="page-section work-proc-1-bg-BIO">
+    <div class="fes4-cont container">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Content goes here -->
+            </div>
+        </div>
+    </div>
+</div>
 
 
-           </div>
-         </div>
+<!-- seperator-->
+ 
 
-        <!-- DIVIDER -->
-        <hr class="mt-0 mb-0">
 
-        <!-- WORK PROCESS 1 -->
-				<div class="page-section work-proc-1-bg-BIO" >
-					<div class="fes4-cont container">
-						<div class="row">
+<!-- SUBTRACTIVE MANUFACTURING -->
+<div class="page-section" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="mb-50">
+                <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header2.title_1 }}<span class="bold">{{ header2.title_2 }}</span></h2>
+            </div>
 
-							<div class="col-md-4">
+            <!-- DIVIDER -->
+            <hr class="mt-0 mb-0">
 
-					         </div>
-				    </div>
-					</div>
-				</div>
-         <!----------------------------------------------------------------------------------->
-         <div class="page-section">
-					<div class="container-fluid">
-						<div class="row">
-              <div class="mb-50">
-                <h2 class="section-title-2 pl-0 pr-0 text-center">COMPOSITE <span class="bold">MATERIALS</span></h2>
+            <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                <div class="cnc-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section5.title }}<br>
+                        <span class="bold">{{ sections.section5.tag }}</span>
+                    </div>
+                    <div class="line-3-70"></div>
+                    <div class="cnc-text-cont">
+                        <ul>
+                            {{ sections.section5.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="background-color: #FFFFFF;">
+                <div class="row">
+                    <div class="cnc-img equal-height" style="background-image: url('{{ sections.section5.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!--- section 6-->
+<div class="page-section" style="background-color: #FFFFFF;">
+  <div class="container-fluid">
+      <div class="row">
+
+          <div class="col-md-6 left-50 wow fadeInRight equal-height">
+              <div class="rt-main-text-cont">
+                  <div class="title-fs-45">
+                      {{ sections.section6.title }}<br>
+                      <span class="bold">{{ sections.section6.tag }}</span>
+                  </div>
+                  <div class="line-3-100"></div>
+                  <div class="rt-text-cont">
+                      <ul>
+                          {{ sections.section6.text }}
+                      </ul>
+                  </div>
               </div>
-              <!-- DIVIDER -->
-              <hr class="mt-0 mb-0">
+          </div>
 
-              <div class="col-md-6 left-50 wow fadeInRight equal-height">
-                  <div class="tr-main-text-cont">
-                      <div class="title-fs-45">
-                          THERMOPLASTIC <br>
-                          <span class="bold">COMPOSITES</span>
-                      </div>
+          <div class="col-md-6 right-50">
+              <div class="row">
+                  <div class="rt-img equal-height" style="background-image: url('{{ sections.section6.img }}');"></div>
+
+                      <!-- Image or content goes here -->
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<div class="page-section work-proc-1-bg-BIO">
+  <div class="fes4-cont container">
+      <div class="row">
+          <div class="col-md-4">
+              <!-- Content goes here -->
+          </div>
+      </div>
+  </div>
+</div>
+<!-- COMPOSITE MATERIALS -->
+<div class="page-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="mb-50">
+              <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
+            </div>
+
+            <!-- DIVIDER -->
+            <hr class="mt-0 mb-0">
+
+            <!--- section 7-->
+            <hr class="mt-0 mb-0">
+
+            <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                <div class="cnc-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section5.title }}<br>
+                        <span class="bold">{{ sections.section5.tag }}</span>
+                    </div>
+                    <div class="line-3-70"></div>
+                    <div class="cnc-text-cont">
+                        <ul>
+                            {{ sections.section5.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="background-color: #FFFFFF;">
+                <div class="row">
+                    <div class="cnc-img equal-height" style="background-image: url('{{ sections.section5.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+          <!--section 8-->
+            <div class="col-md-6 left-50 wow fadeInRight equal-height">
+                <div class="tr-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section8.title }}<br>
+                        <span class="bold">{{ sections.section8.tag }}</span>
+                    </div>
                     <div class="line-3-100"></div>
                     <div class="tr-text-cont">
                         <ul>
-                        Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.
+                            {{ sections.section8.text1 }}
                         </ul>
                     </div>
-                  </div>
                 </div>
+            </div>
 
-              <div class="col-md-6 right-50">
+            <div class="col-md-6 right-50">
                 <div class="row">
-                  <div class="tr-img equal-height" >
-                  </div>
+                    <div class="tr-img equal-height" style="background-image: url('{{ sections.section8.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
                 </div>
-              </div>
-
             </div>
-
-              <!-- DIVIDER -->
-              <hr class="mt-0 mb-0">
-              <div class="col-md-6 wow fadeInLeft equal-height">
-								<div class="cf-main-text-cont">
-									<div class="title-fs-45">
-										CARBON FIBER <br>
-                                     <span class="bold">COMPOSITES</span>
-									</div>
-									<div class="cf-text-cont">
-                                        <ul>
-                                        Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.
-                                        </ul>
-                  </div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="row">
-									<div class="cf-img equal-height">
-                  </div>
-								</div>
-							</div>
-
-
-            </div>
-
-          </div>
         </div>
+    </div>
+    
+</div>
+<div class="page-section work-proc-1-bg-BIO">
+  <div class="fes4-cont container">
+      <div class="row">
+          <div class="col-md-4">
+              <!-- Content goes here -->
+          </div>
+      </div>
+  </div>
+</div>
 
 
         <!-- FOOTER 4 BLACK -->

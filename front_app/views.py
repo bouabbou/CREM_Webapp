@@ -358,17 +358,153 @@ def contact(request):
     return render( request ,'Contact_EN.html')
 def ASMP_innovation(request):
     context = {
+        'header1': {
+            'title_1': 'ADDITIVE ',
+            'title_2': ' MANUFACTURING',
+        },
+        'header2': {
+            'title_1': 'SUBSTRACTIVE ',
+            'title_2': ' MANUFACTURING',
+        },
+        'header3': {
+            'title_1': 'COMPOSITE ',
+            'title_2': ' MATERIALS',
+        },
+        'sections': {
+            'section1': {
+                'title': 'Laser Powder Bed Fusion',
+                'tag': 'LPBF',
+                'text': 'Our work in Laser Powder Bed Fusion (LPBF) centers on producing precise metal components. LPBF allows for intricate and customized geometries, enabling limitless innovation, especially in high-demand industries. ',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
+            'section2': {
+                'title': 'Selective Laser Sintering',
+                'tag': 'SLS',
+                'text': 'Redefines polymer part manufacturing standards. This technology opens up new possibilities for complex geometries and designs in various industries.',
+                'img': '../static/images/Innovation/sls.png'
+
+            },
+            'section3': {
+                'title': 'FUSED DEPOSITION MODELING',
+                'tag': 'FDM',
+                'text': 'This technology efficiently produces thermoplastic parts. Suitable for both conceptual prototypes and functional components. Our work with FDM aims to optimize this popular 3D printing process.',
+                'img': '../static/images/Innovation/FDM.png'
+
+            },
+            'section4': {
+                'title': 'STEREOLITHOGRAPHY',
+                'tag': 'SLA',
+                'text': 'Stereolithography (SLA) is resin-based 3D printing technologies with unparalleled precision. it s used for custom dental prosthetics, detailed designs or any high-precision part.',
+                'img': '../static/images/Innovation/SLA.png'
+
+            },
+            'section5': {
+                'title': 'CNC',
+                'tag': 'MACHINING',
+                'text': 'Our platform features CNC machining tools that produce metal, plastic, and other material parts with micrometer precision, meeting demanding quality and performance standards. ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section6': {
+                'title': 'RAPID',
+                'tag': 'TOOLING',
+                'text': 'This approach is used for efficient manufacturing by quickly producing molds, dies, or other tooling components. It uses techniques like 3D printing and CNC machining for faster iterations and cost-effective production.',
+                'img': '../static/images/Innovation/RP.png'
+            },
+            'section7': {
+                'title': 'THERMOPLASTIC',
+                'tag': 'COMPOSITES',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section8': {
+                'title': 'CARBON FIBER',
+                'tag': 'COMPOSITES',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'img': '../static/images/Innovation/CF.png'
+            }
+        },
+    
+        # Additional context variables
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('ASMP_services'),
         'index_url': reverse('ASMP_index'),
         'infrastructure_url': reverse('ASMP_infrastructure'),
         'innovation_url': reverse('ASMP_innovation'),
-         'img': '../static/images/logo-grey.png'
+        'img': '../static/images/logo-grey.png'
     }
-    return render( request ,'platforms/ASMP/ASMP_Innovation_FA_EN.html',context)
+    
+    return render(request, 'platforms/ASMP/ASMP_Innovation_FA_EN.html', context)
 def AIDE_innovation(request):
+        
+        #data 
     context = {
+        'header1': {
+            'title_1': 'header1 ',
+            'title_2': ' title1',
+        },
+        'header2': {
+            'title_1': 'header2 ',
+            'title_2': ' title2',
+        },
+        'header3': {
+            'title_1': 'header3 ',
+            'title_2': ' title3',
+        },
+        'sections': {
+            'section1': {
+                'title': 'title 1',
+                'tag': 'tag1',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
+            'section2': {
+                'title': 'title 2',
+                'tag': 'tag2',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/sls.png'
+
+            },
+            'section3': {
+                'title': 'title 3',
+                'tag': 'tag3',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/FDM.png'
+
+            },
+            'section4': {
+                'title': 'title 4',
+                'tag': 'tag4',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/SLA.png'
+
+            },
+            'section5': {
+                'title': 'title 5',
+                'tag': 'tag5',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section6': {
+                'title': 'title 6',
+                'tag': 'tag6',
+                'text1': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section7': {
+                'title': 'THERMOPLASTIC',
+                'tag': 'COMPOSITES',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section8': {
+                'title': 'CARBON FIBER',
+                'tag': 'COMPOSITES',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'img': '../static/images/Innovation/CF.png'
+            }
+        },
+         #header
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('AIDE_services'),
@@ -376,11 +512,77 @@ def AIDE_innovation(request):
         'infrastructure_url': reverse('AIDE_infrastructure'),
         'innovation_url': reverse('AIDE_innovation'),
     }
+
     return render( request ,'platforms/AIDE/AIDE_innovation.html',context)
 
 
 def RESEE_innovation(request):
     context = {
+        'header1': {
+            'title_1': 'header1 ',
+            'title_2': ' title1',
+        },
+        'header2': {
+            'title_1': 'header2 ',
+            'title_2': ' title2',
+        },
+        'header3': {
+            'title_1': 'header3 ',
+            'title_2': ' title3',
+        },
+        'sections': {
+            'section1': {
+                'title': 'title 1',
+                'tag': 'tag1',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
+            'section2': {
+                'title': 'title 2',
+                'tag': 'tag2',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/sls.png'
+
+            },
+            'section3': {
+                'title': 'title 3',
+                'tag': 'tag3',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/FDM.png'
+
+            },
+            'section4': {
+                'title': 'title 4',
+                'tag': 'tag4',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/SLA.png'
+
+            },
+            'section5': {
+                'title': 'title 5',
+                'tag': 'tag5',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section6': {
+                'title': 'title 6',
+                'tag': 'tag6',
+                'text1': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section7': {
+                'title': 'THERMOPLASTIC',
+                'tag': 'COMPOSITES',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section8': {
+                'title': 'CARBON FIBER',
+                'tag': 'COMPOSITES',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'img': '../static/images/Innovation/CF.png'
+            }
+        },
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('RESEE_services'),
@@ -393,6 +595,73 @@ def RESEE_innovation(request):
 
 def BIO_innovation(request):
     context = {
+        'header1': {
+            'title_1': 'header1 ',
+            'title_2': ' title1',
+        },
+        'header2': {
+            'title_1': 'header2 ',
+            'title_2': ' title2',
+        },
+        'header3': {
+            'title_1': 'header3 ',
+            'title_2': ' title3',
+        },
+        'sections': {
+            'section1': {
+                'title': 'title 1',
+                'tag': 'tag1',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
+            'section2': {
+                'title': 'title 2',
+                'tag': 'tag2',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/sls.png'
+
+            },
+            'section3': {
+                'title': 'title 3',
+                'tag': 'tag3',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/FDM.png'
+
+            },
+            'section4': {
+                'title': 'title 4',
+                'tag': 'tag4',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/SLA.png'
+
+            },
+            'section5': {
+                'title': 'title 5',
+                'tag': 'tag5',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section6': {
+                'title': 'title 6',
+                'tag': 'tag6',
+                'text1': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section7': {
+                'title': 'THERMOPLASTIC',
+                'tag': 'COMPOSITES',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section8': {
+                'title': 'CARBON FIBER',
+                'tag': 'COMPOSITES',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'img': '../static/images/Innovation/CF.png'
+            }
+        },
+        
+        #header
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('BIO_services'),
@@ -405,6 +674,74 @@ def BIO_innovation(request):
 
 def MSC_innovation(request):
     context = {
+        #data
+        'header1': {
+            'title_1': 'header1 ',
+            'title_2': ' title1',
+        },
+        'header2': {
+            'title_1': 'header2 ',
+            'title_2': ' title2',
+        },
+        'header3': {
+            'title_1': 'header3 ',
+            'title_2': ' title3',
+        },
+        'sections': {
+            'section1': {
+                'title': 'title 1',
+                'tag': 'tag1',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
+            'section2': {
+                'title': 'title 2',
+                'tag': 'tag2',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/sls.png'
+
+            },
+            'section3': {
+                'title': 'title 3',
+                'tag': 'tag3',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/FDM.png'
+
+            },
+            'section4': {
+                'title': 'title 4',
+                'tag': 'tag4',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/SLA.png'
+
+            },
+            'section5': {
+                'title': 'title 5',
+                'tag': 'tag5',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section6': {
+                'title': 'title 6',
+                'tag': 'tag6',
+                'text1': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section7': {
+                'title': 'THERMOPLASTIC',
+                'tag': 'COMPOSITES',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section8': {
+                'title': 'CARBON FIBER',
+                'tag': 'COMPOSITES',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'img': '../static/images/Innovation/CF.png'
+            }
+        },
+        
+        #header
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('MSC_services'),
@@ -417,6 +754,73 @@ def MSC_innovation(request):
 
 def PCE_innovation(request):
     context = {
+        'header1': {
+            'title_1': 'header1 ',
+            'title_2': ' title1',
+        },
+        'header2': {
+            'title_1': 'header2 ',
+            'title_2': ' title2',
+        },
+        'header3': {
+            'title_1': 'header3 ',
+            'title_2': ' title3',
+        },
+        'sections': {
+            'section1': {
+                'title': 'title 1',
+                'tag': 'tag1',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
+            'section2': {
+                'title': 'title 2',
+                'tag': 'tag2',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/sls.png'
+
+            },
+            'section3': {
+                'title': 'title 3',
+                'tag': 'tag3',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/FDM.png'
+
+            },
+            'section4': {
+                'title': 'title 4',
+                'tag': 'tag4',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/SLA.png'
+
+            },
+            'section5': {
+                'title': 'title 5',
+                'tag': 'tag5',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section6': {
+                'title': 'title 6',
+                'tag': 'tag6',
+                'text1': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section7': {
+                'title': 'THERMOPLASTIC',
+                'tag': 'COMPOSITES',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section8': {
+                'title': 'CARBON FIBER',
+                'tag': 'COMPOSITES',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'img': '../static/images/Innovation/CF.png'
+            }
+        },
+        
+        #header
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('PCE_services'),
@@ -429,6 +833,72 @@ def PCE_innovation(request):
 
 def SAI_innovation(request):
     context = {
+        'header1': {
+            'title_1': 'header1 ',
+            'title_2': ' title1',
+        },
+        'header2': {
+            'title_1': 'header2 ',
+            'title_2': ' title2',
+        },
+        'header3': {
+            'title_1': 'header3 ',
+            'title_2': ' title3',
+        },
+        'sections': {
+            'section1': {
+                'title': 'title 1',
+                'tag': 'tag1',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
+            'section2': {
+                'title': 'title 2',
+                'tag': 'tag2',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/sls.png'
+
+            },
+            'section3': {
+                'title': 'title 3',
+                'tag': 'tag3',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/FDM.png'
+
+            },
+            'section4': {
+                'title': 'title 4',
+                'tag': 'tag4',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/SLA.png'
+
+            },
+            'section5': {
+                'title': 'title 5',
+                'tag': 'tag5',
+                'text': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section6': {
+                'title': 'title 6',
+                'tag': 'tag6',
+                'text1': 'text text tex tetx tetx tetsx ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section7': {
+                'title': 'THERMOPLASTIC',
+                'tag': 'COMPOSITES',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section8': {
+                'title': 'CARBON FIBER',
+                'tag': 'COMPOSITES',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'img': '../static/images/Innovation/CF.png'
+            }
+        },
+        #header
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('SAI_services'),
@@ -504,10 +974,10 @@ def AIDE_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('ASMP_services'),
-        'index_url': reverse('ASMP_index'),
-        'infrastructure_url': reverse('ASMP_infrastructure'),
-        'innovation_url': reverse('ASMP_innovation'),
+        'services_url': reverse('AIDE_services'),
+        'index_url': reverse('AIDE_index'),
+        'infrastructure_url': reverse('AIDE_infrastructure'),
+        'innovation_url': reverse('AIDE_innovation'),
 
         # Sections
         'sections': {
@@ -562,10 +1032,10 @@ def BIO_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('ASMP_services'),
-        'index_url': reverse('ASMP_index'),
-        'infrastructure_url': reverse('ASMP_infrastructure'),
-        'innovation_url': reverse('ASMP_innovation'),
+        'services_url': reverse('BIO_services'),
+        'index_url': reverse('BIO_index'),
+        'infrastructure_url': reverse('BIO_infrastructure'),
+        'innovation_url': reverse('BIO_innovation'),
 
         # Sections
         'sections': {
@@ -620,10 +1090,10 @@ def MSC_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('ASMP_services'),
-        'index_url': reverse('ASMP_index'),
-        'infrastructure_url': reverse('ASMP_infrastructure'),
-        'innovation_url': reverse('ASMP_innovation'),
+        'services_url': reverse('MSC_services'),
+        'index_url': reverse('MSC_index'),
+        'infrastructure_url': reverse('MSC_infrastructure'),
+        'innovation_url': reverse('MSC_innovation'),
 
         # Sections
         'sections': {
@@ -678,10 +1148,10 @@ def PCE_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('ASMP_services'),
-        'index_url': reverse('ASMP_index'),
-        'infrastructure_url': reverse('ASMP_infrastructure'),
-        'innovation_url': reverse('ASMP_innovation'),
+        'services_url': reverse('PCE_services'),
+        'index_url': reverse('PCE_index'),
+        'infrastructure_url': reverse('PCE_infrastructure'),
+        'innovation_url': reverse('PCE_innovation'),
 
         # Sections
         'sections': {
@@ -737,10 +1207,10 @@ def RESEE_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('ASMP_services'),
-        'index_url': reverse('ASMP_index'),
-        'infrastructure_url': reverse('ASMP_infrastructure'),
-        'innovation_url': reverse('ASMP_innovation'),
+        'services_url': reverse('RESEE_services'),
+        'index_url': reverse('RESEE_index'),
+        'infrastructure_url': reverse('RESEE_infrastructure'),
+        'innovation_url': reverse('RESEE_innovation'),
 
         # Sections
         'sections': {
@@ -795,10 +1265,10 @@ def SAI_services(request):
         'link_color': 'grey', 
         
         #header
-        'services_url': reverse('ASMP_services'),
-        'index_url': reverse('ASMP_index'),
-        'infrastructure_url': reverse('ASMP_infrastructure'),
-        'innovation_url': reverse('ASMP_innovation'),
+        'services_url': reverse('SAI_services'),
+        'index_url': reverse('SAI_index'),
+        'infrastructure_url': reverse('SAI_infrastructure'),
+        'innovation_url': reverse('SAI_innovation'),
 
         # Sections
         'sections': {
