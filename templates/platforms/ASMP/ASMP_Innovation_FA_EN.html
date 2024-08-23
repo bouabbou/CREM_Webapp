@@ -131,11 +131,16 @@
 				<div class="page-section"  style="background-color: #FFFFFF;">
 					<div class="container-fluid">
 						<div class="row">
+                            {% if header1 %}
+
               <div class="mb-50"  style="background-color: #FFFFFF;">
                 <h2 class="section-title-2 pl-0 pr-0 text-center">{{header1.title_1}} <span class="bold">{{header1.title_2}}</span></h2>
               </div>
+              {% endif %}
+
 <!-- DIVIDER -->
 <hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
+{% if sections.section1 %}
 
 <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
     <div class="lpbf-main-text-cont">
@@ -160,11 +165,14 @@
         </div>
     </div>
 </div>
+{% endif %}
 
 <!-- DIVIDER -->
 <hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
 
 <!-- SECTION 2 -->
+{% if sections.section2 %}
+
 <div class="page-section" style="background-color: #FFFFFF;">
   <div class="container-fluid">
       <div class="row">
@@ -196,11 +204,14 @@
       </div>
   </div>
 </div>
+{% endif %}
 
 <!-- DIVIDER -->
 <hr class="mt-0 mb-0">
 
 <!-- FUSED DEPOSITION MODELING -->
+{% if sections.section3 %}
+
 <div class="page-section" style="background-color: #FFFFFF;">
     <div class="container-fluid">
         <div class="row">
@@ -232,11 +243,15 @@
         </div>
     </div>
 </div>
+{% endif %}
+
 
 <!-- DIVIDER -->
 <hr class="mt-0 mb-0">
 
 <!-- SECTION 4 -->
+{% if sections.section4 %}
+
 <div class="page-section" style="background-color: #FFFFFF;">
     <div class="container-fluid">
         <div class="row">
@@ -268,6 +283,7 @@
         </div>
     </div>
 </div>
+{% endif %}
 
 <!-- DIVIDER -->
 <hr class="mt-0 mb-0">
@@ -292,12 +308,16 @@
 <div class="page-section" style="background-color: #FFFFFF;">
     <div class="container-fluid">
         <div class="row">
+            {% if header2 %}
+
             <div class="mb-50">
                 <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header2.title_1 }}<span class="bold">{{ header2.title_2 }}</span></h2>
             </div>
+            {% endif %}
 
             <!-- DIVIDER -->
             <hr class="mt-0 mb-0">
+            {% if sections.section5 %}
 
             <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                 <div class="cnc-main-text-cont">
@@ -326,11 +346,14 @@
         </div>
     </div>
 </div>
+{% endif %}
 
 <!-- DIVIDER -->
 <hr class="mt-0 mb-0">
 
 <!--- section 6-->
+{% if sections.section6 %}
+
 <div class="page-section" style="background-color: #FFFFFF;">
   <div class="container-fluid">
       <div class="row">
@@ -362,6 +385,8 @@
       </div>
   </div>
 </div>
+{% endif %}
+
 <div class="page-section work-proc-1-bg">
   <div class="fes4-cont container">
       <div class="row">
@@ -372,29 +397,33 @@
   </div>
 </div>
 <!-- COMPOSITE MATERIALS -->
+{% if header3 %}
+
 <div class="page-section">
     <div class="container-fluid">
         <div class="row">
             <div class="mb-50">
               <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
             </div>
+            {% endif %}
 
             <!-- DIVIDER -->
             <hr class="mt-0 mb-0">
 
             <!--- section 7-->
             <hr class="mt-0 mb-0">
+            {% if sections.section7 %}
 
             <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                 <div class="cnc-main-text-cont">
                     <div class="title-fs-45">
-                        {{ sections.section5.title }}<br>
-                        <span class="bold">{{ sections.section5.tag }}</span>
+                        {{ sections.section7.title }}<br>
+                        <span class="bold">{{ sections.section7.tag }}</span>
                     </div>
                     <div class="line-3-70"></div>
                     <div class="cnc-text-cont">
                         <ul>
-                            {{ sections.section5.text }}
+                            {{ sections.section7.text }}
                         </ul>
                     </div>
                 </div>
@@ -412,8 +441,11 @@
         </div>
     </div>
 </div>
+{% endif %}
 
           <!--section 8-->
+          {% if sections.section8 %}
+
             <div class="col-md-6 left-50 wow fadeInRight equal-height">
                 <div class="tr-main-text-cont">
                     <div class="title-fs-45">
@@ -423,7 +455,7 @@
                     <div class="line-3-100"></div>
                     <div class="tr-text-cont">
                         <ul>
-                            {{ sections.section8.text1 }}
+                            {{ sections.section8.text }}
                         </ul>
                     </div>
                 </div>
@@ -441,6 +473,8 @@
     </div>
     
 </div>
+{% endif %}
+
 <div class="page-section work-proc-1-bg">
   <div class="fes4-cont container">
       <div class="row">

@@ -413,13 +413,13 @@ def ASMP_innovation(request):
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
@@ -488,19 +488,19 @@ def AIDE_innovation(request):
             'section6': {
                 'title': 'title 6',
                 'tag': 'tag6',
-                'text1': 'text text tex tetx tetx tetsx ',
+                'text': 'text text tex tetx tetx tetsx ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
@@ -567,19 +567,19 @@ def RESEE_innovation(request):
             'section6': {
                 'title': 'title 6',
                 'tag': 'tag6',
-                'text1': 'text text tex tetx tetx tetsx ',
+                'text': 'text text tex tetx tetx tetsx ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
@@ -644,19 +644,19 @@ def BIO_innovation(request):
             'section6': {
                 'title': 'title 6',
                 'tag': 'tag6',
-                'text1': 'text text tex tetx tetx tetsx ',
+                'text': 'text text tex tetx tetx tetsx ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
@@ -724,19 +724,19 @@ def MSC_innovation(request):
             'section6': {
                 'title': 'title 6',
                 'tag': 'tag6',
-                'text1': 'text text tex tetx tetx tetsx ',
+                'text': 'text text tex tetx tetx tetsx ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
@@ -803,19 +803,19 @@ def PCE_innovation(request):
             'section6': {
                 'title': 'title 6',
                 'tag': 'tag6',
-                'text1': 'text text tex tetx tetx tetsx ',
+                'text': 'text text tex tetx tetx tetsx ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
@@ -882,19 +882,19 @@ def SAI_innovation(request):
             'section6': {
                 'title': 'title 6',
                 'tag': 'tag6',
-                'text1': 'text text tex tetx tetx tetsx ',
+                'text': 'text text tex tetx tetx tetsx ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
