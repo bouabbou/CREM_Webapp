@@ -1811,9 +1811,85 @@ def AIDE_index(request):
     context = {
         'logo': '../static/images/logo-white.png',
         'link_color': 'white', 
-        
-       
-     #header : 
+        "header": {
+        "video": "../static/video/AIDE.mp4",
+        "title": "Virtual Reality and Collaborative Robotics AI Platform",
+        "description": "Empowering innovation through immersive technologies and intelligent collaboration."
+        },
+       "about": {
+        "text_1": "Our digital platform integrates three essential components, each meticulously designed to meet the highest standards of modern industry. First, our AI infrastructure is purpose-built to deliver exceptional computational power, crucial for running deep learning algorithms efficiently. Second, our virtual and augmented reality lab enables the development of immersive programs tailored to various sectors, from education to industrial training. Lastly, our robotics lab allows for the programming and simulation of diverse types of robots, including humanoids, paving the way for innovative human-machine collaboration.",
+        "text_2": "Our platform seamlessly integrates advanced artificial intelligence, virtual reality, and collaborative robotics to revolutionize various industrial sectors. We specialize in leveraging cutting-edge AI algorithms, creating immersive VR and AR experiences, and developing sophisticated robotics solutions, including humanoids. Our multidisciplinary approach ensures that we deliver innovative, practical, and impactful solutions tailored to meet the specific needs of each industry."
+    },
+    "third_section": {
+        "title": "Artificial intelligence and robotics",
+        "description": "Artificial intelligence and robotics are transformative technologies that enhance automation, decision-making, and human-robot interaction across various industries. These technologies provide unprecedented capabilities in processing data, creating immersive experiences, and developing sophisticated robotic systems.",
+        "image": "../static/images/fes7.jpg",
+        "point_1": {
+            "title": "Enhanced Decision-Making",
+            "description": "AI enables the analysis of vast amounts of data to make informed decisions, optimizing processes and improving efficiency."
+        },
+        "point_2": {
+            "title": "Immersive Experiences",
+            "description": "Virtual and augmented reality technologies create immersive environments that enhance training, education, and user engagement."
+        },
+        "point_3": {
+            "title": "Human-Robot Collaboration",
+            "description": "Collaborative robotics, or cobots, work alongside humans, increasing productivity and safety in the workplace by handling repetitive or hazardous tasks."
+        },
+        "point_4": {
+            "title": "Advanced Simulation and Prototyping",
+            "description": "Robotics and AI facilitate advanced simulation and prototyping, accelerating the development process and reducing costs by allowing virtual testing and iteration before physical implementation."
+        }
+    },
+    "video": {
+        "title_l": "Artificial",
+        "title_r": "Intelligence",
+        "video": "../static/video/AIDE.mp4",
+        "bg_img" : "../static/images/play.png"
+    },
+    "details_section": {
+        "title": "Driving Innovation Across Industries",
+        "description": "At our platform, we leverage cutting-edge technologies to drive progress and innovation across various industrial sectors:",
+        "tab_1": {
+            "header": "Automative / Aerospace",
+            "title": "REVOLUTIONIZING MANUFACTURING",
+            "description": "Our AI and robotics solutions enhance precision and efficiency in the automotive/aerospace sector, enabling the production of complex parts and improving assembly line automation.",
+
+            "img_before": "../static/images/static-media/Turbine1.jpg",
+            "img_after": "../static/images/static-media/Turbine2.jpg"
+        },
+        "tab_2": {
+            "header": "Medical Technology",
+            "title": "ADVANCING HEALTHCARE",
+            "description": "Our platform supports the creation of customized medical devices and prosthetics, as well as the development of immersive training programs for healthcare professionals.",
+           
+        },
+        "tab_3": {
+            "header": "Manufacturing",
+            "title": "OPTIMIZING PRODUCTION",
+            "description": "In manufacturing, our technologies streamline processes, improve quality control, and enable the development of innovative products through advanced prototyping and automation.",
+           
+        },
+        "tab_4": {
+            "header": "Logistics",
+            "title": "ENHANCING EFFICIENCY",
+            "description": "Our AI-driven solutions optimize logistics and supply chain management, ensuring timely deliveries and reducing operational costs."
+          
+        },
+        "tab_5": {
+            "header": "Education and Training",
+            "title": "IMMERSIVE LEARNING",
+            "description": "Our virtual and augmented reality technologies create immersive educational experiences, enhancing learning outcomes and providing realistic training simulations."
+          
+        },
+        "tab_6": {
+            "header": "Entertainment",
+            "title": "TRANSFORMING EXPERIENCES",
+            "description": "Our AI and VR/AR technologies revolutionize the entertainment industry, creating interactive and immersive experiences for audiences worldwide."
+          
+        }
+    },
+     #header :
         'services_url': reverse('AIDE_services'),
         'index_url': reverse('AIDE_index'),
         'infrastructure_url': reverse('AIDE_infrastructure'),
