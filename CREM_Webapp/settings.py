@@ -89,12 +89,8 @@ WSGI_APPLICATION = "CREM_Webapp.wsgi.application"
 
 DATABASES = {
     "default": {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres.gbblasxmcvumfinbunbe',
-        'PASSWORD': '@crem_webapp',
-        'HOST': 'aws-0-eu-west-2.pooler.supabase.com',  
-        'PORT': '6543',       
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # Path to the SQLite database file
     }
 }
 
