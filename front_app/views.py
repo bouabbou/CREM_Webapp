@@ -321,23 +321,23 @@ def AIDE_infrastructure(request):
         },
         'header_img': "../static/images/revo-slider/infra.jpg",
         'gallery_texts': {
-            'section_1': {
-                'title': "Title for Section 1",
-                'subtitle': "Subtitle for Section 1",
+             'section_1': {
+                'title': "Powder-Based",
+                'subtitle': "Additive Manufacturing",
             },
             'section_2': {
-                'title': "Title for Section 2",
-                'subtitle': "Subtitle for Section 2",
+                'title': "Fused deposition modeling",
+                'subtitle': "Additive Manufacturing",
             },
             'section_3': {
-                'title': "Title for Section 3",
+                'title': "CNC Machinning",
                 'subtitle': "Subtitle for Section 3",
             },
         },
         'platform_name': "AI AND DIGITAL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         'logo': '../../static/images/logo-grey.png',
 
         #header : 
@@ -882,19 +882,19 @@ def SAI_innovation(request):
             'section6': {
                 'title': 'title 6',
                 'tag': 'tag6',
-                'text': 'text text tex tetx tetx tetsx ',
+                'text1': 'text text tex tetx tetx tetsx ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
