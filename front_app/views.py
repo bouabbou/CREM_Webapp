@@ -11,7 +11,6 @@ from instrumentation.models import Category, Product
 
 #platfroms infrustructures
 
-@cache_page(60 * 60 * 24 * 7)
 def ASMP_infrastructure(request):
     
     """
@@ -77,7 +76,6 @@ def ASMP_infrastructure(request):
     # Render the template with the context data
     return render(request, 'platforms/ASMP/ASMP_Infrastructure_FA_EN.html', context)
 
-@cache_page(60 * 60 * 24 * 7)
 def BIO_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -126,7 +124,6 @@ def BIO_infrastructure(request):
 
     return render( request ,'platforms/BIO/BIO_infrastructure.html', context)
 
-@cache_page(60 * 60 * 24 * 7)
 def MSC_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -173,7 +170,6 @@ def MSC_infrastructure(request):
 
     return render( request ,'platforms/MSC/MSC_infrastructure.html', context)
 
-@cache_page(60 * 60 * 24 * 7)
 def PCE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -221,7 +217,6 @@ def PCE_infrastructure(request):
 
     return render( request ,'platforms/PCE/PCE_infrastructure.html', context)
 
-@cache_page(60 * 60 * 24 * 7)
 def RESEE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -270,7 +265,6 @@ def RESEE_infrastructure(request):
 
     return render( request ,'platforms/RESEE/RESEE_infrastructure.html', context)
 
-@cache_page(60 * 60 * 24 * 7)
 def SAI_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -318,7 +312,6 @@ def SAI_infrastructure(request):
 
     return render( request ,'platforms/sai/SAI_infrastructure.html', context)
 
-@cache_page(60 * 60 * 24 * 7)
 def AIDE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
