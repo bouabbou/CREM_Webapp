@@ -1,5 +1,6 @@
 # CREM/views.py
 from django.templatetags.static import static
+from django.views.decorators.cache import cache_page
 
 from django.shortcuts import render
 from django.urls import reverse
@@ -10,6 +11,7 @@ from instrumentation.models import Category, Product
 
 #platfroms infrustructures
 
+@cache_page(60 * 60 * 24 * 7)
 def ASMP_infrastructure(request):
     
     """
@@ -57,9 +59,9 @@ def ASMP_infrastructure(request):
             },
         },
         'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB1.jpg",  
+        'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         
         #header
         'services_url': reverse('ASMP_services'),
@@ -74,6 +76,8 @@ def ASMP_infrastructure(request):
 
     # Render the template with the context data
     return render(request, 'platforms/ASMP/ASMP_Infrastructure_FA_EN.html', context)
+
+@cache_page(60 * 60 * 24 * 7)
 def BIO_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -104,9 +108,9 @@ def BIO_infrastructure(request):
             },
         },
         'platform_name': "BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/zAMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         'logo': '../../static/images/logo-grey.png',
         
         #header : 
@@ -121,6 +125,8 @@ def BIO_infrastructure(request):
     }
 
     return render( request ,'platforms/BIO/BIO_infrastructure.html', context)
+
+@cache_page(60 * 60 * 24 * 7)
 def MSC_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -150,9 +156,9 @@ def MSC_infrastructure(request):
             },
         },
         'platform_name': "Materials, Synthesis, and Characterization Platform",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
+        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png",
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -166,6 +172,8 @@ def MSC_infrastructure(request):
     }
 
     return render( request ,'platforms/MSC/MSC_infrastructure.html', context)
+
+@cache_page(60 * 60 * 24 * 7)
 def PCE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -196,9 +204,9 @@ def PCE_infrastructure(request):
             },
         },
         'platform_name': "PROCESS ENGINEERING AND CIVIL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
+        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png",
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -212,6 +220,8 @@ def PCE_infrastructure(request):
     }
 
     return render( request ,'platforms/PCE/PCE_infrastructure.html', context)
+
+@cache_page(60 * 60 * 24 * 7)
 def RESEE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -242,9 +252,9 @@ def RESEE_infrastructure(request):
             },
         },
         'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -259,6 +269,8 @@ def RESEE_infrastructure(request):
     }
 
     return render( request ,'platforms/RESEE/RESEE_infrastructure.html', context)
+
+@cache_page(60 * 60 * 24 * 7)
 def SAI_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -289,9 +301,9 @@ def SAI_infrastructure(request):
             },
         },
         'platform_name': "SENSORS AND INSTRUMENTATION",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -305,6 +317,8 @@ def SAI_infrastructure(request):
     }
 
     return render( request ,'platforms/sai/SAI_infrastructure.html', context)
+
+@cache_page(60 * 60 * 24 * 7)
 def AIDE_infrastructure(request):
     categories = Category.objects.all()
     products = Product.objects.all()
@@ -321,23 +335,23 @@ def AIDE_infrastructure(request):
         },
         'header_img': "../static/images/revo-slider/infra.jpg",
         'gallery_texts': {
-            'section_1': {
-                'title': "Title for Section 1",
-                'subtitle': "Subtitle for Section 1",
+             'section_1': {
+                'title': "Powder-Based",
+                'subtitle': "Additive Manufacturing",
             },
             'section_2': {
-                'title': "Title for Section 2",
-                'subtitle': "Subtitle for Section 2",
+                'title': "Fused deposition modeling",
+                'subtitle': "Additive Manufacturing",
             },
             'section_3': {
-                'title': "Title for Section 3",
+                'title': "CNC Machinning",
                 'subtitle': "Subtitle for Section 3",
             },
         },
         'platform_name': "AI AND DIGITAL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         'logo': '../../static/images/logo-grey.png',
 
         #header : 
@@ -874,19 +888,19 @@ def SAI_innovation(request):
             'section6': {
                 'title': 'title 6',
                 'tag': 'tag6',
-                'text': 'text text tex tetx tetx tetsx ',
+                'text1': 'text text tex tetx tetx tetsx ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
-                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
