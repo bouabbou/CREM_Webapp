@@ -440,67 +440,59 @@ def AIDE_innovation(request):
         #data 
     context = {
         'header1': {
-            'title_1': 'header1 ',
-            'title_2': ' title1',
+            'title_1': 'Artificial ',
+            'title_2': ' INTELLIGENCE',
         },
         'header2': {
-            'title_1': 'header2 ',
-            'title_2': ' title2',
+            'title_1': 'Virtual ',
+            'title_2': ' REALITY',
         },
         'header3': {
-            'title_1': 'header3 ',
-            'title_2': ' title3',
+            'title_1': 'Collaborative ',
+            'title_2': ' ROBOTICS',
         },
         'sections': {
             'section1': {
-                'title': 'title 1',
-                'tag': 'tag1',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Deep Learning Algorithms',
+                'text': 'Our work in deep learning focuses on developing advanced AI models that can process vast amounts of data to make precise and intelligent decisions. This technology drives innovation across sectors by enabling sophisticated data analysis and predictive modeling.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
             'section2': {
-                'title': 'title 2',
-                'tag': 'tag2',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Natural Language Processing (NLP)',
+                'text': 'NLP allows for the creation of AI systems that understand and generate human language. This opens up new possibilities for applications such as chatbots, automated translations, and sentiment analysis, enhancing user interactions and experiences. ',
                 'img': '../static/images/Innovation/sls.png'
 
             },
             'section3': {
-                'title': 'title 3',
-                'tag': 'tag3',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Computer Vision',
+                'text': 'Computer vision technology enables machines to interpret and understand visual information from the world. Our expertise in computer vision facilitates applications such as facial recognition, object detection, and automated quality inspection in manufacturing. ',
                 'img': '../static/images/Innovation/FDM.png'
 
             },
-            'section4': {
-                'title': 'title 4',
-                'tag': 'tag4',
-                'text': 'text text tex tetx tetx tetsx ',
-                'img': '../static/images/Innovation/SLA.png'
-
-            },
+            
             'section5': {
-                'title': 'title 5',
-                'tag': 'tag5',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Immersive Training Programs',
+                'text': 'We develop VR training programs that provide realistic and engaging learning experiences. These programs are used in various industries, including healthcare, automotive, and manufacturing, to enhance skills and safety. ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section6': {
-                'title': 'title 6',
-                'tag': 'tag6',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Interactive Simulations',
+                'text': 'Our interactive simulations create virtual environments where users can explore and interact with digital models. This technology is particularly useful for design, prototyping, and educational purposes, allowing for detailed visualization and experimentation. ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'THERMOPLASTIC',
-                'tag': 'COMPOSITES',
-                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'title': 'Robotic Assistance Using Humanoids',
+                'text': 'We specialize in developing humanoid robots that provide assistance in various settings, such as healthcare, customer service, and domestic environments. These humanoids are designed to interact naturally with humans, performing tasks that enhance daily living and improve quality of life.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'title': 'Mobile Robotics',
+                'text': 'Our expertise includes developing algorithms for mobile robotics, enabling robots to navigate and operate autonomously in diverse environments. These mobile robots are used in applications ranging from logistics and warehouse management to exploration and surveillance.',
+                'img': '../static/images/Innovation/CF.png'
+            },
+            'section9': {
+                'title': 'Aerial Robotics',
+                'text': 'We focus on the navigation of drones in complex spaces, developing advanced algorithms to ensure precise and safe operation. These aerial robots are utilized in applications such as surveillance, environmental monitoring, and delivery services.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
