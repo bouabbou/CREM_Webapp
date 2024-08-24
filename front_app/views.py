@@ -57,9 +57,9 @@ def ASMP_infrastructure(request):
             },
         },
         'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB1.jpg",  
+        'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         
         #header
         'services_url': reverse('ASMP_services'),
@@ -104,9 +104,9 @@ def BIO_infrastructure(request):
             },
         },
         'platform_name': "BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/zAMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         'logo': '../../static/images/logo-grey.png',
         
         #header : 
@@ -150,9 +150,9 @@ def MSC_infrastructure(request):
             },
         },
         'platform_name': "Materials, Synthesis, and Characterization Platform",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
+        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png",
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -196,9 +196,9 @@ def PCE_infrastructure(request):
             },
         },
         'platform_name': "PROCESS ENGINEERING AND CIVIL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg",
+        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png",
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -242,9 +242,9 @@ def RESEE_infrastructure(request):
             },
         },
         'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -289,9 +289,9 @@ def SAI_infrastructure(request):
             },
         },
         'platform_name': "SENSORS AND INSTRUMENTATION",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.jpg",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.jpg", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.jpg", 
+        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
+        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
