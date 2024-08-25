@@ -753,68 +753,30 @@ def MSC_innovation(request):
 def PCE_innovation(request):
     context = {
         'header1': {
-            'title_1': 'header1 ',
-            'title_2': ' title1',
+            'title_1': 'Geotechnical ',
         },
         'header2': {
-            'title_1': 'header2 ',
-            'title_2': ' title2',
+            'title_1': 'Concrete ',
         },
         'header3': {
-            'title_1': 'header3 ',
-            'title_2': ' title3',
+            'title_1': 'Traffic ',
+            'title_2': ' Facilities',
         },
         'sections': {
             'section1': {
-                'title': 'title 1',
-                'tag': 'tag1',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Geotechnical characterization',
+                'text': 'We employ advanced geotechnical testing methods to better understand soil and rock behavior for infrastructure design and construction.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
-            'section2': {
-                'title': 'title 2',
-                'tag': 'tag2',
-                'text': 'text text tex tetx tetx tetsx ',
-                'img': '../static/images/Innovation/sls.png'
-
-            },
-            'section3': {
-                'title': 'title 3',
-                'tag': 'tag3',
-                'text': 'text text tex tetx tetx tetsx ',
-                'img': '../static/images/Innovation/FDM.png'
-
-            },
-            'section4': {
-                'title': 'title 4',
-                'tag': 'tag4',
-                'text': 'text text tex tetx tetx tetsx ',
-                'img': '../static/images/Innovation/SLA.png'
-
-            },
             'section5': {
-                'title': 'title 5',
-                'tag': 'tag5',
-                'text': 'text text tex tetx tetx tetsx ',
-                'img': '../static/images/Innovation/CNC.png'
-            },
-            'section6': {
-                'title': 'title 6',
-                'tag': 'tag6',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Advanced materials testing',
+                'text': 'We investigate the properties and behavior of innovative materials such as high-performance concrete, sustainable composites, and recycled materials.-Structural health monitoring: We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'THERMOPLASTIC',
-                'tag': 'COMPOSITES',
-                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'title': 'Innovative Asphalt Technologies',
+                'text': 'Pioneering the development of high-performance asphalt mixtures that are long-lasting, weather-resistant, and environmentally friendly.',
                 'img': '../static/images/Innovation/TP.png'
-            },
-            'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
-                'img': '../static/images/Innovation/CF.png'
             }
         },
         
