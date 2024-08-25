@@ -1584,31 +1584,31 @@ def PCE_index(request):
         "header": {
         "video": "../static/video/PCE.mp4",
         "title": "noyl",
-        "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
+        "description": "Civil Engineering Platform"
     },
     "about": {
-        "text_1": "Our additive and subtractive manufacturing platform offers versatility, enabling rapid production of prototypes and functional parts across industries such as aerospace, automotive, and biomedical. We are committed to advancing materials science and shaping the future of manufacturing.",
-        "text_2": "Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete."
+        "text_1": "Our team of experts partners with clients to deliver exceptional geotechnical, concrete, and pavement engineering services, ensuring precise solutions for critical company needs.",
+        "text_2": "Our team boasts extensive expertise in geotechnical, concrete, and pavement engineering, providing innovative solutions for challenging projects."
     },
     "third_section": {
-        "title": "Additive Manufacturing Advantages",
-        "description": "Additive manufacturing offers numerous benefits, including the ability to create complex geometries, customize products, and use a variety of materials.",
+        "title": "Civil Engineering Advantages",
+        "description": "Our civil engineering laboratory offers state-of-the-art equipment and experienced professionals to provide cutting-edge testing and analysis services. From geotechnical investigations to materials testing, we deliver accurate and reliable results to support your project success. Our commitment to innovation and quality ensures optimal solutions for your engineering challenges. ",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Geometric Complexity",
-            "description": "It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods."
+            "title": "Expertise and Experience",
+            "description": "Our laboratory boasts a team of highly skilled engineers and technicians with extensive experience in the field. This expertise ensures accurate and reliable results for all your testing and analysis needs."
         },
         "point_2": {
-            "title": "Personalization",
-            "description": "It enables the production of customized and unique objects tailored to the specific needs of each user or application."
+            "title": "State-of-the-art-equipment",
+            "description": "We are equipped with the latest testing equipment and technology, allowing us to conduct comprehensive and precise investigations. Our advanced facilities enable us to handle a wide range of projects with efficiency and accuracy."
         },
         "point_3": {
-            "title": "Material Diversity",
-            "description": "Using a diverse range of materials, including plastics, metals, and composites, AM provides flexibility in material selection for creating innovative objects."
+            "title": "Customized Solutions",
+            "description": "We understand that every project is unique. Our laboratory offers tailored testing and analysis services to meet your specific requirements, providing you with the data needed to make informed decisions."
         },
         "point_4": {
-            "title": "Rapid Prototyping",
-            "description": "3D printing allows for rapid prototyping, which accelerates the product development process, thus minimizing the associated costs."
+            "title": "Commitment to Quality",
+            "description": "We adhere to strict quality control standards and ensuring the highest level of accuracy and reliability in our results."
         }
     },
     "video": {
@@ -1619,32 +1619,22 @@ def PCE_index(request):
     },
     "details_section": {
         "title": "Driving Innovation Across Industries",
-        "description": "At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
         "tab_1": {
-            "header": "Aerospace",
-            "title": "A New Era of Creation in Aerospace",
-            "description": "Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.From lightweight components to rocket engines, the potential for innovation is limitless.",
+            "header": "Geotechnics",
+            "description": "Advanced soil analysis methodologies to optimize the design and construction of foundations and Providing innovative solutions to complex geotechnical problems through cutting-edge research and development.",
 
             "img_before": "../static/images/static-media/Turbine1.jpg",
             "img_after": "../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
-            "header": "Automotive",
-            "title": "Transforming Automotive Manufacturing",
-            "description": "From polymer-based composites tailored for specific automotive structures to customized metal parts made through 3D printing, modern manufacturing advancements enable part customization, cost and lead time reduction, as well as the creation of lighter structures and innovative geometries.",
+            "header": "Traffic facilities",
+            "description": "Advanced bitumen analysis methodologies to optimize road design and construction reliability",
            
         },
         "tab_3": {
-            "header": "Medical Technology",
-            "title": "Precision Healthcare: Custom Solutions with Additive Manufacturing",
-            "description": "Additive manufacturing is revolutionizing healthcare, through personalized medical solutions, from tailored implants to custom prosthetics.By leveraging this innovative technology, healthcare providers can now fabricate customized implants, prosthetics and other medical devices that are meticulously designed to meet the unique requirements of each patient, driving enhanced outcomes.",
+            "header": "Non-destructuve testing",
+            "description": "Implement state-of-the-art non-destructive testing techniques to assess structural integrity and Provide accurate and reliable condition assessment reports for informed decision-making.",
            
-        },
-        "tab_4": {
-            "header": "Other Industries",
-            "title": "The Diverse Applications of Additive Manufacturing Across Industries",
-            "description": "From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 3D printing is revolutionizing a multitude of industries.\nThe versatility of additive manufacturing is driving innovation by empowering businesses and artists to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, and redefine the standards within their industries."
-          
         }
     },
      #header : 
