@@ -58,10 +58,9 @@ def ASMP_infrastructure(request):
             },
         },
         'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
-        
+        'slider_image_url_1': "../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB1.png",  
+        'slider_image_url_2': "../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB2.png", 
+        'slider_image_url_3': "../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB3.png", 
         #header
         'services_url': reverse('ASMP_services'),
         'index_url': reverse('ASMP_index'),
