@@ -981,44 +981,58 @@ def AIDE_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': '3D',
-            'title_line2': 'DESIGN',
-            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'title_line1': 'Advanced',
+            'title_line2': 'Chatbots',
+            'text': ' Tailor-made design of advanced chatbots to automate customer interactions, improve online support, and boost business operational efficiency. ',
             'img': '../../static/images/Serv/1.png'
             
         },
         'section_2': {
-            'title_line1': 'ADDITIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'title_line1': 'Character',
+            'title_line2': 'Recognition Systems',
+            'text': ' Design of OCR systems to efficiently extract and interpret text data from printed or handwritten documents. These systems are used to digitize documents, automate data management and improve information retrieval processes.',
             'img': '../../static/images/Serv/2.jpeg'
 
         },
         'section_3': {
-            'title_line1': 'SUBTRACTIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'title_line1': 'Facial',
+            'title_line2': 'Recognition Systems',
+            'text': 'Creating advanced algorithms for facial recognition. These algorithms are deployed in applications for security, access control, workforce management, and even personalized user experiences.',
             'img': '../../static/images/Serv/4.jpeg'
 
         },
         'section_4': {
-            'title_line1': 'COMPOSITE',
-            'title_line2': 'MATERIALS',
-            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'title_line1': 'Event',
+            'title_line2': 'Deployment',
+            'text': 'Robot deployment services for special events, trade fairs, exhibitions or product launches.',
             'img': '../../static/images/Serv/6.jpg'
 
         },
         'section_5': {
-            'title_line1': 'MATERIALS AND MECHANICAL',
-            'title_line2': 'CHARACTERIZATION',
-            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'title_line1': 'Customer Service',
+            'title_line2': 'And Marketing',
+            'text': 'Use robots to improve customer service by providing information, answering questions and collecting feedback. Robots can also be used for interactive marketing campaigns.',
             'img': '../../static/images/Serv/5.jpg'
 
         },
         'section_6': {
-            'title_line1': 'R&D',
-            'title_line2': 'SPECIFIC',
-            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'title_line1': 'Health',
+            'title_line2': 'And Wellness',
+            'text': 'Proposing solutions for healthcare facilities, using robots to entertain patients, encourage physical activity, or provide medical reminders.',
+            'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_5': {
+            'title_line1': 'Custom Content',
+            'title_line2': 'Development',
+            'text': 'Create interactive content tailored to customers needs, such as games, presentations, dialogs and animations.',
+            'img': '../../static/images/Serv/5.jpg'
+
+        },
+        'section_6': {
+            'title_line1': 'Virtual',
+            'title_line2': 'And Augmented Reality',
+            'text': 'Develop virtual and augmented reality content; Train in the use of the following equipment: HTC vive pro eye VR headset, Base stations, Controllers',
             'img': '../../static/images/Serv/7.jpeg'
 
         },
