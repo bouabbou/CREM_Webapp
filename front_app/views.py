@@ -674,67 +674,57 @@ def MSC_innovation(request):
     context = {
         #data
         'header1': {
-            'title_1': 'header1 ',
-            'title_2': ' title1',
+            'title_1': 'Powder ',
+            'title_2': ' Characterization',
         },
         'header2': {
-            'title_1': 'header2 ',
-            'title_2': ' title2',
-        },
-        'header3': {
-            'title_1': 'header3 ',
-            'title_2': ' title3',
+            'title_1': 'Mechanical ',
+            'title_2': ' Characterization',
         },
         'sections': {
             'section1': {
-                'title': 'title 1',
-                'tag': 'tag1',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Pharmaceuticals',
+                'tag': '',
+                'text': 'Measures moisture and density. ',
                 'img': '../static/images/Innovation/lpbf.png'
             },
             'section2': {
-                'title': 'title 2',
-                'tag': 'tag2',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Materials Science',
+                'tag': '',
+                'text': 'Analyzes particle size and density. ',
                 'img': '../static/images/Innovation/sls.png'
 
             },
             'section3': {
-                'title': 'title 3',
-                'tag': 'tag3',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Additive Manufacturing',
+                'tag': '',
+                'text': 'Checks particle size and flowability. ',
                 'img': '../static/images/Innovation/FDM.png'
 
             },
             'section4': {
-                'title': 'title 4',
-                'tag': 'tag4',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Chemical Processing',
+                'tag': '',
+                'text': 'Analyzes particle size and shape.',
                 'img': '../static/images/Innovation/SLA.png'
 
             },
             'section5': {
-                'title': 'title 5',
-                'tag': 'tag5',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Aerospace',
+                'tag': '',
+                'text': 'Tests materials for strength and durability in aircraft and spacecraft.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section6': {
-                'title': 'title 6',
-                'tag': 'tag6',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Automotive',
+                'tag': '',
+                'text': 'Evaluates component materials to ensure reliability and safety.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'THERMOPLASTIC',
-                'tag': 'COMPOSITES',
-                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
-                'img': '../static/images/Innovation/TP.png'
-            },
-            'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'title': 'Construction',
+                'tag': '',
+                'text': 'Assesses materials for structural integrity to meet safety standards.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
@@ -1494,28 +1484,28 @@ def MSC_index(request):
         "description": "",
     },
     "about": {
-        "text_1": "Our additive and subtractive manufacturing platform offers versatility, enabling rapid production of prototypes and functional parts across industries such as aerospace, automotive, and biomedical. We are committed to advancing materials science and shaping the future of manufacturing.",
+        "text_1": "Our characterization platform provides expertise in chemical, structural, mechanical, physico-chemical, and metallographic analyses. With four advanced centers, we drive technological innovation and maintain top performance. We support collaborative research and offer training for academic and industrial partners. ",
         "text_2": "Our platform analyzes various parameters such as crystallinity, specific surface area, morphology, chemical composition, particle size distribution, density, and moisture content. In mechanical characterization, we assess material response to stress, including elasticity, hardness, toughness, and fatigue resistance."
     },
     "third_section": {
-        "title": "Innovative Material Characterization",
-        "description": "desctiption",
+        "title": "Powder Characterization",
+        "description": "Involves analyzing powders to understand their physical and chemical properties",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Precision Measurement",
-            "description": "Our platform integrates cutting-edge technology, offering precise and reliable measurements across a wide range of material applications."
+            "title": "Particle size",
+            "description": "Measures size distribution affecting flow and mixing."
         },
         "point_2": {
-            "title": "Advanced Analytical Techniques",
-            "description": "Employing state-of-the-art methods like Nuclear Magnetic Resonance (NMR) and X-Ray Diffraction (XRD), we push the boundaries of material science."
+            "title": "Surface Properties",
+            "description": "Assesses surface area and texture, influencing reactivity and adhesion."
         },
         "point_3": {
-            "title": "Comprehensive Support",
-            "description": "Beyond instrumentation, we provide unparalleled support and expertise, ensuring you navigate the complexities of material characterization with ease."
+            "title": "Performance Insights",
+            "description": "Evaluates stability and effectiveness, including moisture content."
         },
         "point_4": {
-            "title": "Customized Solutions",
-            "description": "Tailored to meet specific research and industrial needs, our solutions enhance efficiency and drive innovation in material science."
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum"
         }
     },
     "video": {
@@ -1528,29 +1518,47 @@ def MSC_index(request):
         "title": "Driving Innovation Across Industries",
         "description": "At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
         "tab_1": {
-            "header": "Aerospace",
-            "title": "A New Era of Creation in Aerospace",
-            "description": "Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.From lightweight components to rocket engines, the potential for innovation is limitless.",
+            "header": "Pharmaceuticals",
+            "title": "",
+            "description": "Measures moisture and density.",
 
             "img_before": "../static/images/static-media/Turbine1.jpg",
             "img_after": "../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
-            "header": "Automotive",
-            "title": "Transforming Automotive Manufacturing",
-            "description": "From polymer-based composites tailored for specific automotive structures to customized metal parts made through 3D printing, modern manufacturing advancements enable part customization, cost and lead time reduction, as well as the creation of lighter structures and innovative geometries.",
+            "header": "Materials Science",
+            "title": "",
+            "description": "Analyzes particle size and density.",
            
         },
         "tab_3": {
-            "header": "Medical Technology",
-            "title": "Precision Healthcare: Custom Solutions with Additive Manufacturing",
-            "description": "Additive manufacturing is revolutionizing healthcare, through personalized medical solutions, from tailored implants to custom prosthetics.By leveraging this innovative technology, healthcare providers can now fabricate customized implants, prosthetics and other medical devices that are meticulously designed to meet the unique requirements of each patient, driving enhanced outcomes.",
+            "header": "Additive Manufacturing",
+            "title": "",
+            "description": "Checks particle size and flowability.",
            
         },
         "tab_4": {
-            "header": "Other Industries",
-            "title": "The Diverse Applications of Additive Manufacturing Across Industries",
-            "description": "From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 3D printing is revolutionizing a multitude of industries.\nThe versatility of additive manufacturing is driving innovation by empowering businesses and artists to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, and redefine the standards within their industries."
+            "header": "Chemical Processing",
+            "title": "",
+            "description": "Analyzes particle size and shape."
+          
+        },
+        "tab_5": {
+            "header": "Aerospace",
+            "title": "",
+            "description": "Tests materials for strength and durability in aircraft and spacecraft.",
+           
+        },
+        "tab_6": {
+            "header": "Automotive",
+            "title": "",
+            "description": "Evaluates component materials to ensure reliability and safety.",
+           
+        },
+        "tab_7": {
+            "header": "Construction",
+            "title": "",
+            "description": "Assesses materials for structural integrity to meet safety standards."
           
         }
     },
