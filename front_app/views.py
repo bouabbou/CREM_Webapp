@@ -1412,7 +1412,7 @@ def BIO_index(request):
         
         "header": {
         "video": "../static/video/BIO.mp4",
-        "title": "sex",
+        "title": "BIO/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
