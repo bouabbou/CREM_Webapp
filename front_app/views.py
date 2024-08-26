@@ -1111,45 +1111,94 @@ def MSC_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': '3D',
-            'title_line2': 'DESIGN',
-            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'title_line1': 'Tensile ',
+            'title_line2': 'Testing',
+            'text': 'Measures tensile strength, elongation, and elasticity.',
             'img': '../../static/images/Serv/1.png'
             
         },
         'section_2': {
-            'title_line1': 'ADDITIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'title_line1': 'Compression ',
+            'title_line2': 'Testing',
+            'text': 'Assesses compressive strength and deformation.',
             'img': '../../static/images/Serv/2.jpeg'
 
         },
         'section_3': {
-            'title_line1': 'SUBTRACTIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'title_line1': 'Flexural ',
+            'title_line2': 'Testing',
+            'text': 'Determines flexural strength and modulus.',
             'img': '../../static/images/Serv/4.jpeg'
 
         },
         'section_4': {
-            'title_line1': 'COMPOSITE',
-            'title_line2': 'MATERIALS',
-            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'title_line1': 'Fatigue ',
+            'title_line2': 'Testing',
+            'text': 'Analyzes material durability under cyclic loading.',
             'img': '../../static/images/Serv/6.jpg'
 
         },
         'section_5': {
-            'title_line1': 'MATERIALS AND MECHANICAL',
-            'title_line2': 'CHARACTERIZATION',
-            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'title_line1': 'Hardness ',
+            'title_line2': 'Testing',
+            'text': '',
             'img': '../../static/images/Serv/5.jpg'
 
         },
         'section_6': {
-            'title_line1': 'R&D',
-            'title_line2': 'SPECIFIC',
-            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'title_line1': 'Rockwell',
+            'title_line2': '',
+            'text': 'Measures hardness using specific loads and indenters.',
             'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_7': {
+            'title_line1': 'Vickers ',
+            'title_line2': '',
+            'text': 'Assesses hardness with a diamond pyramid indenter.',
+            'img': '../../static/images/Serv/5.jpg'
+
+        },
+        'section_8': {
+            'title_line1': 'Resilience ',
+            'title_line2': 'Testing',
+            'text': 'Measures impact resistance and toughness.',
+            'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_9': {
+            'title_line1': 'Particle Size ',
+            'title_line2': 'Analysis',
+            'text': 'Measures size distribution using Revolution Powder Analyzer and Camsizer X2 Grundgerät.',
+            'img': '../../static/images/Serv/5.jpg'
+
+        },
+        'section_10': {
+            'title_line1': 'Density ',
+            'title_line2': 'Measurement',
+            'text': 'Determines powder density using Gas and Helium Pycnometers.',
+            'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_11': {
+            'title_line1': 'Granulometry ',
+            'title_line2': '',
+            'text': 'Analyzes particle size and shape with Sieve Shakers and Granulometers.',
+            'img': '../../static/images/Serv/5.jpg'
+
+        },
+        'section_12': {
+            'title_line1': 'Revolution Powder ',
+            'title_line2': 'Analysis',
+            'text': 'Assesses powder handling characteristics with Revolution Powder Analyzer. ',
+            'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_13': {
+            'title_line1': 'Gas Density ',
+            'title_line2': 'Measurement',
+            'text': 'Measures density with Pycnometers for Gas Density Measurement. ',
+            'img': '../../static/images/Serv/5.jpg'
 
         },
     },
