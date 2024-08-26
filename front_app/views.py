@@ -1014,45 +1014,94 @@ def BIO_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': '3D',
-            'title_line2': 'DESIGN',
-            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'title_line1': 'BIOMEDICAL ',
+            'title_line2': 'INSTRUMENTATION',
+            'text': '•	Computer-aided design and manufacturing of biomedical instruments creating precise parts and prototypes with advanced CAD/CAE software',
             'img': '../../static/images/Serv/1.png'
             
         },
         'section_2': {
-            'title_line1': 'ADDITIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'title_line1': 'Cellular ',
+            'title_line2': 'and Molecular Analyses',
+            'text': '',
             'img': '../../static/images/Serv/2.jpeg'
 
         },
         'section_3': {
-            'title_line1': 'SUBTRACTIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'title_line1': 'Recombinant ',
+            'title_line2': 'Protein Production',
+            'text': 'Gene cloning and optimization in various vectors, including cloning, expression, and multigenic vectors. Production in heterologous systems and optimization of bio-production conditions. Protein purification and crystallization. Packaging of protein preparations.',
             'img': '../../static/images/Serv/4.jpeg'
 
         },
         'section_4': {
-            'title_line1': 'COMPOSITE',
-            'title_line2': 'MATERIALS',
-            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'title_line1': 'Cell Culture ',
+            'title_line2': 'Testing',
+            'text': 'In vitro tests: cell migration & invasion, proliferation, viability, adhesion, and real-time cellular and molecular analysis. Measurement of cellular cytotoxicity for organic molecules. Determination of antimicrobial activities (antibacterial, antifungal, etc.). Optimization of cell culture and molecular screening conditions.',
             'img': '../../static/images/Serv/6.jpg'
 
         },
         'section_5': {
-            'title_line1': 'MATERIALS AND MECHANICAL',
-            'title_line2': 'CHARACTERIZATION',
-            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'title_line1': 'Molecular ',
+            'title_line2': 'Diagnostics',
+            'text': 'Design of primers and probes for identifying and characterizing bacterial, fungal, and viral pathogens (including COVID-19) using PCR, RT-PCR, and real-time PCR. Sample preparation, including RNA extraction and long DNA fragment extraction. Construction of genomic libraries. DNA sequencing.',
             'img': '../../static/images/Serv/5.jpg'
 
         },
         'section_6': {
-            'title_line1': 'R&D',
-            'title_line2': 'SPECIFIC',
-            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'title_line1': 'Biochemical Analysis of Food ',
+            'title_line2': 'and Environmental Samples',
+            'text': 'Quantification of key organic molecules (amino acids, sugars, lipids, proteins, etc.). Quantification of biological activities.',
             'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_7': {
+            'title_line1': 'Proteomic ',
+            'title_line2': 'Analyses',
+            'text': 'Protein detection through immunoblotting, immunoprecipitation, and peptide/protein quality control. Protein quantification using Western blot, ELISA, electrophoresis, and other methods.',
+            'img': '../../static/images/Serv/5.jpg'
+
+        },
+        'section_8': {
+            'title_line1': 'Microbiological ',
+            'title_line2': 'Analyses',
+            'text': '',
+            'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_9': {
+            'title_line1': 'Food and Environmental ',
+            'title_line2': 'Product Testing',
+            'text': 'Detection and identification of pathogenic microorganisms. Serotyping of foodborne pathogens. Identification of hygiene and quality indicator microorganisms. Audits and control of cleaning-disinfection operations (surface, air, and hood control). Microbiological quality control of various water types.',
+            'img': '../../static/images/Serv/5.jpg'
+
+        },
+        'section_10': {
+            'title_line1': 'Pharmaceutical and Cosmetic ',
+            'title_line2': 'Product Testing',
+            'text': 'Detection, enumeration, and identification of pathogenic microorganisms (bacteria, yeasts, fungi, viruses). Verification of antimicrobial efficacy. Bacteriological testing of finished products.',
+            'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_11': {
+            'title_line1': 'Optimization of Biochemical/Biological ',
+            'title_line2': 'Processes',
+            'text': 'Immobilization and optimization of biocatalysts (cellular and enzymatic). Scaling up of biochemical processes (fermentation and enzymatic catalysis).',
+            'img': '../../static/images/Serv/5.jpg'
+
+        },
+        'section_12': {
+            'title_line1': 'Spectroscopic Elucidation of ',
+            'title_line2': 'Organic/Biological Molecules',
+            'text': 'Separation and spectrometric analysis. Spectroscopic analyses: HPLC-MS/MS, GC-MS, NMR, FT-IR, XRD, UV-NIR.',
+            'img': '../../static/images/Serv/7.jpeg'
+
+        },
+        'section_13': {
+            'title_line1': 'Continuous ',
+            'title_line2': 'Training',
+            'text': 'Our platform offers comprehensive continuous training programs designed to keep professionals up-to-date with the latest advancements and techniques. We provide tailored workshops and courses to enhance skills and knowledge, ensuring your team remains at the forefront of the industry.',
+            'img': '../../static/images/Serv/5.jpg'
 
         },
     },
@@ -1367,63 +1416,68 @@ def BIO_index(request):
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
+<<<<<<< HEAD
         "text_1": "sex",
         "text_2": "Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete."
+=======
+        "text_1": "Welcome to our state-of-the-art Biotechnology and Biomedical Engineering Platform. As a comprehensive hub for research, service provision, and training, we harness the latest advancements in microbiology, cell biology, molecular biology, chemistry, and engineering technologies. ",
+        "text_2": "We offer advanced expertise in protein engineering and recombinant DNA technologies, focusing on post-transcriptional RNA modification and its association with diseases. Our capabilities also include the design and development of cutting-edge medical devices and the synthesis and characterization of nanomaterials for specific medical applications. Additionally, we conduct rigorous microbiological analyses across the agri-food, environmental, pharmaceutical, and cosmetic sectors, providing tailored solutions to meet the needs of each industry."
+>>>>>>> c8f113a9ec4b6aba09264898a81925290dc39489
     },
     "third_section": {
-        "title": "Additive Manufacturing Advantages",
-        "description": "Additive manufacturing offers numerous benefits, including the ability to create complex geometries, customize products, and use a variety of materials.",
+        "title": "Bio/Substractive manufacturing Advantages",
+        "description": "Lorem ipsum",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Geometric Complexity",
-            "description": "It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods."
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum"
         },
         "point_2": {
-            "title": "Personalization",
-            "description": "It enables the production of customized and unique objects tailored to the specific needs of each user or application."
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum"
         },
         "point_3": {
-            "title": "Material Diversity",
-            "description": "Using a diverse range of materials, including plastics, metals, and composites, AM provides flexibility in material selection for creating innovative objects."
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum"
         },
         "point_4": {
-            "title": "Rapid Prototyping",
-            "description": "3D printing allows for rapid prototyping, which accelerates the product development process, thus minimizing the associated costs."
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum"
         }
     },
     "video": {
-        "title_l": "ADDITIVE",
+        "title_l": "Bio/Substractive",
         "title_r": "MANUFACTURING",
         "video": "../static/video/BIO.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
         "title": "Driving Innovation Across Industries",
-        "description": "At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
+        "description": "",
         "tab_1": {
-            "header": "Aerospace",
-            "title": "A New Era of Creation in Aerospace",
-            "description": "Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.From lightweight components to rocket engines, the potential for innovation is limitless.",
+            "header": "Lorem ipsum",
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum",
 
             "img_before": "../static/images/static-media/Turbine1.jpg",
             "img_after": "../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
-            "header": "Automotive",
-            "title": "Transforming Automotive Manufacturing",
-            "description": "From polymer-based composites tailored for specific automotive structures to customized metal parts made through 3D printing, modern manufacturing advancements enable part customization, cost and lead time reduction, as well as the creation of lighter structures and innovative geometries.",
+            "header": "Lorem ipsum",
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum",
            
         },
         "tab_3": {
-            "header": "Medical Technology",
-            "title": "Precision Healthcare: Custom Solutions with Additive Manufacturing",
-            "description": "Additive manufacturing is revolutionizing healthcare, through personalized medical solutions, from tailored implants to custom prosthetics.By leveraging this innovative technology, healthcare providers can now fabricate customized implants, prosthetics and other medical devices that are meticulously designed to meet the unique requirements of each patient, driving enhanced outcomes.",
+            "header": "Lorem ipsum",
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum",
            
         },
         "tab_4": {
-            "header": "Other Industries",
-            "title": "The Diverse Applications of Additive Manufacturing Across Industries",
-            "description": "From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 3D printing is revolutionizing a multitude of industries.\nThe versatility of additive manufacturing is driving innovation by empowering businesses and artists to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, and redefine the standards within their industries."
+            "header": "Lorem ipsum",
+            "title": "Lorem ipsum",
+            "description": "Lorem ipsum"
           
         }
     },
