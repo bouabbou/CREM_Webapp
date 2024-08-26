@@ -1130,45 +1130,24 @@ def PCE_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': '3D',
-            'title_line2': 'DESIGN',
-            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'title_line1': 'ANALYSES OF SOILS AND CONSTRUCTION MATERIALS',
+            'title_line2': '',
+            'text': '-Estimation of Atterberg limits: limits of elasticity and plasticity - Calculation of the sand equivalent - Calculation of the particle size distribution of a soil - Estimation of the fracturing resistance of aggregates (Los Angeles) - Estimation of the friction resistance of aggregates (micro-Deval)  - Compression tests for mortar and concrete',
             'img': '../../static/images/Serv/1.png'
             
         },
         'section_2': {
-            'title_line1': 'ADDITIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'title_line1': 'Lanes',
+            'title_line2': '',
+            'text': '-Aging of bitumen at RTFOT - Calculation of the dynamic stability of asphalt-based road pavement structures using rutting tests.',
             'img': '../../static/images/Serv/2.jpeg'
 
         },
         'section_3': {
-            'title_line1': 'SUBTRACTIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'title_line1': 'Non-destructive testing',
+            'title_line2': '',
+            'text': 'Determination of the resistance of concrete: By measuring the speed of propagation of ultrasound in concrete, we can estimate its compressive resistance. -Internal defect detection: Identification of voids, cracks and other structural defects in concrete. -Evaluation of concrete homogeneity: Verification of the consistency and uniformity of the concrete. -Assessment of the condition of existing structures: Detection of damage, cracks and corrosion of reinforced concrete.',
             'img': '../../static/images/Serv/4.jpeg'
-
-        },
-        'section_4': {
-            'title_line1': 'COMPOSITE',
-            'title_line2': 'MATERIALS',
-            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
-            'img': '../../static/images/Serv/6.jpg'
-
-        },
-        'section_5': {
-            'title_line1': 'MATERIALS AND MECHANICAL',
-            'title_line2': 'CHARACTERIZATION',
-            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
-            'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_6': {
-            'title_line1': 'R&D',
-            'title_line2': 'SPECIFIC',
-            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
-            'img': '../../static/images/Serv/7.jpeg'
 
         },
     },
