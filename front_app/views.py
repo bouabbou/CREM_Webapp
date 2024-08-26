@@ -1416,13 +1416,8 @@ def BIO_index(request):
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
-<<<<<<< HEAD
-        "text_1": "sex",
-        "text_2": "Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete."
-=======
         "text_1": "Welcome to our state-of-the-art Biotechnology and Biomedical Engineering Platform. As a comprehensive hub for research, service provision, and training, we harness the latest advancements in microbiology, cell biology, molecular biology, chemistry, and engineering technologies. ",
         "text_2": "We offer advanced expertise in protein engineering and recombinant DNA technologies, focusing on post-transcriptional RNA modification and its association with diseases. Our capabilities also include the design and development of cutting-edge medical devices and the synthesis and characterization of nanomaterials for specific medical applications. Additionally, we conduct rigorous microbiological analyses across the agri-food, environmental, pharmaceutical, and cosmetic sectors, providing tailored solutions to meet the needs of each industry."
->>>>>>> c8f113a9ec4b6aba09264898a81925290dc39489
     },
     "third_section": {
         "title": "Bio/Substractive manufacturing Advantages",
@@ -1637,6 +1632,7 @@ def PCE_index(request):
         'index_url': reverse('PCE_index'),
         'infrastructure_url': reverse('PCE_infrastructure'),
         'innovation_url': reverse('PCE_innovation'),
+        'services_url': reverse('PCE_services'),
         'logo': '../../static/images/logo-white.png',
 }
     return render( request ,'platforms/PCE//PCE_index.html', context)
