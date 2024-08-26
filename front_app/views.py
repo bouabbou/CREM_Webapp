@@ -1475,6 +1475,13 @@ def BIO_index(request):
             "description": "Lorem ipsum"
           
         }
+        ,
+         "tab_4": {
+            "header": "test",
+            "title": "test",
+            "description": "test"
+          
+        }
     },
      #header : 
         'services_url': reverse('BIO_services'),
@@ -1553,6 +1560,28 @@ def MSC_index(request):
             "description": "From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 3D printing is revolutionizing a multitude of industries.\nThe versatility of additive manufacturing is driving innovation by empowering businesses and artists to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, and redefine the standards within their industries."
           
         }
+        ,
+         "tab_5": {
+            "header": "test5",
+            "title": "test5",
+            "description": "test5"
+          
+        }
+          ,
+         "tab_6": {
+            "header": "test6",
+            "title": "test6",
+            "description": "test6"
+          
+        }
+          ,
+         "tab_7": {
+            "header": "test7    ",
+            "title": "test7 ",
+            "description": "test7   "
+          
+        }
+          
     },
      #header : 
         'services_url': reverse('MSC_services'),
