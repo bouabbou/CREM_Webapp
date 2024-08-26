@@ -722,9 +722,15 @@ def MSC_innovation(request):
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'Construction',
-                'tag': '',
-                'text': 'Assesses materials for structural integrity to meet safety standards.',
+                'title': 'THERMOPLASTIC',
+                'tag': 'COMPOSITES',
+                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section8': {
+                'title': 'CARBON FIBER',
+                'tag': 'COMPOSITES',
+                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
