@@ -681,10 +681,6 @@ def MSC_innovation(request):
             'title_1': 'header2 ',
             'title_2': ' title2',
         },
-        'header3': {
-            'title_1': 'header3 ',
-            'title_2': ' title3',
-        },
         'sections': {
             'section1': {
                 'title': 'title 1',
@@ -731,12 +727,7 @@ def MSC_innovation(request):
                 'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
                 'img': '../static/images/Innovation/TP.png'
             },
-            'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
-                'img': '../static/images/Innovation/CF.png'
-            }
+            
         },
         
         #header
