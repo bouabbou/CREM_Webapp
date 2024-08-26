@@ -1568,27 +1568,7 @@ def MSC_index(request):
             "description": "Assesses materials for structural integrity to meet safety standards."
           
         }
-        ,
-         "tab_5": {
-            "header": "test5",
-            "title": "test5",
-            "description": "test5"
-          
-        }
-          ,
-         "tab_6": {
-            "header": "test6",
-            "title": "test6",
-            "description": "test6"
-          
-        }
-          ,
-         "tab_7": {
-            "header": "test7    ",
-            "title": "test7 ",
-            "description": "test7   "
-          
-        }
+        
           
     },
      #header : 
