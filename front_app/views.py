@@ -1363,11 +1363,11 @@ def BIO_index(request):
         
         "header": {
         "video": "../static/video/BIO.mp4",
-        "title": "BIO/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
+        "title": "sex",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
-        "text_1": "Our additive and subtractive manufacturing platform offers versatility, enabling rapid production of prototypes and functional parts across industries such as aerospace, automotive, and biomedical. We are committed to advancing materials science and shaping the future of manufacturing.",
+        "text_1": "sex",
         "text_2": "Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete."
     },
     "third_section": {

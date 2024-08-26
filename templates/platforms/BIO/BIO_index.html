@@ -18,20 +18,20 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <!-- FAVICONS -->
-    <link rel="shortcut icon" href="../static/images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" href="../static/images/favicon/favicon.ico" />
+    <link rel="shortcut icon" href="../../../static/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" href="../../../static/images/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="../static/images/favicon/favicon.ico"
+      href="../../../static/images/favicon/favicon.ico"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="../static/images/favicon/favicon.ico"
+      href="../../../static/images/favicon/favicon.ico"
     />
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" />
 
     <!-- GOOGLE FONT -->
     <link
@@ -40,62 +40,82 @@
       type="text/css"
     />
     <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS -->
-    <link rel="stylesheet" href="../static/css/icons-fonts.css" />
+    <link rel="stylesheet" href="../../../static/css/icons-fonts.css" />
 
     <!-- CSS THEME -->
-    <link rel="stylesheet" href="../static/css/style.css" />
-    <link rel="stylesheet" href="../static/css/icons-fonts.css" />
+    <link rel="stylesheet" href="../../../static/css/style.css" />
+    <link rel="stylesheet" href="../../../static/css/icons-fonts.css" />
 
     <!-- IMAGES COMPARE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../static/css/twentytwenty.css"
+    />
 
     <!-- ANIMATE -->
-    <link rel="stylesheet" href="../static/css/animate.min.css" />
+    <link rel="stylesheet" href="../../../static/css/animate.min.css" />
     <style>
-      /* Additional styles */
+            /* Additional styles */
 
-      /* Additional styles */
-      #video-thumbnail {
-        width: 100%; /* Adjust to fit container */
-        height: auto; /* Maintain aspect ratio */
-      }
+            /* Additional styles */
+            #video-thumbnail {
+                width: 100%; /* Adjust to fit container */
+                height: auto; /* Maintain aspect ratio */
+            }
 
-      #video-container {
-        display: none;
-        position: fixed; /* Position fixed to cover the screen */
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.8);
-        padding: 10px;
-        border-radius: 5px;
-        z-index: 1000; /* Ensure it's above other content */
-        border: none; /* Remove borders */
-      }
+            #video-container {
+                display: none;
+                position: fixed; /* Position fixed to cover the screen */
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+                z-index: 1000; /* Ensure it's above other content */
+                border: none; /* Remove borders */
+            }
 
-      #video-player {
-        width: 90%; /* Adjust width as needed */
-        height: auto;
-      }
+            #video-player {
+                width: 90%; /* Adjust width as needed */
+                height: auto;
+            }
 
-      .video-background {
-        background-image: url("images/play.png"); /* Update path as needed */
-        background-size: cover; /* Ensure the image covers the entire container */
-        background-position: center; /* Center the image */
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-        cursor: pointer; /* Indicate it's clickable */
-        object-fit: cover;
-      }
+            .video-background {
+                background-image: url('images/play.png'); /* Update path as needed */
+                background-size: cover; /* Ensure the image covers the entire container */
+                background-position: center; /* Center the image */
+                width: 100%;
+                height: 100vh; /* Full viewport height */
+                cursor: pointer; /* Indicate it's clickable */
+                object-fit: cover;
+            }
 
-      #close-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
+
+            #close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            :root {
+                --link-color: {{ link_color }};
+                --link-hover-color: {{ link_hover_color }};
+            }
+            .header .main-menu-container .nav a {
+                color: var(--link-color);
+            }
+            .header.sticky .main-menu-container .nav a {
+                color: black;
+            }
+            .header.sticky {
+          background-color: black; /* Change to black */
+          transition: background-color 0.3s ease; /* Smooth transition */
       }
     </style>
   </head>
@@ -138,6 +158,13 @@
                 >
                   <span class="bold">{{header.title}}</span>
                 </div>
+
+                <!-- LAYER NR. 2 -->
+                <div
+                  class="font-white norm-32-wide hide-0-736 sm-mb-50 relative"
+                >
+                  {{header.description}}
+                </div>
               </div>
             </div>
             <!-- SCROLL ICON -->
@@ -160,17 +187,7 @@
                   </h2>
                 </div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
-                  <p>
-                    Welcome to our Biotechnology and Biomedical Engineering
-                    Platform, a hub for research, services, and training. We
-                    utilize the latest advancements in microbiology, cell
-                    biology, molecular biology, chemistry, and engineering to
-                    drive innovation and share expertise. Our mission is to
-                    create groundbreaking solutions for partners in health,
-                    agri-food, environmental, cosmetic, and agronomy sectors.
-                    Collaborate with us to pioneer progress in these critical
-                    fields.
-                  </p>
+                  <p>{{about.text_1}}</p>
                 </blockquote>
               </div>
               <div class="col-md-6 pb-4">
@@ -180,14 +197,7 @@
                   </h2>
                 </div>
                 <blockquote class="quote mb-0 pr-50-min-1169">
-                  <p>
-                    We specialize in protein engineering, recombinant DNA
-                    technologies, and post-transcriptional RNA modification
-                    linked to diseases. Our services include developing medical
-                    devices, synthesizing nanomaterials for medical use, and
-                    conducting microbiological analyses in the agri-food,
-                    environmental, pharmaceutical, and cosmetic sectors.
-                  </p>
+                  <p>{{about.text_2}}</p>
                 </blockquote>
               </div>
               <!-- FEATURES -->
@@ -207,28 +217,16 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1>
-                  <span class="font-light"
-                    >Lorem ipsum odor amet, consectetuer adipiscing elit.</span
-                  >
-                </h1>
-                <p class="mb-60">
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Senectus
-                  erat sodales eu laoreet eleifend lacus suspendisse. Ipsum
-                  tempor tristique aliquet amet luctus pellentesque sociosqu
-                  lacus. Faucibus natoque auctor dapibus libero mollis lobortis.
-                </p>
+                <h1><span class="font-light">{{third_section.title}}</span></h1>
+                <p class="mb-60">{{third_section.description}}</p>
                 <div class="row">
                   <div class="col-md-6 col-sm-6">
                     <div class="fes7-box wow fadeIn">
                       <div class="fes7-box-icon">
                         <div class="icon icon-arrows-rotate"></div>
                       </div>
-                      <h3>Lorem ipsum odor amet</h3>
-                      <p>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit.
-                        Vestibulum blandit non tellus ante dis.
-                      </p>
+                      <h3>{{third_section.point_1.title}}</h3>
+                      <p>{{third_section.point_1.description}}</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -236,11 +234,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-basic-lightbulb"></div>
                       </div>
-                      <h3>Lorem ipsum odor amet</h3>
-                      <p>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit.
-                        Vestibulum blandit non tellus ante dis.
-                      </p>
+                      <h3>{{third_section.point_2.title}}</h3>
+                      <p>{{third_section.point_2.description}}</p>
                     </div>
                   </div>
                 </div>
@@ -250,11 +245,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-graph-decrease"></div>
                       </div>
-                      <h3>Lorem ipsum odor amet</h3>
-                      <p>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit.
-                        Vestibulum blandit non tellus ante dis.
-                      </p>
+                      <h3>{{third_section.point_3.title}}</h3>
+                      <p>{{third_section.point_3.description}}</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
@@ -262,11 +254,8 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-ecommerce-dollar"></div>
                       </div>
-                      <h3>Lorem ipsum odor amet</h3>
-                      <p>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit.
-                        Vestibulum blandit non tellus ante dis.
-                      </p>
+                      <h3>{{third_section.point_4.title}}</h3>
+                      <p>{{third_section.point_4.description}}</p>
                     </div>
                   </div>
                 </div>
@@ -283,7 +272,7 @@
         <!--------------------------------------------------------->
 
         <!-- VIDEO ADS 1 -->
-        <div class="page-section video-ads-bg-BIO">
+        <div class="page-section video-ads-bg">
           <div class="container">
             <div class="video-ads-text-cont clearfix">
               <span class="video-ads-text">{{video.title_l}}</span>
@@ -314,28 +303,31 @@
 
         <div class="mb-100 container">
           <div class="mt-60 mb-80">
-            <h3 class="section-title">
-              Lorem ipsum odor amet, consectetuer adipiscing elit.
-            </h3>
-            <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum
-              blandit non tellus ante dis.
-            </p>
+            <h3 class="section-title">{{ details_section.title }}</h3>
+            <p>{{ details_section.description}}</p>
           </div>
 
           <div class="tabs-3">
             <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
               <li class="active">
-                <a href="#one" data-toggle="tab">Lorem</a>
+                <a href="#one" data-toggle="tab"
+                  >{{ details_section.tab_1.header }}</a
+                >
               </li>
               <li>
-                <a href="#two" data-toggle="tab">Lorem</a>
+                <a href="#two" data-toggle="tab"
+                  >{{ details_section.tab_2.header }}</a
+                >
               </li>
               <li>
-                <a href="#three" data-toggle="tab">Lorem</a>
+                <a href="#three" data-toggle="tab"
+                  >{{ details_section.tab_3.header }}</a
+                >
               </li>
               <li>
-                <a href="#four" data-toggle="tab">Lorem</a>
+                <a href="#four" data-toggle="tab"
+                  >{{ details_section.tab_4.header }}</a
+                >
               </li>
             </ul>
             <!-- END nav tabs -->
@@ -347,13 +339,9 @@
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
                   <h3 class="blog-page-title mt-50 mb-25">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit.
-                    Vestibulum blandit non tellus ante dis.
+                    {{ details_section.tab_1.title }}
                   </h3>
-                  <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit.
-                    Vestibulum blandit non tellus ante dis.
-                  </p>
+                  <p>{{ details_section.tab_1.description }}</p>
                 </div>
                 <!-- CONTENT CONTAINER -->
               </div>
@@ -363,13 +351,9 @@
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
                   <h3 class="blog-page-title mt-50 mb-25">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit.
-                    Vestibulum blandit non tellus ante dis.
+                    {{ details_section.tab_2.title }}
                   </h3>
-                  <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit.
-                    Vestibulum blandit non tellus ante dis.
-                  </p>
+                  <p>{{ details_section.tab_2.description }}</p>
                 </div>
               </div>
 
@@ -378,13 +362,9 @@
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
                   <h3 class="blog-page-title mt-50 mb-25">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit.
-                    Vestibulum blandit non tellus ante dis.
+                    {{ details_section.tab_3.title }}
                   </h3>
-                  <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit.
-                    Vestibulum blandit non tellus ante dis.
-                  </p>
+                  <p>{{ details_section.tab_3.description }}</p>
                 </div>
               </div>
 
@@ -393,13 +373,9 @@
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
                   <h3 class="blog-page-title mt-50 mb-25">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit.
-                    Vestibulum blandit non tellus ante dis.
+                    {{ details_section.tab_4.title }}
                   </h3>
-                  <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit.
-                    Vestibulum blandit non tellus ante dis.
-                  </p>
+                  <p>{{ details_section.tab_4.description }}</p>
                 </div>
               </div>
             </div>
@@ -407,10 +383,6 @@
           </div>
         </div>
         <!-- END tabs -->
-
-        <!-- CALL TO ACTION  -->
-
-        <!-- NEWS LETTER -->
 
         <!-- FOOTER 4 BLACK -->
         {% include 'includes/footer.html' %}
@@ -429,30 +401,30 @@
     <!-- JS begin -->
 
     <!-- jQuery  -->
-    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <script src="../../../static/js/jquery-1.11.2.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../../../static/js/bootstrap.min.js"></script>
 
     <!-- MAGNIFIC POPUP -->
-    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../../../static/js/jquery.magnific-popup.min.js"></script>
 
     <!-- PORTFOLIO SCRIPTS -->
-    <script src="../static/js/isotope.pkgd.min.js"></script>
-    <script src="../static/js/imagesloaded.pkgd.min.js"></script>
-    <script src="../static/js/masonry.pkgd.min.js"></script>
+    <script src="../../../static/js/isotope.pkgd.min.js"></script>
+    <script src="../../../static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../../../static/js/masonry.pkgd.min.js"></script>
 
     <!-- COUNTER -->
-    <script src="../static/js/jquery.countTo.js"></script>
+    <script src="../../../static/js/jquery.countTo.js"></script>
 
     <!-- APPEAR -->
-    <script src="../static/js/jquery.appear.js"></script>
+    <script src="../../../static/js/jquery.appear.js"></script>
 
     <!-- OWL CAROUSEL -->
-    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../../../static/js/owl.carousel.min.js"></script>
 
     <!-- BACKGROUND VIDEO -->
-    <script src="../static/js/jquery.backgroundvideo.min.js"></script>
+    <script src="../../../static/js/jquery.backgroundvideo.min.js"></script>
     <script>
       // Video Init
       $(document).ready(function () {
@@ -476,16 +448,12 @@
     </script>
 
     <!-- MAIN SCRIPT -->
-    <script src="../static/js/main.js"></script>
+    <script src="../../../static/js/main.js"></script>
 
     <!-- IMAGES COMPARE -->
-    <script src="../static/js/jquery.event.move.js"></script>
-    <script src="../static/js/jquery.twentytwenty.js"></script>
-    <script>
-      $(function () {
-        $(".twentytwenty-container").twentytwenty({ default_offset_pct: 0.5 });
-      });
-    </script>
+    <script src="../../../static/js/jquery.event.move.js"></script>
+    <script src="../../../static/js/jquery.twentytwenty.js"></script>
+
     <script>
       document
         .getElementById("video-thumbnail")
