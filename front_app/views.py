@@ -517,68 +517,45 @@ def AIDE_innovation(request):
 def RESEE_innovation(request):
     context = {
         'header1': {
-            'title_1': 'header1 ',
-            'title_2': ' title1',
+            'title_1': 'Solar ',
+            'title_2': ' Energies',
         },
         'header2': {
-            'title_1': 'header2 ',
-            'title_2': ' title2',
+            'title_1': 'Energy ',
+            'title_2': ' Storage',
         },
         'header3': {
-            'title_1': 'header3 ',
-            'title_2': ' title3',
+            'title_1': 'Desalination ',
+            'title_2': ' Technologies',
+        },
+        'header4': {
+            'title_1': 'Energy ',
+            'title_2': ' Efficiency',
         },
         'sections': {
             'section1': {
-                'title': 'title 1',
-                'tag': 'tag1',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Solar Technologiescial',
+                'tag': '',
+                'text': 'Our research into PV technology covers a broad spectrum of essential aspects. These include enhancing system performance, assessing the durability of new materials, predicting system performance, integrating PV systems into the power grid, and analyzing the economic and policy implications of PV power. We also focus on enhancing thermal solar technologies through advanced modeling, material innovation, cost optimization, and environmental assessment.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
-            'section2': {
-                'title': 'title 2',
-                'tag': 'tag2',
-                'text': 'text text tex tetx tetx tetsx ',
-                'img': '../static/images/Innovation/sls.png'
-
-            },
-            'section3': {
-                'title': 'title 3',
-                'tag': 'tag3',
-                'text': 'text text tex tetx tetx tetsx ',
-                'img': '../static/images/Innovation/FDM.png'
-
-            },
-            'section4': {
-                'title': 'title 4',
-                'tag': 'tag4',
-                'text': 'text text tex tetx tetx tetsx ',
-                'img': '../static/images/Innovation/SLA.png'
-
-            },
             'section5': {
-                'title': 'title 5',
-                'tag': 'tag5',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Batteries',
+                'tag': '',
+                'text': 'We specialize in developing innovative, cost-effective battery solutions. Our work encompasses designing, building, and testing battery systems while optimizing their economic performance and minimizing environmental impact.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section6': {
-                'title': 'title 6',
-                'tag': 'tag6',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Desalination',
+                'tag': '',
+                'text': 'Our research focuses on developing innovative and cost-effective desalination solutions. We address industry challenges by creating new materials, components and technologies. Our research involves designing, building, and testing desalination systems that integrate renewable energy sources with advanced membrane processes like Reverse Osmosis (RO), Forward Osmosis (FO), and Membrane Distillation (MD).',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'THERMOPLASTIC',
-                'tag': 'COMPOSITES',
-                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'title': 'Buildings',
+                'tag': '',
+                'text': 'We specialize in sustainable building solutions, combining bio-based and recycled materials with innovative smart home technologies. Our expertise extends to building energy management, where we develop predictive models to optimize energy consumption.',
                 'img': '../static/images/Innovation/TP.png'
-            },
-            'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
-                'img': '../static/images/Innovation/CF.png'
             }
         },
         'logo': '../static/images/logo-grey.png',
@@ -594,55 +571,55 @@ def RESEE_innovation(request):
 def BIO_innovation(request):
     context = {
         'header1': {
-            'title_1': 'header1 ',
-            'title_2': ' title1',
+            'title_1': 'ADDITIVE ',
+            'title_2': ' MANUFACTURING',
         },
         'header2': {
-            'title_1': 'header2 ',
-            'title_2': ' title2',
+            'title_1': 'SUBSTRACTIVE ',
+            'title_2': ' MANUFACTURING',
         },
         'header3': {
-            'title_1': 'header3 ',
-            'title_2': ' title3',
+            'title_1': 'COMPOSITE ',
+            'title_2': ' MATERIALS',
         },
         'sections': {
             'section1': {
-                'title': 'title 1',
-                'tag': 'tag1',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Laser Powder Bed Fusion',
+                'tag': 'LPBF',
+                'text': 'Our work in Laser Powder Bed Fusion (LPBF) centers on producing precise metal components. LPBF allows for intricate and customized geometries, enabling limitless innovation, especially in high-demand industries.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
             'section2': {
-                'title': 'title 2',
-                'tag': 'tag2',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Selective Laser Sintering',
+                'tag': 'SLS',
+                'text': 'Redefines polymer part manufacturing standards. This technology opens up new possibilities for complex geometries and designs in various industries.',
                 'img': '../static/images/Innovation/sls.png'
 
             },
             'section3': {
-                'title': 'title 3',
-                'tag': 'tag3',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'FUSED DEPOSITION MODELING',
+                'tag': 'FDM',
+                'text': 'This technology efficiently produces thermoplastic parts. Suitable for both conceptual prototypes and functional components. Our work with FDM aims to optimize this popular 3D printing process. ',
                 'img': '../static/images/Innovation/FDM.png'
 
             },
             'section4': {
-                'title': 'title 4',
-                'tag': 'tag4',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'STEREOLITHOGRAPHY',
+                'tag': 'SLA',
+                'text': "Stereolithography (SLA) is resin-based 3D printing technologies with unparalleled precision. it's used for custom dental prosthetics, detailed designs or any high-precision part. ",
                 'img': '../static/images/Innovation/SLA.png'
 
             },
             'section5': {
-                'title': 'title 5',
-                'tag': 'tag5',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'CNC',
+                'tag': 'MACHINING',
+                'text': 'Our platform features CNC machining tools that produce metal, plastic, and other material parts with micrometer precision, meeting demanding quality and performance standards. ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section6': {
-                'title': 'title 6',
-                'tag': 'tag6',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'RAPID',
+                'tag': 'TOOLING',
+                'text': 'This approach is used for efficient manufacturing by quickly producing molds, dies, or other tooling components. It uses techniques like 3D printing and CNC machining for faster iterations and cost-effective production.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
@@ -674,64 +651,46 @@ def MSC_innovation(request):
     context = {
         #data
         'header1': {
-            'title_1': 'Powder ',
-            'title_2': ' Characterization',
+            'title_1': '',
+            'title_2': '',
         },
         'header2': {
-            'title_1': 'Mechanical ',
-            'title_2': ' Characterization',
+            'title_1': '',
+            'title_2': '',
         },
         'sections': {
             'section1': {
-                'title': 'Pharmaceuticals',
+                'title': 'Innovation in Materials science:',
                 'tag': '',
-                'text': 'Measures moisture and density. ',
+                'text': 'At the forefront of material science, our platform leverages cutting-edge technology to deliver precise, reliable measurements across diverse applications. We drive innovation through advanced instruments and software solutions, enabling researchers and industries to push the boundaries of material characterization.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
             'section2': {
-                'title': 'Materials Science',
+                'title': 'Unparalleled Precision With NMR:',
                 'tag': '',
-                'text': 'Analyzes particle size and density. ',
+                'text': 'Our NMR capabilities are unmatched, featuring a 600 MHz high-field spectrometer and state-of-the-art probes. Whether analyzing liquid or solid samples, our platform ensures high sensitivity, resolution, and versatility, making it indispensable for pharmaceutical, polymer, and complex material studies.',
                 'img': '../static/images/Innovation/sls.png'
 
             },
             'section3': {
-                'title': 'Additive Manufacturing',
+                'title': 'Advanced X-Ray Diffraction (XRD) and Nanomaterial Analysis:',
                 'tag': '',
-                'text': 'Checks particle size and flowability. ',
+                'text': 'Equipped with the D8 DISCOVER diffractometer and SAXS module, our platform excels in crystalline structure and nanomaterial characterization. These technologies provide crucial insights into material properties, essential for research, development, and quality control.',
                 'img': '../static/images/Innovation/FDM.png'
 
             },
             'section4': {
-                'title': 'Chemical Processing',
+                'title': 'Thermal and Thermomechanical Analysis:',
                 'tag': '',
-                'text': 'Analyzes particle size and shape.',
+                'text': 'Our advanced thermal analysis tools, including TGA, DSC, and DMA, offer precise assessment of material properties under varying conditions. From thermal decomposition to viscoelastic behavior, our platform delivers accurate data crucial for material performance optimization.',
                 'img': '../static/images/Innovation/SLA.png'
 
             },
             'section5': {
-                'title': 'Aerospace',
+                'title': 'Supporting Innovation Beyond Instruments:',
                 'tag': '',
-                'text': 'Tests materials for strength and durability in aircraft and spacecraft.',
+                'text': 'Our commitment to innovation extends beyond technology. We provide unparalleled support and expertise to help you navigate the complexities of material characterization. Dr. Hamdoun Ghanem is available to ensure you maximize the potential of our platform.',
                 'img': '../static/images/Innovation/CNC.png'
-            },
-            'section6': {
-                'title': 'Automotive',
-                'tag': '',
-                'text': 'Evaluates component materials to ensure reliability and safety.',
-                'img': '../static/images/Innovation/CNC.png'
-            },
-            'section7': {
-                'title': 'THERMOPLASTIC',
-                'tag': 'COMPOSITES',
-                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
-                'img': '../static/images/Innovation/TP.png'
-            },
-            'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
-                'img': '../static/images/Innovation/CF.png'
             }
         },
         
@@ -767,6 +726,11 @@ def PCE_innovation(request):
             'section5': {
                 'title': 'Advanced materials testing',
                 'text': 'We investigate the properties and behavior of innovative materials such as high-performance concrete, sustainable composites, and recycled materials.-Structural health monitoring: We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section6': {
+                'title': 'Structural health monitoring',
+                'text': 'We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
@@ -1117,51 +1081,51 @@ def MSC_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'Tensile ',
-            'title_line2': 'Testing',
-            'text': 'Measures tensile strength, elongation, and elasticity.',
+            'title_line1': 'Advanced Spectroscopic Analysis ',
+            'title_line2': '',
+            'text': 'Our platform offers cutting-edge spectroscopic analysis using Nuclear Magnetic Resonance (NMR),  InfraRed (IR), and UltraViolet-Visible (UV-Vis) spectroscopy.  Tailored to specific project needs, our services include both qualitative and quantitative analyses, with detailed spectra and comprehensive interpretive reports.',
             'img': '../../static/images/Serv/1.png'
             
         },
         'section_2': {
-            'title_line1': 'Compression ',
-            'title_line2': 'Testing',
-            'text': 'Assesses compressive strength and deformation.',
+            'title_line1': 'X-ray Diffraction (XRD) Analysis ',
+            'title_line2': '',
+            'text': 'Our X-ray diffraction (XRD) service delivers high-precision analysis for material sciences, offering phase identification and structural parameter determination.  From lattice dimensions to crystallite sizes, our expertise enables complete material characterization, supporting the optimization of manufacturing processes and the development of new materials.',
             'img': '../../static/images/Serv/2.jpeg'
 
         },
         'section_3': {
-            'title_line1': 'Flexural ',
-            'title_line2': 'Testing',
-            'text': 'Determines flexural strength and modulus.',
+            'title_line1': 'Thermal Analysis Services ',
+            'title_line2': '',
+            'text': 'Our thermal analysis services, including Thermogravimetric Analysis (TGA) and Differential Scanning Calorimetry (DSC). Whether measuring mass changes or heat flows, we deliver comprehensive thermal characterization, stability studies, and process optimization to meet diverse industrial needs. ',
             'img': '../../static/images/Serv/4.jpeg'
 
         },
         'section_4': {
-            'title_line1': 'Fatigue ',
-            'title_line2': 'Testing',
-            'text': 'Analyzes material durability under cyclic loading.',
+            'title_line1': 'Microscopy Services ',
+            'title_line2': '',
+            'text': 'Our platform offers Scanning Electron Microscopy (SEM) and Acoustic Microscopy for high-resolution imaging and analysis. SEM delivers nanoscale imaging and elemental composition analysis, while Acoustic Microscopy maps internal structures and detects defects, ensuring thorough material characterization for research and quality control.',
             'img': '../../static/images/Serv/6.jpg'
 
         },
         'section_5': {
-            'title_line1': 'Hardness ',
-            'title_line2': 'Testing',
-            'text': '',
+            'title_line1': 'Physical and Mechanical Characterization ',
+            'title_line2': '',
+            'text': 'We provide Dynamic Mechanical Analysis (DMA) and Thermomechanical Analysis (TMA) services to assess mechanical and thermal properties of materials. From viscoelastic behavior to phase transitions, our analysis supports material development, quality control, and process optimization.',
             'img': '../../static/images/Serv/5.jpg'
 
         },
         'section_6': {
-            'title_line1': 'Rockwell',
+            'title_line1': 'Rheology and Viscosity Analysis',
             'title_line2': '',
-            'text': 'Measures hardness using specific loads and indenters.',
+            'text': 'Our rheology services evaluate the mechanical properties and structure of materials, including fluids, semi-solids, and solids. We offer comprehensive viscosity testing and viscoelastic behavior analysis to optimize formulations and enhance product quality across various industries.',
             'img': '../../static/images/Serv/7.jpeg'
 
         },
         'section_7': {
-            'title_line1': 'Vickers ',
+            'title_line1': 'Surface and Porosity Characterization ',
             'title_line2': '',
-            'text': 'Assesses hardness with a diamond pyramid indenter.',
+            'text': 'Utilizing the BET method, our Surface and Porosity Characterization service measures specific surface areas and pore characteristics. This analysis is crucial for understanding material performance in industrial, pharmaceutical, and environmental applications, aiding in the design and optimization of advanced materials.',
             'img': '../../static/images/Serv/5.jpg'
 
         },
@@ -1170,41 +1134,6 @@ def MSC_services(request):
             'title_line2': 'Testing',
             'text': 'Measures impact resistance and toughness.',
             'img': '../../static/images/Serv/7.jpeg'
-
-        },
-        'section_9': {
-            'title_line1': 'Particle Size ',
-            'title_line2': 'Analysis',
-            'text': 'Measures size distribution using Revolution Powder Analyzer and Camsizer X2 Grundgerät.',
-            'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_10': {
-            'title_line1': 'Density ',
-            'title_line2': 'Measurement',
-            'text': 'Determines powder density using Gas and Helium Pycnometers.',
-            'img': '../../static/images/Serv/7.jpeg'
-
-        },
-        'section_11': {
-            'title_line1': 'Granulometry ',
-            'title_line2': '',
-            'text': 'Analyzes particle size and shape with Sieve Shakers and Granulometers.',
-            'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_12': {
-            'title_line1': 'Revolution Powder ',
-            'title_line2': 'Analysis',
-            'text': 'Assesses powder handling characteristics with Revolution Powder Analyzer. ',
-            'img': '../../static/images/Serv/7.jpeg'
-
-        },
-        'section_13': {
-            'title_line1': 'Gas Density ',
-            'title_line2': 'Measurement',
-            'text': 'Measures density with Pycnometers for Gas Density Measurement. ',
-            'img': '../../static/images/Serv/5.jpg'
 
         },
     },
@@ -1461,8 +1390,8 @@ def BIO_index(request):
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
-        "text_1": "Welcome to our state-of-the-art Biotechnology and Biomedical Engineering Platform. As a comprehensive hub for research, service provision, and training, we harness the latest advancements in microbiology, cell biology, molecular biology, chemistry, and engineering technologies. ",
-        "text_2": "We offer advanced expertise in protein engineering and recombinant DNA technologies, focusing on post-transcriptional RNA modification and its association with diseases. Our capabilities also include the design and development of cutting-edge medical devices and the synthesis and characterization of nanomaterials for specific medical applications. Additionally, we conduct rigorous microbiological analyses across the agri-food, environmental, pharmaceutical, and cosmetic sectors, providing tailored solutions to meet the needs of each industry."
+        "text_1": "Welcome to our Biotechnology and Biomedical Engineering Platform, a hub for research, services, and training. We utilize the latest advancements in microbiology, cell biology, molecular biology, chemistry, and engineering to drive innovation and share expertise. Our mission is to create groundbreaking solutions for partners in health, agri-food, environmental, cosmetic, and agronomy sectors. Collaborate with us to pioneer progress in these critical fields.",
+        "text_2": "We specialize in protein engineering, recombinant DNA technologies, and post-transcriptional RNA modification linked to diseases. Our services include developing medical devices, synthesizing nanomaterials for medical use, and conducting microbiological analyses in the agri-food, environmental, pharmaceutical, and cosmetic sectors."
     },
     "third_section": {
         "title": "Bio/Substractive manufacturing Advantages",
@@ -1564,10 +1493,6 @@ def MSC_index(request):
         "point_3": {
             "title": "Performance Insights",
             "description": "Evaluates stability and effectiveness, including moisture content."
-        },
-        "point_4": {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum"
         }
     },
     "video": {
@@ -1578,7 +1503,7 @@ def MSC_index(request):
     },
     "details_section": {
         "title": "Driving Innovation Across Industries",
-        "description": "At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
+        "description": "",
         "tab_1": {
             "header": "Pharmaceuticals",
             "title": "",
@@ -1720,28 +1645,28 @@ def RESEE_index(request):
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
-        "text_1": "Our additive and subtractive manufacturing platform offers versatility, enabling rapid production of prototypes and functional parts across industries such as aerospace, automotive, and biomedical. We are committed to advancing materials science and shaping the future of manufacturing.",
-        "text_2": "Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete."
+        "text_1": "Our platform is a comprehensive resource equipped with state-of-the-art design, manufacturing, and characterization tools for developing sustainable energy solutions. It fosters innovation and research in key areas such as renewable energies, energy storage, and energy efficiency.",
+        "text_2": "We advance renewable energy, storage, and efficiency technologies by designing innovative solutions for harnessing, storing, and optimizing energy. We also test and develop advanced tools to evaluate renewable energy systems, thermal systems, and batteries, ensuring they meet specifications and support sustainability goals. Our Open-Air Laboratories offer real-world testing and insights into energy-efficient technologies."
     },
     "third_section": {
-        "title": "Additive Manufacturing Advantages",
-        "description": "Additive manufacturing offers numerous benefits, including the ability to create complex geometries, customize products, and use a variety of materials.",
+        "title": "Renewable Energies Advantages",
+        "description": "Renewable energies offer numerous benefits over traditional fossil fuels. These advantages contribute to a more sustainable and environmentally friendly future.",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Geometric Complexity",
-            "description": "It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods."
+            "title": "Durability",
+            "description": "Renewable energy sources are inexhaustible; their use guarantees a constant source of energy for future generations without disrupting the availability of resources for future needs."
         },
         "point_2": {
-            "title": "Personalization",
-            "description": "It enables the production of customized and unique objects tailored to the specific needs of each user or application."
+            "title": "Environmental-Friendly",
+            "description": "Renewable energy sources cut greenhouse gas emissions more than fossil fuels, aiding in climate change mitigation and improving air quality, which benefits public health."
         },
         "point_3": {
-            "title": "Material Diversity",
-            "description": "Using a diverse range of materials, including plastics, metals, and composites, AM provides flexibility in material selection for creating innovative objects."
+            "title": "Long-term cost savings",
+            "description": "Renewable energy technologies often lead to lower operational costs compared to fossil fuels."
         },
         "point_4": {
-            "title": "Rapid Prototyping",
-            "description": "3D printing allows for rapid prototyping, which accelerates the product development process, thus minimizing the associated costs."
+            "title": "Increased energy access",
+            "description": "Renewable energy technologies can provide electricity to remote and underserved areas, improving living conditions and quality of life."
         }
     },
     "video": {
@@ -1752,31 +1677,31 @@ def RESEE_index(request):
     },
     "details_section": {
         "title": "Driving Innovation Across Industries",
-        "description": "At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
+        "description": "",
         "tab_1": {
-            "header": "Aerospace",
-            "title": "A New Era of Creation in Aerospace",
-            "description": "Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.From lightweight components to rocket engines, the potential for innovation is limitless.",
+            "header": "Renewable Energy",
+            "title": "",
+            "description": "Pioneering cutting-edge solutions for harnessing renewable energy technologies for both connected and off-grid environments. Design and implement advanced technologies for clean hydrogen generation. Advancing energy storage capabilities with innovative technologies like Vanadium Redox Flow Batteries. Building a sustainable energy future through technological breakthroughs.",
 
             "img_before": "../static/images/static-media/Turbine1.jpg",
             "img_after": "../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
-            "header": "Automotive",
-            "title": "Transforming Automotive Manufacturing",
-            "description": "From polymer-based composites tailored for specific automotive structures to customized metal parts made through 3D printing, modern manufacturing advancements enable part customization, cost and lead time reduction, as well as the creation of lighter structures and innovative geometries.",
+            "header": "Manufacturing",
+            "title": "",
+            "description": "Innovative energy-efficient solutions to streamline manufacturing processes, reduce operational costs, and minimize environmental impact. Optimize energy consumption across the manufacturing value chain to lower costs, increase competitiveness, and achieve sustainability goals. Implement new methods for industrial decarbonization.",
            
         },
         "tab_3": {
-            "header": "Medical Technology",
-            "title": "Precision Healthcare: Custom Solutions with Additive Manufacturing",
-            "description": "Additive manufacturing is revolutionizing healthcare, through personalized medical solutions, from tailored implants to custom prosthetics.By leveraging this innovative technology, healthcare providers can now fabricate customized implants, prosthetics and other medical devices that are meticulously designed to meet the unique requirements of each patient, driving enhanced outcomes.",
+            "header": "Buildings",
+            "title": "",
+            "description": "Develop innovative building envelopes and insulation systems. Implement energy-efficient building practices to reduce environmental impact and enhance occupant comfort. Development and integration of smart home technologies to optimize energy consumption.",
            
         },
         "tab_4": {
-            "header": "Other Industries",
-            "title": "The Diverse Applications of Additive Manufacturing Across Industries",
-            "description": "From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 3D printing is revolutionizing a multitude of industries.\nThe versatility of additive manufacturing is driving innovation by empowering businesses and artists to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, and redefine the standards within their industries."
+            "header": "Desalination",
+            "title": "",
+            "description": "Drive advancements in desalination processes to provide clean water sources. Explore innovative approaches for large-scale, low-cost water desalination."
           
         }
     },
@@ -1907,8 +1832,8 @@ def AIDE_index(request):
         }
     },
     "video": {
-        "title_l": "Artificial",
-        "title_r": "Intelligence",
+        "title_l": "DIGITAL",
+        "title_r": "ENGINEERING",
         "video": "../static/video/AIDE.mp4",
         "bg_img" : "../static/images/play.png"
     },
