@@ -1191,44 +1191,44 @@ def RESEE_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': '3D',
-            'title_line2': 'DESIGN',
-            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'title_line1': 'Solar Energy Solutions',
+            'title_line2': '',
+            'text': 'We specialize in evaluating the performance of photovoltaic and concentrating solar systems. Our services encompass a comprehensive approach to assessing system efficiency, environmental impact, and economic viability. Core Competencies: Performance Assessment, Environmental Impact Analysis, Economic Evaluation, Reliability and Durability Testing, Predictive Modeling',
             'img': '../../static/images/Serv/1.png'
             
         },
         'section_2': {
-            'title_line1': 'ADDITIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'title_line1': 'PV Material Development and Validation',
+            'title_line2': '',
+            'text': 'Our cutting-edge solar simulator provides a controlled environment for comprehensive testing of photovoltaic materials. Key Services: Rigorous Material Evaluation: Accurately assess the performance of new photovoltaic materials under simulated solar conditions. Industry Standard Compliance: Ensure that materials meet stringent industry requirements and certifications.',
             'img': '../../static/images/Serv/2.jpeg'
 
         },
         'section_3': {
-            'title_line1': 'SUBTRACTIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'title_line1': 'Energy Storage Solutions',
+            'title_line2': '',
+            'text': 'Our storage research center is equipped with state-of-the-art facilities for comprehensive evaluation of energy storage technologies. Key Services: VRFB Component Characterization: In-depth analysis of membrane, electrolyte, electrode, and bipolar plate components for vanadium redox flow batteries (VRFBs). Battery Performance Testing: Advanced battery testing to assess capacity, internal resistance, temperature, and lifespan of VRFBs and other battery technologies.',
             'img': '../../static/images/Serv/4.jpeg'
 
         },
         'section_4': {
-            'title_line1': 'COMPOSITE',
-            'title_line2': 'MATERIALS',
-            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'title_line1': 'Advanced Desalination solutions',
+            'title_line2': '',
+            'text': 'Our desalination platform is dedicated to enhancing the efficiency and performance of Forward Osmosis (FO), Reverse Osmosis (RO), and Pressure Retarded Osmosis (PRO) desalination systems. Key Services: Membrane Performance Evaluation, System Optimization, Solution Analysis, Precise Osmolarity Measurement',
             'img': '../../static/images/Serv/6.jpg'
 
         },
         'section_5': {
-            'title_line1': 'MATERIALS AND MECHANICAL',
-            'title_line2': 'CHARACTERIZATION',
-            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'title_line1': 'Thermal Analysis',
+            'title_line2': '',
+            'text': 'We provide thermal characterization and optimization services for thermodynamics and heat transfer applications.',
             'img': '../../static/images/Serv/5.jpg'
 
         },
         'section_6': {
-            'title_line1': 'R&D',
-            'title_line2': 'SPECIFIC',
-            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
+            'title_line1': 'Research Consulting',
+            'title_line2': '',
+            'text': 'We provide expert guidance on research methodology, design, and analysis. We team up with other CREM platform to develop and produce components or prototypes for energy systems or desalination processes, and to perform sample characterization.',
             'img': '../../static/images/Serv/7.jpeg'
 
         },
