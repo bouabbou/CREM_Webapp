@@ -1479,20 +1479,24 @@ def MSC_index(request):
         "text_2": "Our platform analyzes various parameters such as crystallinity, specific surface area, morphology, chemical composition, particle size distribution, density, and moisture content. In mechanical characterization, we assess material response to stress, including elasticity, hardness, toughness, and fatigue resistance."
     },
     "third_section": {
-        "title": "Powder Characterization",
+        "title": "Innovative Material Characterization",
         "description": "Involves analyzing powders to understand their physical and chemical properties",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Particle size",
-            "description": "Measures size distribution affecting flow and mixing."
+            "title": "Precision Measurement",
+            "description": "Our platform integrates cutting-edge technology, offering precise and reliable measurements across a wide range of material applications."
         },
         "point_2": {
-            "title": "Surface Properties",
-            "description": "Assesses surface area and texture, influencing reactivity and adhesion."
+            "title": "Advanced Analytical Techniques",
+            "description": "Employing state-of-the-art methods like Nuclear Magnetic Resonance (NMR) and X-Ray Diffraction (XRD), we push the boundaries of material science."
         },
         "point_3": {
-            "title": "Performance Insights",
-            "description": "Evaluates stability and effectiveness, including moisture content."
+            "title": "Comprehensive Support",
+            "description": "Beyond instrumentation, we provide unparalleled support and expertise, ensuring you navigate the complexities of material characterization with ease."
+        },
+        "point_4": {
+            "title": "Customized Solutions",
+            "description": "Tailored to meet specific research and industrial needs, our solutions enhance efficiency and drive innovation in material science."
         }
     },
     "video": {
