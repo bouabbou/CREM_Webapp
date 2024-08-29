@@ -363,42 +363,50 @@
 
 <!-- DIVIDER -->
 <hr class="mt-0 mb-0">
-
-<!--- section 6-->
-{% if sections.section6 %}
-
+<!-- SUBTRACTIVE MANUFACTURING -->
 <div class="page-section" style="background-color: #FFFFFF;">
-  <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid">
+        <div class="row">
+            {% if header3 %}
 
-          <div class="col-md-6 left-50 wow fadeInRight equal-height">
-              <div class="rt-main-text-cont">
-                  <div class="title-fs-45">
-                      {{ sections.section6.title }}<br>
-                      <span class="bold">{{ sections.section6.tag }}</span>
-                  </div>
-                  <div class="line-3-100"></div>
-                  <div class="rt-text-cont">
-                      <ul>
-                          {{ sections.section6.text }}
-                      </ul>
-                  </div>
-              </div>
-          </div>
+            <div class="mb-50">
+                <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
+            </div>
+            {% endif %}
 
-          <div class="col-md-6 right-50">
-              <div class="row">
-                  <div class="rt-img equal-height" style="background-image: url('{{ sections.section6.img }}');"></div>
+            <!-- DIVIDER -->
+            <hr class="mt-0 mb-0">
+            {% if sections.section6 %}
 
-                      <!-- Image or content goes here -->
-                  </div>
-              </div>
-          </div>
+            <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                <div class="cnc-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section6.title }}<br>
+                        <span class="bold">{{ sections.section6.tag }}</span>
+                    </div>
+                    <div class="line-3-70"></div>
+                    <div class="cnc-text-cont">
+                        <ul>
+                            {{ sections.section6.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-      </div>
-  </div>
+            <div class="col-md-6" style="background-color: #FFFFFF;">
+                <div class="row">
+                    <div class="cnc-img equal-height" style="background-image: url('{{ sections.section5.img }}');"></div>
+
+                        <!-- Image or content goes here -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 {% endif %}
+
 
 <div class="page-section work-proc-1-bg-RESEE">
   <div class="fes4-cont container">
@@ -410,20 +418,18 @@
   </div>
 </div>
 <!-- COMPOSITE MATERIALS -->
-{% if header3 %}
-
-<div class="page-section">
+<!-- SUBTRACTIVE MANUFACTURING -->
+<div class="page-section" style="background-color: #FFFFFF;">
     <div class="container-fluid">
         <div class="row">
+            {% if header4 %}
+
             <div class="mb-50">
-              <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
+                <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header4.title_1 }}<span class="bold">{{ header4.title_2 }}</span></h2>
             </div>
             {% endif %}
 
             <!-- DIVIDER -->
-            <hr class="mt-0 mb-0">
-
-            <!--- section 7-->
             <hr class="mt-0 mb-0">
             {% if sections.section7 %}
 
