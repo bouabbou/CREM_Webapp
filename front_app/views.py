@@ -387,7 +387,7 @@ def ASMP_innovation(request):
                 'title': 'Selective Laser Sintering',
                 'tag': 'SLS',
                 'text': 'Redefines polymer part manufacturing standards. This technology opens up new possibilities for complex geometries and designs in various industries.',
-                'img': '../static/images/Innovation/sls.png'
+                'img': '../static/images/platforms/ASMP/innovation_ASMP/sls.png'
 
             },
             'section3': {
@@ -408,7 +408,7 @@ def ASMP_innovation(request):
                 'title': 'CNC',
                 'tag': 'MACHINING',
                 'text': 'Our platform features CNC machining tools that produce metal, plastic, and other material parts with micrometer precision, meeting demanding quality and performance standards. ',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/ASMP/innovation_ASMP/cnc.png'
             },
             'section6': {
                 'title': 'RAPID',
@@ -420,13 +420,13 @@ def ASMP_innovation(request):
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
                 'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
-                'img': '../static/images/Innovation/TP.png'
+                'img': '../static/images/platforms/ASMP/innovation_ASMP/cm.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
                 'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
-                'img': '../static/images/Innovation/CF.png'
+                'img': '../static/images/platforms/ASMP/innovation_ASMP/cf.png'
             }
         },
     
@@ -663,34 +663,34 @@ def MSC_innovation(request):
                 'title': 'Innovation in Materials science:',
                 'tag': '',
                 'text': 'At the forefront of material science, our platform leverages cutting-edge technology to deliver precise, reliable measurements across diverse applications. We drive innovation through advanced instruments and software solutions, enabling researchers and industries to push the boundaries of material characterization.',
-                'img': '../static/images/Innovation/lpbf.png'
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc1.png'
             },
             'section2': {
                 'title': 'Unparalleled Precision With NMR:',
                 'tag': '',
                 'text': 'Our NMR capabilities are unmatched, featuring a 600 MHz high-field spectrometer and state-of-the-art probes. Whether analyzing liquid or solid samples, our platform ensures high sensitivity, resolution, and versatility, making it indispensable for pharmaceutical, polymer, and complex material studies.',
-                'img': '../static/images/Innovation/sls.png'
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc2.png'
 
             },
             'section3': {
                 'title': 'Advanced X-Ray Diffraction (XRD) and Nanomaterial Analysis:',
                 'tag': '',
                 'text': 'Equipped with the D8 DISCOVER diffractometer and SAXS module, our platform excels in crystalline structure and nanomaterial characterization. These technologies provide crucial insights into material properties, essential for research, development, and quality control.',
-                'img': '../static/images/Innovation/FDM.png'
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno3.jpg'
 
             },
             'section4': {
                 'title': 'Thermal and Thermomechanical Analysis:',
                 'tag': '',
                 'text': 'Our advanced thermal analysis tools, including TGA, DSC, and DMA, offer precise assessment of material properties under varying conditions. From thermal decomposition to viscoelastic behavior, our platform delivers accurate data crucial for material performance optimization.',
-                'img': '../static/images/Innovation/SLA.png'
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno4.jpg'
 
             },
             'section5': {
                 'title': 'Supporting Innovation Beyond Instruments:',
                 'tag': '',
                 'text': 'Our commitment to innovation extends beyond technology. We provide unparalleled support and expertise to help you navigate the complexities of material characterization. Dr. Hamdoun Ghanem is available to ensure you maximize the potential of our platform.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno5.jpg'
             }
         },
         
@@ -847,7 +847,7 @@ def ASMP_services(request):
             'title_line1': '3D',
             'title_line2': 'DESIGN',
             'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
-            'img': '../../static/images/Serv/1.png'
+            'img': '../../static/images/platforms/ASMP/services_ASMP/cao.png'
             
         },
         'section_2': {
@@ -861,7 +861,7 @@ def ASMP_services(request):
             'title_line1': 'SUBTRACTIVE',
             'title_line2': 'MANUFACTURING',
             'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
-            'img': '../../static/images/Serv/4.jpeg'
+            'img': '../../static/images/platforms/ASMP/services_ASMP/cnc_srv.png'
 
         },
         'section_4': {
@@ -1084,42 +1084,42 @@ def MSC_services(request):
             'title_line1': 'Advanced Spectroscopic Analysis ',
             'title_line2': '',
             'text': 'Our platform offers cutting-edge spectroscopic analysis using Nuclear Magnetic Resonance (NMR),  InfraRed (IR), and UltraViolet-Visible (UV-Vis) spectroscopy.  Tailored to specific project needs, our services include both qualitative and quantitative analyses, with detailed spectra and comprehensive interpretive reports.',
-            'img': '../../static/images/Serv/1.png'
+            'img': '../../static/images/platforms/MSC/services_msc/srv1.jpg'
             
         },
         'section_2': {
             'title_line1': 'X-ray Diffraction (XRD) Analysis ',
             'title_line2': '',
             'text': 'Our X-ray diffraction (XRD) service delivers high-precision analysis for material sciences, offering phase identification and structural parameter determination.  From lattice dimensions to crystallite sizes, our expertise enables complete material characterization, supporting the optimization of manufacturing processes and the development of new materials.',
-            'img': '../../static/images/Serv/2.jpeg'
+            'img': '../../static/images/platforms/MSC/services_msc/srv2.jpg'
 
         },
         'section_3': {
             'title_line1': 'Thermal Analysis Services ',
             'title_line2': '',
             'text': 'Our thermal analysis services, including Thermogravimetric Analysis (TGA) and Differential Scanning Calorimetry (DSC). Whether measuring mass changes or heat flows, we deliver comprehensive thermal characterization, stability studies, and process optimization to meet diverse industrial needs. ',
-            'img': '../../static/images/Serv/4.jpeg'
+            'img': '../../static/images/platforms/MSC/services_msc/srv3.jpg'
 
         },
         'section_4': {
             'title_line1': 'Microscopy Services ',
             'title_line2': '',
             'text': 'Our platform offers Scanning Electron Microscopy (SEM) and Acoustic Microscopy for high-resolution imaging and analysis. SEM delivers nanoscale imaging and elemental composition analysis, while Acoustic Microscopy maps internal structures and detects defects, ensuring thorough material characterization for research and quality control.',
-            'img': '../../static/images/Serv/6.jpg'
+            'img': '../../static/images/platforms/MSC/services_msc/srv4.jpg'
 
         },
         'section_5': {
             'title_line1': 'Physical and Mechanical Characterization ',
             'title_line2': '',
             'text': 'We provide Dynamic Mechanical Analysis (DMA) and Thermomechanical Analysis (TMA) services to assess mechanical and thermal properties of materials. From viscoelastic behavior to phase transitions, our analysis supports material development, quality control, and process optimization.',
-            'img': '../../static/images/Serv/5.jpg'
+            'img': '../../static/images/platforms/MSC/services_msc/srv5.jpg'
 
         },
         'section_6': {
             'title_line1': 'Rheology and Viscosity Analysis',
             'title_line2': '',
             'text': 'Our rheology services evaluate the mechanical properties and structure of materials, including fluids, semi-solids, and solids. We offer comprehensive viscosity testing and viscoelastic behavior analysis to optimize formulations and enhance product quality across various industries.',
-            'img': '../../static/images/Serv/7.jpeg'
+            'img': '../../static/images/platforms/MSC/services_msc/srv6.jpg'
 
         },
         'section_7': {
@@ -1313,7 +1313,7 @@ def ASMP_index(request):
     "third_section": {
         "title": "Additive Manufacturing Advantages",
         "description": "Additive manufacturing offers numerous benefits, including the ability to create complex geometries, customize products, and use a variety of materials.",
-        "image": "../static/images/fes7.jpg",
+        "image": "../static/images/platforms/ASMP/index_ASMP/3S_AM.png",
         "point_1": {
             "title": "Geometric Complexity",
             "description": "It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods."
@@ -1386,15 +1386,15 @@ def BIO_index(request):
         
         "header": {
         "video": "../static/video/BIO.mp4",
-        "title": "BIO/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
-        "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
+        "title": "BIOTECHNOLOGY AND BIOMEDICAL ENGINEERING",
+        "description": "Innovate. Collaborate. Transform."
     },
     "about": {
         "text_1": "Welcome to our Biotechnology and Biomedical Engineering Platform, a hub for research, services, and training. We utilize the latest advancements in microbiology, cell biology, molecular biology, chemistry, and engineering to drive innovation and share expertise. Our mission is to create groundbreaking solutions for partners in health, agri-food, environmental, cosmetic, and agronomy sectors. Collaborate with us to pioneer progress in these critical fields.",
         "text_2": "We specialize in protein engineering, recombinant DNA technologies, and post-transcriptional RNA modification linked to diseases. Our services include developing medical devices, synthesizing nanomaterials for medical use, and conducting microbiological analyses in the agri-food, environmental, pharmaceutical, and cosmetic sectors."
     },
     "third_section": {
-        "title": "Bio/Substractive manufacturing Advantages",
+        "title": "Biotechnology example",
         "description": "Lorem ipsum",
         "image": "../static/images/fes7.jpg",
         "point_1": {
