@@ -1645,8 +1645,8 @@ def RESEE_index(request):
         
         "header": {
         "video": "../static/video/RESEE.mp4",
-        "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
-        "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
+        "title": "",
+        "description": ""
     },
     "about": {
         "text_1": "Our platform is a comprehensive resource equipped with state-of-the-art design, manufacturing, and characterization tools for developing sustainable energy solutions. It fosters innovation and research in key areas such as renewable energies, energy storage, and energy efficiency.",
@@ -1674,8 +1674,8 @@ def RESEE_index(request):
         }
     },
     "video": {
-        "title_l": "ADDITIVE",
-        "title_r": "MANUFACTURING",
+        "title_l": "ENERGY",
+        "title_r": "ENGINEERING",
         "video": "../static/video/RESEE.mp4",
         "bg_img" : "../static/images/play.png"
     },
