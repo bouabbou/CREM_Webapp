@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>UEMF-MANUFACTURING AND PROTOTYPING PLATFORM</title>
+    <title>UEMF-CIVIL ENGINEERING PLATFORM</title>
     <meta charset="utf-8" />
     <!--[if IE
       ]><meta http-equiv="X-UA-Compatible" content="IE=edge"
@@ -9,10 +9,10 @@
     <meta name="robots" content="index, follow" />
     <meta
       name="keywords"
-      content="research, innovation, Additive, manufacturing, 3D printing, CNC, Prototyping, tooling"
+      content="research, innovation, construction, geotechnical, geotechnique, concerete analysis, pavement, fondation, bitum, asphalt mixtures, non-destructive testing"
     />
-    <meta name="description" content="UEMF Platform fabrication additive" />
-    <meta name="author" content="Direction Systems d'information" />
+    <meta name="description" content="UEMF- civil engineering platform" />
+    <meta name="author" content="AB" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
@@ -140,7 +140,8 @@
                 <div
                   class="font-white light-72-wide sm-mb-15 sm-mt-20 relative"
                 >
-                  <span class="bold">Civil Engineering Platform</span>
+                  <span>Civil Engineering</span>
+                  <span class="bold">Platform</span>
                 </div>
 
                 <!-- LAYER NR. 2 -->
@@ -211,16 +212,10 @@
             <div class="row">
               <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
                 <h1>
-                  <span class="font-light">Civil Engineering Advantages</span>
+                  <span class="font-light">{{third_section.title}}</span>
                 </h1>
                 <p class="mb-60">
-                  Our civil engineering laboratory offers state-of-the-art
-                  equipment and experienced professionals to provide
-                  cutting-edge testing and analysis services. From geotechnical
-                  investigations to materials testing, we deliver accurate and
-                  reliable results to support your project success. Our
-                  commitment to innovation and quality ensures optimal solutions
-                  for your engineering challenges.
+                  {{third_section.description}}
                 </p>
                 <div class="row">
                   <div class="col-md-6 col-sm-6">
@@ -326,7 +321,7 @@
 
         <div class="mb-100 container">
           <div class="mt-60 mb-80">
-            <h3 class="section-title">Driving Innovation Across Industries</h3>
+            <h3 class="section-title"></h3>
           </div>
 
           <div class="tabs-3">
@@ -350,11 +345,9 @@
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
                   <h3 class="blog-page-title mt-50 mb-25">
-                    Advanced soil analysis methodologies to optimize the design
-                    and construction of foundations and Providing innovative
-                    solutions to complex geotechnical problems through
-                    cutting-edge research and development.
+                    {{ details_section.tab_2.title }}
                   </h3>
+                  <p>{{ details_section.tab_1.description }}</p>
                 </div>
                 <!-- CONTENT CONTAINER -->
                 
@@ -364,10 +357,9 @@
               <div class="tab-pane fade" id="two">
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
-                  <h3 class="blog-page-title mt-50 mb-25">
-                    Advanced bitumen analysis methodologies to optimize road
-                    design and construction reliability
-                  </h3>
+                  <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_2.title }}</h3>
+                  <p>{{ details_section.tab_2.description }}</p>
+                  
                 </div>
               </div>
 
@@ -376,11 +368,9 @@
                 <div class="grey-light-bg leave-comment-cont">
                   <!-- TITLE -->
                   <h3 class="blog-page-title mt-50 mb-25">
-                    Implement state-of-the-art non-destructive testing
-                    techniques to assess structural integrity and Provide
-                    accurate and reliable condition assessment reports for
-                    informed decision-making.
+                    {{ details_section.tab_3.title }}
                   </h3>
+                  <p>{{ details_section.tab_3.description }}</p>
                 </div>
               </div>
             </div>

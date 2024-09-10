@@ -1471,31 +1471,31 @@ def MSC_index(request):
         
         "header": {
         "video": "../static/video/MSC.mp4",
-        "title": "Materials, Synthesis, and Characterization Platform",
-        "description": "",
+        "title": "Materials, Synthesis, and Characterization",
+        "description": "Platforms for Innovation, Solutions in Synthesis, Results through Characterization.",
     },
     "about": {
-        "text_1": "Our characterization platform provides expertise in chemical, structural, mechanical, physico-chemical, and metallographic analyses. With four advanced centers, we drive technological innovation and maintain top performance. We support collaborative research and offer training for academic and industrial partners. ",
-        "text_2": "Our platform analyzes various parameters such as crystallinity, specific surface area, morphology, chemical composition, particle size distribution, density, and moisture content. In mechanical characterization, we assess material response to stress, including elasticity, hardness, toughness, and fatigue resistance."
+        "text_1": "At the forefront of material characterization, our platform integrates cutting-edge technology to offer precise and reliable measurements across a broad spectrum of applications. Our mission is to drive innovation through advanced instrumentation and software solutions, enabling researchers and industries to push the boundaries of material science. Our dedication to innovation extends beyond our instruments.",
+        "text_2": "At our characterization platform, we provide unmatched support and expertise to help you navigate the complexities of material characterization across diverse application areas, including material science, pharmaceuticals, agroalimentary, chemistry, and polymers. Our skilled team is dedicated to delivering precise insights and solutions tailored to your needs, ensuring optimal performance and innovation in your projects."
     },
     "third_section": {
-        "title": "Innovative Material Characterization",
+        "title": "Advantages of Using Our Platform:",
         "description": "Involves analyzing powders to understand their physical and chemical properties",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Precision Measurement",
-            "description": "Our platform integrates cutting-edge technology, offering precise and reliable measurements across a wide range of material applications."
+            "title": "Advanced Analytical Tools:",
+            "description": "Our platform provides a diverse selection of cutting-edge analytical instruments to support various research projects. These tools are also available for on-demand services tailored to meet the specific needs of our clients."
         },
         "point_2": {
-            "title": "Advanced Analytical Techniques",
-            "description": "Employing state-of-the-art methods like Nuclear Magnetic Resonance (NMR) and X-Ray Diffraction (XRD), we push the boundaries of material science."
+            "title": "Expertise for Industrial Analysis:",
+            "description": "Whether for occasional or regular analyses, our platform offers advanced tools and the expertise necessary for high-level analyses, particularly for industrial clients aiming for precision and reliability."
         },
         "point_3": {
-            "title": "Comprehensive Support",
-            "description": "Beyond instrumentation, we provide unparalleled support and expertise, ensuring you navigate the complexities of material characterization with ease."
+            "title": "Expert Analysis and Interpretation:",
+            "description": "Our team, comprised of specialists in chemistry, mechanics, and physics, delivers precise and insightful interpretation of analysis results, ensuring our collaborator fully understand the outcomes and implications for their projects."
         },
         "point_4": {
-            "title": "Customized Solutions",
+            "title": "Impact on Research and Industry:",
             "description": "Tailored to meet specific research and industrial needs, our solutions enhance efficiency and drive innovation in material science."
         }
     },
@@ -1575,15 +1575,15 @@ def PCE_index(request):
         "header": {
         "video": "../static/video/PCE.mp4",
         "title": "noyl",
-        "description": "Civil Engineering Platform"
+        "description": "Civil Engineering solutions for a better world"
     },
     "about": {
         "text_1": "Our team of experts partners with clients to deliver exceptional geotechnical, concrete, and pavement engineering services, ensuring precise solutions for critical company needs.",
         "text_2": "Our team boasts extensive expertise in geotechnical, concrete, and pavement engineering, providing innovative solutions for challenging projects."
     },
     "third_section": {
-        "title": "Civil Engineering Advantages",
-        "description": "Our civil engineering laboratory offers state-of-the-art equipment and experienced professionals to provide cutting-edge testing and analysis services. From geotechnical investigations to materials testing, we deliver accurate and reliable results to support your project success. Our commitment to innovation and quality ensures optimal solutions for your engineering challenges. ",
+        "title": "State-of-the-Art Solutions for Engineering Challenges",
+        "description": "Our civil engineering lab delivers precise testing and analysis with cutting-edge equipment and expert professionals, ensuring reliable results and innovative solutions for your projects.",
         "image": "../static/images/fes7.jpg",
         "point_1": {
             "title": "Expertise and Experience",
@@ -1609,9 +1609,10 @@ def PCE_index(request):
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
-        "title": "Driving Innovation Across Industries",
+        "title": "Empowering Innovation in Civil Engineering",
         "tab_1": {
             "header": "Geotechnics",
+            "title": "Soil Characterization and Analysis",
             "description": "Advanced soil analysis methodologies to optimize the design and construction of foundations and Providing innovative solutions to complex geotechnical problems through cutting-edge research and development.",
 
             "img_before": "../static/images/static-media/Turbine1.jpg",
@@ -1619,11 +1620,13 @@ def PCE_index(request):
         },
         "tab_2": {
             "header": "Traffic facilities",
-            "description": "Advanced bitumen analysis methodologies to optimize road design and construction reliability",
+            "title": " Asphalt Mixture Evaluation ",
+            "description": "Advanced bitumen analysis machines streamline the process of evaluating bitumen properties, ensuring the construction of durable and reliable road pavements. These machines automate various testing procedures, reducing human error and improving efficiency. They provide accurate data on bitumen's characteristics, aiding in informed decision-making for road design and maintenance.",
            
         },
         "tab_3": {
             "header": "Non-destructuve testing",
+            "title": "Structural Health Monitoring ",
             "description": "Implement state-of-the-art non-destructive testing techniques to assess structural integrity and Provide accurate and reliable condition assessment reports for informed decision-making.",
            
         }
