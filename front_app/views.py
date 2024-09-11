@@ -716,6 +716,7 @@ def PCE_innovation(request):
         'header3': {
             'title_1': 'Traffic ',
             'title_2': ' Facilities',
+            'style': 'background-color: white;'
         },
         'sections': {
             'section1': {
