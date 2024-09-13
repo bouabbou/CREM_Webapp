@@ -34,49 +34,65 @@
     <style>
         /* Additional styles */
       
-        /* Additional styles */
-        #video-thumbnail {
-            width: 100%; /* Adjust to fit container */
-            height: auto; /* Maintain aspect ratio */
-        }
+            /* Additional styles */
+            #video-thumbnail {
+                width: 100%; /* Adjust to fit container */
+                height: auto; /* Maintain aspect ratio */
+            }
 
-        #video-container {
-            display: none;
-            position: fixed; /* Position fixed to cover the screen */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            border-radius: 5px;
-            z-index: 1000; /* Ensure it's above other content */
-            border: none; /* Remove borders */
-        }
+            #video-container {
+                display: none;
+                position: fixed; /* Position fixed to cover the screen */
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+                z-index: 1000; /* Ensure it's above other content */
+                border: none; /* Remove borders */
+            }
 
-        #video-player {
-            width: 90%; /* Adjust width as needed */
-            height: auto;
-        }
+            #video-player {
+                width: 90%; /* Adjust width as needed */
+                height: auto;
+            }
 
-        .video-background {
-            background-image: url('images/play.png'); /* Update path as needed */
-            background-size: cover; /* Ensure the image covers the entire container */
-            background-position: center; /* Center the image */
-            width: 100%;
-            height: 100vh; /* Full viewport height */
-            cursor: pointer; /* Indicate it's clickable */
-        }
+            .video-background {
+                background-image: url('images/play.png'); /* Update path as needed */
+                background-size: cover; /* Ensure the image covers the entire container */
+                background-position: center; /* Center the image */
+                width: 100%;
+                height: 100vh; /* Full viewport height */
+                cursor: pointer; /* Indicate it's clickable */
+                object-fit: cover;
+            }
 
-        #close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
+
+            #close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            :root {
+                --link-color: {{ link_color }};
+                --link-hover-color: {{ link_hover_color }};
+            }
+            .header .main-menu-container .nav a {
+                color: var(--link-color);
+            }
+            .header.sticky .main-menu-container .nav a {
+                color: black;
+            }
+            .header.sticky {
+          background-color: black; /* Change to black */
+          transition: background-color 0.3s ease; /* Smooth transition */
+      }
     </style>
 	</head>
 	<body>
@@ -92,43 +108,47 @@
 {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}          
 
         <!-- STATIC MEDIA IMAGE -->
-        <div class="sm-video-bg">
-  <div class="sm-content-cont js-height-fullscr container text-left">
-    <!-- VIDEO BG -->
-    <div class="sm-video-wrapper">
-        <div class="sm-video">
-          <video
-            autoplay
-            muted
-            loop
-            playsinline
-            class="video-background"
-          >
-            <source src="{{header.video}}" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    <div class="sm-cont-middle">
-      <!-- LAYER NR. 1 -->
-      <span class="bold"></span>
-      <div class="font-white light-72-wide sm-mb-15 sm-mt-20 relative">
-        <span class="bold"> AI, Virtual Reality and Collaborative Robotics</span>
-      </div>
+  <div class="sm-video-bg">
+            <div class="sm-content-cont js-height-fullscr container text-left">
+              <!-- VIDEO BG -->
+              <div class="sm-video-wrapper">
+                <div class="sm-video">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    class="video-background"
+                  >
+                    <source src="{{header.video}}" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div class="sm-cont-middle">
+                <!-- LAYER NR. 1 -->
+                <span class="bold"></span>
+                <div
+                  class="font-white light-72-wide sm-mb-15 sm-mt-20 relative"
+                >
+                  <span class="bold">{{header.title}}</span>
+                </div>
 
-      <!-- LAYER NR. 2 -->
-      <div class="font-white norm-32-wide hide-0-736 sm-mb-50 relative">
-        Empowering innovation through immersive technologies and intelligent collaboration.
-      </div>
-    </div>
-  </div>
-  <!-- SCROLL ICON -->
-  <div class="local-scroll-cont font-white">
-    <a href="#about" class="scroll-down smooth-scroll">
-      <div class="icon icon-arrows-down"></div>
-    </a>
-  </div>
-</div>
+                <!-- LAYER NR. 2 -->
+                <div
+                  class="font-white norm-32-wide hide-0-736 sm-mb-50 relative"
+                >
+                  {{header.description}}
+                </div>
+              </div>
+            </div>
+            <!-- SCROLL ICON -->
+            <div class="local-scroll-cont font-white">
+              <a href="#about" class="scroll-down smooth-scroll">
+                <div class="icon icon-arrows-down"></div>
+              </a>
+            </div>
+          </div>
        </div>
         <!-- FEATURES 5 & TESTIMONIALS 1 -->
         <div id="about" class="page-section p-110-cont">
