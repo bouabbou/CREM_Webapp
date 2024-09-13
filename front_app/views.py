@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.urls import reverse
 
 
-from instrumentation.models import Category, Product
+from instrumentation.models import Category, Machine
 
 
 #platfroms infrustructures
@@ -26,7 +26,7 @@ def ASMP_infrastructure(request):
     """
     # Fetch categories and products from the database
     categories = Category.objects.all()
-    products = Product.objects.all()
+    products = Machine.objects.all()
 
     # Context data to pass to the template
     context = {
@@ -77,7 +77,7 @@ def ASMP_infrastructure(request):
 
 def BIO_infrastructure(request):
     categories = Category.objects.all()
-    products = Product.objects.all()
+    products = Machine.objects.all()
 
     context = {
         'categories': categories,
@@ -125,7 +125,7 @@ def BIO_infrastructure(request):
 
 def MSC_infrastructure(request):
     categories = Category.objects.all()
-    products = Product.objects.all()
+    products = Machine.objects.all()
     context = {
         'categories': categories,
         'products': products,
@@ -171,7 +171,7 @@ def MSC_infrastructure(request):
 
 def PCE_infrastructure(request):
     categories = Category.objects.all()
-    products = Product.objects.all()
+    products = Machine.objects.all()
 
     context = {
         'categories': categories,
@@ -218,7 +218,7 @@ def PCE_infrastructure(request):
 
 def RESEE_infrastructure(request):
     categories = Category.objects.all()
-    products = Product.objects.all()
+    products = Machine.objects.all()
 
     context = {
         'categories': categories,
@@ -266,7 +266,7 @@ def RESEE_infrastructure(request):
 
 def SAI_infrastructure(request):
     categories = Category.objects.all()
-    products = Product.objects.all()
+    products = Machine.objects.all()
 
     context = {
         'categories': categories,
@@ -313,7 +313,7 @@ def SAI_infrastructure(request):
 
 def AIDE_infrastructure(request):
     categories = Category.objects.all()
-    products = Product.objects.all()
+    products = Machine.objects.all()
 
     context = {
         'categories': categories,

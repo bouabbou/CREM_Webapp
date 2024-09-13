@@ -20,11 +20,11 @@ class Category(models.Model):
         verbose_name = "Category"
         verbose_name_plural = "Categories"
 
-class Product(models.Model):
+class Machine(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     image = models.ImageField(upload_to='', null=True, blank=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='machines')
 
     def __str__(self):
         return self.name
@@ -39,4 +39,4 @@ class Product(models.Model):
         if self.image:
             # Update the upload_to path before saving
             self.image.name = self.get_image_upload_path(self.image.name)
-        super(Product, self).save(*args, **kwargs)
+        super(Machine, self).save(*args, **kwargs)
