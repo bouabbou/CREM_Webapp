@@ -89,12 +89,10 @@
     width: 100%; /* Full width on small screens */
   }
 }
-
-.header3 {
-    background-color: white;
-    color: black; /* Adjust text color to ensure readability */
-    padding: 10px; /* Optional: Add some padding for better spacing */
+.cnc-main-text-cont {
+    background-color: #FFFFFF;
 }
+
   </style>
 		</head>
 	<body>
@@ -165,8 +163,8 @@
 
 <div class="col-md-6" style="background-color: #FFFFFF;">
     <div class="row">
-        <div class="lpbf-img equal-height"  <div class="lpbf-img equal-height" style="background-image: url('{{ sections.section1.img }}');"></div>
-
+        <div class="lpbf-img equal-height"  >
+            <div class="lpbf-img equal-height" style="background-image: url('{{ sections.section1.img }}');"></div>
             <!-- Image or content goes here -->
         </div>
     </div>
@@ -403,18 +401,13 @@
   </div>
 </div>
 <!-- COMPOSITE MATERIALS -->
-{% if header3 %}
 
-<div class="page-section">
-    <div class="container-fluid">
-        <div class="row">
+            {% if header3 %}
+
             <div class="mb-50">
-              <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
+                <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
             </div>
             {% endif %}
-
-            <!-- DIVIDER -->
-            <hr class="mt-0 mb-0">
 
             <!--- section 7-->
             <hr class="mt-0 mb-0">
@@ -449,37 +442,7 @@
 </div>
 {% endif %}
 
-          <!--section 8-->
-          {% if sections.section8 %}
-
-            <div class="col-md-6 left-50 wow fadeInRight equal-height">
-                <div class="tr-main-text-cont">
-                    <div class="title-fs-45">
-                        {{ sections.section8.title }}<br>
-                        <span class="bold">{{ sections.section8.tag }}</span>
-                    </div>
-                    <div class="line-3-100"></div>
-                    <div class="tr-text-cont">
-                        <ul>
-                            {{ sections.section8.text }}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 right-50">
-                <div class="row">
-                    <div class="tr-img equal-height" style="background-image: url('{{ sections.section8.img }}');"></div>
-
-                        <!-- Image or content goes here -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</div>
-{% endif %}
+          
 
 <div class="page-section work-proc-1-bg-PCE">
   <div class="fes4-cont container">
