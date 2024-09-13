@@ -17,7 +17,7 @@ def contact(request):
                 subject=f"Contact Form Submission from {name}",
                 message=message,
                 from_email=email,
-                recipient_list=['elhammamimeryem@gmail.com'],
+                recipient_list=['a.bouabbou@ueuromed.org'],
                 fail_silently=False,
             )
             return redirect('/contact/?status=success')
