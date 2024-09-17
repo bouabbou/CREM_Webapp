@@ -1,6 +1,6 @@
 import logging
 from django.contrib import admin
-from .models import Category, Product, Platform
+from .models import Category, Machine, Platform
 
 logger = logging.getLogger(__name__)
 
@@ -79,5 +79,5 @@ class ProductAdmin(admin.ModelAdmin):
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
 
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Product, ProductAdmin)
+admin.site.register(Machine, ProductAdmin)
 admin.site.register(Platform, PlatformAdmin)
