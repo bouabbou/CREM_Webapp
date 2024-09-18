@@ -755,71 +755,87 @@ def PCE_innovation(request):
 def SAI_innovation(request):
     context = {
         'header1': {
-            'title_1': 'header1 ',
-            'title_2': ' title1',
+            'title_1': 'Sensor Technologies',
+            'title_2': '',
         },
         'header2': {
-            'title_1': 'header2 ',
-            'title_2': ' title2',
+            'title_1': 'Data Acquisition',
+            'title_2': '',
         },
         'header3': {
-            'title_1': 'header3 ',
-            'title_2': ' title3',
+            'title_1': 'Data Processing',
+            'title_2': '',
+        },
+        'header4': {
+            'title_1': 'Simulation and Modeling',
+            'title_2': '',
+        },
+        'header5': {
+            'title_1': 'Calibration',
+            'title_2': '',
         },
         'sections': {
             'section1': {
-                'title': 'title 1',
-                'tag': 'tag1',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Laser-based Sensors',
+                'tag': '',
+                'text': 'Our work in laser-based sensors focuses on achieving high-precision measurements for a variety of applications. This technology allows for non-contact detection of physical parameters such as distance, speed, and surface characteristics, providing accurate data for industrial automation, aerospace, and more.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
             'section2': {
-                'title': 'title 2',
-                'tag': 'tag2',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Optical Sensors',
+                'tag': '',
+                'text': 'Optical sensors utilize light-based technologies to measure parameters such as light intensity, color, and displacement. These sensors are ideal for applications requiring high sensitivity and accuracy, including environmental monitoring, quality control, and healthcare diagnostics.',
                 'img': '../static/images/Innovation/sls.png'
-
             },
             'section3': {
-                'title': 'title 3',
-                'tag': 'tag3',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Electrochemical Sensors',
+                'tag': '',
+                'text': 'Electrochemical sensors are employed to detect and measure chemical substances and concentrations. They are crucial for applications in environmental monitoring, medical diagnostics, and industrial process control, providing reliable and real-time data.',
                 'img': '../static/images/Innovation/FDM.png'
-
             },
             'section4': {
-                'title': 'title 4',
-                'tag': 'tag4',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Acoustic Sensors',
+                'tag': '',
+                'text': 'Acoustic sensors use sound waves to detect and measure various parameters such as distance, velocity, and material properties. This technology is applied in fields such as automotive safety systems, industrial inspection, and environmental studies.',
                 'img': '../static/images/Innovation/SLA.png'
-
             },
             'section5': {
-                'title': 'title 5',
-                'tag': 'tag5',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Embedded Systems',
+                'tag': '',
+                'text': 'We integrate advanced embedded systems for efficient data acquisition from various sensors. These systems manage real-time data collection and processing, ensuring accurate and reliable information for further analysis.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section6': {
-                'title': 'title 6',
-                'tag': 'tag6',
-                'text1': 'text text tex tetx tetx tetsx ',
+                'title': 'Data Integration and Management',
+                'tag': '',
+                'text': 'Our platform utilizes sophisticated methods for integrating and managing sensor data. This includes filtering, analyzing, and presenting data to support informed decision-making and enhance system performance.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'THERMOPLASTIC',
-                'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'title': 'Signal Processing',
+                'tag': '',
+                'text': 'Our solutions involve advanced signal processing techniques to enhance the quality and accuracy of sensor data. This includes noise reduction, signal amplification, and data smoothing to ensure precise measurements.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'title': 'Analog-to-Digital Conversion',
+                'tag': '',
+                'text': 'We provide conversion services for transforming data between analog and digital formats, facilitating better integration and usability of sensor data in various applications.',
+                'img': '../static/images/Innovation/CF.png'
+            },
+            'section9': {
+                'title': 'System Simulation',
+                'tag': '',
+                'text': 'We use simulation tools such as LabVIEW and MATLAB to model and test sensor systems. This helps in designing accurate and effective solutions, predicting performance, and optimizing system integration.',
+                'img': '../static/images/Innovation/CF.png'
+            },
+            'section10': {
+                'title': 'Sensor Calibration',
+                'tag': '',
+                'text': 'We offer comprehensive calibration services for mechatronic sensors, ensuring they meet the highest standards of accuracy and reliability. Our calibration processes are designed to enhance sensor performance and maintain consistency in measurements.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
-        #header
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('SAI_services'),
@@ -827,7 +843,8 @@ def SAI_innovation(request):
         'infrastructure_url': reverse('SAI_infrastructure'),
         'innovation_url': reverse('SAI_innovation'),
     }
-    return render( request ,'platforms/sai/SAI_innovation.html',context)
+    return render(request, 'platforms/sai/SAI_innovation.html', context)
+
 
 # platfrom's services
 
@@ -1250,51 +1267,40 @@ def SAI_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': '3D',
-            'title_line2': 'DESIGN',
-            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'title_line1': 'DETECTION',
+            'title_line2': '',
+            'text': 'We specialize in detecting and collecting a wide range of physical parameters that can be utilized across multiple domains, including:<br><br>o Healthcare: Monitoring vital signs, patient diagnostics, and wearable health devices.<br>o Agriculture: Soil moisture, crop health, and environmental conditions.<br>o Automotive: Vehicle performance, engine diagnostics, and safety systems.<br>o Aerospace: Flight control systems, engine monitoring, and structural health.<br>o And More: Tailored solutions for other specialized fields.',
             'img': '../../static/images/Serv/1.png'
-            
         },
         'section_2': {
-            'title_line1': 'ADDITIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'title_line1': 'DATA',
+            'title_line2': 'ACQUISITION',
+            'text': 'We use various electronic and embedded systems to acquire data and integrate it into the acquisition chain. This includes selecting and implementing the right hardware to ensure accurate and reliable data capture.',
             'img': '../../static/images/Serv/2.jpeg'
-
         },
         'section_3': {
-            'title_line1': 'SUBTRACTIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'title_line1': 'DATA',
+            'title_line2': 'PROCESSING',
+            'text': 'Our data processing solutions involve the use of electronic components for:<br><br>• Signal Processing/Data Handling: Efficiently processing and analyzing collected data.<br>• Analog-to-Digital and Digital-to-Analog Conversion: Converting data between analog and digital formats to facilitate further analysis and integration.<br>• Signal Amplification: Enhancing signal strength to ensure accurate measurements and readings.',
             'img': '../../static/images/Serv/4.jpeg'
-
         },
         'section_4': {
-            'title_line1': 'COMPOSITE',
-            'title_line2': 'MATERIALS',
-            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'title_line1': 'SIMULATION',
+            'title_line2': '',
+            'text': 'We employ simulation and modeling tools such as LabVIEW and MATLAB to design and test systems. These tools help in developing accurate models and simulations of sensor systems and their interactions.',
             'img': '../../static/images/Serv/6.jpg'
-
         },
         'section_5': {
-            'title_line1': 'MATERIALS AND MECHANICAL',
-            'title_line2': 'CHARACTERIZATION',
-            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'title_line1': 'OTHER',
+            'title_line2': 'SERVICES',
+            'text': 'We provide calibration services for mechatronic sensors to ensure they perform with the highest accuracy and reliability. This includes fine-tuning sensors to meet specific application requirements and standards.',
             'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_6': {
-            'title_line1': 'R&D',
-            'title_line2': 'SPECIFIC',
-            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
-            'img': '../../static/images/Serv/7.jpeg'
-
         },
     },
     }
     
-    return render( request ,'platforms/sai/SAI_services.html',context)
+    return render(request, 'platforms/sai/SAI_services.html', context)
+
 
 
 # platforms presentation
@@ -1730,32 +1736,32 @@ def SAI_index(request):
         
         "header": {
         "video": "../static/video/SAI.mp4",
-        "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
-        "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
+        "title": "Sensors and Instrumentation Platform",
+        "description": "Precision technology, innovative sensors, and reliable instrumentation in one place"
     },
     "about": {
-        "text_1": "Our additive and subtractive manufacturing platform offers versatility, enabling rapid production of prototypes and functional parts across industries such as aerospace, automotive, and biomedical. We are committed to advancing materials science and shaping the future of manufacturing.",
-        "text_2": "Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete."
+        "text_1": "The Sensors and Instrumentation Platform at Euromed University of Fes is a cornerstone of our SMART FACTORY initiative. Designed to meet the advanced needs of our research teams, it offers state-of-the-art facilities for the design and development of innovative processes in sensor utilization and component characterization. We welcome partners from all sectors to collaborate with us and benefit from our scientific and technical expertise. Whether through joint research projects or service partnerships, our platform is poised to support the development and optimization of cutting-edge technological concepts.",
+        "text_2": "Our platform specializes in advanced sensor and instrumentation technologies, addressing a wide range of applications across various industries. We work with cutting-edge materials and technologies to develop high-precision sensors and reliable instrumentation systems. From design and prototyping to testing and implementation, our platform supports every stage of sensor development and integration. We are committed to advancing the field of sensors and instrumentation, providing innovative solutions for industrial automation, environmental monitoring, healthcare, and more."
     },
     "third_section": {
-        "title": "Additive Manufacturing Advantages",
-        "description": "Additive manufacturing offers numerous benefits, including the ability to create complex geometries, customize products, and use a variety of materials.",
+        "title": "Sensor technology Advantages",
+        "description": "Sensor technology encompasses a wide range of devices that detect and measure physical properties such as temperature, pressure, and motion. These sensors are made using advanced materials like silicon, graphene, and composites, enabling precise measurements and real-time data collection. This technology is critical for developing systems that require high accuracy and reliability, such as medical devices, environmental monitoring systems, and industrial automation.",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Geometric Complexity",
-            "description": "It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods."
+            "title": "Precision and Miniaturization",
+            "description": "Advanced sensors offer unparalleled precision and can be miniaturized to fit into compact systems. This makes them ideal for applications in medical devices, aerospace, and wearable technology, where exact measurements and space-saving designs are crucial."
         },
         "point_2": {
-            "title": "Personalization",
-            "description": "It enables the production of customized and unique objects tailored to the specific needs of each user or application."
+            "title": "Diverse Applications and Customization",
+            "description": "Our sensors are versatile, catering to a wide range of industries from environmental monitoring and healthcare to industrial automation and smart infrastructure. This flexibility allows for the creation of customized solutions tailored to specific needs."
         },
         "point_3": {
-            "title": "Material Diversity",
-            "description": "Using a diverse range of materials, including plastics, metals, and composites, AM provides flexibility in material selection for creating innovative objects."
+            "title": "Material Innovation",
+            "description": "We utilize a variety of advanced materials, including silicon, graphene, and various polymers and composites. These materials enhance the performance, durability, and functionality of our sensors, allowing for innovative and reliable solutions."
         },
         "point_4": {
-            "title": "Rapid Prototyping",
-            "description": "3D printing allows for rapid prototyping, which accelerates the product development process, thus minimizing the associated costs."
+            "title": "Real-time Monitoring and Smart Integration",
+            "description": "Our sensor technology enables real-time monitoring and data collection, providing immediate insights and feedback. We also integrate sensors with IoT and AI technologies to develop smart systems that can autonomously monitor, analyze, and respond to changing conditions, enhancing efficiency and decision-making."
         }
     },
     "video": {
@@ -1766,31 +1772,49 @@ def SAI_index(request):
     },
     "details_section": {
         "title": "Driving Innovation Across Industries",
-        "description": "At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
+        "description": "At the Sensors and Instrumentation Platform, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
         "tab_1": {
             "header": "Aerospace",
-            "title": "A New Era of Creation in Aerospace",
-            "description": "Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.From lightweight components to rocket engines, the potential for innovation is limitless.",
+            "title": "Precision and Reliability",
+            "description": "In the aerospace industry, our advanced sensor technologies enable the precise monitoring and control of critical systems. From flight control systems to engine diagnostics, our sensors enhance safety, performance, and efficiency.",
 
             "img_before": "../static/images/static-media/Turbine1.jpg",
             "img_after": "../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
             "header": "Automotive",
-            "title": "Transforming Automotive Manufacturing",
-            "description": "From polymer-based composites tailored for specific automotive structures to customized metal parts made through 3D printing, modern manufacturing advancements enable part customization, cost and lead time reduction, as well as the creation of lighter structures and innovative geometries.",
+            "title": "Smart and Efficient",
+            "description": "Our sensors contribute to the development of smart, efficient, and safe vehicles. They are integral to systems such as adaptive cruise control, collision detection, and engine performance monitoring, driving the evolution of next-generation automotive technologies.",
            
         },
         "tab_3": {
             "header": "Medical Technology",
-            "title": "Precision Healthcare: Custom Solutions with Additive Manufacturing",
-            "description": "Additive manufacturing is revolutionizing healthcare, through personalized medical solutions, from tailored implants to custom prosthetics.By leveraging this innovative technology, healthcare providers can now fabricate customized implants, prosthetics and other medical devices that are meticulously designed to meet the unique requirements of each patient, driving enhanced outcomes.",
+            "title": "Innovative Healthcare Solutions",
+            "description": " In the medical field, our sensors provide accurate and real-time monitoring of vital signs and medical conditions. They are essential for developing advanced diagnostic devices, wearable health monitors, and smart medical implants, improving patient care and treatment outcomes.",
            
         },
         "tab_4": {
-            "header": "Other Industries",
-            "title": "The Diverse Applications of Additive Manufacturing Across Industries",
-            "description": "From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 3D printing is revolutionizing a multitude of industries.\nThe versatility of additive manufacturing is driving innovation by empowering businesses and artists to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, and redefine the standards within their industries."
+            "header": "Environmental Monitoring",
+            "title": "Sustainable Solutions",
+            "description": "Our sensors play a crucial role in environmental monitoring, offering precise measurement of air and water quality, weather conditions, and pollution levels. These sensors support the development of sustainable solutions for environmental protection and climate change mitigation."
+          
+        },
+        "tab_5": {
+            "header": "Industrial Automation",
+            "title": "Enhanced Productivity",
+            "description": "In industrial automation, our sensors ensure accurate monitoring and control of manufacturing processes. They enable predictive maintenance, quality control, and efficient resource management, driving productivity and innovation in smart factories.",
+           
+        },
+        "tab_6": {
+            "header": "Infrastructure and Smart Cities",
+            "title": "Building the Future",
+            "description": "Our sensor technology supports the development of smart cities and infrastructure by providing real-time data on traffic flow, energy consumption, and structural health. This data enables efficient urban planning, resource management, and enhanced public safety."
+          
+        },
+        "tab_7": {
+            "header": "Other",
+            "title": "",
+            "description": "By integrating these advanced sensor technologies, our platform drives innovation across these and other industries, enabling the development of cutting-edge solutions and fostering progress in various sectors."
           
         }
     },
