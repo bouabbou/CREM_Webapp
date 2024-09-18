@@ -660,37 +660,37 @@ def MSC_innovation(request):
         },
         'sections': {
             'section1': {
-                'title': 'Innovation in Materials science:',
+                'title': 'NMR: A Revolution in AgriFood Research',
                 'tag': '',
-                'text': 'At the forefront of material science, our platform leverages cutting-edge technology to deliver precise, reliable measurements across diverse applications. We drive innovation through advanced instruments and software solutions, enabling researchers and industries to push the boundaries of material characterization.',
-                'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc1.png'
+                'text': 'We developed a novel NMR technique that employs spatially selective chemical shift filters, adiabatic pulses, and TOCSY to accurately quantify carbohydrates. This method eliminates background interference and the need for calibration curves, providing high precision with low detection limits and making it suitable for routine analysis of various natural matrices.',
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc01.png'
             },
             'section2': {
-                'title': 'Unparalleled Precision With NMR:',
+                'title': 'NMR Insights into DES-Based Catalysis',
                 'tag': '',
-                'text': 'Our NMR capabilities are unmatched, featuring a 600 MHz high-field spectrometer and state-of-the-art probes. Whether analyzing liquid or solid samples, our platform ensures high sensitivity, resolution, and versatility, making it indispensable for pharmaceutical, polymer, and complex material studies.',
+                'text': 'We work on using NMR spectroscopy to investigate catalytic reactions in Deep Eutectic Solvents (DESs), aiming to uncover reaction mechanisms, identify intermediates, and optimize catalytic performance. This work supports green chemistry by advancing the use of environmentally friendly solvents and promoting sustainable catalytic processes.',
                 'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc2.png'
 
             },
             'section3': {
-                'title': 'Advanced X-Ray Diffraction (XRD) and Nanomaterial Analysis:',
+                'title': 'A Powerful Tool for Drug Innovation',
                 'tag': '',
-                'text': 'Equipped with the D8 DISCOVER diffractometer and SAXS module, our platform excels in crystalline structure and nanomaterial characterization. These technologies provide crucial insights into material properties, essential for research, development, and quality control.',
+                'text': 'We developed an NMR-based method to screen covalent inhibitors of cysteine proteases, including the SARS-CoV-2 main protease (M pro). Using real-time NMR spectroscopy, we tracked S-C bond formation and reaction kinetics with various Michael acceptors. This approach links chemical reactivity to inhibitory activity, enhancing drug discovery for antiviral agents targeting cysteine proteases.',
                 'img': '../static/images/platforms/MSC/innovation_MSC/inno3.jpg'
 
             },
             'section4': {
-                'title': 'Thermal and Thermomechanical Analysis:',
+                'title': 'NMR-Enabled High-Throughput Screening of Plant Metabolites',
                 'tag': '',
-                'text': 'Our advanced thermal analysis tools, including TGA, DSC, and DMA, offer precise assessment of material properties under varying conditions. From thermal decomposition to viscoelastic behavior, our platform delivers accurate data crucial for material performance optimization.',
+                'text': 'High-resolution NMR has become essential in plant metabolism research. We’ve developed novel NMR-based methods tailored to screen, identify, and quantify metabolites in plant extracts, focusing on CBD and THC in Moroccan cannabis. These advanced techniques enable precise and efficient cannabis analysis, supporting scientific research, medicinal quality control, and cosmetic product development.',
                 'img': '../static/images/platforms/MSC/innovation_MSC/inno4.jpg'
 
             },
             'section5': {
-                'title': 'Supporting Innovation Beyond Instruments:',
+                'title': 'Enhancing Biomarker Detection in Blood Serum Using Advanced NMR Techniques',
                 'tag': '',
-                'text': 'Our commitment to innovation extends beyond technology. We provide unparalleled support and expertise to help you navigate the complexities of material characterization. Dr. Hamdoun Ghanem is available to ensure you maximize the potential of our platform.',
-                'img': '../static/images/platforms/MSC/innovation_MSC/inno5.jpg'
+                'text': 'We work on improving early disease diagnosis by optimizing Nuclear Magnetic Resonance (NMR) techniques for detecting biomarkers in blood serum. This research aims to refine NMR protocols to achieve greater sensitivity and accuracy in identifying biomarkers for cancer and metabolic disorders, ultimately advancing diagnostic methods and clinical applications.',
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno5.png'
             }
         },
         
@@ -708,36 +708,65 @@ def MSC_innovation(request):
 def PCE_innovation(request):
     context = {
         'header1': {
-            'title_1': 'Geotechnical ',
+            'title_1': 'Non-Destructive ',
+            'title_2': 'Testing',
+
         },
         'header2': {
-            'title_1': 'Concrete ',
+            'title_1': 'Construction and Asphalt ',
+            'title_2': 'Technologies',
+
         },
         'header3': {
-            'title_1': 'Traffic ',
-            'title_2': ' Facilities',
+            'title_1': 'Geotechnics ',
+            'title_2': '',
             'style': 'background-color: white;'
         },
         'sections': {
             'section1': {
-                'title': 'Geotechnical characterization',
-                'text': 'We employ advanced geotechnical testing methods to better understand soil and rock behavior for infrastructure design and construction.',
+                'title': 'Radiography',
+                'text': 'Radiography utilizes X-rays or gamma rays to penetrate materials and create images of internal structures. This technique enables the detection of defects such as cracks, porosity, and inclusions, providing valuable insights into material integrity and assembly quality.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
-            'section5': {
-                'title': 'Advanced materials testing',
-                'text': 'We investigate the properties and behavior of innovative materials such as high-performance concrete, sustainable composites, and recycled materials.-Structural health monitoring: We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
+            'section2': {
+                'title': 'Eddy currents (ECT)',
+                'text': 'ECT method utilizes electromagnetic induction to detect surface defects and variations in conductivity within conductive materials. By inducing eddy currents in the material and measuring their response, ECT can identify anomalies such as cracks, corrosion, and material defects. This technique is widely used in various industries, including aerospace, automotive, and power generation. ',
                 'img': '../static/images/Innovation/CNC.png'
             },
+            'section3': {
+                'title': 'Magnetic particle inspection (MPI)',
+                'text': 'MPI method is used to detect surface and subsurface defects in ferromagnetic materials. By applying a magnetic field to the material and then applying magnetic particles, any discontinuities or defects will attract the particles, making them visible for inspection.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section4': {
+                'title': 'Ultrasonics Testing',
+                'text': 'Ultrasonics Testing is a non-destructive testing method that utilizes high-frequency sound waves to detect internal defects within materials.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section5': {
+                'title': 'Liquid penetrant inspection (LPT)',
+                'text': 'LPT is a non-destructive testing method used to detect surface-breaking defects in materials. By applying a penetrant liquid to the surface, allowing it to penetrate into any cracks or discontinuities, and then revealing the penetrant using a developer, LPT can effectively identify defects that may not be visible to the naked eye.',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
             'section6': {
-                'title': 'Structural health monitoring',
-                'text': 'We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
+                'title': 'Bitumen modification',
+                'text': 'Advanced bitumen analysis focuses on developing innovative additives and polymers to enhance bitumen properties, understanding their molecular interactions, and evaluating the long-term performance of modified bitumen in asphalt mixtures.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'Innovative Asphalt Technologies',
-                'text': 'Pioneering the development of high-performance asphalt mixtures that are long-lasting, weather-resistant, and environmentally friendly.',
-                'img': '../static/images/Innovation/TP.png'
+                'title': '3D construction printing ',
+                'text': 'This technology revolutionizes the construction industry by enabling the manufactruring of complex structures with unprecedented precision, reduced material waste and energy efficiency. Our 3D printing machines, such as the 3D Potter and the CyBe RC, are driving innovation in this field.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section8': {
+                'title': 'Numerical soil modeling',
+                'text': 'Development of numerical models to simulate in situ soil behavior like finite element modeling, discrete element modeling and limit equilibrium methods.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section9': {
+                'title': 'Soil-structure interaction',
+                'text': 'Numerical and experimental analysis of the interactions between structures and soils, particularly under cyclic loading conditions such as earthquakes and traffic.',
+                'img': '../static/images/Innovation/CNC.png'
             }
         },
         
@@ -1099,44 +1128,44 @@ def MSC_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'Advanced Spectroscopic Analysis ',
-            'title_line2': '',
-            'text': 'Our platform offers cutting-edge spectroscopic analysis using Nuclear Magnetic Resonance (NMR),  InfraRed (IR), and UltraViolet-Visible (UV-Vis) spectroscopy.  Tailored to specific project needs, our services include both qualitative and quantitative analyses, with detailed spectra and comprehensive interpretive reports.',
+            'title_line1': 'Advanced Spectroscopic',
+            'title_line2': 'Analysis',
+            'text': 'Our Advanced Spectroscopy Solutions deliver comprehensive chemical analysis, including structural elucidation, accurate quantitative measurements, insights into molecular interactions, observation of dynamic behavior, and detailed material characterization.',
             'img': '../../static/images/platforms/MSC/services_msc/srv1.jpg'
             
         },
         'section_2': {
-            'title_line1': 'X-ray Diffraction (XRD) Analysis ',
-            'title_line2': '',
-            'text': 'Our X-ray diffraction (XRD) service delivers high-precision analysis for material sciences, offering phase identification and structural parameter determination.  From lattice dimensions to crystallite sizes, our expertise enables complete material characterization, supporting the optimization of manufacturing processes and the development of new materials.',
+            'title_line1': 'XRD Services for ',
+            'title_line2': 'Materials Science',
+            'text': 'Our platform offers extensive XRD services for materials characterization, supporting process optimization and development. Services include phase and structure determination, nanomaterial analysis, phase transformation observation, and characterization of thin films and nanostructured layers.',
             'img': '../../static/images/platforms/MSC/services_msc/srv2.jpg'
 
         },
         'section_3': {
-            'title_line1': 'Thermal Analysis Services ',
-            'title_line2': '',
-            'text': 'Our thermal analysis services, including Thermogravimetric Analysis (TGA) and Differential Scanning Calorimetry (DSC). Whether measuring mass changes or heat flows, we deliver comprehensive thermal characterization, stability studies, and process optimization to meet diverse industrial needs. ',
+            'title_line1': 'Thermal ',
+            'title_line2': 'Analysis',
+            'text': 'Our platform offers advanced thermal analysis with TGA and DSC, offering detailed insights into material properties for research, development, and quality control. TGA covers decomposition, volatile content, residue analysis, and stability, while DSC includes melting temperatures, glass transitions, crystallization, and thermal reactions.',
             'img': '../../static/images/platforms/MSC/services_msc/srv3.jpg'
 
         },
         'section_4': {
-            'title_line1': 'Microscopy Services ',
-            'title_line2': '',
-            'text': 'Our platform offers Scanning Electron Microscopy (SEM) and Acoustic Microscopy for high-resolution imaging and analysis. SEM delivers nanoscale imaging and elemental composition analysis, while Acoustic Microscopy maps internal structures and detects defects, ensuring thorough material characterization for research and quality control.',
+            'title_line1': 'D-SEM & Acoustic ',
+            'title_line2': 'Microscopy',
+            'text': 'Our platform offers advanced material characterization with state-of-the-art SEM and Acoustic Microscopy. SEM services include high-resolution imaging, elemental analysis, and topographic mapping. Acoustic Microscopy services provide density mapping, defect detection, and 3D imaging for non-destructive material examination.',
             'img': '../../static/images/platforms/MSC/services_msc/srv4.jpg'
 
         },
         'section_5': {
-            'title_line1': 'Physical and Mechanical Characterization ',
-            'title_line2': '',
-            'text': 'We provide Dynamic Mechanical Analysis (DMA) and Thermomechanical Analysis (TMA) services to assess mechanical and thermal properties of materials. From viscoelastic behavior to phase transitions, our analysis supports material development, quality control, and process optimization.',
+            'title_line1': 'E-DMA/TMA ',
+            'title_line2': 'Analysis',
+            'text': 'Our platform offers DMA and TMA services for in-depth material characterization. DMA services include measuring elastic modulus, glass transition temperature (Tg), and viscoelastic properties. TMA services cover thermal expansion, temperature-dependent deformation, and viscoelastic behavior under thermal load.',
             'img': '../../static/images/platforms/MSC/services_msc/srv5.jpg'
 
         },
         'section_6': {
-            'title_line1': 'Rheology and Viscosity Analysis',
-            'title_line2': '',
-            'text': 'Our rheology services evaluate the mechanical properties and structure of materials, including fluids, semi-solids, and solids. We offer comprehensive viscosity testing and viscoelastic behavior analysis to optimize formulations and enhance product quality across various industries.',
+            'title_line1': 'Rheology and Viscosity ',
+            'title_line2': 'Analysis',
+            'text': 'Our rheology service offers detailed analysis of fluids, semi-solids, and solids, including viscosity measurement, viscoelastic structure analysis, and shear behavior. We help optimize formulations and enhance product quality for pharmaceuticals, cosmetics, polymers, and food.',
             'img': '../../static/images/platforms/MSC/services_msc/srv6.jpg'
 
         },
@@ -1148,9 +1177,9 @@ def MSC_services(request):
 
         },
         'section_8': {
-            'title_line1': 'Resilience ',
-            'title_line2': 'Testing',
-            'text': 'Measures impact resistance and toughness.',
+            'title_line1': 'Supporting ',
+            'title_line2': 'R&D',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
             'img': '../../static/images/Serv/7.jpeg'
 
         },
@@ -1486,24 +1515,24 @@ def MSC_index(request):
         "text_2": "At our characterization platform, we provide unmatched support and expertise to help you navigate the complexities of material characterization across diverse application areas, including material science, pharmaceuticals, agroalimentary, chemistry, and polymers. Our skilled team is dedicated to delivering precise insights and solutions tailored to your needs, ensuring optimal performance and innovation in your projects."
     },
     "third_section": {
-        "title": "Advantages of Using Our Platform:",
-        "description": "Involves analyzing powders to understand their physical and chemical properties",
-        "image": "../static/images/fes7.jpg",
+        "title": "Advantages of using our characterization platform:",
+        "description": "",
+        "image": "../static/images/platforms/MSC/index_MSC/sec3.png",
         "point_1": {
-            "title": "Advanced Analytical Tools:",
-            "description": "Our platform provides a diverse selection of cutting-edge analytical instruments to support various research projects. These tools are also available for on-demand services tailored to meet the specific needs of our clients."
+            "title": "Diverse Analytical Tools:",
+            "description": "Access to a comprehensive suite of cutting-edge instruments, tailored to support a wide range of research needs with flexibility and precision."
         },
         "point_2": {
-            "title": "Expertise for Industrial Analysis:",
-            "description": "Whether for occasional or regular analyses, our platform offers advanced tools and the expertise necessary for high-level analyses, particularly for industrial clients aiming for precision and reliability."
+            "title": "Industrial precision:",
+            "description": "Benefit from advanced tools and expertise designed for high-accuracy industrial analysis, ideal for both occasional and regular needs."
         },
         "point_3": {
-            "title": "Expert Analysis and Interpretation:",
-            "description": "Our team, comprised of specialists in chemistry, mechanics, and physics, delivers precise and insightful interpretation of analysis results, ensuring our collaborator fully understand the outcomes and implications for their projects."
+            "title": "Customizable Services:",
+            "description": "Utilize on-demand, customizable services to get exactly what you need, when you need it, enhancing research efficiency and adaptability."
         },
         "point_4": {
-            "title": "Impact on Research and Industry:",
-            "description": "Tailored to meet specific research and industrial needs, our solutions enhance efficiency and drive innovation in material science."
+            "title": "Expert Interpretation:",
+            "description": "Receive detailed and insightful analysis from a team of specialists in chemistry, mechanics, and physics, ensuring clear understanding and actionable results."
         }
     },
     "video": {
@@ -1513,50 +1542,47 @@ def MSC_index(request):
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
-        "title": "Driving Innovation Across Industries",
+        "title": "Impact on Research and Industry",
         "description": "",
         "tab_1": {
-            "header": "Pharmaceuticals",
-            "title": "",
-            "description": "Measures moisture and density.",
-
-            "img_before": "../static/images/static-media/Turbine1.jpg",
-            "img_after": "../static/images/static-media/Turbine2.jpg"
+            "header": "Materials Science",
+            "title": "Revolutionizing High-Performance Materials",
+            "description": "Advanced materials enable the development of high-performance materials for electronics, aerospace, and energy sectors, while performance optimization analyzes thermal and mechanical properties to ensure material reliability.",
         },
         "tab_2": {
-            "header": "Materials Science",
-            "title": "",
-            "description": "Analyzes particle size and density.",
+            "header": "Biotechnology and Medicine",
+            "title": "Innovations in Biomaterials and Drug Development",
+            "description": "Biomaterials provide insights into the molecular structure of biological materials, enhancing implants and drug delivery systems. Drug development optimizes formulations and interactions through detailed analysis.",
            
         },
         "tab_3": {
-            "header": "Additive Manufacturing",
-            "title": "",
-            "description": "Checks particle size and flowability.",
+            "header": "Industrial Processes",
+            "title": "Enhancing Efficiency and Sustainability",
+            "description": "Catalyst optimization enhances efficiency and sustainability in chemical manufacturing, while process improvement reduces waste and streamlines operations through comprehensive material analysis.",
            
         },
         "tab_4": {
-            "header": "Chemical Processing",
-            "title": "",
-            "description": "Analyzes particle size and shape."
+            "header": "Environmental and Sustainability",
+            "title": "Advancing Environmental Protection",
+            "description": "Pollution monitoring analyzes pollutants and supports environmental protection efforts, while sustainable materials aid in developing eco-friendly materials and processes."
           
         },
         "tab_5": {
-            "header": "Aerospace",
-            "title": "",
-            "description": "Tests materials for strength and durability in aircraft and spacecraft.",
+            "header": "Food and Agriculture",
+            "title": "Ensuring Quality and Innovation",
+            "description": "Quality control ensures food quality by detecting contaminants and verifying composition, while agricultural innovations improve practices and crop yields through material analysis.",
            
         },
         "tab_6": {
-            "header": "Automotive",
-            "title": "",
-            "description": "Evaluates component materials to ensure reliability and safety.",
+            "header": "Energy Sector",
+            "title": "Driving Sustainable Energy Solutions",
+            "description": "Pollution monitoring analyzes pollutants and supports environmental protection efforts, while sustainable materials aid in developing eco-friendly materials and processes.",
            
         },
         "tab_7": {
-            "header": "Construction",
+            "header": "",
             "title": "",
-            "description": "Assesses materials for structural integrity to meet safety standards."
+            "description": ""
           
         }
         
