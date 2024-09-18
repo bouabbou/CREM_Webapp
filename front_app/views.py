@@ -708,36 +708,65 @@ def MSC_innovation(request):
 def PCE_innovation(request):
     context = {
         'header1': {
-            'title_1': 'Geotechnical ',
+            'title_1': 'Non-Destructive ',
+            'title_2': 'Testing',
+
         },
         'header2': {
-            'title_1': 'Concrete ',
+            'title_1': 'Construction and Asphalt ',
+            'title_2': 'Technologies',
+
         },
         'header3': {
-            'title_1': 'Traffic ',
-            'title_2': ' Facilities',
+            'title_1': 'Geotechnics ',
+            'title_2': '',
             'style': 'background-color: white;'
         },
         'sections': {
             'section1': {
-                'title': 'Geotechnical characterization',
-                'text': 'We employ advanced geotechnical testing methods to better understand soil and rock behavior for infrastructure design and construction.',
+                'title': 'Radiography',
+                'text': 'Radiography utilizes X-rays or gamma rays to penetrate materials and create images of internal structures. This technique enables the detection of defects such as cracks, porosity, and inclusions, providing valuable insights into material integrity and assembly quality.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
-            'section5': {
-                'title': 'Advanced materials testing',
-                'text': 'We investigate the properties and behavior of innovative materials such as high-performance concrete, sustainable composites, and recycled materials.-Structural health monitoring: We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
+            'section2': {
+                'title': 'Eddy currents (ECT)',
+                'text': 'ECT method utilizes electromagnetic induction to detect surface defects and variations in conductivity within conductive materials. By inducing eddy currents in the material and measuring their response, ECT can identify anomalies such as cracks, corrosion, and material defects. This technique is widely used in various industries, including aerospace, automotive, and power generation. ',
                 'img': '../static/images/Innovation/CNC.png'
             },
+            'section3': {
+                'title': 'Magnetic particle inspection (MPI)',
+                'text': 'MPI method is used to detect surface and subsurface defects in ferromagnetic materials. By applying a magnetic field to the material and then applying magnetic particles, any discontinuities or defects will attract the particles, making them visible for inspection.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section4': {
+                'title': 'Ultrasonics Testing',
+                'text': 'Ultrasonics Testing is a non-destructive testing method that utilizes high-frequency sound waves to detect internal defects within materials.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section5': {
+                'title': 'Liquid penetrant inspection (LPT)',
+                'text': 'LPT is a non-destructive testing method used to detect surface-breaking defects in materials. By applying a penetrant liquid to the surface, allowing it to penetrate into any cracks or discontinuities, and then revealing the penetrant using a developer, LPT can effectively identify defects that may not be visible to the naked eye.',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
             'section6': {
-                'title': 'Structural health monitoring',
-                'text': 'We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
+                'title': 'Bitumen modification',
+                'text': 'Advanced bitumen analysis focuses on developing innovative additives and polymers to enhance bitumen properties, understanding their molecular interactions, and evaluating the long-term performance of modified bitumen in asphalt mixtures.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'Innovative Asphalt Technologies',
-                'text': 'Pioneering the development of high-performance asphalt mixtures that are long-lasting, weather-resistant, and environmentally friendly.',
-                'img': '../static/images/Innovation/TP.png'
+                'title': '3D construction printing ',
+                'text': 'This technology revolutionizes the construction industry by enabling the manufactruring of complex structures with unprecedented precision, reduced material waste and energy efficiency. Our 3D printing machines, such as the 3D Potter and the CyBe RC, are driving innovation in this field.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section8': {
+                'title': 'Numerical soil modeling',
+                'text': 'Development of numerical models to simulate in situ soil behavior like finite element modeling, discrete element modeling and limit equilibrium methods.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section9': {
+                'title': 'Soil-structure interaction',
+                'text': 'Numerical and experimental analysis of the interactions between structures and soils, particularly under cyclic loading conditions such as earthquakes and traffic.',
+                'img': '../static/images/Innovation/CNC.png'
             }
         },
         
