@@ -33,13 +33,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'a.bouabbou@ueuromed.org'
 EMAIL_HOST_PASSWORD = 'xkgb syxd bsmv qxel'
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-ALLOWED_HOSTS = []
->>>>>>> 3c2ae5a3c9cbb374e60fd286cdd1cb5d1721295f
->>>>>>> 4979bf48da2c09ce2cba17b6fe8ae043eb91c9f4
+ALLOWED_HOSTS = ['172.16.80.130']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -124,11 +118,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-# TIME_ZONE = "UTC"
+TIME_ZONE = "UTC"
 
 USE_I18N = True
 
-# USE_TZ = True
+USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
