@@ -808,61 +808,61 @@ def SAI_innovation(request):
                 'title': 'Laser-based Sensors',
                 'tag': '',
                 'text': 'Our work in laser-based sensors focuses on achieving high-precision measurements for a variety of applications. This technology allows for non-contact detection of physical parameters such as distance, speed, and surface characteristics, providing accurate data for industrial automation, aerospace, and more.',
-                'img': '../static/images/Innovation/lpbf.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno1.jpg'
             },
             'section2': {
                 'title': 'Optical Sensors',
                 'tag': '',
                 'text': 'Optical sensors utilize light-based technologies to measure parameters such as light intensity, color, and displacement. These sensors are ideal for applications requiring high sensitivity and accuracy, including environmental monitoring, quality control, and healthcare diagnostics.',
-                'img': '../static/images/Innovation/sls.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno2.jpg'
             },
             'section3': {
                 'title': 'Electrochemical Sensors',
                 'tag': '',
                 'text': 'Electrochemical sensors are employed to detect and measure chemical substances and concentrations. They are crucial for applications in environmental monitoring, medical diagnostics, and industrial process control, providing reliable and real-time data.',
-                'img': '../static/images/Innovation/FDM.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno3.jpg'
             },
             'section4': {
                 'title': 'Acoustic Sensors',
                 'tag': '',
                 'text': 'Acoustic sensors use sound waves to detect and measure various parameters such as distance, velocity, and material properties. This technology is applied in fields such as automotive safety systems, industrial inspection, and environmental studies.',
-                'img': '../static/images/Innovation/SLA.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno4.jpg'
             },
             'section5': {
                 'title': 'Embedded Systems',
                 'tag': '',
                 'text': 'We integrate advanced embedded systems for efficient data acquisition from various sensors. These systems manage real-time data collection and processing, ensuring accurate and reliable information for further analysis.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno5.jpg'
             },
             'section6': {
                 'title': 'Data Integration and Management',
                 'tag': '',
                 'text': 'Our platform utilizes sophisticated methods for integrating and managing sensor data. This includes filtering, analyzing, and presenting data to support informed decision-making and enhance system performance.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno6.jpg'
             },
             'section7': {
                 'title': 'Signal Processing',
                 'tag': '',
                 'text': 'Our solutions involve advanced signal processing techniques to enhance the quality and accuracy of sensor data. This includes noise reduction, signal amplification, and data smoothing to ensure precise measurements.',
-                'img': '../static/images/Innovation/TP.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno7.jpg'
             },
             'section8': {
                 'title': 'Analog-to-Digital Conversion',
                 'tag': '',
                 'text': 'We provide conversion services for transforming data between analog and digital formats, facilitating better integration and usability of sensor data in various applications.',
-                'img': '../static/images/Innovation/CF.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno8.png'
             },
             'section9': {
                 'title': 'System Simulation',
                 'tag': '',
                 'text': 'We use simulation tools such as LabVIEW and MATLAB to model and test sensor systems. This helps in designing accurate and effective solutions, predicting performance, and optimizing system integration.',
-                'img': '../static/images/Innovation/CF.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno9.jpg'
             },
             'section10': {
                 'title': 'Sensor Calibration',
                 'tag': '',
                 'text': 'We offer comprehensive calibration services for mechatronic sensors, ensuring they meet the highest standards of accuracy and reliability. Our calibration processes are designed to enhance sensor performance and maintain consistency in measurements.',
-                'img': '../static/images/Innovation/CF.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno10.jpg'
             }
         },
         'logo': '../static/images/logo-grey.png',
@@ -1298,32 +1298,32 @@ def SAI_services(request):
         'section_1': {
             'title_line1': 'DETECTION',
             'title_line2': '',
-            'text': 'We specialize in detecting and collecting a wide range of physical parameters that can be utilized across multiple domains, including:<br><br>o Healthcare: Monitoring vital signs, patient diagnostics, and wearable health devices.<br>o Agriculture: Soil moisture, crop health, and environmental conditions.<br>o Automotive: Vehicle performance, engine diagnostics, and safety systems.<br>o Aerospace: Flight control systems, engine monitoring, and structural health.<br>o And More: Tailored solutions for other specialized fields.',
-            'img': '../../static/images/Serv/1.png'
+            'text': 'We specialize in detecting and collecting physical parameters for various domains, including healthcare (vital signs, diagnostics, wearable devices), agriculture (soil moisture, crop health, environmental conditions), automotive (vehicle performance, engine diagnostics, safety systems), and aerospace (flight control, engine monitoring, structural health). We also offer tailored solutions for other specialized fields.',
+            'img': '../static/images/platforms/sai/services_sai/serv1.jpg'
         },
         'section_2': {
             'title_line1': 'DATA',
             'title_line2': 'ACQUISITION',
             'text': 'We use various electronic and embedded systems to acquire data and integrate it into the acquisition chain. This includes selecting and implementing the right hardware to ensure accurate and reliable data capture.',
-            'img': '../../static/images/Serv/2.jpeg'
+            'img': '../static/images/platforms/sai/services_sai/serv2.jpg'
         },
         'section_3': {
             'title_line1': 'DATA',
             'title_line2': 'PROCESSING',
-            'text': 'Our data processing solutions involve the use of electronic components for:<br><br>• Signal Processing/Data Handling: Efficiently processing and analyzing collected data.<br>• Analog-to-Digital and Digital-to-Analog Conversion: Converting data between analog and digital formats to facilitate further analysis and integration.<br>• Signal Amplification: Enhancing signal strength to ensure accurate measurements and readings.',
-            'img': '../../static/images/Serv/4.jpeg'
+            'text': 'Our data processing solutions utilize electronic components for efficient signal processing and data handling, converting data between analog and digital formats, and amplifying signals to ensure accurate measurements and readings.',
+            'img': '../static/images/platforms/sai/services_sai/serv3.jpg'
         },
         'section_4': {
             'title_line1': 'SIMULATION',
             'title_line2': '',
             'text': 'We employ simulation and modeling tools such as LabVIEW and MATLAB to design and test systems. These tools help in developing accurate models and simulations of sensor systems and their interactions.',
-            'img': '../../static/images/Serv/6.jpg'
+            'img': '../static/images/platforms/sai/services_sai/serv4.jpg'
         },
         'section_5': {
             'title_line1': 'OTHER',
             'title_line2': 'SERVICES',
             'text': 'We provide calibration services for mechatronic sensors to ensure they perform with the highest accuracy and reliability. This includes fine-tuning sensors to meet specific application requirements and standards.',
-            'img': '../../static/images/Serv/5.jpg'
+            'img': '../static/images/Serv/7.jpeg'
         },
     },
     }
@@ -1871,7 +1871,7 @@ def AIDE_index(request):
     "third_section": {
         "title": "Artificial intelligence and robotics",
         "description": "Artificial intelligence and robotics are transformative technologies that enhance automation, decision-making, and human-robot interaction across various industries. These technologies provide unprecedented capabilities in processing data, creating immersive experiences, and developing sophisticated robotic systems.",
-        "image": "../static/images/fes7.jpg",
+        "image": "../static/images/platforms/AIDE/index_AIDE/section3.jpg",
         "point_1": {
             "title": "Enhanced Decision-Making",
             "description": "AI enables the analysis of vast amounts of data to make informed decisions, optimizing processes and improving efficiency."
