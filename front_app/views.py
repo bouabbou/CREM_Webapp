@@ -660,37 +660,37 @@ def MSC_innovation(request):
         },
         'sections': {
             'section1': {
-                'title': 'Innovation in Materials science:',
+                'title': 'NMR: A Revolution in AgriFood Research',
                 'tag': '',
-                'text': 'At the forefront of material science, our platform leverages cutting-edge technology to deliver precise, reliable measurements across diverse applications. We drive innovation through advanced instruments and software solutions, enabling researchers and industries to push the boundaries of material characterization.',
-                'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc1.png'
+                'text': 'We developed a novel NMR technique that employs spatially selective chemical shift filters, adiabatic pulses, and TOCSY to accurately quantify carbohydrates. This method eliminates background interference and the need for calibration curves, providing high precision with low detection limits and making it suitable for routine analysis of various natural matrices.',
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc01.png'
             },
             'section2': {
-                'title': 'Unparalleled Precision With NMR:',
+                'title': 'NMR Insights into DES-Based Catalysis',
                 'tag': '',
-                'text': 'Our NMR capabilities are unmatched, featuring a 600 MHz high-field spectrometer and state-of-the-art probes. Whether analyzing liquid or solid samples, our platform ensures high sensitivity, resolution, and versatility, making it indispensable for pharmaceutical, polymer, and complex material studies.',
+                'text': 'We work on using NMR spectroscopy to investigate catalytic reactions in Deep Eutectic Solvents (DESs), aiming to uncover reaction mechanisms, identify intermediates, and optimize catalytic performance. This work supports green chemistry by advancing the use of environmentally friendly solvents and promoting sustainable catalytic processes.',
                 'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc2.png'
 
             },
             'section3': {
-                'title': 'Advanced X-Ray Diffraction (XRD) and Nanomaterial Analysis:',
+                'title': 'A Powerful Tool for Drug Innovation',
                 'tag': '',
-                'text': 'Equipped with the D8 DISCOVER diffractometer and SAXS module, our platform excels in crystalline structure and nanomaterial characterization. These technologies provide crucial insights into material properties, essential for research, development, and quality control.',
+                'text': 'We developed an NMR-based method to screen covalent inhibitors of cysteine proteases, including the SARS-CoV-2 main protease (M pro). Using real-time NMR spectroscopy, we tracked S-C bond formation and reaction kinetics with various Michael acceptors. This approach links chemical reactivity to inhibitory activity, enhancing drug discovery for antiviral agents targeting cysteine proteases.',
                 'img': '../static/images/platforms/MSC/innovation_MSC/inno3.jpg'
 
             },
             'section4': {
-                'title': 'Thermal and Thermomechanical Analysis:',
+                'title': 'NMR-Enabled High-Throughput Screening of Plant Metabolites',
                 'tag': '',
-                'text': 'Our advanced thermal analysis tools, including TGA, DSC, and DMA, offer precise assessment of material properties under varying conditions. From thermal decomposition to viscoelastic behavior, our platform delivers accurate data crucial for material performance optimization.',
+                'text': 'High-resolution NMR has become essential in plant metabolism research. We’ve developed novel NMR-based methods tailored to screen, identify, and quantify metabolites in plant extracts, focusing on CBD and THC in Moroccan cannabis. These advanced techniques enable precise and efficient cannabis analysis, supporting scientific research, medicinal quality control, and cosmetic product development.',
                 'img': '../static/images/platforms/MSC/innovation_MSC/inno4.jpg'
 
             },
             'section5': {
-                'title': 'Supporting Innovation Beyond Instruments:',
+                'title': 'Enhancing Biomarker Detection in Blood Serum Using Advanced NMR Techniques',
                 'tag': '',
-                'text': 'Our commitment to innovation extends beyond technology. We provide unparalleled support and expertise to help you navigate the complexities of material characterization. Dr. Hamdoun Ghanem is available to ensure you maximize the potential of our platform.',
-                'img': '../static/images/platforms/MSC/innovation_MSC/inno5.jpg'
+                'text': 'We work on improving early disease diagnosis by optimizing Nuclear Magnetic Resonance (NMR) techniques for detecting biomarkers in blood serum. This research aims to refine NMR protocols to achieve greater sensitivity and accuracy in identifying biomarkers for cancer and metabolic disorders, ultimately advancing diagnostic methods and clinical applications.',
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno5.png'
             }
         },
         
@@ -708,36 +708,65 @@ def MSC_innovation(request):
 def PCE_innovation(request):
     context = {
         'header1': {
-            'title_1': 'Geotechnical ',
+            'title_1': 'Non-Destructive ',
+            'title_2': 'Testing',
+
         },
         'header2': {
-            'title_1': 'Concrete ',
+            'title_1': 'Construction and Asphalt ',
+            'title_2': 'Technologies',
+
         },
         'header3': {
-            'title_1': 'Traffic ',
-            'title_2': ' Facilities',
+            'title_1': 'Geotechnics ',
+            'title_2': '',
             'style': 'background-color: white;'
         },
         'sections': {
             'section1': {
-                'title': 'Geotechnical characterization',
-                'text': 'We employ advanced geotechnical testing methods to better understand soil and rock behavior for infrastructure design and construction.',
+                'title': 'Radiography',
+                'text': 'Radiography utilizes X-rays or gamma rays to penetrate materials and create images of internal structures. This technique enables the detection of defects such as cracks, porosity, and inclusions, providing valuable insights into material integrity and assembly quality.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
-            'section5': {
-                'title': 'Advanced materials testing',
-                'text': 'We investigate the properties and behavior of innovative materials such as high-performance concrete, sustainable composites, and recycled materials.-Structural health monitoring: We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
+            'section2': {
+                'title': 'Eddy currents (ECT)',
+                'text': 'ECT method utilizes electromagnetic induction to detect surface defects and variations in conductivity within conductive materials. By inducing eddy currents in the material and measuring their response, ECT can identify anomalies such as cracks, corrosion, and material defects. This technique is widely used in various industries, including aerospace, automotive, and power generation. ',
                 'img': '../static/images/Innovation/CNC.png'
             },
+            'section3': {
+                'title': 'Magnetic particle inspection (MPI)',
+                'text': 'MPI method is used to detect surface and subsurface defects in ferromagnetic materials. By applying a magnetic field to the material and then applying magnetic particles, any discontinuities or defects will attract the particles, making them visible for inspection.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section4': {
+                'title': 'Ultrasonics Testing',
+                'text': 'Ultrasonics Testing is a non-destructive testing method that utilizes high-frequency sound waves to detect internal defects within materials.',
+                'img': '../static/images/Innovation/TP.png'
+            },
+            'section5': {
+                'title': 'Liquid penetrant inspection (LPT)',
+                'text': 'LPT is a non-destructive testing method used to detect surface-breaking defects in materials. By applying a penetrant liquid to the surface, allowing it to penetrate into any cracks or discontinuities, and then revealing the penetrant using a developer, LPT can effectively identify defects that may not be visible to the naked eye.',
+                'img': '../static/images/Innovation/lpbf.png'
+            },
             'section6': {
-                'title': 'Structural health monitoring',
-                'text': 'We develop and apply cutting-edge techniques to assess the condition and performance of structures throughout their lifecycle. ',
+                'title': 'Bitumen modification',
+                'text': 'Advanced bitumen analysis focuses on developing innovative additives and polymers to enhance bitumen properties, understanding their molecular interactions, and evaluating the long-term performance of modified bitumen in asphalt mixtures.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'Innovative Asphalt Technologies',
-                'text': 'Pioneering the development of high-performance asphalt mixtures that are long-lasting, weather-resistant, and environmentally friendly.',
-                'img': '../static/images/Innovation/TP.png'
+                'title': '3D construction printing ',
+                'text': 'This technology revolutionizes the construction industry by enabling the manufactruring of complex structures with unprecedented precision, reduced material waste and energy efficiency. Our 3D printing machines, such as the 3D Potter and the CyBe RC, are driving innovation in this field.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section8': {
+                'title': 'Numerical soil modeling',
+                'text': 'Development of numerical models to simulate in situ soil behavior like finite element modeling, discrete element modeling and limit equilibrium methods.',
+                'img': '../static/images/Innovation/CNC.png'
+            },
+            'section9': {
+                'title': 'Soil-structure interaction',
+                'text': 'Numerical and experimental analysis of the interactions between structures and soils, particularly under cyclic loading conditions such as earthquakes and traffic.',
+                'img': '../static/images/Innovation/CNC.png'
             }
         },
         
@@ -755,71 +784,87 @@ def PCE_innovation(request):
 def SAI_innovation(request):
     context = {
         'header1': {
-            'title_1': 'header1 ',
-            'title_2': ' title1',
+            'title_1': 'Sensor Technologies',
+            'title_2': '',
         },
         'header2': {
-            'title_1': 'header2 ',
-            'title_2': ' title2',
+            'title_1': 'Data Acquisition',
+            'title_2': '',
         },
         'header3': {
-            'title_1': 'header3 ',
-            'title_2': ' title3',
+            'title_1': 'Data Processing',
+            'title_2': '',
+        },
+        'header4': {
+            'title_1': 'Simulation and Modeling',
+            'title_2': '',
+        },
+        'header5': {
+            'title_1': 'Calibration',
+            'title_2': '',
         },
         'sections': {
             'section1': {
-                'title': 'title 1',
-                'tag': 'tag1',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Laser-based Sensors',
+                'tag': '',
+                'text': 'Our work in laser-based sensors focuses on achieving high-precision measurements for a variety of applications. This technology allows for non-contact detection of physical parameters such as distance, speed, and surface characteristics, providing accurate data for industrial automation, aerospace, and more.',
                 'img': '../static/images/Innovation/lpbf.png'
             },
             'section2': {
-                'title': 'title 2',
-                'tag': 'tag2',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Optical Sensors',
+                'tag': '',
+                'text': 'Optical sensors utilize light-based technologies to measure parameters such as light intensity, color, and displacement. These sensors are ideal for applications requiring high sensitivity and accuracy, including environmental monitoring, quality control, and healthcare diagnostics.',
                 'img': '../static/images/Innovation/sls.png'
-
             },
             'section3': {
-                'title': 'title 3',
-                'tag': 'tag3',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Electrochemical Sensors',
+                'tag': '',
+                'text': 'Electrochemical sensors are employed to detect and measure chemical substances and concentrations. They are crucial for applications in environmental monitoring, medical diagnostics, and industrial process control, providing reliable and real-time data.',
                 'img': '../static/images/Innovation/FDM.png'
-
             },
             'section4': {
-                'title': 'title 4',
-                'tag': 'tag4',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Acoustic Sensors',
+                'tag': '',
+                'text': 'Acoustic sensors use sound waves to detect and measure various parameters such as distance, velocity, and material properties. This technology is applied in fields such as automotive safety systems, industrial inspection, and environmental studies.',
                 'img': '../static/images/Innovation/SLA.png'
-
             },
             'section5': {
-                'title': 'title 5',
-                'tag': 'tag5',
-                'text': 'text text tex tetx tetx tetsx ',
+                'title': 'Embedded Systems',
+                'tag': '',
+                'text': 'We integrate advanced embedded systems for efficient data acquisition from various sensors. These systems manage real-time data collection and processing, ensuring accurate and reliable information for further analysis.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section6': {
-                'title': 'title 6',
-                'tag': 'tag6',
-                'text1': 'text text tex tetx tetx tetsx ',
+                'title': 'Data Integration and Management',
+                'tag': '',
+                'text': 'Our platform utilizes sophisticated methods for integrating and managing sensor data. This includes filtering, analyzing, and presenting data to support informed decision-making and enhance system performance.',
                 'img': '../static/images/Innovation/CNC.png'
             },
             'section7': {
-                'title': 'THERMOPLASTIC',
-                'tag': 'COMPOSITES',
-                'text1': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
+                'title': 'Signal Processing',
+                'tag': '',
+                'text': 'Our solutions involve advanced signal processing techniques to enhance the quality and accuracy of sensor data. This includes noise reduction, signal amplification, and data smoothing to ensure precise measurements.',
                 'img': '../static/images/Innovation/TP.png'
             },
             'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text1': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'title': 'Analog-to-Digital Conversion',
+                'tag': '',
+                'text': 'We provide conversion services for transforming data between analog and digital formats, facilitating better integration and usability of sensor data in various applications.',
+                'img': '../static/images/Innovation/CF.png'
+            },
+            'section9': {
+                'title': 'System Simulation',
+                'tag': '',
+                'text': 'We use simulation tools such as LabVIEW and MATLAB to model and test sensor systems. This helps in designing accurate and effective solutions, predicting performance, and optimizing system integration.',
+                'img': '../static/images/Innovation/CF.png'
+            },
+            'section10': {
+                'title': 'Sensor Calibration',
+                'tag': '',
+                'text': 'We offer comprehensive calibration services for mechatronic sensors, ensuring they meet the highest standards of accuracy and reliability. Our calibration processes are designed to enhance sensor performance and maintain consistency in measurements.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
-        #header
         'logo': '../static/images/logo-grey.png',
         'link_color': 'grey', 
         'services_url': reverse('SAI_services'),
@@ -827,7 +872,8 @@ def SAI_innovation(request):
         'infrastructure_url': reverse('SAI_infrastructure'),
         'innovation_url': reverse('SAI_innovation'),
     }
-    return render( request ,'platforms/sai/SAI_innovation.html',context)
+    return render(request, 'platforms/sai/SAI_innovation.html', context)
+
 
 # platfrom's services
 
@@ -1082,44 +1128,44 @@ def MSC_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'Advanced Spectroscopic Analysis ',
-            'title_line2': '',
-            'text': 'Our platform offers cutting-edge spectroscopic analysis using Nuclear Magnetic Resonance (NMR),  InfraRed (IR), and UltraViolet-Visible (UV-Vis) spectroscopy.  Tailored to specific project needs, our services include both qualitative and quantitative analyses, with detailed spectra and comprehensive interpretive reports.',
+            'title_line1': 'Advanced Spectroscopic',
+            'title_line2': 'Analysis',
+            'text': 'Our Advanced Spectroscopy Solutions deliver comprehensive chemical analysis, including structural elucidation, accurate quantitative measurements, insights into molecular interactions, observation of dynamic behavior, and detailed material characterization.',
             'img': '../../static/images/platforms/MSC/services_msc/srv1.jpg'
             
         },
         'section_2': {
-            'title_line1': 'X-ray Diffraction (XRD) Analysis ',
-            'title_line2': '',
-            'text': 'Our X-ray diffraction (XRD) service delivers high-precision analysis for material sciences, offering phase identification and structural parameter determination.  From lattice dimensions to crystallite sizes, our expertise enables complete material characterization, supporting the optimization of manufacturing processes and the development of new materials.',
+            'title_line1': 'XRD Services for ',
+            'title_line2': 'Materials Science',
+            'text': 'Our platform offers extensive XRD services for materials characterization, supporting process optimization and development. Services include phase and structure determination, nanomaterial analysis, phase transformation observation, and characterization of thin films and nanostructured layers.',
             'img': '../../static/images/platforms/MSC/services_msc/srv2.jpg'
 
         },
         'section_3': {
-            'title_line1': 'Thermal Analysis Services ',
-            'title_line2': '',
-            'text': 'Our thermal analysis services, including Thermogravimetric Analysis (TGA) and Differential Scanning Calorimetry (DSC). Whether measuring mass changes or heat flows, we deliver comprehensive thermal characterization, stability studies, and process optimization to meet diverse industrial needs. ',
+            'title_line1': 'Thermal ',
+            'title_line2': 'Analysis',
+            'text': 'Our platform offers advanced thermal analysis with TGA and DSC, offering detailed insights into material properties for research, development, and quality control. TGA covers decomposition, volatile content, residue analysis, and stability, while DSC includes melting temperatures, glass transitions, crystallization, and thermal reactions.',
             'img': '../../static/images/platforms/MSC/services_msc/srv3.jpg'
 
         },
         'section_4': {
-            'title_line1': 'Microscopy Services ',
-            'title_line2': '',
-            'text': 'Our platform offers Scanning Electron Microscopy (SEM) and Acoustic Microscopy for high-resolution imaging and analysis. SEM delivers nanoscale imaging and elemental composition analysis, while Acoustic Microscopy maps internal structures and detects defects, ensuring thorough material characterization for research and quality control.',
+            'title_line1': 'D-SEM & Acoustic ',
+            'title_line2': 'Microscopy',
+            'text': 'Our platform offers advanced material characterization with state-of-the-art SEM and Acoustic Microscopy. SEM services include high-resolution imaging, elemental analysis, and topographic mapping. Acoustic Microscopy services provide density mapping, defect detection, and 3D imaging for non-destructive material examination.',
             'img': '../../static/images/platforms/MSC/services_msc/srv4.jpg'
 
         },
         'section_5': {
-            'title_line1': 'Physical and Mechanical Characterization ',
-            'title_line2': '',
-            'text': 'We provide Dynamic Mechanical Analysis (DMA) and Thermomechanical Analysis (TMA) services to assess mechanical and thermal properties of materials. From viscoelastic behavior to phase transitions, our analysis supports material development, quality control, and process optimization.',
+            'title_line1': 'E-DMA/TMA ',
+            'title_line2': 'Analysis',
+            'text': 'Our platform offers DMA and TMA services for in-depth material characterization. DMA services include measuring elastic modulus, glass transition temperature (Tg), and viscoelastic properties. TMA services cover thermal expansion, temperature-dependent deformation, and viscoelastic behavior under thermal load.',
             'img': '../../static/images/platforms/MSC/services_msc/srv5.jpg'
 
         },
         'section_6': {
-            'title_line1': 'Rheology and Viscosity Analysis',
-            'title_line2': '',
-            'text': 'Our rheology services evaluate the mechanical properties and structure of materials, including fluids, semi-solids, and solids. We offer comprehensive viscosity testing and viscoelastic behavior analysis to optimize formulations and enhance product quality across various industries.',
+            'title_line1': 'Rheology and Viscosity ',
+            'title_line2': 'Analysis',
+            'text': 'Our rheology service offers detailed analysis of fluids, semi-solids, and solids, including viscosity measurement, viscoelastic structure analysis, and shear behavior. We help optimize formulations and enhance product quality for pharmaceuticals, cosmetics, polymers, and food.',
             'img': '../../static/images/platforms/MSC/services_msc/srv6.jpg'
 
         },
@@ -1131,9 +1177,9 @@ def MSC_services(request):
 
         },
         'section_8': {
-            'title_line1': 'Resilience ',
-            'title_line2': 'Testing',
-            'text': 'Measures impact resistance and toughness.',
+            'title_line1': 'Supporting ',
+            'title_line2': 'R&D',
+            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
             'img': '../../static/images/Serv/7.jpeg'
 
         },
@@ -1250,51 +1296,40 @@ def SAI_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': '3D',
-            'title_line2': 'DESIGN',
-            'text': 'Our 3D Design and reverse engineering services empower you to create exceptional 3D models, transforming your ideas into reality.',
+            'title_line1': 'DETECTION',
+            'title_line2': '',
+            'text': 'We specialize in detecting and collecting a wide range of physical parameters that can be utilized across multiple domains, including:<br><br>o Healthcare: Monitoring vital signs, patient diagnostics, and wearable health devices.<br>o Agriculture: Soil moisture, crop health, and environmental conditions.<br>o Automotive: Vehicle performance, engine diagnostics, and safety systems.<br>o Aerospace: Flight control systems, engine monitoring, and structural health.<br>o And More: Tailored solutions for other specialized fields.',
             'img': '../../static/images/Serv/1.png'
-            
         },
         'section_2': {
-            'title_line1': 'ADDITIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Explore the infinite possibilities of additive manufacturing using cutting-edge technologies such as LPBF for metals, SLS for ceramics and polymers, FDM for thermoplastics, and stereolithography (SLA) for resins.',
+            'title_line1': 'DATA',
+            'title_line2': 'ACQUISITION',
+            'text': 'We use various electronic and embedded systems to acquire data and integrate it into the acquisition chain. This includes selecting and implementing the right hardware to ensure accurate and reliable data capture.',
             'img': '../../static/images/Serv/2.jpeg'
-
         },
         'section_3': {
-            'title_line1': 'SUBTRACTIVE',
-            'title_line2': 'MANUFACTURING',
-            'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
+            'title_line1': 'DATA',
+            'title_line2': 'PROCESSING',
+            'text': 'Our data processing solutions involve the use of electronic components for:<br><br>• Signal Processing/Data Handling: Efficiently processing and analyzing collected data.<br>• Analog-to-Digital and Digital-to-Analog Conversion: Converting data between analog and digital formats to facilitate further analysis and integration.<br>• Signal Amplification: Enhancing signal strength to ensure accurate measurements and readings.',
             'img': '../../static/images/Serv/4.jpeg'
-
         },
         'section_4': {
-            'title_line1': 'COMPOSITE',
-            'title_line2': 'MATERIALS',
-            'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
+            'title_line1': 'SIMULATION',
+            'title_line2': '',
+            'text': 'We employ simulation and modeling tools such as LabVIEW and MATLAB to design and test systems. These tools help in developing accurate models and simulations of sensor systems and their interactions.',
             'img': '../../static/images/Serv/6.jpg'
-
         },
         'section_5': {
-            'title_line1': 'MATERIALS AND MECHANICAL',
-            'title_line2': 'CHARACTERIZATION',
-            'text': 'Our experts meticulously analyze materials, from powders to metal components. Our advanced techniques ensure product quality and reliability, preventing future failures and optimizing overall reliability.',
+            'title_line1': 'OTHER',
+            'title_line2': 'SERVICES',
+            'text': 'We provide calibration services for mechatronic sensors to ensure they perform with the highest accuracy and reliability. This includes fine-tuning sensors to meet specific application requirements and standards.',
             'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_6': {
-            'title_line1': 'R&D',
-            'title_line2': 'SPECIFIC',
-            'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
-            'img': '../../static/images/Serv/7.jpeg'
-
         },
     },
     }
     
-    return render( request ,'platforms/sai/SAI_services.html',context)
+    return render(request, 'platforms/sai/SAI_services.html', context)
+
 
 
 # platforms presentation
@@ -1480,24 +1515,24 @@ def MSC_index(request):
         "text_2": "At our characterization platform, we provide unmatched support and expertise to help you navigate the complexities of material characterization across diverse application areas, including material science, pharmaceuticals, agroalimentary, chemistry, and polymers. Our skilled team is dedicated to delivering precise insights and solutions tailored to your needs, ensuring optimal performance and innovation in your projects."
     },
     "third_section": {
-        "title": "Advantages of Using Our Platform:",
-        "description": "Involves analyzing powders to understand their physical and chemical properties",
-        "image": "../static/images/fes7.jpg",
+        "title": "Advantages of using our characterization platform:",
+        "description": "",
+        "image": "../static/images/platforms/MSC/index_MSC/sec3.png",
         "point_1": {
-            "title": "Advanced Analytical Tools:",
-            "description": "Our platform provides a diverse selection of cutting-edge analytical instruments to support various research projects. These tools are also available for on-demand services tailored to meet the specific needs of our clients."
+            "title": "Diverse Analytical Tools:",
+            "description": "Access to a comprehensive suite of cutting-edge instruments, tailored to support a wide range of research needs with flexibility and precision."
         },
         "point_2": {
-            "title": "Expertise for Industrial Analysis:",
-            "description": "Whether for occasional or regular analyses, our platform offers advanced tools and the expertise necessary for high-level analyses, particularly for industrial clients aiming for precision and reliability."
+            "title": "Industrial precision:",
+            "description": "Benefit from advanced tools and expertise designed for high-accuracy industrial analysis, ideal for both occasional and regular needs."
         },
         "point_3": {
-            "title": "Expert Analysis and Interpretation:",
-            "description": "Our team, comprised of specialists in chemistry, mechanics, and physics, delivers precise and insightful interpretation of analysis results, ensuring our collaborator fully understand the outcomes and implications for their projects."
+            "title": "Customizable Services:",
+            "description": "Utilize on-demand, customizable services to get exactly what you need, when you need it, enhancing research efficiency and adaptability."
         },
         "point_4": {
-            "title": "Impact on Research and Industry:",
-            "description": "Tailored to meet specific research and industrial needs, our solutions enhance efficiency and drive innovation in material science."
+            "title": "Expert Interpretation:",
+            "description": "Receive detailed and insightful analysis from a team of specialists in chemistry, mechanics, and physics, ensuring clear understanding and actionable results."
         }
     },
     "video": {
@@ -1507,50 +1542,47 @@ def MSC_index(request):
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
-        "title": "Driving Innovation Across Industries",
+        "title": "Impact on Research and Industry",
         "description": "",
         "tab_1": {
-            "header": "Pharmaceuticals",
-            "title": "",
-            "description": "Measures moisture and density.",
-
-            "img_before": "../static/images/static-media/Turbine1.jpg",
-            "img_after": "../static/images/static-media/Turbine2.jpg"
+            "header": "Materials Science",
+            "title": "Revolutionizing High-Performance Materials",
+            "description": "Advanced materials enable the development of high-performance materials for electronics, aerospace, and energy sectors, while performance optimization analyzes thermal and mechanical properties to ensure material reliability.",
         },
         "tab_2": {
-            "header": "Materials Science",
-            "title": "",
-            "description": "Analyzes particle size and density.",
+            "header": "Biotechnology and Medicine",
+            "title": "Innovations in Biomaterials and Drug Development",
+            "description": "Biomaterials provide insights into the molecular structure of biological materials, enhancing implants and drug delivery systems. Drug development optimizes formulations and interactions through detailed analysis.",
            
         },
         "tab_3": {
-            "header": "Additive Manufacturing",
-            "title": "",
-            "description": "Checks particle size and flowability.",
+            "header": "Industrial Processes",
+            "title": "Enhancing Efficiency and Sustainability",
+            "description": "Catalyst optimization enhances efficiency and sustainability in chemical manufacturing, while process improvement reduces waste and streamlines operations through comprehensive material analysis.",
            
         },
         "tab_4": {
-            "header": "Chemical Processing",
-            "title": "",
-            "description": "Analyzes particle size and shape."
+            "header": "Environmental and Sustainability",
+            "title": "Advancing Environmental Protection",
+            "description": "Pollution monitoring analyzes pollutants and supports environmental protection efforts, while sustainable materials aid in developing eco-friendly materials and processes."
           
         },
         "tab_5": {
-            "header": "Aerospace",
-            "title": "",
-            "description": "Tests materials for strength and durability in aircraft and spacecraft.",
+            "header": "Food and Agriculture",
+            "title": "Ensuring Quality and Innovation",
+            "description": "Quality control ensures food quality by detecting contaminants and verifying composition, while agricultural innovations improve practices and crop yields through material analysis.",
            
         },
         "tab_6": {
-            "header": "Automotive",
-            "title": "",
-            "description": "Evaluates component materials to ensure reliability and safety.",
+            "header": "Energy Sector",
+            "title": "Driving Sustainable Energy Solutions",
+            "description": "Pollution monitoring analyzes pollutants and supports environmental protection efforts, while sustainable materials aid in developing eco-friendly materials and processes.",
            
         },
         "tab_7": {
-            "header": "Construction",
+            "header": "",
             "title": "",
-            "description": "Assesses materials for structural integrity to meet safety standards."
+            "description": ""
           
         }
         
@@ -1730,32 +1762,32 @@ def SAI_index(request):
         
         "header": {
         "video": "../static/video/SAI.mp4",
-        "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
-        "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
+        "title": "Sensors and Instrumentation Platform",
+        "description": "Precision technology, innovative sensors, and reliable instrumentation in one place"
     },
     "about": {
-        "text_1": "Our additive and subtractive manufacturing platform offers versatility, enabling rapid production of prototypes and functional parts across industries such as aerospace, automotive, and biomedical. We are committed to advancing materials science and shaping the future of manufacturing.",
-        "text_2": "Our platform integrates both subtractive and additive manufacturing techniques to produce complex functional parts across various industrial sectors. We work with a range of materials, including Polymers, Metals, Composites, Ceramics, and Concrete."
+        "text_1": "The Sensors and Instrumentation Platform at Euromed University of Fes is a cornerstone of our SMART FACTORY initiative. Designed to meet the advanced needs of our research teams, it offers state-of-the-art facilities for the design and development of innovative processes in sensor utilization and component characterization. We welcome partners from all sectors to collaborate with us and benefit from our scientific and technical expertise. Whether through joint research projects or service partnerships, our platform is poised to support the development and optimization of cutting-edge technological concepts.",
+        "text_2": "Our platform specializes in advanced sensor and instrumentation technologies, addressing a wide range of applications across various industries. We work with cutting-edge materials and technologies to develop high-precision sensors and reliable instrumentation systems. From design and prototyping to testing and implementation, our platform supports every stage of sensor development and integration. We are committed to advancing the field of sensors and instrumentation, providing innovative solutions for industrial automation, environmental monitoring, healthcare, and more."
     },
     "third_section": {
-        "title": "Additive Manufacturing Advantages",
-        "description": "Additive manufacturing offers numerous benefits, including the ability to create complex geometries, customize products, and use a variety of materials.",
+        "title": "Sensor technology Advantages",
+        "description": "Sensor technology encompasses a wide range of devices that detect and measure physical properties such as temperature, pressure, and motion. These sensors are made using advanced materials like silicon, graphene, and composites, enabling precise measurements and real-time data collection. This technology is critical for developing systems that require high accuracy and reliability, such as medical devices, environmental monitoring systems, and industrial automation.",
         "image": "../static/images/fes7.jpg",
         "point_1": {
-            "title": "Geometric Complexity",
-            "description": "It allows the realization of complex geometries that were previously unattainable using traditional manufacturing methods."
+            "title": "Precision and Miniaturization",
+            "description": "Advanced sensors offer unparalleled precision and can be miniaturized to fit into compact systems. This makes them ideal for applications in medical devices, aerospace, and wearable technology, where exact measurements and space-saving designs are crucial."
         },
         "point_2": {
-            "title": "Personalization",
-            "description": "It enables the production of customized and unique objects tailored to the specific needs of each user or application."
+            "title": "Diverse Applications and Customization",
+            "description": "Our sensors are versatile, catering to a wide range of industries from environmental monitoring and healthcare to industrial automation and smart infrastructure. This flexibility allows for the creation of customized solutions tailored to specific needs."
         },
         "point_3": {
-            "title": "Material Diversity",
-            "description": "Using a diverse range of materials, including plastics, metals, and composites, AM provides flexibility in material selection for creating innovative objects."
+            "title": "Material Innovation",
+            "description": "We utilize a variety of advanced materials, including silicon, graphene, and various polymers and composites. These materials enhance the performance, durability, and functionality of our sensors, allowing for innovative and reliable solutions."
         },
         "point_4": {
-            "title": "Rapid Prototyping",
-            "description": "3D printing allows for rapid prototyping, which accelerates the product development process, thus minimizing the associated costs."
+            "title": "Real-time Monitoring and Smart Integration",
+            "description": "Our sensor technology enables real-time monitoring and data collection, providing immediate insights and feedback. We also integrate sensors with IoT and AI technologies to develop smart systems that can autonomously monitor, analyze, and respond to changing conditions, enhancing efficiency and decision-making."
         }
     },
     "video": {
@@ -1766,31 +1798,49 @@ def SAI_index(request):
     },
     "details_section": {
         "title": "Driving Innovation Across Industries",
-        "description": "At CREM, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
+        "description": "At the Sensors and Instrumentation Platform, we harness cutting-edge technologies to advance progress and innovation across diverse industrial sectors:",
         "tab_1": {
             "header": "Aerospace",
-            "title": "A New Era of Creation in Aerospace",
-            "description": "Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.From lightweight components to rocket engines, the potential for innovation is limitless.",
+            "title": "Precision and Reliability",
+            "description": "In the aerospace industry, our advanced sensor technologies enable the precise monitoring and control of critical systems. From flight control systems to engine diagnostics, our sensors enhance safety, performance, and efficiency.",
 
             "img_before": "../static/images/static-media/Turbine1.jpg",
             "img_after": "../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
             "header": "Automotive",
-            "title": "Transforming Automotive Manufacturing",
-            "description": "From polymer-based composites tailored for specific automotive structures to customized metal parts made through 3D printing, modern manufacturing advancements enable part customization, cost and lead time reduction, as well as the creation of lighter structures and innovative geometries.",
+            "title": "Smart and Efficient",
+            "description": "Our sensors contribute to the development of smart, efficient, and safe vehicles. They are integral to systems such as adaptive cruise control, collision detection, and engine performance monitoring, driving the evolution of next-generation automotive technologies.",
            
         },
         "tab_3": {
             "header": "Medical Technology",
-            "title": "Precision Healthcare: Custom Solutions with Additive Manufacturing",
-            "description": "Additive manufacturing is revolutionizing healthcare, through personalized medical solutions, from tailored implants to custom prosthetics.By leveraging this innovative technology, healthcare providers can now fabricate customized implants, prosthetics and other medical devices that are meticulously designed to meet the unique requirements of each patient, driving enhanced outcomes.",
+            "title": "Innovative Healthcare Solutions",
+            "description": " In the medical field, our sensors provide accurate and real-time monitoring of vital signs and medical conditions. They are essential for developing advanced diagnostic devices, wearable health monitors, and smart medical implants, improving patient care and treatment outcomes.",
            
         },
         "tab_4": {
-            "header": "Other Industries",
-            "title": "The Diverse Applications of Additive Manufacturing Across Industries",
-            "description": "From mechanical engineering to construction, tool-making, art, fashion, and lifestyle, 3D printing is revolutionizing a multitude of industries.\nThe versatility of additive manufacturing is driving innovation by empowering businesses and artists to explore new creative possibilities, unlock novel creative avenues, enhance efficiency, and redefine the standards within their industries."
+            "header": "Environmental Monitoring",
+            "title": "Sustainable Solutions",
+            "description": "Our sensors play a crucial role in environmental monitoring, offering precise measurement of air and water quality, weather conditions, and pollution levels. These sensors support the development of sustainable solutions for environmental protection and climate change mitigation."
+          
+        },
+        "tab_5": {
+            "header": "Industrial Automation",
+            "title": "Enhanced Productivity",
+            "description": "In industrial automation, our sensors ensure accurate monitoring and control of manufacturing processes. They enable predictive maintenance, quality control, and efficient resource management, driving productivity and innovation in smart factories.",
+           
+        },
+        "tab_6": {
+            "header": "Infrastructure and Smart Cities",
+            "title": "Building the Future",
+            "description": "Our sensor technology supports the development of smart cities and infrastructure by providing real-time data on traffic flow, energy consumption, and structural health. This data enables efficient urban planning, resource management, and enhanced public safety."
+          
+        },
+        "tab_7": {
+            "header": "Other",
+            "title": "",
+            "description": "By integrating these advanced sensor technologies, our platform drives innovation across these and other industries, enabling the development of cutting-edge solutions and fostering progress in various sectors."
           
         }
     },

@@ -484,6 +484,100 @@
       </div>
   </div>
 </div>
+<!-- Calibration Section Title and Divider -->
+{% if header4 %}
+<div class="mb-50">
+    <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header4.title_1 }}<span class="bold">{{ header4.title_2 }}</span></h2>
+</div>
+{% endif %}
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!-- Calibration Section -->
+{% if sections.section9 %}
+<div class="page-section" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 wow fadeInLeft equal-height">
+                <div class="calib-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section9.title }}<br>
+                        <span class="bold">{{ sections.section9.tag }}</span>
+                    </div>
+                    <div class="line-3-70"></div>
+                    <div class="calib-text-cont">
+                        <ul>
+                            {{ sections.section9.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="calib-img equal-height" style="background-image: url('{{ sections.section9.img }}');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+<div class="page-section work-proc-1-bg-SAI">
+  <div class="fes4-cont container">
+      <div class="row">
+          <div class="col-md-4">
+              <!-- Content goes here -->
+          </div>
+      </div>
+  </div>
+</div>
+<!-- System Simulation Section Title and Divider -->
+{% if header5 %}
+<div class="mb-50">
+    <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header5.title_1 }}<span class="bold">{{ header5.title_2 }}</span></h2>
+</div>
+{% endif %}
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!-- System Simulation Section -->
+{% if sections.section10 %}
+<div class="page-section" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 wow fadeInRight equal-height">
+                <div class="sim-main-text-cont">
+                    <div class="title-fs-45">
+                        {{ sections.section10.title }}<br>
+                        <span class="bold">{{ sections.section10.tag }}</span>
+                    </div>
+                    <div class="line-3-100"></div>
+                    <div class="sim-text-cont">
+                        <ul>
+                            {{ sections.section10.text }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="sim-img equal-height" style="background-image: url('{{ sections.section10.img }}');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
 
 
         <!-- FOOTER 4 BLACK -->
