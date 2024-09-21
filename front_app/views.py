@@ -726,47 +726,47 @@ def PCE_innovation(request):
             'section1': {
                 'title': 'Radiography',
                 'text': 'Radiography utilizes X-rays or gamma rays to penetrate materials and create images of internal structures. This technique enables the detection of defects such as cracks, porosity, and inclusions, providing valuable insights into material integrity and assembly quality.',
-                'img': '../static/images/Innovation/lpbf.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno1.png'
             },
             'section2': {
                 'title': 'Eddy currents (ECT)',
                 'text': 'ECT method utilizes electromagnetic induction to detect surface defects and variations in conductivity within conductive materials. By inducing eddy currents in the material and measuring their response, ECT can identify anomalies such as cracks, corrosion, and material defects. This technique is widely used in various industries, including aerospace, automotive, and power generation. ',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno2.png'
             },
             'section3': {
                 'title': 'Magnetic particle inspection (MPI)',
                 'text': 'MPI method is used to detect surface and subsurface defects in ferromagnetic materials. By applying a magnetic field to the material and then applying magnetic particles, any discontinuities or defects will attract the particles, making them visible for inspection.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno3.png'
             },
             'section4': {
                 'title': 'Ultrasonics Testing',
                 'text': 'Ultrasonics Testing is a non-destructive testing method that utilizes high-frequency sound waves to detect internal defects within materials.',
-                'img': '../static/images/Innovation/TP.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno4.png'
             },
             'section5': {
                 'title': 'Liquid penetrant inspection (LPT)',
                 'text': 'LPT is a non-destructive testing method used to detect surface-breaking defects in materials. By applying a penetrant liquid to the surface, allowing it to penetrate into any cracks or discontinuities, and then revealing the penetrant using a developer, LPT can effectively identify defects that may not be visible to the naked eye.',
-                'img': '../static/images/Innovation/lpbf.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno5.png'
             },
             'section6': {
                 'title': 'Bitumen modification',
                 'text': 'Advanced bitumen analysis focuses on developing innovative additives and polymers to enhance bitumen properties, understanding their molecular interactions, and evaluating the long-term performance of modified bitumen in asphalt mixtures.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno6.jpg'
             },
             'section7': {
                 'title': '3D construction printing ',
                 'text': 'This technology revolutionizes the construction industry by enabling the manufactruring of complex structures with unprecedented precision, reduced material waste and energy efficiency. Our 3D printing machines, such as the 3D Potter and the CyBe RC, are driving innovation in this field.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno7.jpg'
             },
             'section8': {
                 'title': 'Numerical soil modeling',
                 'text': 'Development of numerical models to simulate in situ soil behavior like finite element modeling, discrete element modeling and limit equilibrium methods.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno8.png'
             },
             'section9': {
                 'title': 'Soil-structure interaction',
                 'text': 'Numerical and experimental analysis of the interactions between structures and soils, particularly under cyclic loading conditions such as earthquakes and traffic.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/PCE/innovation_PCE/inno9.png'
             }
         },
         
@@ -850,7 +850,7 @@ def SAI_innovation(request):
                 'title': 'Analog-to-Digital Conversion',
                 'tag': '',
                 'text': 'We provide conversion services for transforming data between analog and digital formats, facilitating better integration and usability of sensor data in various applications.',
-                'img': '../static/images/platforms/sai/innovation_sai/inno8.png'
+                'img': '../static/images/platforms/sai/innovation_sai/inno8.jpg'
             },
             'section9': {
                 'title': 'System Simulation',
@@ -1203,21 +1203,21 @@ def PCE_services(request):
             'title_line1': 'ANALYSES OF SOILS AND CONSTRUCTION MATERIALS',
             'title_line2': '',
             'text': '-Estimation of Atterberg limits: limits of elasticity and plasticity - Calculation of the sand equivalent - Calculation of the particle size distribution of a soil - Estimation of the fracturing resistance of aggregates (Los Angeles) - Estimation of the friction resistance of aggregates (micro-Deval)  - Compression tests for mortar and concrete',
-            'img': '../../static/images/Serv/1.png'
+            'img': '../static/images/platforms/PCE/services_PCE/serv1.jpg'
             
         },
         'section_2': {
             'title_line1': 'Lanes',
             'title_line2': '',
             'text': '-Aging of bitumen at RTFOT - Calculation of the dynamic stability of asphalt-based road pavement structures using rutting tests.',
-            'img': '../../static/images/Serv/2.jpeg'
+            'img': '../static/images/platforms/PCE/services_PCE/serv2.webp'
 
         },
         'section_3': {
             'title_line1': 'Non-destructive testing',
             'title_line2': '',
             'text': 'Determination of the resistance of concrete: By measuring the speed of propagation of ultrasound in concrete, we can estimate its compressive resistance. -Internal defect detection: Identification of voids, cracks and other structural defects in concrete. -Evaluation of concrete homogeneity: Verification of the consistency and uniformity of the concrete. -Assessment of the condition of existing structures: Detection of damage, cracks and corrosion of reinforced concrete.',
-            'img': '../../static/images/Serv/4.jpeg'
+            'img': '../static/images/platforms/PCE/services_PCE/serv3.jpg'
 
         },
     },
@@ -1451,8 +1451,8 @@ def BIO_index(request):
         }
     },
     "video": {
-        "title_l": "Bio/Substractive",
-        "title_r": "MANUFACTURING",
+        "title_l": "BIO",
+        "title_r": "TECHNOLOGY",
         "video": "../static/video/BIO.mp4",
         "bg_img" : "../static/images/play.png"
     },
@@ -1536,8 +1536,8 @@ def MSC_index(request):
         }
     },
     "video": {
-        "title_l": "ADDITIVE",
-        "title_r": "MANUFACTURING",
+        "title_l": "MATERIALS",
+        "title_r": "SCIENCE",
         "video": "../static/video/MSC.mp4",
         "bg_img" : "../static/images/play.png"
     },
@@ -1617,7 +1617,7 @@ def PCE_index(request):
     "third_section": {
         "title": "State-of-the-Art Solutions for Engineering Challenges",
         "description": "Our civil engineering lab delivers precise testing and analysis with cutting-edge equipment and expert professionals, ensuring reliable results and innovative solutions for your projects.",
-        "image": "../static/images/fes7.jpg",
+        "image": "../static/images/platforms/PCE/index_PCE/section3.jpg",
         "point_1": {
             "title": "Expertise and Experience",
             "description": "Our laboratory boasts a team of highly skilled engineers and technicians with extensive experience in the field. This expertise ensures accurate and reliable results for all your testing and analysis needs."
@@ -1636,8 +1636,8 @@ def PCE_index(request):
         }
     },
     "video": {
-        "title_l": "ADDITIVE",
-        "title_r": "MANUFACTURING",
+        "title_l": "CIVIL",
+        "title_r": "ENGINEERING",
         "video": "../static/video/PCE.mp4",
         "bg_img" : "../static/images/play.png"
     },
@@ -1772,7 +1772,7 @@ def SAI_index(request):
     "third_section": {
         "title": "Sensor technology Advantages",
         "description": "Sensor technology encompasses a wide range of devices that detect and measure physical properties such as temperature, pressure, and motion. These sensors are made using advanced materials like silicon, graphene, and composites, enabling precise measurements and real-time data collection. This technology is critical for developing systems that require high accuracy and reliability, such as medical devices, environmental monitoring systems, and industrial automation.",
-        "image": "../static/images/fes7.jpg",
+        "image": "../static/images/platforms/sai/index_sai/section3.jpg",
         "point_1": {
             "title": "Precision and Miniaturization",
             "description": "Advanced sensors offer unparalleled precision and can be miniaturized to fit into compact systems. This makes them ideal for applications in medical devices, aerospace, and wearable technology, where exact measurements and space-saving designs are crucial."
@@ -1791,8 +1791,8 @@ def SAI_index(request):
         }
     },
     "video": {
-        "title_l": "ADDITIVE",
-        "title_r": "MANUFACTURING",
+        "title_l": "SENSOR",
+        "title_r": "TECHNOLOGY",
         "video": "../static/video/SAI.mp4",
         "bg_img" : "../static/images/play.png"
     },

@@ -33,7 +33,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'a.bouabbou@ueuromed.org'
 EMAIL_HOST_PASSWORD = 'xkgb syxd bsmv qxel'
 
-ALLOWED_HOSTS = ['172.16.80.130']
+ALLOWED_HOSTS = []
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
