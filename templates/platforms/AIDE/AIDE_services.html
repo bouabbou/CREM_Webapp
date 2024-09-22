@@ -267,6 +267,62 @@ body, .grey-bg, .page-section:not(#footer) {
                 </div>
             </div>
         </div>
+
+        {% endif %}
+        <!-- FEATURES 7 -->
+        {% if sections.section_7 %}
+
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_7.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_7.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_7.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes-img equal-height" style="background-image: url('{{ sections.section_7.img }}');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- FEATURES 8 -->
+        {% if sections.section_8 %}
+
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_8.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_8.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-70"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_8.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-50">
+                        <div class="row">
+                            <div class="fes-img equal-height" style="background-image: url('{{ sections.section_8.img }}');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% endif %}
 
         <!-- FOOTER 2 -->

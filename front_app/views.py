@@ -461,45 +461,45 @@ def AIDE_innovation(request):
             'section1': {
                 'title': 'Deep Learning Algorithms',
                 'text': 'Our work in deep learning focuses on developing advanced AI models that can process vast amounts of data to make precise and intelligent decisions. This technology drives innovation across sectors by enabling sophisticated data analysis and predictive modeling.',
-                'img': '../static/images/Innovation/lpbf.png'
+                'img': '../static/images/platforms/AIDE/innovation_AIDE/inno1.jpg'
             },
             'section2': {
                 'title': 'Natural Language Processing (NLP)',
                 'text': 'NLP allows for the creation of AI systems that understand and generate human language. This opens up new possibilities for applications such as chatbots, automated translations, and sentiment analysis, enhancing user interactions and experiences. ',
-                'img': '../static/images/Innovation/sls.png'
+                'img': '../static/images/platforms/AIDE/innovation_AIDE/inno2.jpg'
 
             },
             'section3': {
                 'title': 'Computer Vision',
                 'text': 'Computer vision technology enables machines to interpret and understand visual information from the world. Our expertise in computer vision facilitates applications such as facial recognition, object detection, and automated quality inspection in manufacturing. ',
-                'img': '../static/images/Innovation/FDM.png'
+                'img': '../static/images/platforms/AIDE/innovation_AIDE/inno3.jpg'
 
             },
             
-            'section5': {
+            'section4': {
                 'title': 'Immersive Training Programs',
                 'text': 'We develop VR training programs that provide realistic and engaging learning experiences. These programs are used in various industries, including healthcare, automotive, and manufacturing, to enhance skills and safety. ',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/AIDE/innovation_AIDE/inno4.jpg'
             },
-            'section6': {
+            'section5': {
                 'title': 'Interactive Simulations',
                 'text': 'Our interactive simulations create virtual environments where users can explore and interact with digital models. This technology is particularly useful for design, prototyping, and educational purposes, allowing for detailed visualization and experimentation. ',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/AIDE/innovation_AIDE/inno5.jpg'
             },
-            'section7': {
+            'section6': {
                 'title': 'Robotic Assistance Using Humanoids',
                 'text': 'We specialize in developing humanoid robots that provide assistance in various settings, such as healthcare, customer service, and domestic environments. These humanoids are designed to interact naturally with humans, performing tasks that enhance daily living and improve quality of life.',
-                'img': '../static/images/Innovation/TP.png'
+                'img': '../static/images/platforms/AIDE/innovation_AIDE/inno6.jpg'
             },
-            'section8': {
+            'section7': {
                 'title': 'Mobile Robotics',
                 'text': 'Our expertise includes developing algorithms for mobile robotics, enabling robots to navigate and operate autonomously in diverse environments. These mobile robots are used in applications ranging from logistics and warehouse management to exploration and surveillance.',
-                'img': '../static/images/Innovation/CF.png'
+                'img': '../static/images/platforms/AIDE/innovation_AIDE/inno8.png'
             },
-            'section9': {
+            'section8': {
                 'title': 'Aerial Robotics',
                 'text': 'We focus on the navigation of drones in complex spaces, developing advanced algorithms to ensure precise and safe operation. These aerial robots are utilized in applications such as surveillance, environmental monitoring, and delivery services.',
-                'img': '../static/images/Innovation/CF.png'
+                'img': '../static/images/platforms/AIDE/innovation_AIDE/inno8.jpg'
             }
         },
          #header
@@ -952,56 +952,57 @@ def AIDE_services(request):
             'title_line1': 'Advanced',
             'title_line2': 'Chatbots',
             'text': ' Tailor-made design of advanced chatbots to automate customer interactions, improve online support, and boost business operational efficiency. ',
-            'img': '../../static/images/Serv/1.png'
+            'img': '../../static/images/platforms/AIDE/services_AIDE/srv1.png'
             
         },
         'section_2': {
             'title_line1': 'Character',
             'title_line2': 'Recognition Systems',
             'text': ' Design of OCR systems to efficiently extract and interpret text data from printed or handwritten documents. These systems are used to digitize documents, automate data management and improve information retrieval processes.',
-            'img': '../../static/images/Serv/2.jpeg'
+            'img': '../../static/images/platforms/AIDE/services_AIDE/srv2.jpg'
 
         },
         'section_3': {
             'title_line1': 'Facial',
             'title_line2': 'Recognition Systems',
             'text': 'Creating advanced algorithms for facial recognition. These algorithms are deployed in applications for security, access control, workforce management, and even personalized user experiences.',
-            'img': '../../static/images/Serv/4.jpeg'
+            'img': '../../static/images/platforms/AIDE/services_AIDE/srv3.png'
 
         },
         'section_4': {
             'title_line1': 'Event',
             'title_line2': 'Deployment',
             'text': 'Robot deployment services for special events, trade fairs, exhibitions or product launches.',
-            'img': '../../static/images/Serv/6.jpg'
+            'img': '../../static/images/platforms/AIDE/services_AIDE/srv4.jpg'
+            
 
         },
         'section_5': {
             'title_line1': 'Customer Service',
             'title_line2': 'And Marketing',
             'text': 'Use robots to improve customer service by providing information, answering questions and collecting feedback. Robots can also be used for interactive marketing campaigns.',
-            'img': '../../static/images/Serv/5.jpg'
+            'img': '../../static/images/platforms/AIDE/services_AIDE/srv5.jpg'
 
         },
         'section_6': {
             'title_line1': 'Health',
             'title_line2': 'And Wellness',
             'text': 'Proposing solutions for healthcare facilities, using robots to entertain patients, encourage physical activity, or provide medical reminders.',
-            'img': '../../static/images/Serv/7.jpeg'
+            'img': '../../static/images/platforms/AIDE/services_AIDE/srv6.jpg'
 
         },
-        'section_5': {
+        'section_7': {
             'title_line1': 'Custom Content',
             'title_line2': 'Development',
             'text': 'Create interactive content tailored to customers needs, such as games, presentations, dialogs and animations.',
-            'img': '../../static/images/Serv/5.jpg'
+            'img': '../../static/images/platforms/AIDE/services_AIDE/srv7.jpg'
 
         },
-        'section_6': {
+        'section_8': {
             'title_line1': 'Virtual',
             'title_line2': 'And Augmented Reality',
             'text': 'Develop virtual and augmented reality content; Train in the use of the following equipment: HTC vive pro eye VR headset, Base stations, Controllers',
-            'img': '../../static/images/Serv/7.jpeg'
+            'img': '../../static/images/platforms/AIDE/services_AIDE/srv8.jpg'
 
         },
     },
@@ -1020,98 +1021,69 @@ def BIO_services(request):
 
         # Sections
         'sections': {
-        'section_1': {
-            'title_line1': 'BIOMEDICAL ',
-            'title_line2': 'INSTRUMENTATION',
-            'text': '•	Computer-aided design and manufacturing of biomedical instruments creating precise parts and prototypes with advanced CAD/CAE software',
-            'img': '../../static/images/Serv/1.png'
-            
-        },
-        'section_2': {
-            'title_line1': 'Cellular ',
-            'title_line2': 'and Molecular Analyses',
-            'text': '',
-            'img': '../../static/images/Serv/2.jpeg'
-
-        },
-        'section_3': {
-            'title_line1': 'Recombinant ',
-            'title_line2': 'Protein Production',
-            'text': 'Gene cloning and optimization in various vectors, including cloning, expression, and multigenic vectors. Production in heterologous systems and optimization of bio-production conditions. Protein purification and crystallization. Packaging of protein preparations.',
-            'img': '../../static/images/Serv/4.jpeg'
-
-        },
-        'section_4': {
-            'title_line1': 'Cell Culture ',
-            'title_line2': 'Testing',
-            'text': 'In vitro tests: cell migration & invasion, proliferation, viability, adhesion, and real-time cellular and molecular analysis. Measurement of cellular cytotoxicity for organic molecules. Determination of antimicrobial activities (antibacterial, antifungal, etc.). Optimization of cell culture and molecular screening conditions.',
-            'img': '../../static/images/Serv/6.jpg'
-
-        },
-        'section_5': {
-            'title_line1': 'Molecular ',
-            'title_line2': 'Diagnostics',
-            'text': 'Design of primers and probes for identifying and characterizing bacterial, fungal, and viral pathogens (including COVID-19) using PCR, RT-PCR, and real-time PCR. Sample preparation, including RNA extraction and long DNA fragment extraction. Construction of genomic libraries. DNA sequencing.',
-            'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_6': {
-            'title_line1': 'Biochemical Analysis of Food ',
-            'title_line2': 'and Environmental Samples',
-            'text': 'Quantification of key organic molecules (amino acids, sugars, lipids, proteins, etc.). Quantification of biological activities.',
-            'img': '../../static/images/Serv/7.jpeg'
-
-        },
-        'section_7': {
-            'title_line1': 'Proteomic ',
-            'title_line2': 'Analyses',
-            'text': 'Protein detection through immunoblotting, immunoprecipitation, and peptide/protein quality control. Protein quantification using Western blot, ELISA, electrophoresis, and other methods.',
-            'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_8': {
-            'title_line1': 'Microbiological ',
-            'title_line2': 'Analyses',
-            'text': '',
-            'img': '../../static/images/Serv/7.jpeg'
-
-        },
-        'section_9': {
-            'title_line1': 'Food and Environmental ',
-            'title_line2': 'Product Testing',
-            'text': 'Detection and identification of pathogenic microorganisms. Serotyping of foodborne pathogens. Identification of hygiene and quality indicator microorganisms. Audits and control of cleaning-disinfection operations (surface, air, and hood control). Microbiological quality control of various water types.',
-            'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_10': {
-            'title_line1': 'Pharmaceutical and Cosmetic ',
-            'title_line2': 'Product Testing',
-            'text': 'Detection, enumeration, and identification of pathogenic microorganisms (bacteria, yeasts, fungi, viruses). Verification of antimicrobial efficacy. Bacteriological testing of finished products.',
-            'img': '../../static/images/Serv/7.jpeg'
-
-        },
-        'section_11': {
-            'title_line1': 'Optimization of Biochemical/Biological ',
-            'title_line2': 'Processes',
-            'text': 'Immobilization and optimization of biocatalysts (cellular and enzymatic). Scaling up of biochemical processes (fermentation and enzymatic catalysis).',
-            'img': '../../static/images/Serv/5.jpg'
-
-        },
-        'section_12': {
-            'title_line1': 'Spectroscopic Elucidation of ',
-            'title_line2': 'Organic/Biological Molecules',
-            'text': 'Separation and spectrometric analysis. Spectroscopic analyses: HPLC-MS/MS, GC-MS, NMR, FT-IR, XRD, UV-NIR.',
-            'img': '../../static/images/Serv/7.jpeg'
-
-        },
-        'section_13': {
-            'title_line1': 'Continuous ',
-            'title_line2': 'Training',
-            'text': 'Our platform offers comprehensive continuous training programs designed to keep professionals up-to-date with the latest advancements and techniques. We provide tailored workshops and courses to enhance skills and knowledge, ensuring your team remains at the forefront of the industry.',
-            'img': '../../static/images/Serv/5.jpg'
-
-        },
+    'section_1': {
+        'title_line1': 'Biomedical ',
+        'title_line2': 'Instrumentation',
+        'text': 'We offer computer-aided design and manufacturing of biomedical instruments, creating precise parts and prototypes with advanced CAD/CAE software.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv1.jpg'
     },
+    'section_2': {
+        'title_line1': 'Optimization of ',
+        'title_line2': 'Biochemical/Biological Processes',
+        'text': 'We specialize in the immobilization and optimization of biocatalysts (cellular and enzymatic) and scaling up of biochemical processes (fermentation and enzymatic catalysis).',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv2.jpg'
+    },
+    'section_3': {
+        'title_line1': 'Recombinant ',
+        'title_line2': 'Protein Production',
+        'text': 'Our services include gene cloning and optimization in various vectors, production in heterologous systems, optimization of bio-production conditions, protein purification, crystallization, and packaging of protein preparations.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv3.jpg'
+    },
+    'section_4': {
+        'title_line1': 'Cell Culture ',
+        'title_line2': 'Testing',
+        'text': 'We conduct in vitro tests for cell migration, invasion, proliferation, viability, adhesion, and real-time cellular and molecular analysis. Additionally, we measure cellular cytotoxicity for organic molecules, determine antimicrobial activities, and optimize cell culture and molecular screening conditions.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv4.jpg'
+    },
+    'section_5': {
+        'title_line1': 'Molecular ',
+        'title_line2': 'Diagnostics',
+        'text': 'We design primers and probes for identifying and characterizing bacterial, fungal, and viral pathogens (including COVID-19) using PCR, RT-PCR, and real-time PCR. Our services also include sample preparation, genomic library construction, and DNA sequencing.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv5.jpg'
+    },
+    'section_6': {
+        'title_line1': 'Biochemical Analysis ',
+        'title_line2': 'of Food and Environmental Samples',
+        'text': 'We quantify key organic molecules (amino acids, sugars, lipids, proteins, etc.) and biological activities in food and environmental samples.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv6.jpg'
+    },
+    'section_7': {
+        'title_line1': 'Proteomic ',
+        'title_line2': 'Analyses',
+        'text': 'Our proteomic services include protein detection through immunoblotting, immunoprecipitation, and peptide/protein quality control, as well as protein quantification using Western blot, ELISA, electrophoresis, and other methods.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv7.jpg'
+    },
+    'section_8': {
+        'title_line1': 'Microbiological ',
+        'title_line2': 'Analyses',
+        'text': 'We offer detection and identification of pathogenic microorganisms, serotyping of foodborne pathogens, identification of hygiene and quality indicator microorganisms, audits and control of cleaning-disinfection operations, and microbiological quality control of various water types.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv8.jpg'
+    },
+    'section_9': {
+        'title_line1': 'Pharmaceutical and ',
+        'title_line2': 'Cosmetic Product Testing',
+        'text': 'Our testing services include detection, enumeration, and identification of pathogenic microorganisms (bacteria, yeasts, fungi, viruses), verification of antimicrobial efficacy, and bacteriological testing of finished products.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv9.jpg'
+    },
+    'section_10': {
+        'title_line1': 'Spectroscopic Elucidation ',
+        'title_line2': 'of Organic/Biological Molecules',
+        'text': 'Our services include separation and spectrometric analysis, as well as spectroscopic analyses using HPLC-MS/MS, GC-MS, NMR, FT-IR, XRD, and UV-NIR.',
+        'img': '../../static/images/platforms/BIO/services_BIO/srv10.jpg'
+    }
+}
+ 
+    
     }
     return render( request ,'platforms/BIO/BIO_services.html',context)
 def MSC_services(request):
@@ -1299,25 +1271,25 @@ def SAI_services(request):
             'title_line1': 'DETECTION',
             'title_line2': '',
             'text': 'We specialize in detecting and collecting physical parameters for various domains, including healthcare (vital signs, diagnostics, wearable devices), agriculture (soil moisture, crop health, environmental conditions), automotive (vehicle performance, engine diagnostics, safety systems), and aerospace (flight control, engine monitoring, structural health). We also offer tailored solutions for other specialized fields.',
-            'img': '../static/images/platforms/sai/services_sai/serv1.jpg'
+            'img': '../static/images/platforms/sai/services_sai/srv1.jpg'
         },
         'section_2': {
             'title_line1': 'DATA',
             'title_line2': 'ACQUISITION',
             'text': 'We use various electronic and embedded systems to acquire data and integrate it into the acquisition chain. This includes selecting and implementing the right hardware to ensure accurate and reliable data capture.',
-            'img': '../static/images/platforms/sai/services_sai/serv2.jpg'
+            'img': '../static/images/platforms/sai/services_sai/srv2.jpg'
         },
         'section_3': {
             'title_line1': 'DATA',
             'title_line2': 'PROCESSING',
             'text': 'Our data processing solutions utilize electronic components for efficient signal processing and data handling, converting data between analog and digital formats, and amplifying signals to ensure accurate measurements and readings.',
-            'img': '../static/images/platforms/sai/services_sai/serv3.jpg'
+            'img': '../static/images/platforms/sai/services_sai/srv3.jpg'
         },
         'section_4': {
             'title_line1': 'SIMULATION',
             'title_line2': '',
             'text': 'We employ simulation and modeling tools such as LabVIEW and MATLAB to design and test systems. These tools help in developing accurate models and simulations of sensor systems and their interactions.',
-            'img': '../static/images/platforms/sai/services_sai/serv4.jpg'
+            'img': '../static/images/platforms/sai/services_sai/srv4.jpg'
         },
         'section_5': {
             'title_line1': 'OTHER',
