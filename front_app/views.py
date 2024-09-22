@@ -571,67 +571,67 @@ def RESEE_innovation(request):
 def BIO_innovation(request):
     context = {
         'header1': {
-            'title_1': 'ADDITIVE ',
-            'title_2': ' MANUFACTURING',
+            'title_1': 'Cutting-Edge ',
+            'title_2': ' R&D',
         },
         'header2': {
-            'title_1': 'SUBSTRACTIVE ',
-            'title_2': ' MANUFACTURING',
+            'title_1': 'ADVANCED ANALYTICAL',
+            'title_2': ' TECHNIQUES',
         },
         'header3': {
-            'title_1': 'COMPOSITE ',
-            'title_2': ' MATERIALS',
+            'title_1': 'DIAGNOSTICS AND',
+            'title_2': ' EDUCATIONAL INNOVATION',
         },
         'sections': {
             'section1': {
-                'title': 'Laser Powder Bed Fusion',
-                'tag': 'LPBF',
-                'text': 'Our work in Laser Powder Bed Fusion (LPBF) centers on producing precise metal components. LPBF allows for intricate and customized geometries, enabling limitless innovation, especially in high-demand industries.',
-                'img': '../static/images/Innovation/lpbf.png'
+                'title': 'Advanced Drug Discovery',
+                'tag': '',
+                'text': 'Our Medicinal Chemistry Laboratory is pioneering new methods in drug discovery, utilizing AI-driven algorithms to design and synthesize novel pharmaceutical compounds. This approach accelerates the identification of potential drug candidates, reducing the time and cost associated with traditional drug development processes.',
+                'img': '../static/images/platforms/BIO/innovation_BIO/inno1.jpg'
             },
             'section2': {
-                'title': 'Selective Laser Sintering',
-                'tag': 'SLS',
-                'text': 'Redefines polymer part manufacturing standards. This technology opens up new possibilities for complex geometries and designs in various industries.',
-                'img': '../static/images/Innovation/sls.png'
+                'title': 'Genetic Engineering Breakthroughs',
+                'tag': '',
+                'text': 'In the Biotechnology Laboratory, researchers are making significant strides in genetic engineering. By employing CRISPR-Cas9 technology, they are able to precisely edit genes, leading to advancements in gene therapy, agricultural biotechnology, and the development of genetically modified organisms (GMOs) with enhanced traits.',
+                'img': '../static/images/platforms/BIO/innovation_BIO/inno2.jpg'
 
             },
             'section3': {
-                'title': 'FUSED DEPOSITION MODELING',
-                'tag': 'FDM',
-                'text': 'This technology efficiently produces thermoplastic parts. Suitable for both conceptual prototypes and functional components. Our work with FDM aims to optimize this popular 3D printing process. ',
-                'img': '../static/images/Innovation/FDM.png'
+                'title': 'Innovative Medical Devices',
+                'tag': '',
+                'text': 'The Biomedical Instrumentation Laboratory is at the forefront of developing cutting-edge medical devices. Recent projects include the creation of wearable health monitors that provide real-time data on vital signs, enabling early detection and management of chronic diseases.',
+                'img': '../static/images/platforms/BIO/innovation_BIO/inno3.jpg'
 
             },
             'section4': {
-                'title': 'STEREOLITHOGRAPHY',
-                'tag': 'SLA',
-                'text': "Stereolithography (SLA) is resin-based 3D printing technologies with unparalleled precision. it's used for custom dental prosthetics, detailed designs or any high-precision part. ",
-                'img': '../static/images/Innovation/SLA.png'
+                'title': 'Environmental Monitoring',
+                'tag': '',
+                'text': 'Utilizing Gas Chromatography-Mass Spectrometry (GC-MS), our team is conducting innovative research in environmental monitoring. This technology enables the precise detection and analysis of pollutants, contributing to efforts in environmental protection and sustainability.',
+                'img': '../static/images/platforms/BIO/innovation_BIO/inno4.jpg'
 
             },
             'section5': {
-                'title': 'CNC',
-                'tag': 'MACHINING',
-                'text': 'Our platform features CNC machining tools that produce metal, plastic, and other material parts with micrometer precision, meeting demanding quality and performance standards. ',
-                'img': '../static/images/Innovation/CNC.png'
+                'title': 'High-Resolution Imaging',
+                'tag': '',
+                'text': 'Our platform’s advanced fluorescence microscopy capabilities allow for high-resolution imaging of biological samples. This technology is crucial for studying cellular processes in detail, leading to a better understanding of disease mechanisms and the development of targeted therapies.',
+                'img': '../static/images/platforms/BIO/innovation_BIO/inno5.jpg'
             },
             'section6': {
-                'title': 'RAPID',
-                'tag': 'TOOLING',
-                'text': 'This approach is used for efficient manufacturing by quickly producing molds, dies, or other tooling components. It uses techniques like 3D printing and CNC machining for faster iterations and cost-effective production.',
-                'img': '../static/images/Innovation/CNC.png'
+                'title': 'Protein Purification Techniques',
+                'tag': '',
+                'text': 'Researchers in our Biotechnology Laboratory are refining protein purification techniques using Fast Protein Liquid Chromatography (FPLC). These advancements are essential for producing high-purity proteins for use in pharmaceuticals, diagnostics, and research applications.',
+                'img': '../static/images/platforms/BIO/innovation_BIO/inno6.jpg'
             },
             'section7': {
-                'title': 'THERMOPLASTIC',
-                'tag': 'COMPOSITES',
-                'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
-                'img': '../static/images/Innovation/TP.png'
+                'title': 'Molecular Diagnostics',
+                'tag': '',
+                'text': 'Our Molecular Diagnostics services are enhancing the detection and characterization of pathogens. By developing advanced PCR-based assays, we are improving the accuracy and speed of diagnosing infectious diseases, including emerging viral threats.',
+                'img': '../static/images/platforms/BIO/innovation_BIO/inno7.jpg'
             },
             'section8': {
-                'title': 'CARBON FIBER',
-                'tag': 'COMPOSITES',
-                'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
+                'title': 'Continuous Training Programs',
+                'tag': '',
+                'text': 'We offer comprehensive continuous training programs to keep researchers and industry professionals updated with the latest advancements in biotechnology and biomedical engineering. These programs ensure that our partners are equipped with the knowledge and skills needed to drive innovation in their respective fields.',
                 'img': '../static/images/Innovation/CF.png'
             }
         },
