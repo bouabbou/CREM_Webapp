@@ -534,28 +534,28 @@ def RESEE_innovation(request):
         },
         'sections': {
             'section1': {
-                'title': 'Solar Technologiescial',
+                'title': 'Solar Technologies',
                 'tag': '',
                 'text': 'Our research into PV technology covers a broad spectrum of essential aspects. These include enhancing system performance, assessing the durability of new materials, predicting system performance, integrating PV systems into the power grid, and analyzing the economic and policy implications of PV power. We also focus on enhancing thermal solar technologies through advanced modeling, material innovation, cost optimization, and environmental assessment.',
-                'img': '../static/images/Innovation/lpbf.png'
+                'img': '../static/images/platforms/RESEE/innovation_RESEE/inno1.jpg'
             },
             'section5': {
                 'title': 'Batteries',
                 'tag': '',
                 'text': 'We specialize in developing innovative, cost-effective battery solutions. Our work encompasses designing, building, and testing battery systems while optimizing their economic performance and minimizing environmental impact.',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/RESEE/innovation_RESEE/inno2.jpg'
             },
             'section6': {
                 'title': 'Desalination',
                 'tag': '',
                 'text': 'Our research focuses on developing innovative and cost-effective desalination solutions. We address industry challenges by creating new materials, components and technologies. Our research involves designing, building, and testing desalination systems that integrate renewable energy sources with advanced membrane processes like Reverse Osmosis (RO), Forward Osmosis (FO), and Membrane Distillation (MD).',
-                'img': '../static/images/Innovation/CNC.png'
+                'img': '../static/images/platforms/RESEE/innovation_RESEE/inno3.jpg'
             },
             'section7': {
                 'title': 'Buildings',
                 'tag': '',
                 'text': 'We specialize in sustainable building solutions, combining bio-based and recycled materials with innovative smart home technologies. Our expertise extends to building energy management, where we develop predictive models to optimize energy consumption.',
-                'img': '../static/images/Innovation/TP.png'
+                'img': '../static/images/platforms/RESEE/innovation_RESEE/inno7.png'
             }
         },
         'logo': '../static/images/logo-grey.png',
@@ -1213,35 +1213,35 @@ def RESEE_services(request):
             'title_line1': 'Solar Energy Solutions',
             'title_line2': '',
             'text': 'We specialize in evaluating the performance of photovoltaic and concentrating solar systems. Our services encompass a comprehensive approach to assessing system efficiency, environmental impact, and economic viability. Core Competencies: Performance Assessment, Environmental Impact Analysis, Economic Evaluation, Reliability and Durability Testing, Predictive Modeling',
-            'img': '../../static/images/Serv/1.png'
+            'img': '../static/images/platforms/RESEE/services_RESEE/srv1.jpg'
             
         },
         'section_2': {
             'title_line1': 'PV Material Development and Validation',
             'title_line2': '',
             'text': 'Our cutting-edge solar simulator provides a controlled environment for comprehensive testing of photovoltaic materials. Key Services: Rigorous Material Evaluation: Accurately assess the performance of new photovoltaic materials under simulated solar conditions. Industry Standard Compliance: Ensure that materials meet stringent industry requirements and certifications.',
-            'img': '../../static/images/Serv/2.jpeg'
+            'img': '../static/images/platforms/RESEE/services_RESEE/srv2.jpg'
 
         },
         'section_3': {
             'title_line1': 'Energy Storage Solutions',
             'title_line2': '',
             'text': 'Our storage research center is equipped with state-of-the-art facilities for comprehensive evaluation of energy storage technologies. Key Services: VRFB Component Characterization: In-depth analysis of membrane, electrolyte, electrode, and bipolar plate components for vanadium redox flow batteries (VRFBs). Battery Performance Testing: Advanced battery testing to assess capacity, internal resistance, temperature, and lifespan of VRFBs and other battery technologies.',
-            'img': '../../static/images/Serv/4.jpeg'
+            'img': '../static/images/platforms/RESEE/services_RESEE/srv3.jpg'
 
         },
         'section_4': {
             'title_line1': 'Advanced Desalination solutions',
             'title_line2': '',
             'text': 'Our desalination platform is dedicated to enhancing the efficiency and performance of Forward Osmosis (FO), Reverse Osmosis (RO), and Pressure Retarded Osmosis (PRO) desalination systems. Key Services: Membrane Performance Evaluation, System Optimization, Solution Analysis, Precise Osmolarity Measurement',
-            'img': '../../static/images/Serv/6.jpg'
+            'img': '../static/images/platforms/RESEE/services_RESEE/srv4.jpg'
 
         },
         'section_5': {
             'title_line1': 'Thermal Analysis',
             'title_line2': '',
             'text': 'We provide thermal characterization and optimization services for thermodynamics and heat transfer applications.',
-            'img': '../../static/images/Serv/5.jpg'
+            'img': '../static/images/platforms/RESEE/services_RESEE/srv5.jpg'
 
         },
         'section_6': {
@@ -1663,7 +1663,7 @@ def RESEE_index(request):
     "third_section": {
         "title": "Renewable Energies Advantages",
         "description": "Renewable energies offer numerous benefits over traditional fossil fuels. These advantages contribute to a more sustainable and environmentally friendly future.",
-        "image": "../static/images/fes7.jpg",
+        "image": "../static/images/platforms/RESEE/index_RESEE/section3.jpg",
         "point_1": {
             "title": "Durability",
             "description": "Renewable energy sources are inexhaustible; their use guarantees a constant source of energy for future generations without disrupting the availability of resources for future needs."
