@@ -12,3 +12,4 @@ front_app/__pycache__/*
 CREM_Webapp/CREM_Webapp/Settings.py
 CREM_Webapp/settings.py
 CREM_Webapp/settings.py
+staticfiles/
