@@ -245,7 +245,7 @@ def RESEE_infrastructure(request):
                 'subtitle': "Subtitle for Section 3",
             },
         },
-        'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
+        'platform_name': "RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY",
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.png", 
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
