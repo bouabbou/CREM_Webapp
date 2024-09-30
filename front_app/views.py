@@ -129,32 +129,32 @@ def MSC_infrastructure(request):
     context = {
         'categories': categories,
         'products': products,
-        'image_header': "Image Header",
+        'image_header': "Advanced characterization",
         'image_descriptions': {
-            'part1': "Description Part 1",
-            'part2': "Description Part 2",
-            'part3': "Description Part 3",
-            'part4': "Description Part 4",
+            'part1': "Materials",
+            'part2': "Synthesis",
+            'part3': "Testing",
+            'part4': "Characterization",
         },
-        'header_img': "../static/images/revo-slider/infra.jpg",
+        'header_img': "../static/images/revo-slider/MSC/MSC_header.webp",
         'gallery_texts': {
             'section_1': {
-                'title': "Title for Section 1",
-                'subtitle': "Subtitle for Section 1",
+                'title': "",
+                'subtitle': "",
             },
             'section_2': {
-                'title': "Title for Section 2",
-                'subtitle': "Subtitle for Section 2",
+                'title': "",
+                'subtitle': "",
             },
             'section_3': {
-                'title': "Title for Section 3",
-                'subtitle': "Subtitle for Section 3",
+                'title': "",
+                'subtitle': "",
             },
         },
         'platform_name': "Materials, Synthesis, and Characterization Platform",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png",
+        'slider_image_url_1': "../static/images/flexslider/MSC/lab01.webp",  
+        'slider_image_url_2': "../static/images/flexslider/MSC/lab03.webp", 
+        'slider_image_url_3': "../static/images/flexslider/MSC/lab04.webp",
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
