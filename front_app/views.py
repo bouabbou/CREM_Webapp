@@ -45,16 +45,16 @@ def ASMP_infrastructure(request):
         'header_img': "../static/images/revo-slider/infra.jpg",
         'gallery_texts': {
             'section_1': {
-                'title': "Powder-Based",
-                'subtitle': "Additive Manufacturing",
+                'title': "CNC Machinning",
+                'subtitle': "Substractive Manufacturing",
             },
             'section_2': {
                 'title': "Fused deposition modeling",
                 'subtitle': "Additive Manufacturing",
             },
             'section_3': {
-                'title': "CNC Machinning",
-                'subtitle': "Subtitle for Section 3",
+                'title': "Powder-Based",
+                'subtitle': "Additive Manufacturing",
             },
         },
         'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
@@ -136,25 +136,25 @@ def MSC_infrastructure(request):
             'part3': "Testing",
             'part4': "Characterization",
         },
-        'header_img': "../static/images/revo-slider/MSC/MSC_header.webp",
+        'header_img': "../static/images/platforms/MSC/infrastructure_MSC/MSC_header.png",
         'gallery_texts': {
             'section_1': {
-                'title': "",
-                'subtitle': "",
+                'title': "Nuclear Magnetic Resonance",
+                'subtitle': "NMR Laboratory",
             },
             'section_2': {
-                'title': "",
-                'subtitle': "",
+                'title': "Microscopy",
+                'subtitle': "Laboratory",
             },
             'section_3': {
-                'title': "",
-                'subtitle': "",
+                'title': "X-Ray Crystallography",
+                'subtitle': "XRD Laboratory",
             },
         },
         'platform_name': "Materials, Synthesis, and Characterization Platform",
-        'slider_image_url_1': "../static/images/flexslider/MSC/lab01.webp",  
-        'slider_image_url_2': "../static/images/flexslider/MSC/lab03.webp", 
-        'slider_image_url_3': "../static/images/flexslider/MSC/lab04.webp",
+        'slider_image_url_1': "../static/images/platforms/MSC/infrastructure_MSC/lab01.webp",  
+        'slider_image_url_2': "../static/images/platforms/MSC/infrastructure_MSC/lab02.webp", 
+        'slider_image_url_3': "../static/images/platforms/MSC/infrastructure_MSC/lab03.webp",
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
