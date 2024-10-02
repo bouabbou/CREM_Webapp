@@ -1103,42 +1103,42 @@ def MSC_services(request):
             'title_line1': 'Advanced Spectroscopic',
             'title_line2': 'Analysis',
             'text': 'Our Advanced Spectroscopy Solutions deliver comprehensive chemical analysis, including structural elucidation, accurate quantitative measurements, insights into molecular interactions, observation of dynamic behavior, and detailed material characterization.',
-            'img': '../../static/images/platforms/MSC/services_msc/srv1.jpg'
+            'img':'../static/images/platforms/MSC/services_MSC/srv1.jpg'
             
         },
         'section_2': {
             'title_line1': 'XRD Services for ',
             'title_line2': 'Materials Science',
             'text': 'Our platform offers extensive XRD services for materials characterization, supporting process optimization and development. Services include phase and structure determination, nanomaterial analysis, phase transformation observation, and characterization of thin films and nanostructured layers.',
-            'img': '../../static/images/platforms/MSC/services_msc/srv2.jpg'
+            'img': '../static/images/platforms/MSC/services_MSC/srv2.jpg'
 
         },
         'section_3': {
             'title_line1': 'Thermal ',
             'title_line2': 'Analysis',
             'text': 'Our platform offers advanced thermal analysis with TGA and DSC, offering detailed insights into material properties for research, development, and quality control. TGA covers decomposition, volatile content, residue analysis, and stability, while DSC includes melting temperatures, glass transitions, crystallization, and thermal reactions.',
-            'img': '../../static/images/platforms/MSC/services_msc/srv3.jpg'
+            'img': '../static/images/platforms/MSC/services_MSC/srv3.jpg'
 
         },
         'section_4': {
             'title_line1': 'D-SEM & Acoustic ',
             'title_line2': 'Microscopy',
             'text': 'Our platform offers advanced material characterization with state-of-the-art SEM and Acoustic Microscopy. SEM services include high-resolution imaging, elemental analysis, and topographic mapping. Acoustic Microscopy services provide density mapping, defect detection, and 3D imaging for non-destructive material examination.',
-            'img': '../../static/images/platforms/MSC/services_msc/srv4.jpg'
+            'img': '../static/images/platforms/MSC/services_MSC/srv4.jpg'
 
         },
         'section_5': {
             'title_line1': 'E-DMA/TMA ',
             'title_line2': 'Analysis',
             'text': 'Our platform offers DMA and TMA services for in-depth material characterization. DMA services include measuring elastic modulus, glass transition temperature (Tg), and viscoelastic properties. TMA services cover thermal expansion, temperature-dependent deformation, and viscoelastic behavior under thermal load.',
-            'img': '../../static/images/platforms/MSC/services_msc/srv5.jpg'
+            'img': '../static/images/platforms/MSC/services_MSC/srv5.jpg'
 
         },
         'section_6': {
             'title_line1': 'Rheology and Viscosity ',
             'title_line2': 'Analysis',
             'text': 'Our rheology service offers detailed analysis of fluids, semi-solids, and solids, including viscosity measurement, viscoelastic structure analysis, and shear behavior. We help optimize formulations and enhance product quality for pharmaceuticals, cosmetics, polymers, and food.',
-            'img': '../../static/images/platforms/MSC/services_msc/srv6.jpg'
+            'img': '../static/images/platforms/MSC/services_MSC/srv6.jpg'
 
         },
         'section_7': {
