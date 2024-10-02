@@ -176,32 +176,32 @@ def PCE_infrastructure(request):
     context = {
         'categories': categories,
         'products': products,
-        'image_header': "Image Header",
+        'image_header': "Civil Engineering",
         'image_descriptions': {
-            'part1': "Description Part 1",
-            'part2': "Description Part 2",
-            'part3': "Description Part 3",
-            'part4': "Description Part 4",
+            'part1': "Civil Engineering",
+            'part2': "Traffic Facilities",
+            'part3': "Geotechnics",
+            'part4': "Cement-Matrix Structures",
         },
-        'header_img': "../static/images/revo-slider/infra.jpg",
+        'header_img': "../static/images/platforms/PCE/infrastructure_PCE/PCE_header.jpg",
         'gallery_texts': {
             'section_1': {
-                'title': "Title for Section 1",
-                'subtitle': "Subtitle for Section 1",
+                'title': "Cement-Matrix Structures",
+                'subtitle': "Laboratory",
             },
             'section_2': {
-                'title': "Title for Section 2",
-                'subtitle': "Subtitle for Section 2",
+                'title': "Geotechnics",
+                'subtitle': "Laboratory",
             },
             'section_3': {
-                'title': "Title for Section 3",
-                'subtitle': "Subtitle for Section 3",
+                'title': "Traffic Facilities",
+                'subtitle': "Laboratory",
             },
         },
         'platform_name': "PROCESS ENGINEERING AND CIVIL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png",
+        'slider_image_url_1': "../static/images/platforms/PCE/infrastructure_PCE/lab01.webp", 
+        'slider_image_url_2': "../static/images/platforms/PCE/infrastructure_PCE/lab02.webp", 
+        'slider_image_url_3': "../static/images/platforms/PCE/infrastructure_PCE/lab03.webp", 
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -230,7 +230,7 @@ def RESEE_infrastructure(request):
             'part3': "Description Part 3",
             'part4': "Description Part 4",
         },
-        'header_img': "../static/images/revo-slider/infra.jpg",
+        'header_img': "../static/images/platforms/PCE/infrastructure_PCE/PCE_header.jpg",
         'gallery_texts': {
             'section_1': {
                 'title': "Title for Section 1",
@@ -246,9 +246,9 @@ def RESEE_infrastructure(request):
             },
         },
         'platform_name': "RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB3.png", 
-        'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_1': "../static/images/platforms/PCE/infrastructure_PCE/lab01.webp", 
+        'slider_image_url_2': "../static/images/platforms/PCE/infrastructure_PCE/lab02.webp", 
+        'slider_image_url_3': "../static/images/platforms/PCE/infrastructure_PCE/lab03.webp", 
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
@@ -318,32 +318,32 @@ def AIDE_infrastructure(request):
     context = {
         'categories': categories,
         'products': products,
-        'image_header': "Image Header",
+        'image_header': "Advanced AI and Digital engineering",
         'image_descriptions': {
-            'part1': "Description Part 1",
-            'part2': "Description Part 2",
-            'part3': "Description Part 3",
-            'part4': "Description Part 4",
+            'part1': "AI",
+            'part2': "Digital Engineering",
+            'part3': "Virtual Reality",
+            'part4': "Robotics and Cobotics",
         },
-        'header_img': "../static/images/revo-slider/infra.jpg",
+        'header_img': "../static/images/platforms/AIDE/infrastructure_AIDE/AIDE_header.png",
         'gallery_texts': {
              'section_1': {
-                'title': "Powder-Based",
-                'subtitle': "Additive Manufacturing",
+                'title': "Virtual reality",
+                'subtitle': "Laboratory",
             },
             'section_2': {
-                'title': "Fused deposition modeling",
-                'subtitle': "Additive Manufacturing",
+                'title': "Robotics and Cobotics",
+                'subtitle': "Laboratory",
             },
             'section_3': {
-                'title': "CNC Machinning",
-                'subtitle': "Subtitle for Section 3",
+                'title': "AI and Digital engineering",
+                'subtitle': "Laboratory",
             },
         },
         'platform_name': "AI AND DIGITAL ENGINEERING",
-        'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
-        'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
-        'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_1': "../static/images/platforms/AIDE/infrastructure_AIDE/lab01.webp",  
+        'slider_image_url_2': "../static/images/platforms/AIDE/infrastructure_AIDE/lab02.webp", 
+        'slider_image_url_3': "../static/images/platforms/AIDE/infrastructure_AIDE/lab03.webp", 
         'logo': '../../static/images/logo-grey.png',
 
         #header : 
