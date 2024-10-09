@@ -223,14 +223,14 @@ def RESEE_infrastructure(request):
     context = {
         'categories': categories,
         'products': products,
-        'image_header': "Image Header",
+        'image_header': "Energy Engineering",
         'image_descriptions': {
-            'part1': "Description Part 1",
-            'part2': "RESEE Part 2",
-            'part3': "Description Part 3",
-            'part4': "Description Part 4",
+            'part1': "Renewable energy and Storage",
+            'part2': "Thermodynamic systems",
+            'part3': "Desalination",
+            
         },
-        'header_img': "../static/images/platforms/PCE/infrastructure_PCE/PCE_header.jpg",
+        'header_img': "../static/images/platforms/RESEE/infrastructure_RESEE/RESEE_header.webp",
         'gallery_texts': {
             'section_1': {
                 'title': "Title for Section 1",
@@ -246,9 +246,9 @@ def RESEE_infrastructure(request):
             },
         },
         'platform_name': "RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY",
-        'slider_image_url_1': "../static/images/platforms/PCE/infrastructure_PCE/lab01.webp", 
-        'slider_image_url_2': "../static/images/platforms/PCE/infrastructure_PCE/lab02.webp", 
-        'slider_image_url_3': "../static/images/platforms/PCE/infrastructure_PCE/lab03.webp", 
+        'slider_image_url_1': "../static/images/platforms/RESEE/infrastructure_RESEE/lab01.webp", 
+        'slider_image_url_2': "../static/images/platforms/RESEE/infrastructure_RESEE/lab02.webp", 
+        'slider_image_url_3': "../static/images/platforms/RESEE/infrastructure_RESEE/lab03.webp", 
         'logo': '../../static/images/logo-grey.png',
         
          #header : 
