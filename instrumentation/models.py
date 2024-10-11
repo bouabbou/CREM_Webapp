@@ -34,6 +34,13 @@ class Machine(models.Model):
         category_abrv = self.category.abbreviation
         folder_name = f'infrastructure/{platform_abrv}/{category_abrv}/'
         return os.path.join(folder_name, filename)
+    
+    def save(self, *args, **kwargs):
+         if self.image:
+            upload_path = self.get_image_upload_path(self.image.name)
+            self.image.storage.save(upload_path, self.image.file)
+         super(Machine, self).save(*args, **kwargs)
+    
 """
     def save(self, *args, **kwargs):
         if self.image:
@@ -41,8 +48,3 @@ class Machine(models.Model):
             self.image.name = self.get_image_upload_path(self.image.name)
         super(Machine, self).save(*args, **kwargs)
 """
-    def save(self, *args, **kwargs):
-    	if self.image:
-            upload_path = self.get_image_upload_path(self.image.name)
-            self.image.storage.save(upload_path, self.image.file)
-    	super(Machine, self).save(*args, **kwargs)
