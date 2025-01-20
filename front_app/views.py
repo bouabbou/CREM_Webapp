@@ -1518,44 +1518,38 @@ def MSC_index(request):
         "description": "",
         "tab_1": {
             "header": "Materials Science",
-            "title": "Revolutionizing High-Performance Materials",
-            "description": "Advanced materials enable the development of high-performance materials for electronics, aerospace, and energy sectors, while performance optimization analyzes thermal and mechanical properties to ensure material reliability.",
+            "title": " Materials research and Advanced Characterization for Cutting-Edge Industries ",
+            "description": "Advanced characterization techniques are employed to optimize material performance across cutting-edge industries such as electronics, aerospace, and energy, driving innovation and ensuring reliability in high-demand applications.",
         },
         "tab_2": {
             "header": "Biotechnology and Medicine",
-            "title": "Innovations in Biomaterials and Drug Development",
-            "description": "Biomaterials provide insights into the molecular structure of biological materials, enhancing implants and drug delivery systems. Drug development optimizes formulations and interactions through detailed analysis.",
+            "title": "Advancing Biomaterials and Drug Development",
+            "description": "Biomaterials offer insights into the molecular structure of biological materials. Through new formulations and detailed analysis of interactions, the drug development process is optimized, leading to the creation of innovative implants and drug delivery systems.",
            
         },
         "tab_3": {
             "header": "Industrial Processes",
-            "title": "Enhancing Efficiency and Sustainability",
-            "description": "Catalyst optimization enhances efficiency and sustainability in chemical manufacturing, while process improvement reduces waste and streamlines operations through comprehensive material analysis.",
+            "title": "Boosting Industrial Efficiency Via Analysis",
+            "description": "Industrial efficiency is enhanced through precise material analysis, optimizing performance, improving quality, and promoting sustainability across processes.",
            
         },
         "tab_4": {
             "header": "Environmental and Sustainability",
             "title": "Advancing Environmental Protection",
-            "description": "Pollution monitoring analyzes pollutants and supports environmental protection efforts, while sustainable materials aid in developing eco-friendly materials and processes."
+            "description": "Pollution monitoring enables effective pollutant detection and supports environmental protection efforts, complemented by a sustainable approach that fosters the development of eco-friendly materials and processes."
           
         },
         "tab_5": {
             "header": "Food and Agriculture",
-            "title": "Ensuring Quality and Innovation",
-            "description": "Quality control ensures food quality by detecting contaminants and verifying composition, while agricultural innovations improve practices and crop yields through material analysis.",
+            "title": "Advanced Analysis For Quality, Safety and Authenticity",
+            "description": "Materials synthesis and characterization are essential in the food and agriculture industry, ensuring product quality, safety, and authenticity through precise composition analysis, contaminant detection, and process optimization.",
            
         },
         "tab_6": {
             "header": "Energy Sector",
-            "title": "Driving Sustainable Energy Solutions",
-            "description": "Pollution monitoring analyzes pollutants and supports environmental protection efforts, while sustainable materials aid in developing eco-friendly materials and processes.",
+            "title": "Energy Storage Materials",
+            "description": "Advanced characterization and testing techniques are essential for enhancing the performance, durability, and efficiency of energy storage materials, enabling breakthroughs in applications such as batteries, supercapacitors, and energy systems.",
            
-        },
-        "tab_7": {
-            "header": "",
-            "title": "",
-            "description": ""
-          
         }
         
           
@@ -1738,8 +1732,8 @@ def SAI_index(request):
         "description": "Precision technology, innovative sensors, and reliable instrumentation in one place"
     },
     "about": {
-        "text_1": "The Sensors and Instrumentation Platform at Euromed University of Fes is a cornerstone of our SMART FACTORY initiative. Designed to meet the advanced needs of our research teams, it offers state-of-the-art facilities for the design and development of innovative processes in sensor utilization and component characterization. We welcome partners from all sectors to collaborate with us and benefit from our scientific and technical expertise. Whether through joint research projects or service partnerships, our platform is poised to support the development and optimization of cutting-edge technological concepts.",
-        "text_2": "Our platform specializes in advanced sensor and instrumentation technologies, addressing a wide range of applications across various industries. We work with cutting-edge materials and technologies to develop high-precision sensors and reliable instrumentation systems. From design and prototyping to testing and implementation, our platform supports every stage of sensor development and integration. We are committed to advancing the field of sensors and instrumentation, providing innovative solutions for industrial automation, environmental monitoring, healthcare, and more."
+        "text_1": "Our Sensors and Instrumentation Platform plays a pivotal role in the SMART FACTORY initiative, providing cutting-edge capabilities for sensor development and calibration essential to data acquisition. By collaborating with all Euromed research platforms, it drives innovation and supports advanced research across a range of applications.",
+        "text_2": "Our platform specializes in advanced sensor technologies, offering end-to-end solutions from design and prototyping to testing and implementation. Leveraging cutting-edge materials and methods, we deliver high-precision sensors and reliable systems for industrial automation, environmental monitoring, healthcare, and beyond."
     },
     "third_section": {
         "title": "Sensor technology Advantages",
