@@ -660,38 +660,45 @@ def MSC_innovation(request):
         },
         'sections': {
             'section1': {
-                'title': 'NMR: A Revolution in AgriFood Research',
+                'title': 'A Revolution in AgriFood Research',
                 'tag': '',
-                'text': 'We developed a novel NMR technique that employs spatially selective chemical shift filters, adiabatic pulses, and TOCSY to accurately quantify carbohydrates. This method eliminates background interference and the need for calibration curves, providing high precision with low detection limits and making it suitable for routine analysis of various natural matrices.',
-                'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc01.png'
+                'text': 'We developed a novel NMR approach for complex matrices, integrating spatially selective chemical shift filters, adiabatic pulses, and TOCSY. This method eliminates background interference and the need for calibration curves, providing high precision and making it well-suited for routine analysis of diverse natural samples.',
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno1.jpg'
             },
             'section2': {
                 'title': 'NMR Insights into DES-Based Catalysis',
                 'tag': '',
-                'text': 'We work on using NMR spectroscopy to investigate catalytic reactions in Deep Eutectic Solvents (DESs), aiming to uncover reaction mechanisms, identify intermediates, and optimize catalytic performance. This work supports green chemistry by advancing the use of environmentally friendly solvents and promoting sustainable catalytic processes.',
-                'img': '../static/images/platforms/MSC/innovation_MSC/inno_msc2.png'
+                'text': 'Explore catalytic reactions in Deep Eutectic Solvents (DESs) to investigate reaction mechanisms, identify intermediates, and improve catalytic performance. This research advances green chemistry by supporting the use of environmentally friendly solvents and fostering sustainable catalytic processes.',
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno2.jpg'
 
             },
             'section3': {
                 'title': 'A Powerful Tool for Drug Innovation',
                 'tag': '',
-                'text': 'We developed an NMR-based method to screen covalent inhibitors of cysteine proteases, including the SARS-CoV-2 main protease (M pro). Using real-time NMR spectroscopy, we tracked S-C bond formation and reaction kinetics with various Michael acceptors. This approach links chemical reactivity to inhibitory activity, enhancing drug discovery for antiviral agents targeting cysteine proteases.',
+                'text': 'We developed an NMR-based method to screen covalent inhibitors of proteases, connecting chemical reactivity with inhibitory activity. This approach represents a significant advancement in drug discovery for protease-targeting agents.',
                 'img': '../static/images/platforms/MSC/innovation_MSC/inno3.jpg'
 
             },
             'section4': {
                 'title': 'NMR-Enabled High-Throughput Screening of Plant Metabolites',
                 'tag': '',
-                'text': 'High-resolution NMR has become essential in plant metabolism research. We’ve developed novel NMR-based methods tailored to screen, identify, and quantify metabolites in plant extracts, focusing on CBD and THC in Moroccan cannabis. These advanced techniques enable precise and efficient cannabis analysis, supporting scientific research, medicinal quality control, and cosmetic product development.',
+                'text': 'Our ongoing research focuses on developing advanced NMR-based methods to screen, identify, and quantify metabolites in plant extracts. These innovative techniques support cutting-edge research, ensure rigorous quality control, and drive the development of high-value products.',
                 'img': '../static/images/platforms/MSC/innovation_MSC/inno4.jpg'
 
             },
             'section5': {
-                'title': 'Enhancing Biomarker Detection in Blood Serum Using Advanced NMR Techniques',
+                'title': 'Enhancing Biomarker Detection in Blood Serum',
                 'tag': '',
-                'text': 'We work on improving early disease diagnosis by optimizing Nuclear Magnetic Resonance (NMR) techniques for detecting biomarkers in blood serum. This research aims to refine NMR protocols to achieve greater sensitivity and accuracy in identifying biomarkers for cancer and metabolic disorders, ultimately advancing diagnostic methods and clinical applications.',
-                'img': '../static/images/platforms/MSC/innovation_MSC/inno5.png'
+                'text': 'We focus on enhancing early disease diagnosis by optimizing NMR techniques to detect biomarkers in blood serum. Our research aims to improve sensitivity and accuracy in identifying biomarkers for cancer and metabolic disorders, advancing diagnostic methods and clinical applications.',
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno5.jpg'
+            },
+            'section6': {
+                'title': 'Solid-State NMR for Characterizing Biomaterials',
+                'tag': '',
+                'text': 'We explore solid-state NMR for characterizing biomaterials, focusing on selecting suitable materials for tissue regeneration. We investigate their potential for biomineralization and examine their surface properties for various applications.',
+                'img': '../static/images/platforms/MSC/innovation_MSC/inno6.jpg'
             }
+            
         },
         
         #header
@@ -1510,7 +1517,7 @@ def MSC_index(request):
     "video": {
         "title_l": "MATERIALS",
         "title_r": "SCIENCE",
-        "video": "../static/video/MSC.mp4",
+        "video": "../static/video/MSC2.mp4",
         "bg_img" : "../static/images/play.png"
     },
     "details_section": {
