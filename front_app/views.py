@@ -534,16 +534,34 @@ def RESEE_innovation(request):
         },
         'sections': {
             'section1': {
-                'title': 'Solar Technologies',
+                'title': 'Concentrated Solar Power',
                 'tag': '',
-                'text': 'Our research into PV technology covers a broad spectrum of essential aspects. These include enhancing system performance, assessing the durability of new materials, predicting system performance, integrating PV systems into the power grid, and analyzing the economic and policy implications of PV power. We also focus on enhancing thermal solar technologies through advanced modeling, material innovation, cost optimization, and environmental assessment.',
+                'text': 'At the forefront of concentrating solar power (CSP) research, we focus on advancing technology through cutting-edge modeling, material breakthroughs, cost optimization, and comprehensive environmental assessments. Our work aims to improve efficiency and sustainability in CSP systems.',
                 'img': '../static/images/platforms/RESEE/innovation_RESEE/inno1.jpg'
             },
-            'section5': {
-                'title': 'Batteries',
+            'section2': {
+                'title': 'Photovoltaics',
                 'tag': '',
-                'text': 'We specialize in developing innovative, cost-effective battery solutions. Our work encompasses designing, building, and testing battery systems while optimizing their economic performance and minimizing environmental impact.',
+                'text': 'Our research in PV technology focuses on improving system performance, assessing material durability, predicting output, optimizing grid integration, and analyzing economic and policy impacts.',
                 'img': '../static/images/platforms/RESEE/innovation_RESEE/inno2.jpg'
+            },
+            'section3': {
+                'title': 'Hydrogen Production',
+                'tag': '',
+                'text': 'We innovate in cost-effective hydrogen production through the water splitting process, designing, building, and testing new components. Our approach incorporates custom electrodes and metal 3D-printed parts for improved efficiency.',
+                'img': '../static/images/platforms/RESEE/innovation_RESEE/inno3.jpg'
+            },
+            'section4': {
+                'title': 'Redox Flow Batteries',
+                'tag': '',
+                'text': 'We specialize in developing innovative, cost-effective battery solutions. Our expertise spans the entire lifecycle, from design and manufacturing to testing and optimization, with a strong focus on economic viability and environmental sustainability. ',
+                'img': '../static/images/platforms/RESEE/innovation_RESEE/inno4.jpg'
+            },
+            'section5': {
+                'title': 'Redox Flow Batteries',
+                'tag': '',
+                'text': 'We specialize in developing innovative, cost-effective battery solutions. Our expertise spans the entire lifecycle, from design and manufacturing to testing and optimization, with a strong focus on economic viability and environmental sustainability. ',
+                'img': '../static/images/platforms/RESEE/innovation_RESEE/inno5.jpg'
             },
             'section6': {
                 'title': 'Desalination',
