@@ -1672,8 +1672,8 @@ def RESEE_index(request):
         
         "header": {
         "video": "../static/video/RESEE.mp4",
-        "title": "",
-        "description": ""
+        "title": "Energy systems and process engineering",
+        "description": "For a cleaner future"
     },
     "about": {
         "text_1": "Our platform is a comprehensive resource equipped with state-of-the-art design, manufacturing, and characterization tools for developing sustainable energy solutions. It fosters innovation and research in key areas such as renewable energies, energy storage, and energy efficiency.",
