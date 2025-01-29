@@ -1170,14 +1170,14 @@ def MSC_services(request):
             'title_line1': 'Surface and Porosity Characterization ',
             'title_line2': '',
             'text': 'Utilizing the BET method, our Surface and Porosity Characterization service measures specific surface areas and pore characteristics. This analysis is crucial for understanding material performance in industrial, pharmaceutical, and environmental applications, aiding in the design and optimization of advanced materials.',
-            'img': '../../static/images/Serv/5.jpg'
+            'img': '../static/images/platforms/MSC/services_MSC/srv7.jpg'
 
         },
         'section_8': {
             'title_line1': 'Supporting ',
             'title_line2': 'R&D',
             'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
-            'img': '../../static/images/Serv/7.jpeg'
+            'img': '../static/images/platforms/MSC/services_MSC/srv8.jpg'
 
         },
     },
