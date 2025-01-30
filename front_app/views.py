@@ -1761,24 +1761,24 @@ def SAI_index(request):
         "text_2": "Our platform specializes in advanced sensor technologies, offering end-to-end solutions from design and prototyping to testing and implementation. Leveraging cutting-edge materials and methods, we deliver high-precision sensors and reliable systems for industrial automation, environmental monitoring, healthcare, and beyond."
     },
     "third_section": {
-        "title": "Sensor technology Advantages",
-        "description": "Sensor technology encompasses a wide range of devices that detect and measure physical properties such as temperature, pressure, and motion. These sensors are made using advanced materials like silicon, graphene, and composites, enabling precise measurements and real-time data collection. This technology is critical for developing systems that require high accuracy and reliability, such as medical devices, environmental monitoring systems, and industrial automation.",
+        "title": "The critical role of sensor technology",
+        "description": "Sensor technology encompasses a wide range of devices, enabling automation, real-time monitoring, and data-driven decision-making. Here are the key roles:",
         "image": "../static/images/platforms/sai/index_sai/section3.jpg",
         "point_1": {
-            "title": "Precision and Miniaturization",
-            "description": "Advanced sensors offer unparalleled precision and can be miniaturized to fit into compact systems. This makes them ideal for applications in medical devices, aerospace, and wearable technology, where exact measurements and space-saving designs are crucial."
+            "title": "Predictive Maintenance & Asset Management",
+            "description": "Vibration and thermal sensors detect early signs of equipment failure. While AI-driven analytics predict maintenance needs, improving efficiency and longevity."
         },
         "point_2": {
-            "title": "Diverse Applications and Customization",
-            "description": "Our sensors are versatile, catering to a wide range of industries from environmental monitoring and healthcare to industrial automation and smart infrastructure. This flexibility allows for the creation of customized solutions tailored to specific needs."
+            "title": "Automation & Smart Manufacturing 4.0",
+            "description": "IoT-enabled sensors integrate with robotics and AI systems to enable autonomous production and enhances precision in manufacturing."
         },
         "point_3": {
-            "title": "Material Innovation",
-            "description": "We utilize a variety of advanced materials, including silicon, graphene, and various polymers and composites. These materials enhance the performance, durability, and functionality of our sensors, allowing for innovative and reliable solutions."
+            "title": "Quality Control & Process Optimization",
+            "description": "Sensors inspect products in real-time, detecting defects and ensuring consistent quality. It improves material usage, reducing waste and enhancing sustainability."
         },
         "point_4": {
-            "title": "Real-time Monitoring and Smart Integration",
-            "description": "Our sensor technology enables real-time monitoring and data collection, providing immediate insights and feedback. We also integrate sensors with IoT and AI technologies to develop smart systems that can autonomously monitor, analyze, and respond to changing conditions, enhancing efficiency and decision-making."
+            "title": "Supply Chain & Logistics Optimization",
+            "description": "RFID, GPS, and environmental sensors track goods, improving logistics and inventory management. It ensures real-time visibility and minimizes disruptions."
         }
     },
     "video": {
@@ -1795,8 +1795,6 @@ def SAI_index(request):
             "title": "Precision and Reliability",
             "description": "In the aerospace industry, our advanced sensor technologies enable the precise monitoring and control of critical systems. From flight control systems to engine diagnostics, our sensors enhance safety, performance, and efficiency.",
 
-            "img_before": "../static/images/static-media/Turbine1.jpg",
-            "img_after": "../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
             "header": "Automotive",
