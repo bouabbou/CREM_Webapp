@@ -66,7 +66,7 @@ def ASMP_infrastructure(request):
         'index_url': reverse('ASMP_index'),
         'Infrastructre_url': reverse('ASMP_infrastructure'),
         'innovation_url': reverse('ASMP_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
         
         #platform filtration : 
         'platform_name' : "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM"
@@ -108,14 +108,14 @@ def BIO_infrastructure(request):
         'slider_image_url_1': "../static/images/flexslider/AMLAB1.png",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB2.png", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
         
         #header : 
         'services_url': reverse('BIO_services'),
         'index_url': reverse('BIO_index'),
         'infrastructure_url': reverse('BIO_infrastructure'),
         'innovation_url': reverse('BIO_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
         
 
 
@@ -155,14 +155,14 @@ def MSC_infrastructure(request):
         'slider_image_url_1': "../static/images/platforms/MSC/infrastructure_MSC/lab01.webp",  
         'slider_image_url_2': "../static/images/platforms/MSC/infrastructure_MSC/lab02.webp", 
         'slider_image_url_3': "../static/images/platforms/MSC/infrastructure_MSC/lab03.webp",
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
         
          #header : 
         'services_url': reverse('MSC_services'),
         'index_url': reverse('MSC_index'),
         'infrastructure_url': reverse('MSC_infrastructure'),
         'innovation_url': reverse('MSC_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
  
 
     }
@@ -202,14 +202,14 @@ def PCE_infrastructure(request):
         'slider_image_url_1': "../static/images/platforms/PCE/infrastructure_PCE/lab01.webp", 
         'slider_image_url_2': "../static/images/platforms/PCE/infrastructure_PCE/lab02.webp", 
         'slider_image_url_3': "../static/images/platforms/PCE/infrastructure_PCE/lab03.webp", 
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
         
          #header : 
         'services_url': reverse('PCE_services'),
         'index_url': reverse('PCE_index'),
         'infrastructure_url': reverse('PCE_infrastructure'),
         'innovation_url': reverse('PCE_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
  
 
     }
@@ -249,14 +249,14 @@ def RESEE_infrastructure(request):
         'slider_image_url_1': "../static/images/platforms/RESEE/infrastructure_RESEE/lab01.webp", 
         'slider_image_url_2': "../static/images/platforms/RESEE/infrastructure_RESEE/lab02.webp", 
         'slider_image_url_3': "../static/images/platforms/RESEE/infrastructure_RESEE/lab03.webp", 
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
         
          #header : 
         'services_url': reverse('RESEE_services'),
         'index_url': reverse('RESEE_index'),
         'infrastructure_url': reverse('RESEE_infrastructure'),
         'innovation_url': reverse('RESEE_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
 
 
 
@@ -297,14 +297,14 @@ def SAI_infrastructure(request):
         'slider_image_url_1': "../static/images/flexslider/AMLAB3.png",  
         'slider_image_url_2': "../static/images/flexslider/AMLAB3.png", 
         'slider_image_url_3': "../static/images/flexslider/AMLAB3.png", 
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
         
          #header : 
         'services_url': reverse('SAI_services'),
         'index_url': reverse('SAI_index'),
         'infrastructure_url': reverse('SAI_infrastructure'),
         'innovation_url': reverse('SAI_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
 
 
     }
@@ -344,14 +344,14 @@ def AIDE_infrastructure(request):
         'slider_image_url_1': "../static/images/platforms/AIDE/infrastructure_AIDE/lab01.webp",  
         'slider_image_url_2': "../static/images/platforms/AIDE/infrastructure_AIDE/lab02.webp", 
         'slider_image_url_3': "../static/images/platforms/AIDE/infrastructure_AIDE/lab03.webp", 
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
 
         #header : 
         'services_url': reverse('AIDE_services'),
         'index_url': reverse('AIDE_index'),
         'infrastructure_url': reverse('AIDE_infrastructure'),
         'innovation_url': reverse('AIDE_innovation'),
-        'logo': '../../static/images/logo-grey.png',
+        'logo': '../../static/images/logo-black.png',
 
     }
 
@@ -431,13 +431,13 @@ def ASMP_innovation(request):
         },
     
         # Additional context variables
-        'logo': '../static/images/logo-grey.png',
+        'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         'services_url': reverse('ASMP_services'),
         'index_url': reverse('ASMP_index'),
         'infrastructure_url': reverse('ASMP_infrastructure'),
         'innovation_url': reverse('ASMP_innovation'),
-        'img': '../static/images/logo-grey.png'
+        'img': '../static/images/logo-black.png'
     }
     
     return render(request, 'platforms/ASMP/ASMP_Innovation_FA_EN.html', context)
@@ -503,7 +503,7 @@ def AIDE_innovation(request):
             }
         },
          #header
-        'logo': '../static/images/logo-grey.png',
+        'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         'services_url': reverse('AIDE_services'),
         'index_url': reverse('AIDE_index'),
@@ -576,7 +576,7 @@ def RESEE_innovation(request):
                 'img': '../static/images/platforms/RESEE/innovation_RESEE/inno7.png'
             }
         },
-        'logo': '../static/images/logo-grey.png',
+        'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         'services_url': reverse('RESEE_services'),
         'index_url': reverse('RESEE_index'),
@@ -655,7 +655,7 @@ def BIO_innovation(request):
         },
         
         #header
-        'logo': '../static/images/logo-grey.png',
+        'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         'services_url': reverse('BIO_services'),
         'index_url': reverse('BIO_index'),
@@ -720,7 +720,7 @@ def MSC_innovation(request):
         },
         
         #header
-        'logo': '../static/images/logo-grey.png',
+        'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         'services_url': reverse('MSC_services'),
         'index_url': reverse('MSC_index'),
@@ -796,7 +796,7 @@ def PCE_innovation(request):
         },
         
         #header
-        'logo': '../static/images/logo-grey.png',
+        'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         'services_url': reverse('PCE_services'),
         'index_url': reverse('PCE_index'),
@@ -890,7 +890,7 @@ def SAI_innovation(request):
                 'img': '../static/images/platforms/sai/innovation_sai/inno10.jpg'
             }
         },
-        'logo': '../static/images/logo-grey.png',
+        'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         'services_url': reverse('SAI_services'),
         'index_url': reverse('SAI_index'),
@@ -904,7 +904,7 @@ def SAI_innovation(request):
 
 def ASMP_services(request):
     context = {
-       'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         
         #header
@@ -962,7 +962,7 @@ def ASMP_services(request):
     return render( request ,'platforms/ASMP/ASMP_Services_FA_EN.html',context)
 def AIDE_services(request):
     context = {
-       'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         
         #header
@@ -1035,7 +1035,7 @@ def AIDE_services(request):
     return render( request ,'platforms/AIDE/AIDE_services.html',context)
 def BIO_services(request):
     context = {
-       'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         
         #header
@@ -1113,7 +1113,7 @@ def BIO_services(request):
     return render( request ,'platforms/BIO/BIO_services.html',context)
 def MSC_services(request):
     context = {
-       'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         
         #header
@@ -1185,7 +1185,7 @@ def MSC_services(request):
     return render( request ,'platforms/MSC/MSC_services.html',context)
 def PCE_services(request):
     context = {
-       'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         
         #header
@@ -1223,7 +1223,7 @@ def PCE_services(request):
     return render( request ,'platforms/PCE/PCE_services.html',context)
 def RESEE_services(request):
     context = {
-       'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         
         #header
@@ -1281,7 +1281,7 @@ def RESEE_services(request):
     return render( request ,'platforms/RESEE/RESEE_services.html',context)
 def SAI_services(request):
     context = {
-       'logo': '../static/images/logo-grey.png',
+       'logo': '../static/images/logo-black.png',
         'link_color': 'grey', 
         
         #header

@@ -8514,8 +8514,10 @@ h2.portfolio-timeline-title {
   /*	#HEADER MENU ====================================*/
 	/*****	#HEADER	*****/
 	.container-m-30 {
+    background: gray;
 		padding:0;
 	}
+  
   .nofloat.col-md-3, .nofloat.col-md-4, .nofloat.col-md-2{
     float:none;
     width:auto;
@@ -8570,7 +8572,7 @@ h2.portfolio-timeline-title {
 	  float: left;
 	  padding: 25px 17px 22px 5px;
 	  font-size: 29px;
-	  color: #4b4e53;
+	  color: white;
 	  -webkit-transition: padding .4s ease 0s;
 	  -o-transition: padding .4s ease 0s;
 	  transition: padding .4s ease 0s;
@@ -11977,4 +11979,11 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
   .tp-caption {
     font-size: 40px;
   }
+}
+
+/*Text Centering */
+.section-align {
+  display:flex; 
+  justify-content:center; 
+  align-items:center;
 }
