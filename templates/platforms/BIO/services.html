@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
  	<head>
-		<title>OUR SERVICES</title>
+		<title>SERVICES</title>
 		<meta charset="utf-8">
 		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 		<meta name="robots" content="index, follow" >
@@ -9,23 +9,23 @@
 		<meta name="description" content="PLATFORM FA" >
 		<meta name="author" content="AB">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="../static/images/favicon/favicon.png">
-    <link rel="apple-touch-icon" href="../static/images/favicon/favicon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../static/images/favicon/favicon.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../static/images/favicon/favicon.png">
+    <link rel="shortcut icon" href="../../static/images/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="../../static/images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../static/images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../static/images/favicon/favicon.png">
 		<!-- CSS -->
     <!-- FLEXSLIDER SLIDER CSS -->
-		<link rel="stylesheet" type="text/css" href="../static/css/flexslider.css"  >
+		<link rel="stylesheet" type="text/css" href="../../static/css/flexslider.css"  >
     <!-- BOOTSTRAP -->
-		<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../static/css/bootstrap.min.css">
 	   <!-- GOOGLE FONT -->
 		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS -->
-		<link rel="stylesheet" href="../static/css/icons-fonts.css" >
+		<link rel="stylesheet" href="../../static/css/icons-fonts.css" >
     <!-- CSS THEME -->
-		<link rel="stylesheet" href="../static/css/style.css" >
+		<link rel="stylesheet" href="../../static/css/style.css" >
     <!-- ANIMATE -->
-		<link rel='stylesheet' href="../static/css/animate.min.css">
+		<link rel='stylesheet' href="../../static/css/animate.min.css">
         <style>
 body, .grey-bg, .page-section:not(#footer) {
     background-color: #FFFFFF;
@@ -267,11 +267,7 @@ body, .grey-bg, .page-section:not(#footer) {
                 </div>
             </div>
         </div>
-
-        {% endif %}
-        <!-- FEATURES 7 -->
-        {% if sections.section_7 %}
-
+{%endif %}
         <div class="page-section">
             <div class="container-fluid">
                 <div class="row">
@@ -295,11 +291,8 @@ body, .grey-bg, .page-section:not(#footer) {
                 </div>
             </div>
         </div>
-        {% endif %}
-
-        <!-- FEATURES 8 -->
-        {% if sections.section_8 %}
-
+        
+        <!-- FEATURES 6 -->
         <div class="page-section">
             <div class="container-fluid">
                 <div class="row">
@@ -323,8 +316,57 @@ body, .grey-bg, .page-section:not(#footer) {
                 </div>
             </div>
         </div>
-        {% endif %}
 
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_9.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_9.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_9.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes-img equal-height" style="background-image: url('{{ sections.section_9.img }}');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FEATURES 6 -->
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 left-50 wow fadeInRight equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_10.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_10.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-70"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_10.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-50">
+                        <div class="row">
+                            <div class="fes-img equal-height" style="background-image: url('{{ sections.section_10.img }}');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        
         <!-- FOOTER 2 -->
         {% include 'includes/footer.html' %}
 
@@ -340,28 +382,28 @@ body, .grey-bg, .page-section:not(#footer) {
 <!-- JS begin -->
 
 		<!-- jQuery  -->
-		<script src="../static/js/jquery-1.11.2.min.js"></script>
+		<script src="../../static/js/jquery-1.11.2.min.js"></script>
 
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
 
 		<!-- MAGNIFIC POPUP -->
-		<script src='../static/js/jquery.magnific-popup.min.js'></script>
+		<script src='../../static/js/jquery.magnific-popup.min.js'></script>
 
     <!-- PORTFOLIO SCRIPTS -->
-    <script src="../static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../../static/js/imagesloaded.pkgd.min.js"></script>
 
     <!-- COUNTER -->
-    <script src="../static/js/jquery.countTo.js"></script>
+    <script src="../../static/js/jquery.countTo.js"></script>
 
     <!-- APPEAR -->
-    <script src="../static/js/jquery.appear.js"></script>
+    <script src="../../static/js/jquery.appear.js"></script>
 
     <!-- OWL CAROUSEL -->
-    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../../static/js/owl.carousel.min.js"></script>
 
     <!-- MAIN SCRIPT -->
-		<script src="../static/js/main.js"></script>
+		<script src="../../static/js/main.js"></script>
 
 <!-- JS end -->
 
