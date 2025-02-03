@@ -381,52 +381,52 @@ def ASMP_innovation(request):
                 'title': 'Laser Powder Bed Fusion',
                 'tag': 'LPBF',
                 'text': 'Our work in Laser Powder Bed Fusion (LPBF) centers on producing precise metal components. LPBF allows for intricate and customized geometries, enabling limitless innovation, especially in high-demand industries. ',
-                'img': '../../static/images/Innovation/lpbf.png'
+                'img': '../../static/images/platforms/ASMP/innovation_ASMP/inno1.png'
             },
             'section2': {
                 'title': 'Selective Laser Sintering',
                 'tag': 'SLS',
                 'text': 'Redefines polymer part manufacturing standards. This technology opens up new possibilities for complex geometries and designs in various industries.',
-                'img': '../../static/images/platforms/ASMP/innovation_ASMP/sls.png'
+                'img': '../../static/images/platforms/ASMP/innovation_ASMP/inno2.png'
 
             },
             'section3': {
                 'title': 'FUSED DEPOSITION MODELING',
                 'tag': 'FDM',
                 'text': 'This technology efficiently produces thermoplastic parts. Suitable for both conceptual prototypes and functional components. Our work with FDM aims to optimize this popular 3D printing process.',
-                'img': '../../static/images/Innovation/FDM.png'
+                'img': '../../static/images/platforms/ASMP/innovation_ASMP/inno3.png'
 
             },
             'section4': {
                 'title': 'STEREOLITHOGRAPHY',
                 'tag': 'SLA',
                 'text': 'Stereolithography (SLA) is resin-based 3D printing technologies with unparalleled precision. it s used for custom dental prosthetics, detailed designs or any high-precision part.',
-                'img': '../../static/images/Innovation/SLA.png'
+                'img': '../../static/images/platforms/ASMP/innovation_ASMP/inno4.png'
 
             },
             'section5': {
                 'title': 'CNC',
                 'tag': 'MACHINING',
                 'text': 'Our platform features CNC machining tools that produce metal, plastic, and other material parts with micrometer precision, meeting demanding quality and performance standards. ',
-                'img': '../../static/images/platforms/ASMP/innovation_ASMP/cnc.png'
+                'img': '../../static/images/platforms/ASMP/innovation_ASMP/inno5.png'
             },
             'section6': {
                 'title': 'RAPID',
                 'tag': 'TOOLING',
                 'text': 'This approach is used for efficient manufacturing by quickly producing molds, dies, or other tooling components. It uses techniques like 3D printing and CNC machining for faster iterations and cost-effective production.',
-                'img': '../../static/images/Innovation/RP.png'
+                'img': '../../static/images/platforms/ASMP/innovation_ASMP/inno6.png'
             },
             'section7': {
                 'title': 'THERMOPLASTIC',
                 'tag': 'COMPOSITES',
                 'text': 'Thermoplastic composites offer a balance of lightness and strength, making them ideal for aerospace, automotive, and other industrial applications.',
-                'img': '../../static/images/platforms/ASMP/innovation_ASMP/cm.png'
+                'img': '../../static/images/platforms/ASMP/innovation_ASMP/inno7.png'
             },
             'section8': {
                 'title': 'CARBON FIBER',
                 'tag': 'COMPOSITES',
                 'text': 'Exceptionally strong, carbon fiber composites find use in structural components, including high-end automotive vehicles and advanced sports equipment.',
-                'img': '../../static/images/platforms/ASMP/innovation_ASMP/cf.png'
+                'img': '../../static/images/platforms/ASMP/innovation_ASMP/inno8.png'
             }
         },
     
@@ -1367,7 +1367,7 @@ def ASMP_index(request):
     "video": {
         "title_l": "ADDITIVE",
         "title_r": "MANUFACTURING",
-        "video": "../../static/video/ASMP_PLATFORM.mp4",
+        "video": "../../static/video/ASMP_final.mp4",
         "bg_img" : "../../static/images/play.png"
     },
     "details_section": {
@@ -1423,70 +1423,73 @@ def BIO_index(request):
         "description": "Innovate. Collaborate. Transform."
     },
     "about": {
-        "text_1": "Welcome to our Biotechnology and Biomedical Engineering Platform, a hub for research, services, and training. We utilize the latest advancements in microbiology, cell biology, molecular biology, chemistry, and engineering to drive innovation and share expertise. Our mission is to create groundbreaking solutions for partners in health, agri-food, environmental, cosmetic, and agronomy sectors. Collaborate with us to pioneer progress in these critical fields.",
-        "text_2": "We specialize in protein engineering, recombinant DNA technologies, and post-transcriptional RNA modification linked to diseases. Our services include developing medical devices, synthesizing nanomaterials for medical use, and conducting microbiological analyses in the agri-food, environmental, pharmaceutical, and cosmetic sectors."
+        "text_1": "Welcome to our Biotechnology and Biomedical Engineering Platform, a center for research, innovation, and training. It houses three specialized laboratories: Medicinal Chemistry, Biotechnology, and Biomedical engineering, all equipped with advanced technology to ensure precision and excellence in our services.",
+        "text_2": "Our team combines biology, bioengineering, genetic engineering, chemistry, and cell culture to solve biomedical and environmental challenges. We specialize in protein engineering, rDNA technologies, stem cell research, and RNA modification, providing solutions for the agri-food, environmental, and pharmaceutical industries."
+    
     },
     "third_section": {
-        "title": "Biotechnology example",
+        "title": "Core Advantages of Our Platform",
         "description": "Lorem ipsum",
         "image": "../../static/images/fes7.jpg",
         "point_1": {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum"
+            "title": "Advanced Analytical Tools",
+            "description": "Our platform features cutting-edge instruments and a range of services designed to meet your needs with precision and efficiency."
         },
         "point_2": {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum"
+            "title": "Multidisciplinary Expertise",
+            "description": "We foster scientific collaborations, combining expertise from various fields to address complex challenges and drive innovation."
         },
         "point_3": {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum"
+            "title": "Customizable Solutions",
+            "description": "We offer tailored services to meet your specific requirements, ensuring excellence and reliability."
         },
         "point_4": {
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum"
+            "title": "Expert Interpretation",
+            "description": "Our team of specialists in chemistry, biology, and engineering provides detailed reports with clear insights and actionable recommendations."
         }
     },
     "video": {
         "title_l": "BIO",
         "title_r": "TECHNOLOGY",
-        "video": "../../static/video/BIO.mp4",
+        "video": "../../static/video/BIO_final.mp4",
         "bg_img" : "../../static/images/play.png"
     },
     "details_section": {
-        "title": "Driving Innovation Across Industries",
+        "title": "Transforming Industries Through Biotechnology",
         "description": "",
         "tab_1": {
-            "header": "Lorem ipsum",
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum",
-
-            "img_before": "../../static/images/static-media/Turbine1.jpg",
-            "img_after": "../../static/images/static-media/Turbine2.jpg"
+            "header": "Pharmaceuticals",
+            "title": "Precision in Therapeutic Development",
+            "description": "Biotechnology accelerates drug discovery using high-throughput screening, genomics, and bioinformatics. Recombinant DNA and gene editing, like CRISPR, drive the development of biologics, monoclonal antibodies, and personalized treatments, enhancing therapeutic precision.",
         },
         "tab_2": {
-            "header": "Lorem ipsum",
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum",
+            "header": "Agriculture",
+            "title": "Enhancing Crop Resilience and Sustainability",
+            "description": "Biotechnology applies genetic modification and CRISPR to create drought-resistant crops and improve yield. Transgenic plants and biofertilizers support sustainable agriculture, increasing productivity while minimizing environmental impact.",
            
         },
         "tab_3": {
-            "header": "Lorem ipsum",
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum",
+            "header": "Food & Beverages",
+            "title": "Advancing Food Safety through Biotechnology",
+            "description": "Microbial biotechnology, such as fermentation and genetic engineering, ensures food safety and quality. Techniques like genome sequencing optimize fermentation, extend shelf-life, and reduce contamination risks.",
            
         },
         "tab_4": {
-            "header": "Lorem ipsum",
-            "title": "Lorem ipsum",
-            "description": "Lorem ipsum"
+            "header": "Environment",
+            "title": "Sustainable Solutions for Pollution and Energy",
+            "description": "Biotechnology uses microorganisms and bioreactors for bioremediation, cleaning pollutants from soil, water, and air. Additionally, biofuels from waste biomass contribute to reducing fossil fuel dependence and greenhouse gases."
           
-        }
-        ,
-         "tab_4": {
-            "header": "test",
-            "title": "test",
-            "description": "test"
+        },
+        "tab_5": {
+            "header": "Healthcare",
+            "title": "Innovating Medical Treatments and Devices",
+            "description": "Biotechnology utilizes nanotechnology, gene therapy, and tissue engineering for advanced medical devices and regenerative medicine. CRISPR and stem cell therapies offer new treatments for genetic disorders, cancer, and chronic conditions."
+          
+        },
+        "tab_6": {
+            "header": "Cosmetics",
+            "title": "Advancing Safety and Efficacy in Beauty Products",
+            "description": "Biotechnology improves cosmetic formulations with bio-based ingredients from fermentation and microorganisms. These ingredients enhance product safety, efficacy, and sustainability while ensuring microbiological quality control."
           
         }
     },
