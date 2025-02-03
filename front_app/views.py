@@ -1637,10 +1637,8 @@ def PCE_index(request):
         "tab_1": {
             "header": "Geotechnics",
             "title": "Soil Characterization and Analysis",
-            "description": "Advanced soil analysis methodologies to optimize the design and construction of foundations and Providing innovative solutions to complex geotechnical problems through cutting-edge research and development.",
+            "description": "The stability and safety of structures depend on understanding soil and rock behavior, which is the core of geotechnics. This field involves site investigations, soil mechanics, and foundation engineering to mitigate risks such as settlement and landslides.",
 
-            "img_before": "../../static/images/static-media/Turbine1.jpg",
-            "img_after": "../../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
             "header": "Traffic facilities",
@@ -1651,7 +1649,25 @@ def PCE_index(request):
         "tab_3": {
             "header": "Non-destructuve testing",
             "title": "Structural Health Monitoring ",
-            "description": "Implement state-of-the-art non-destructive testing techniques to assess structural integrity and Provide accurate and reliable condition assessment reports for informed decision-making.",
+            "description": "Assessing material integrity without causing damage is crucial in engineering, and non-destructive testing (NDT) provides this capability. Techniques like ultrasonic testing, radiography, and thermal imaging detect hidden defects, ensuring long-term reliability and safety.",
+           
+        },
+        "tab_4": {
+            "header": "Concrete and Cement Matrix Structures",
+            "title": "Sustainability Assessment",
+            "description": "Modern construction relies heavily on concrete and cement-based materials for their strength and versatility. Advances in composite formulations and reinforcement technologies enhance durability, sustainability, and performance in a wide range of infrastructure projects.",
+           
+        },
+        "tab_5": {
+            "header": "Structural Mechanics",
+            "title": "Seismic Analysis and Design",
+            "description": "Understanding how structures respond to forces and environmental conditions is essential in engineering. Structural mechanics applies physics and mathematical modeling to design resilient buildings, bridges, and frameworks that can withstand various loads.It also plays a crucial role in mitigating the impact of environmental calamities such as earthquakes, floods, and extreme weather, ensuring structural safety and longevity.",
+           
+        },
+        "tab_6": {
+            "header": "Hydraulics",
+            "title": "Fluid-Structure Interaction",
+            "description": "The movement and control of fluids play a critical role in infrastructure and environmental management. Hydraulics and fluid mechanics guide the design of efficient water supply systems, drainage networks, and flood prevention measures.",
            
         }
     },
