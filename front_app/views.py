@@ -1546,7 +1546,7 @@ def MSC_index(request):
     "video": {
         "title_l": "MATERIALS",
         "title_r": "SCIENCE",
-        "video": "../../static/video/MSC2.mp4",
+        "video": "../../static/video/MSC_final.mp4",
         "bg_img" : "../../static/images/play.png"
     },
     "details_section": {
