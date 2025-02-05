@@ -523,38 +523,34 @@ def AIDE_innovation(request):
 def RESEE_innovation(request):
     context = {
         'header1': {
-            'title_1': 'Solar ',
-            'title_2': ' Energies',
+            'title_1': 'Energy ',
+            'title_2': ' Generation',
         },
         'header2': {
             'title_1': 'Energy ',
             'title_2': ' Storage',
         },
         'header3': {
-            'title_1': 'Desalination ',
-            'title_2': ' Technologies',
-        },
-        'header4': {
-            'title_1': 'Energy ',
-            'title_2': ' Efficiency',
+            'title_1': 'Process ',
+            'title_2': ' Engineering',
         },
         'sections': {
             'section1': {
-                'title': 'Concentrated Solar Power',
+                'title': 'CSP Technology',
                 'tag': '',
-                'text': 'At the forefront of concentrating solar power (CSP) research, we focus on advancing technology through cutting-edge modeling, material breakthroughs, cost optimization, and comprehensive environmental assessments. Our work aims to improve efficiency and sustainability in CSP systems.',
+                'text': 'Our CSP research focuses on driving innovation in concentrating solar power through advancedmodelling, material breakthroughs, cost optimization strategies, and rigorous environmentalassessments',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno1.jpg'
             },
             'section2': {
                 'title': 'Photovoltaics',
                 'tag': '',
-                'text': 'Our research in PV technology focuses on improving system performance, assessing material durability, predicting output, optimizing grid integration, and analyzing economic and policy impacts.',
+                'text': 'Our PV technology research encompasses enhancing system performance, evaluating materialdurability, predicting system output, grid integration, and analyzing economic/policy impacts.',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno2.jpg'
             },
             'section3': {
                 'title': 'Hydrogen Production',
                 'tag': '',
-                'text': 'We innovate in cost-effective hydrogen production through the water splitting process, designing, building, and testing new components. Our approach incorporates custom electrodes and metal 3D-printed parts for improved efficiency.',
+                'text': 'Our innovation is about developing cost-effective solutions for hydrogen production, includingthe design, construction, characterization, and testing of new components.',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno3.jpg'
             },
             'section4': {
@@ -564,22 +560,22 @@ def RESEE_innovation(request):
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno4.jpg'
             },
             'section5': {
-                'title': 'Redox Flow Batteries',
+                'title': 'Electrode Materials Research',
                 'tag': '',
-                'text': 'We specialize in developing innovative, cost-effective battery solutions. Our expertise spans the entire lifecycle, from design and manufacturing to testing and optimization, with a strong focus on economic viability and environmental sustainability. ',
+                'text': 'We are at the forefront of developing cutting-edge electrode materials and components foradvanced battery systems, employing innovative manufacturing methods to achieve superiorperformance, safety, and sustainability.',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno5.jpg'
             },
             'section6': {
-                'title': 'Desalination',
+                'title': 'Water Desalination',
                 'tag': '',
-                'text': 'Our research focuses on developing innovative and cost-effective desalination solutions. We address industry challenges by creating new materials, components and technologies. Our research involves designing, building, and testing desalination systems that integrate renewable energy sources with advanced membrane processes like Reverse Osmosis (RO), Forward Osmosis (FO), and Membrane Distillation (MD).',
-                'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno3.jpg'
+                'text': 'We focus on developing innovative, cost-effective water desalination solutions. Our researchaddresses industry challenges by creating novel materials and technologies, integratingrenewable energy with advanced membrane processes for efficient and sustainable waterdesalination.',
+                'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno6.jpg'
             },
             'section7': {
-                'title': 'Buildings',
+                'title': 'Industrial Energy Efficiency',
                 'tag': '',
-                'text': 'We specialize in sustainable building solutions, combining bio-based and recycled materials with innovative smart home technologies. Our expertise extends to building energy management, where we develop predictive models to optimize energy consumption.',
-                'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno7.png'
+                'text': 'We specialize in developing sustainable industrial solutions, focusing on optimizing energyconsumption and increasing production output. Our expertise includes developing predictivemodels to control and optimize energy requirements and production in industrial proces.',
+                'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno7.jpg'
             }
         },
         'logo': '../../static/images/logo-black.png',
