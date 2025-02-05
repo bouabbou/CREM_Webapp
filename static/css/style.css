@@ -2916,7 +2916,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background:#2c2c2c url(../images/platforms/PCE/index_PCE/work-proc-bg.jpg) fixed;
+  background:#2c2c2c url(../images/platforms/PCE/index_PCE/PCE-bg.webp) fixed;
 }
 
 .video-ads-bg-BIO {
@@ -2962,8 +2962,8 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   font-family: 'Lato',Arial,Helvetica,sans-serif;
   font-size:36px;
   line-height:36px;
-  font-weight:100;
-  color:#f1f1f1;
+  font-weight:normal;
+  color:#000000;
 }
 .video-ads-a a:hover{
   color:#a5a5a5;

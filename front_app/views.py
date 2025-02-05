@@ -178,7 +178,7 @@ def PCE_infrastructure(request):
         'products': products,
         'image_header': "Civil Engineering",
         'image_descriptions': {
-            'part1': "Civil Engineering",
+            'part1': "Hydraulics and Fluid Mechanics",
             'part2': "Traffic Facilities",
             'part3': "Geotechnics",
             'part4': "Cement-Matrix Structures",
@@ -197,11 +197,17 @@ def PCE_infrastructure(request):
                 'title': "Traffic Facilities",
                 'subtitle': "Laboratory",
             },
+            'section_4': {
+                'title': "Hydraulics and Fluid Mechanics",
+                'subtitle': "Laboratory",
+            },
         },
         'platform_name': "PROCESS ENGINEERING AND CIVIL ENGINEERING",
-        'slider_image_url_1': "../../static/images/platforms/PCE/infrastructure_PCE/lab01.webp", 
-        'slider_image_url_2': "../../static/images/platforms/PCE/infrastructure_PCE/lab02.webp", 
-        'slider_image_url_3': "../../static/images/platforms/PCE/infrastructure_PCE/lab03.webp", 
+        'slider_image_url_1': "../../static/images/platforms/PCE/infrastructure_PCE/lab01.jpg", 
+        'slider_image_url_2': "../../static/images/platforms/PCE/infrastructure_PCE/lab02.jpg", 
+        'slider_image_url_3': "../../static/images/platforms/PCE/infrastructure_PCE/lab03.jpg",
+        'slider_image_url_4': "../../static/images/platforms/PCE/infrastructure_PCE/lab04.jpg", 
+ 
         'logo': '../../../static/images/logo-black.png',
         
          #header : 
@@ -1110,7 +1116,7 @@ def BIO_services(request):
  
     
     }
-    return render( request ,'platforms/BIO/BIO_services.html',context)
+    return render( request ,'platforms/BIO/services.html',context)
 def MSC_services(request):
     context = {
        'logo': '../../static/images/logo-black.png',
@@ -1197,24 +1203,32 @@ def PCE_services(request):
         # Sections
         'sections': {
         'section_1': {
-            'title_line1': 'ANALYSES OF SOILS AND CONSTRUCTION MATERIALS',
-            'title_line2': '',
-            'text': '-Estimation of Atterberg limits: limits of elasticity and plasticity - Calculation of the sand equivalent - Calculation of the particle size distribution of a soil - Estimation of the fracturing resistance of aggregates (Los Angeles) - Estimation of the friction resistance of aggregates (micro-Deval)  - Compression tests for mortar and concrete',
+            'title_line1': 'GEOTECHNICAL',
+            'title_line2': 'ANALYSIS',
+            'text': 'Our laboratory provides precise soil and construction material analysis, evaluating properties, strength, and composition to ensure optimal performance and structural integrity.',
             'img': '../../static/images/platforms/PCE/services_PCE/serv1.jpg'
             
         },
         'section_2': {
-            'title_line1': 'Lanes',
-            'title_line2': '',
-            'text': '-Aging of bitumen at RTFOT - Calculation of the dynamic stability of asphalt-based road pavement structures using rutting tests.',
-            'img': '../../static/images/platforms/PCE/services_PCE/serv2.webp'
+            'title_line1': 'BITUMINOUS ',
+            'title_line2': 'MATERIALS EVALUATION',
+            'text': 'We systematically assess bitumen characteristics and pavement performance, delivering comprehensive insights for road infrastructure development and maintenance strategies.',
+            'img': '../../static/images/platforms/PCE/services_PCE/serv2.jpg'
 
         },
         'section_3': {
-            'title_line1': 'Non-destructive testing',
-            'title_line2': '',
-            'text': 'Determination of the resistance of concrete: By measuring the speed of propagation of ultrasound in concrete, we can estimate its compressive resistance. -Internal defect detection: Identification of voids, cracks and other structural defects in concrete. -Evaluation of concrete homogeneity: Verification of the consistency and uniformity of the concrete. -Assessment of the condition of existing structures: Detection of damage, cracks and corrosion of reinforced concrete.',
+            'title_line1': 'NON-DESTRUCTIVE',
+            'title_line2': 'TESTING',
+            'text': 'Employing advanced techniques, we diagnose concrete and structural conditions, detecting internal defects and estimating material strength without causing damage.',
             'img': '../../static/images/platforms/PCE/services_PCE/serv3.jpg'
+
+        },
+
+        'section_4': {
+            'title_line1': 'WATER FLOW',
+            'title_line2': 'ANALYSIS',
+            'text': 'We conduct comprehensive hydraulic tests to measure water flow rates, pressure dynamics, and fluid behavior in various engineering systems and infrastructures.',
+            'img': '../../static/images/platforms/PCE/services_PCE/serv4.jpg'
 
         },
     },
@@ -1378,8 +1392,6 @@ def ASMP_index(request):
             "title": "A New Era of Creation in Aerospace",
             "description": "Within the aerospace industry, a transformative era of producing intricate components, previously challenging with conventional methods, is now attainable through additive manufacturing.From lightweight components to rocket engines, the potential for innovation is limitless.",
 
-            "img_before": "../../static/images/static-media/Turbine1.jpg",
-            "img_after": "../../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
             "header": "Automotive",
@@ -1429,8 +1441,8 @@ def BIO_index(request):
     },
     "third_section": {
         "title": "Core Advantages of Our Platform",
-        "description": "Lorem ipsum",
-        "image": "../../static/images/fes7.jpg",
+        "description": "The biotechnology and biomedical engineering platform delivers high-quality, innovative solutions through cutting-edge technology and expert collaboration.",
+        "image": "../../static/images/platforms/BIO/index_BIO/section3.jpg",
         "point_1": {
             "title": "Advanced Analytical Tools",
             "description": "Our platform features cutting-edge instruments and a range of services designed to meet your needs with precision and efficiency."
@@ -1722,7 +1734,7 @@ def RESEE_index(request):
     "video": {
         "title_l": "ENERGY",
         "title_r": "ENGINEERING",
-        "video": "../../static/video/RESEE.mp4",
+        "video": "../../static/video/RESEE_final.mp4",
         "bg_img" : "../../static/images/play.png"
     },
     "details_section": {
@@ -1900,7 +1912,7 @@ def AIDE_index(request):
     "video": {
         "title_l": "DIGITAL",
         "title_r": "ENGINEERING",
-        "video": "../../static/video/AIDE.mp4",
+        "video": "../../static/video/AIDE_final.mp4",
         "bg_img" : "../../static/images/play.png"
     },
     "details_section": {
@@ -1911,8 +1923,6 @@ def AIDE_index(request):
             "title": "REVOLUTIONIZING MANUFACTURING",
             "description": "Our AI and robotics solutions enhance precision and efficiency in the automotive/aerospace sector, enabling the production of complex parts and improving assembly line automation.",
 
-            "img_before": "../../static/images/static-media/Turbine1.jpg",
-            "img_after": "../../static/images/static-media/Turbine2.jpg"
         },
         "tab_2": {
             "header": "Medical Technology",
