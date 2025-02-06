@@ -1055,58 +1055,61 @@ def BIO_services(request):
         'img': '../../../static/images/platforms/BIO/services_BIO/srv1.jpg'
     },
     'section_2': {
-        'title_line1': 'Optimization of ',
-        'title_line2': 'Biochemical/Biological Processes',
-        'text': 'We specialize in the immobilization and optimization of biocatalysts (cellular and enzymatic) and scaling up of biochemical processes (fermentation and enzymatic catalysis).',
-        'img': '../../../static/images/platforms/BIO/services_BIO/srv2.jpg'
-    },
-    'section_3': {
         'title_line1': 'Recombinant ',
         'title_line2': 'Protein Production',
         'text': 'Our services include gene cloning and optimization in various vectors, production in heterologous systems, optimization of bio-production conditions, protein purification, crystallization, and packaging of protein preparations.',
-        'img': '../../../static/images/platforms/BIO/services_BIO/srv3.jpg'
+        'img': '../../../static/images/platforms/BIO/services_BIO/srv2.jpg'
     },
-    'section_4': {
+    'section_3': {
         'title_line1': 'Cell Culture ',
         'title_line2': 'Testing',
         'text': 'We conduct in vitro tests for cell migration, invasion, proliferation, viability, adhesion, and real-time cellular and molecular analysis. Additionally, we measure cellular cytotoxicity for organic molecules, determine antimicrobial activities, and optimize cell culture and molecular screening conditions.',
-        'img': '../../../static/images/platforms/BIO/services_BIO/srv4.jpg'
+        'img': '../../../static/images/platforms/BIO/services_BIO/srv3.jpg'
     },
-    'section_5': {
+    'section_4': {
         'title_line1': 'Molecular ',
         'title_line2': 'Diagnostics',
         'text': 'We design primers and probes for identifying and characterizing bacterial, fungal, and viral pathogens (including COVID-19) using PCR, RT-PCR, and real-time PCR. Our services also include sample preparation, genomic library construction, and DNA sequencing.',
-        'img': '../../../static/images/platforms/BIO/services_BIO/srv5.jpg'
+        'img': '../../../static/images/platforms/BIO/services_BIO/srv4.jpg'
     },
-    'section_6': {
+    'section_5': {
         'title_line1': 'Biochemical Analysis ',
         'title_line2': 'of Food and Environmental Samples',
         'text': 'We quantify key organic molecules (amino acids, sugars, lipids, proteins, etc.) and biological activities in food and environmental samples.',
-        'img': '../../../static/images/platforms/BIO/services_BIO/srv6.jpg'
+        'img': '../../../static/images/platforms/BIO/services_BIO/srv5.jpg'
     },
-    'section_7': {
+    'section_6': {
         'title_line1': 'Proteomic ',
         'title_line2': 'Analyses',
         'text': 'Our proteomic services include protein detection through immunoblotting, immunoprecipitation, and peptide/protein quality control, as well as protein quantification using Western blot, ELISA, electrophoresis, and other methods.',
+        'img': '../../../static/images/platforms/BIO/services_BIO/srv6.jpg'
+    },
+
+    'section_7': {
+        'title_line1': 'Microbiological Analysis and  ',
+        'title_line2': ' Quality Control',
+        'text': 'We provide comprehensive detection, enumeration, serotyping, and identification ofpathogens in food, environmental, pharmaceutical, and cosmetic products. Our servicesinclude hygiene audits, cleaning-disinfection process control, and verification ofantimicrobial/antifungal efficacy to ensure safety, quality, and regulatory compliance.',
         'img': '../../../static/images/platforms/BIO/services_BIO/srv7.jpg'
     },
+    
     'section_8': {
-        'title_line1': 'Microbiological ',
-        'title_line2': 'Analyses',
-        'text': 'We offer detection and identification of pathogenic microorganisms, serotyping of foodborne pathogens, identification of hygiene and quality indicator microorganisms, audits and control of cleaning-disinfection operations, and microbiological quality control of various water types.',
+        'title_line1': 'Optimization of ',
+        'title_line2': 'Biochemical/Biological Processes',
+        'text': 'We specialize in the immobilization and optimization of biocatalysts (cellular and enzymatic) and scaling up of biochemical processes (fermentation and enzymatic catalysis).',
         'img': '../../../static/images/platforms/BIO/services_BIO/srv8.jpg'
     },
     'section_9': {
-        'title_line1': 'Pharmaceutical and ',
-        'title_line2': 'Cosmetic Product Testing',
-        'text': 'Our testing services include detection, enumeration, and identification of pathogenic microorganisms (bacteria, yeasts, fungi, viruses), verification of antimicrobial efficacy, and bacteriological testing of finished products.',
+        'title_line1': 'Chromatographic & Spectroscopic ',
+        'title_line2': 'Elucidation of Biomolecules',
+        'text': 'We provide advanced separation and structural analysis using HPLC-MS/MS, GC-MS, NMR, FT-IR, XRD, and UV-NIR techniques for precise characterization of organic and biologicalcompounds.',
         'img': '../../../static/images/platforms/BIO/services_BIO/srv9.jpg'
     },
+
     'section_10': {
-        'title_line1': 'Spectroscopic Elucidation ',
-        'title_line2': 'of Organic/Biological Molecules',
-        'text': 'Our services include separation and spectrometric analysis, as well as spectroscopic analyses using HPLC-MS/MS, GC-MS, NMR, FT-IR, XRD, and UV-NIR.',
-        'img': '../../../static/images/platforms/BIO/services_BIO/srv10.jpg'
+        'title_line1': 'Continuous Training  ',
+        'title_line2': 'Programs',
+        'text': 'We provide up-to-date training in biotechnology and biomedical engineering equippingprofessionals with the latest skills to innovate and excel. Our programs focus on practical, up-to-date knowledge, ensuring participants stay ahead in their fields.',
+        'img': '../../../static/images/platforms/BIO/services_BIO/srv8.jpg'
     }
 }
  
@@ -1432,7 +1435,7 @@ def BIO_index(request):
     },
     "about": {
         "text_1": "Welcome to our Biotechnology and Biomedical Engineering Platform, a center for research, innovation, and training. It houses three specialized laboratories: Medicinal Chemistry, Biotechnology, and Biomedical engineering, all equipped with advanced technology to ensure precision and excellence in our services.",
-        "text_2": "Our team combines biology, bioengineering, genetic engineering, chemistry, and cell culture to solve biomedical and environmental challenges. We specialize in protein engineering, rDNA technologies, stem cell research, and RNA modification, providing solutions for the agri-food, environmental, and pharmaceutical industries."
+        "text_2": "Our team combines biology, bioengineering, genetic engineering, chemistry, and cell culture to solve biomedical and environmental challenges. We specialize in protein engineering, rDNA technologies, stem cell research, and RNA modification, providing solutions for the agri-food, environmental, cosmetic, and pharmaceutical industries."
     
     },
     "third_section": {
