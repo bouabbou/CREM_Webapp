@@ -331,7 +331,7 @@ def AIDE_infrastructure(request):
             'part3': "Virtual Reality",
             'part4': "Robotics and Cobotics",
         },
-        'header_img': "../../static/images/platforms/AIDE/infrastructure_AIDE/AIDE_header.png",
+        'header_img': "../../static/images/platforms/AIDE/infrastructure_AIDE/img.jpg",
         'gallery_texts': {
              'section_1': {
                 'title': "Virtual reality",
@@ -347,9 +347,9 @@ def AIDE_infrastructure(request):
             },
         },
         'platform_name': "AI AND DIGITAL ENGINEERING",
-        'slider_image_url_1': "../../static/images/platforms/AIDE/infrastructure_AIDE/lab01.webp",  
-        'slider_image_url_2': "../../static/images/platforms/AIDE/infrastructure_AIDE/lab02.webp", 
-        'slider_image_url_3': "../../static/images/platforms/AIDE/infrastructure_AIDE/lab03.webp", 
+        'slider_image_url_1': "../../static/images/platforms/AIDE/infrastructure_AIDE/lab02.jpg",  
+        'slider_image_url_2': "../../static/images/platforms/AIDE/infrastructure_AIDE/lab03.jpg", 
+        'slider_image_url_3': "../../static/images/platforms/AIDE/infrastructure_AIDE/lab01.jpg", 
         'logo': '../../../static/images/logo-black.png',
 
         #header : 
