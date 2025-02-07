@@ -1365,7 +1365,7 @@ def ASMP_index(request):
         
         "header": {
         "video": "../../static/video/ASMP.mp4",
-        "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING PLATFORM",
+        "title": "ADDITIVE/SUBTRACTIVE MANUFACTURING AND PROTOTYPING",
         "description": "Advanced technologies, materials expertise, and practical knowledge in one place."
     },
     "about": {
