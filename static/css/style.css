@@ -2794,7 +2794,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background: #2c2c2c url(../images/platforms/PCE/index_PCE/work-proc-bg.jpg) fixed;
+  background: #2c2c2c url(../images/platforms/PCE/index_PCE/PCE-bg.webp) fixed;
   color:#f1f1f1;
 }
 .work-proc-1-bg-RESEE {
@@ -2909,7 +2909,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background:#2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  background:#2c2c2c url(../images/platforms/ASMP/index_ASMP/work-proc-bg.jpg) fixed;
 }
 
 .video-ads-bg-PCE {

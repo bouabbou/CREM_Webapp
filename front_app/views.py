@@ -42,25 +42,41 @@ def ASMP_infrastructure(request):
             'part3': "COMPOSITES",
             'part4': "CHARACTERIZATION",
         },
-        'header_img': "../../static/images/revo-slider/infra.jpg",
+        'header_img': "../../static/images/platforms/ASMP/infrastructure_ASMP/Infra-bg.jpg",
         'gallery_texts': {
             'section_1': {
-                'title': "CNC Machinning",
-                'subtitle': "Substractive Manufacturing",
+                'title': "Powder-Based",
+                'subtitle': "Additive Manufacturing",
             },
             'section_2': {
                 'title': "Fused deposition modeling",
                 'subtitle': "Additive Manufacturing",
             },
-            'section_3': {
-                'title': "Powder-Based",
-                'subtitle': "Additive Manufacturing",
+            
+            'section_4': {
+                'title': "Polymers and Carbon Fiber",
+                'subtitle': "Composites",
             },
+            'section_3': {
+                'title': "CNC Machinning",
+                'subtitle': "Substractive Manufacturing",
+            },
+            
+            'section_5': {
+                'title': "Mechanical testing",
+                'subtitle': "Characterization",
+            },
+            
+            
         },
         'platform_name': "ADDITIVE/SUBSTRACTIVE MANUFACTURING AND PROTOTYPING",
-        'slider_image_url_1': "../../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB1.png",  
-        'slider_image_url_2': "../../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB2.png", 
-        'slider_image_url_3': "../../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB3.png", 
+        'slider_image_url_1': "../../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB1.jpg",  
+        'slider_image_url_2': "../../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB2.jpg", 
+        'slider_image_url_3': "../../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB3.jpg", 
+        'slider_image_url_4': "../../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB4.jpg", 
+        'slider_image_url_5': "../../static/images/platforms/ASMP/infrastructure_ASMP/flexslider/AMLAB5.jpg", 
+
+        
         #header
         'services_url': reverse('ASMP_services'),
         'index_url': reverse('ASMP_index'),
