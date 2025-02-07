@@ -98,32 +98,38 @@ def BIO_infrastructure(request):
     context = {
         'categories': categories,
         'products': products,
-        'image_header': "Image Header",
+        'image_header': "Biotech & Biomedical engineering",
         'image_descriptions': {
-            'part1': "Description Part 1",
-            'part2': "Description Part 2",
-            'part3': "Description Part 3",
-            'part4': "Description Part 4",
+            'part1': "Biotechnology",
+            'part2': "Medicinal Chemistry",
+            'part3': "Biomedical instrumentation",
         },
-        'header_img': "../../static/images/revo-slider/infra.jpg",
+        'header_img': "../../../static/images/platforms/BIO/infrastructure_BIO/Infra-bg.jpg",
         'gallery_texts': {
             'section_1': {
-                'title': "Title for Section 1",
-                'subtitle': "Subtitle for Section 1",
+                'title': "Biotechnology ",
+                'subtitle': "Laboratory",
             },
             'section_2': {
-                'title': "Title for Section 2",
-                'subtitle': "Subtitle for Section 2",
+                'title': "Medicinal Chemistry ",
+                'subtitle': "Laboratory",
             },
             'section_3': {
-                'title': "Title for Section 3",
-                'subtitle': "Subtitle for Section 3",
+                'title': "Spectrophotometry ",
+                'subtitle': "Laboratory",
+            },
+
+            'section_4': {
+                'title': "Protein Chromatography ",
+                'subtitle': "Laboratory",
             },
         },
         'platform_name': "BIOTECHNOLOGY ET BIOMEDICAL ENGINEERING",
-        'slider_image_url_1': "../../../static/images/flexslider/AMLAB1.png",  
-        'slider_image_url_2': "../../../static/images/flexslider/AMLAB2.png", 
-        'slider_image_url_3': "../../../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_1': "../../../static/images/platforms/BIO/infrastructure_BIO/Lab01.jpg",  
+        'slider_image_url_2': "../../../static/images/platforms/BIO/infrastructure_BIO/Lab02.jpg", 
+        'slider_image_url_3': "../../../static/images/platforms/BIO/infrastructure_BIO/Lab03.jpg", 
+        'slider_image_url_4': "../../../static/images/platforms/BIO/infrastructure_BIO/Lab04.jpg", 
+
         'logo': '../../../../static/images/logo-black.png',
         
         #header : 
@@ -607,68 +613,56 @@ def RESEE_innovation(request):
 def BIO_innovation(request):
     context = {
         'header1': {
-            'title_1': 'Cutting-Edge ',
+            'title_1': 'PHARMACEUTICAL ',
             'title_2': ' R&D',
         },
         'header2': {
-            'title_1': 'ADVANCED ANALYTICAL',
+            'title_1': 'MEDICAL ',
             'title_2': ' TECHNIQUES',
         },
         'header3': {
-            'title_1': 'DIAGNOSTICS AND',
-            'title_2': ' EDUCATIONAL INNOVATION',
+            'title_1': 'BIO',
+            'title_2': 'TECHNOLOGY',
         },
         'sections': {
             'section1': {
-                'title': 'Advanced Drug Discovery',
+                'title': 'Drug design and Discovery',
                 'tag': '',
-                'text': 'Our Medicinal Chemistry Laboratory is pioneering new methods in drug discovery, utilizing AI-driven algorithms to design and synthesize novel pharmaceutical compounds. This approach accelerates the identification of potential drug candidates, reducing the time and cost associated with traditional drug development processes.',
+                'text': 'Pioneering innovative drug discovery through the synthesis and characterization of bioactivemolecules, targeting cancer and neurodegenerative diseases with organic nanoparticles,fluorescent MRI agents, and sustainable chemistry solutions.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno1.jpg'
             },
             'section2': {
-                'title': 'Genetic Engineering Breakthroughs',
+                'title': 'Study of endemic Moroccan medicinal plants',
                 'tag': '',
-                'text': 'In the Biotechnology Laboratory, researchers are making significant strides in genetic engineering. By employing CRISPR-Cas9 technology, they are able to precisely edit genes, leading to advancements in gene therapy, agricultural biotechnology, and the development of genetically modified organisms (GMOs) with enhanced traits.',
+                'text': 'Identification and characterization of secondary metabolites, evaluation of their biologicalproperties, therapeutic potential, and pharmacological and toxicological effects in vitro andin vivo.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno2.jpg'
 
             },
             'section3': {
                 'title': 'Innovative Medical Devices',
                 'tag': '',
-                'text': 'The Biomedical Instrumentation Laboratory is at the forefront of developing cutting-edge medical devices. Recent projects include the creation of wearable health monitors that provide real-time data on vital signs, enabling early detection and management of chronic diseases.',
+                'text': 'Synthesis of innovative nanomaterials for health and sustainable development. Developmentof advanced medical technologies and devices, bringing engineering to the service ofbiomedical sciences.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno3.jpg'
 
             },
             'section4': {
-                'title': 'Environmental Monitoring',
+                'title': 'Therapeutic Strategies and Disease Modeling',
                 'tag': '',
-                'text': 'Utilizing Gas Chromatography-Mass Spectrometry (GC-MS), our team is conducting innovative research in environmental monitoring. This technology enables the precise detection and analysis of pollutants, contributing to efforts in environmental protection and sustainability.',
+                'text': 'We advance biomedical research by integrating cell biology, bioengineering, and regenerative medicineto develop innovative solutions for 3D tissue repair, disease modeling, and drug discovery using stemcells, biomaterials, and 3D bio-printing.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno4.jpg'
 
             },
             'section5': {
-                'title': 'High-Resolution Imaging',
+                'title': 'Bioprospecting and antibiotic discovery',
                 'tag': '',
-                'text': 'Our platform’s advanced fluorescence microscopy capabilities allow for high-resolution imaging of biological samples. This technology is crucial for studying cellular processes in detail, leading to a better understanding of disease mechanisms and the development of targeted therapies.',
+                'text': 'Uncovering new Antibacterial agents from unexplored microbial niches and screeningsynthetic chemical compounds for potent Antibiotics against multidrug-resistant bacteria.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno5.jpg'
             },
             'section6': {
-                'title': 'Protein Purification Techniques',
+                'title': 'Vaccine Development',
                 'tag': '',
-                'text': 'Researchers in our Biotechnology Laboratory are refining protein purification techniques using Fast Protein Liquid Chromatography (FPLC). These advancements are essential for producing high-purity proteins for use in pharmaceuticals, diagnostics, and research applications.',
+                'text': 'The design and production of virus capsid particles in yeast and bacteria as an alternative tothe live attenuated virus vaccine. Our work focuses on the creation of Virus-Like Particles(VLPs) that replicate the virus structure without being infectious, offering a safer and moreeffective option for vaccination.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno6.jpg'
-            },
-            'section7': {
-                'title': 'Molecular Diagnostics',
-                'tag': '',
-                'text': 'Our Molecular Diagnostics services are enhancing the detection and characterization of pathogens. By developing advanced PCR-based assays, we are improving the accuracy and speed of diagnosing infectious diseases, including emerging viral threats.',
-                'img': '../../static/images/platforms/BIO/innovation_BIO/inno7.jpg'
-            },
-            'section8': {
-                'title': 'Continuous Training Programs',
-                'tag': '',
-                'text': 'We offer comprehensive continuous training programs to keep researchers and industry professionals updated with the latest advancements in biotechnology and biomedical engineering. These programs ensure that our partners are equipped with the knowledge and skills needed to drive innovation in their respective fields.',
-                'img': '../../static/images/Innovation/CF.png'
             }
         },
         
@@ -1078,8 +1072,8 @@ def BIO_services(request):
     },
     'section_3': {
         'title_line1': 'Cell Culture ',
-        'title_line2': 'Testing',
-        'text': 'We conduct in vitro tests for cell migration, invasion, proliferation, viability, adhesion, and real-time cellular and molecular analysis. Additionally, we measure cellular cytotoxicity for organic molecules, determine antimicrobial activities, and optimize cell culture and molecular screening conditions.',
+        'title_line2': 'Assays',
+        'text': 'We perform comprehensive in-vitro assays to evaluate cell migration, invasion, proliferation,viability, and cytotoxicity in response to organic molecules. Additionally, we optimize cellculture conditions and molecular screening for reliable results.',
         'img': '../../../static/images/platforms/BIO/services_BIO/srv3.jpg'
     },
     'section_4': {
@@ -1089,8 +1083,8 @@ def BIO_services(request):
         'img': '../../../static/images/platforms/BIO/services_BIO/srv4.jpg'
     },
     'section_5': {
-        'title_line1': 'Biochemical Analysis ',
-        'title_line2': 'of Food and Environmental Samples',
+        'title_line1': 'Biochemical ',
+        'title_line2': ' Analysis',
         'text': 'We quantify key organic molecules (amino acids, sugars, lipids, proteins, etc.) and biological activities in food and environmental samples.',
         'img': '../../../static/images/platforms/BIO/services_BIO/srv5.jpg'
     },
@@ -1110,12 +1104,12 @@ def BIO_services(request):
     
     'section_8': {
         'title_line1': 'Optimization of ',
-        'title_line2': 'Biochemical/Biological Processes',
+        'title_line2': ' Bioprocesses',
         'text': 'We specialize in the immobilization and optimization of biocatalysts (cellular and enzymatic) and scaling up of biochemical processes (fermentation and enzymatic catalysis).',
         'img': '../../../static/images/platforms/BIO/services_BIO/srv8.jpg'
     },
     'section_9': {
-        'title_line1': 'Chromatographic & Spectroscopic ',
+        'title_line1': 'Chromatographic ',
         'title_line2': 'Elucidation of Biomolecules',
         'text': 'We provide advanced separation and structural analysis using HPLC-MS/MS, GC-MS, NMR, FT-IR, XRD, and UV-NIR techniques for precise characterization of organic and biologicalcompounds.',
         'img': '../../../static/images/platforms/BIO/services_BIO/srv9.jpg'
