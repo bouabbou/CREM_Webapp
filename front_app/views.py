@@ -261,22 +261,28 @@ def RESEE_infrastructure(request):
         'header_img': "../../static/images/platforms/RESEE/infrastructure_RESEE/RESEE_header.webp",
         'gallery_texts': {
             'section_1': {
-                'title': "Title for Section 1",
-                'subtitle': "Subtitle for Section 1",
-            },
-            'section_2': {
-                'title': "Title for Section 2",
-                'subtitle': "Subtitle for Section 2",
+                'title': "Heat transfer",
+                'subtitle': "Laboratory",
             },
             'section_3': {
-                'title': "Title for Section 3",
-                'subtitle': "Subtitle for Section 3",
+                'title': "Energy storage",
+                'subtitle': "Laboratory",
+            },
+            'section_2': {
+                'title': "Energy materials",
+                'subtitle': "Laboratory",
+            },
+            'section_4': {
+                'title': "Process engineering",
+                'subtitle': "Laboratory",
             },
         },
         'platform_name': "RENEWABLE ENERGY, STORAGE AND ENERGY EFFICIENCY",
         'slider_image_url_1': "../../static/images/platforms/RESEE/infrastructure_RESEE/lab01.webp", 
         'slider_image_url_2': "../../static/images/platforms/RESEE/infrastructure_RESEE/lab02.webp", 
         'slider_image_url_3': "../../static/images/platforms/RESEE/infrastructure_RESEE/lab03.webp", 
+        'slider_image_url_4': "../../static/images/platforms/RESEE/infrastructure_RESEE/lab04.webp", 
+
         'logo': '../../../static/images/logo-black.png',
         
          #header : 
@@ -1293,9 +1299,16 @@ def RESEE_services(request):
 
         },
         'section_6': {
-            'title_line1': 'Research Consulting',
+            'title_line1': 'Advanced Process Development',
             'title_line2': '',
             'text': 'We provide expert guidance on research methodology, design, and analysis. We team up with other CREM platform to develop and produce components or prototypes for energy systems or desalination processes, and to perform sample characterization.',
+            'img': '../../static/images/platforms/RESEE/services_RESEE/srv6.jpg'
+
+        },
+        'section_7': {
+            'title_line1': 'Research Consulting',
+            'title_line2': '',
+            'text': 'Our process engineering platform provides access to well-equipped labs with cutting-edge process technologies, tools and resources for quickly designing, simulating, and testing new processes, accelerating the R&D cycle. We also support the scale-up of processes from lab-scale to industrial production. We propose expert consulting services to help industrials optimizing their processes.',
             'img': '../../../static/images/Serv/7.jpeg'
 
         },
