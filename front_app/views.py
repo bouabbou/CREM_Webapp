@@ -305,32 +305,33 @@ def SAI_infrastructure(request):
     context = {
         'categories': categories,
         'products': products,
-        'image_header': "Image Header",
+        'image_header': "Sensors and Instrumentation",
         'image_descriptions': {
-            'part1': "Description Part 1",
-            'part2': "Description Part 2",
-            'part3': "Description Part 3",
+            'part1': "Acquisition",
+            'part2': "Sensors",
+            'part3': "Electronics",
             'part4': "Description Part 4",
         },
-        'header_img': "../../static/images/revo-slider/infra.jpg",
+        'header_img': "../../../static/images/platforms/sai/infrastructure_sai/SAI-header",
         'gallery_texts': {
             'section_1': {
-                'title': "Title for Section 1",
-                'subtitle': "Subtitle for Section 1",
+                'title': "Automatism",
+                'subtitle': "Laboratory",
             },
             'section_2': {
-                'title': "Title for Section 2",
-                'subtitle': "Subtitle for Section 2",
+                'title': "Sensors",
+                'subtitle': "Laboratory",
             },
             'section_3': {
-                'title': "Title for Section 3",
-                'subtitle': "Subtitle for Section 3",
+                'title': "Electronics",
+                'subtitle': "Laboratory",
             },
         },
         'platform_name': "SENSORS AND INSTRUMENTATION",
-        'slider_image_url_1': "../../static/images/flexslider/AMLAB3.png",  
-        'slider_image_url_2': "../../static/images/flexslider/AMLAB3.png", 
-        'slider_image_url_3': "../../static/images/flexslider/AMLAB3.png", 
+        'slider_image_url_1': "../../static/images/platforms/sai/infrastructure_sai/lab01.jpg", 
+        'slider_image_url_2': "../../static/images/platforms/sai/infrastructure_sai/lab02.jpg", 
+        'slider_image_url_3': "../../static/images/platforms/sai/infrastructure_sai/lab03.jpg", 
+
         'logo': '../../../static/images/logo-black.png',
         
          #header : 
