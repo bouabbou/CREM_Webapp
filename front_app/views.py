@@ -1126,7 +1126,7 @@ def BIO_services(request):
         'title_line1': 'Continuous Training  ',
         'title_line2': 'Programs',
         'text': 'We provide up-to-date training in biotechnology and biomedical engineering equippingprofessionals with the latest skills to innovate and excel. Our programs focus on practical, up-to-date knowledge, ensuring participants stay ahead in their fields.',
-        'img': '../../../static/images/platforms/BIO/services_BIO/srv8.jpg'
+        'img': '../../../static/images/platforms/BIO/services_BIO/srv10.jpg'
     }
 }
  
