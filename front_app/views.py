@@ -1766,11 +1766,8 @@ def RESEE_index(request):
         "tab_1": {
             "header": "Renewable Energy",
             "title": "",
-            "description": "Pioneering cutting-edge solutions for harnessing renewable energy technologies for both connected and off-grid environments. Design and implement advanced technologies for clean hydrogen generation. Advancing energy storage capabilities with innovative technologies like Vanadium Redox Flow Batteries. Building a sustainable energy future through technological breakthroughs.",
-
-            "img_before": "../../static/images/static-media/Turbine1.jpg",
-            "img_after": "../../static/images/static-media/Turbine2.jpg"
-        },
+            "description": "Pioneering cutting-edge solutions for harnessing renewable energy technologies for both connected and off-grid environments. Design and implement advanced technologies for clean hydrogen generation. Advancing energy storage capabilities with innovative technologies like Vanadium Redox Flow Batteries. Building a sustainable energy future through technological breakthroughs."
+            },
         "tab_2": {
             "header": "Manufacturing",
             "title": "",
