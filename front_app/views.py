@@ -639,9 +639,9 @@ def BIO_innovation(request):
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno1.jpg'
             },
             'section2': {
-                'title': 'Study of endemic Moroccan medicinal plants',
+                'title': 'Endemic Moroccan medicinal plants',
                 'tag': '',
-                'text': 'Identification and characterization of secondary metabolites, evaluation of their biologicalproperties, therapeutic potential, and pharmacological and toxicological effects in vitro andin vivo.',
+                'text': 'Extraction, identification, characterization, and biological evaluation of secondary metabolites with a focus on their therapeutic potential, including in silico, in vitro, and in vivo assessments of their pharmacological activities and toxicological effects.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno2.jpg'
 
             },
@@ -655,7 +655,7 @@ def BIO_innovation(request):
             'section4': {
                 'title': 'Therapeutic Strategies and Disease Modeling',
                 'tag': '',
-                'text': 'We advance biomedical research by integrating cell biology, bioengineering, and regenerative medicineto develop innovative solutions for 3D tissue repair, disease modeling, and drug discovery using stemcells, biomaterials, and 3D bio-printing.',
+                'text': 'We advance biomedical research by integrating cell biology, bioengineering, and regenerative medicine to develop innovative solutions for 3D tissue repair, disease modeling, and drug discovery using stem cells, biomaterials, and 3D bio-printing.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno4.jpg'
 
             },
@@ -670,6 +670,13 @@ def BIO_innovation(request):
                 'tag': '',
                 'text': 'The design and production of virus capsid particles in yeast and bacteria as an alternative tothe live attenuated virus vaccine. Our work focuses on the creation of Virus-Like Particles(VLPs) that replicate the virus structure without being infectious, offering a safer and moreeffective option for vaccination.',
                 'img': '../../static/images/platforms/BIO/innovation_BIO/inno6.jpg'
+            }
+            ,
+            'section7': {
+                'title': 'Nutrient Sensing and Insulin Regulation',
+                'tag': '',
+                'text': 'We investigate how TORC1/S6K regulate insulin signaling in response to nutrients, using C.elegans and advanced tools like CRISPR/Cas9. We aim to uncover pathways linking nutrient sensing to insulin secretion, offering insights into metabolic disorders like diabetes and potential therapies.',
+                'img': '../../static/images/platforms/BIO/innovation_BIO/inno7.jpg'
             }
         },
         
@@ -1118,7 +1125,7 @@ def BIO_services(request):
     'section_9': {
         'title_line1': 'Chromatographic ',
         'title_line2': 'Elucidation of Biomolecules',
-        'text': 'We provide advanced separation and structural analysis using HPLC-MS/MS, GC-MS, NMR, FT-IR, XRD, and UV-NIR techniques for precise characterization of organic and biologicalcompounds.',
+        'text': 'We provide advanced structural analysis of organic compounds using high-performanceliquid chromatography with diode array detection (HPLC-DAD) and gas chromatography-mass spectrometry (GC-MS).',
         'img': '../../../static/images/platforms/BIO/services_BIO/srv9.jpg'
     },
 
@@ -1901,7 +1908,7 @@ def AIDE_index(request):
         'link_color': 'white', 
         "header": {
         "video": "../../static/video/AIDE.mp4",
-        "title": "Virtual Reality and Collaborative Robotics AI Platform",
+        "title": "AI AND DIGITAL ENGINEERING PLATFORM",
         "description": "Empowering innovation through immersive technologies and intelligent collaboration."
         },
        "about": {
