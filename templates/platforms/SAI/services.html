@@ -214,7 +214,7 @@ body, .grey-bg, .page-section:not(#footer) {
         {% endif %}
 
         <!-- FEATURES 5 -->
-        {% if sections.section_5 %}
+        {% if sections.section_7 %}
 
         <div class="page-section">
             <div class="container-fluid">
@@ -222,18 +222,18 @@ body, .grey-bg, .page-section:not(#footer) {
                     <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
                         <div class="fes2-main-text-cont">
                             <div class="title-fs-45">
-                                {{ sections.section_5.title_line1 }} <br>
-                                <span class="bold">{{ sections.section_5.title_line2 }}</span>
+                                {{ sections.section_7.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_7.title_line2 }}</span>
                             </div>
                             <div class="line-3-100"></div>
                             <div class="fes2-text-cont">
-                                {{ sections.section_5.text }}
+                                {{ sections.section_7.text }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="fes-img equal-height" style="background-image: url('{{ sections.section_5.img }}');"></div>
+                            <div class="fes-img equal-height" style="background-image: url('{{ sections.section_7.img }}');"></div>
                         </div>
                     </div>
                 </div>
@@ -268,6 +268,34 @@ body, .grey-bg, .page-section:not(#footer) {
             </div>
         </div>
         {% endif %}
+        <!-- FEATURES 5 -->
+        {% if sections.section_5 %}
+
+        <div class="page-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft equal-height" style="background-color: #FFFFFF;">
+                        <div class="fes2-main-text-cont">
+                            <div class="title-fs-45">
+                                {{ sections.section_5.title_line1 }} <br>
+                                <span class="bold">{{ sections.section_5.title_line2 }}</span>
+                            </div>
+                            <div class="line-3-100"></div>
+                            <div class="fes2-text-cont">
+                                {{ sections.section_5.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="fes-img equal-height" style="background-image: url('{{ sections.section_5.img }}');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
         <!-- FOOTER 2 -->
         {% include 'includes/footer.html' %}
 

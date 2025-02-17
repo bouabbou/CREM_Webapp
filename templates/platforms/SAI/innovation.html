@@ -1,451 +1,489 @@
 <!DOCTYPE html>
 <html lang="fr">
- 	<head>
-		<title>SAI - CREATION AND INNOVATION</title>
-		<meta charset="utf-8">
-		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-		<meta name="robots" content="index, follow" >
-		<meta name="keywords" content="detection, data acquisition, data processing, simulation, sensor calibration, embedded systems, signal processing, analog-to-digital conversion, LabVIEW, MATLAB, healthcare sensors, agricultural sensors, automotive diagnostics, aerospace monitoring, mechatronic sensors" />
-        <meta name="description" content="Expert solutions in detection, data acquisition, processing, and simulation. We specialize in sensor calibration, signal processing, and embedded systems for healthcare, agriculture, automotive, and aerospace applications." />
-		<meta name="author" content="AB">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<!-- FAVICONS -->
+<head>
+    <title>SAI - CREATION AND INNOVATION</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="detection, data acquisition, data processing, simulation, sensor calibration, embedded systems, signal processing, analog-to-digital conversion, LabVIEW, MATLAB, healthcare sensors, agricultural sensors, automotive diagnostics, aerospace monitoring, mechatronic sensors">
+    <meta name="description" content="Expert solutions in detection, data acquisition, processing, and simulation. We specialize in sensor calibration, signal processing, and embedded systems for healthcare, agriculture, automotive, and aerospace applications.">
+    <meta name="author" content="AB">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- FAVICONS -->
     <link rel="shortcut icon" href="../../static/images/favicon/favicon.ico">
     <link rel="apple-touch-icon" href="../../static/images/favicon/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../../static/images/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="../../static/images/favicon/apple-touch-icon-114x114.png">
-		<!-- CSS -->
-    <!-- FLEXSLIDER SLIDER CSS -->
-		<link rel="stylesheet" type="text/css" href="../../static/css/flexslider.css"  >
-    <!-- BOOTSTRAP -->
-		<link rel="stylesheet" href="../../static/css/bootstrap.min.css">
-	   <!-- GOOGLE FONT -->
-		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS -->
-		<link rel="stylesheet" href="../../static/css/icons-fonts.css" >
-    <!-- CSS THEME -->
-		<link rel="stylesheet" href="../../static/css/style.css" >
-    <!-- ANIMATE -->
-		<link rel='stylesheet' href="../../static/css/animate.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/flexslider.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../static/css/icons-fonts.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel='stylesheet' href="../../static/css/animate.min.css">
+
     <!-- IE Warning CSS -->
-		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
-    <!-- Magnific popup  in style.css	Owl Carousel Assets in style.css -->
-	  <!-- CSS end -->
-    <!-- JS begin some js files in bottom of file-->
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		<!-- Modernizr -->
-    <!-- <script src="js/modernizr.js"></script> -->
-<style>
-    .text-image-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Adjust if needed */
-}
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie-warning.css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8-fix.css">
+    <![endif]-->
 
-.text-content,
-.image-content {
-  flex: 1;
-}
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-@media (max-width: 992px) and (min-width: 768px) {
-  .text-image-container {
-    flex-direction: row; /* Ensure text and image are on the same line */
-  }
-
-  .text-content {
-    margin-bottom: 20px; /* Space between text and image on small screens */
-  }
-}
-.lpbf-main-text-cont, .fdm-main-text-cont, .cnc-main-text-cont {
-  padding: 15px; /* Adjust padding if needed */
-}
-
-.title-fs-45 {
-  font-size: 45px; /* Ensure font-size is appropriate */
-  margin-bottom: 10px; /* Space below title */
-}
-
-.line-3-70, .line-3-100 {
-  border-bottom: 2px solid #000; /* Adjust line styling */
-  width: 70%; /* Adjust width for line */
-}
-
-.rt-text-cont, .cnc-text-cont, .lpbf-text-cont {
-  margin-top: 10px; /* Space above text */
-}
-
-@media (max-width: 768px) {
-  .title-fs-45 {
-    font-size: 35px; /* Adjust font-size on small screens */
-  }
-
-  .line-3-70, .line-3-100 {
-    width: 100%; /* Full width on small screens */
-  }
-}
-  </style>
-		</head>
-	<body>
-		<!-- LOADER -->
-		<div id="loader-overflow">
-      <div id="loader3">Please enable JS</div>
+    <style>
+        .text-image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust if needed */
+        }
+        .text-content,
+        .image-content {
+            flex: 1;
+        }
+        @media (max-width: 992px) and (min-width: 768px) {
+            .text-image-container {
+                flex-direction: row; /* Ensure text and image are on the same line */
+            }
+            .text-content {
+                margin-bottom: 20px; /* Space between text and image on small screens */
+            }
+        }
+        .lpbf-main-text-cont, .fdm-main-text-cont, .cnc-main-text-cont {
+            padding: 15px; /* Adjust padding if needed */
+        }
+        .title-fs-45 {
+            font-size: 45px; /* Ensure font-size is appropriate */
+            margin-bottom: 10px; /* Space below title */
+        }
+        .line-3-70, .line-3-100 {
+            border-bottom: 2px solid #000; /* Adjust line styling */
+            width: 70%; /* Adjust width for line */
+        }
+        .rt-text-cont, .cnc-text-cont, .lpbf-text-cont {
+            margin-top: 10px; /* Space above text */
+        }
+        @media (max-width: 768px) {
+            .title-fs-45 {
+                font-size: 35px; /* Adjust font-size on small screens */
+            }
+            .line-3-70, .line-3-100 {
+                width: 100%; /* Full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- LOADER -->
+    <div id="loader-overflow">
+        <div id="loader3">Please enable JS</div>
     </div>
-		<div id="wrap" class="boxed">
-			<div class="grey-bg"> <!-- Grey BG  -->
 
-        <div class="header-transporent-bg-black">
-          <!-- HEADER -->
-          {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
-
-          <!-- HEADER -->
-
-
-        <!-- PAGE TITLE SMALL -->
-        <div class="page-title-cont page-title-small grey-light-bg">
-          <div class="align-left container relative">
-            <div class="row">
-               <div class="col-md-8">
-                 <div class="fes4-box wow fadeIn">
-                    <h2 class="section-title">CREATION AND <span class="bold">INNOVATION</span></h2>
-                  </div>
-                 </div>
-                <div class="col-md-4">
-                <div class="breadcrumbs">
-                  <a href="{% url 'home' %}">
-                    Home</a><span class="slash-divider">/</span><span class="bread-current">INNOVATION</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- COTENT CONTAINER -->
-       
-				<!-- FEATURES 2 -->
-				<div class="page-section"  style="background-color: #FFFFFF;">
-					<div class="container-fluid">
-						<div class="row">
-                            {% if header1 %}
-
-              <div class="mb-50"  style="background-color: #FFFFFF;">
-                <h2 class="section-title-2 pl-0 pr-0 text-center">{{header1.title_1}} <span class="bold">{{header1.title_2}}</span></h2>
-              </div>
-              {% endif %}
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
-{% if sections.section1 %}
-
-<div class="col-md-6 wow fadeInLeft equal-height section-align" style="background-color: #FFFFFF;">
-    <div class="fdm-main-text-cont">
-        <div class="title-fs-45">
-            {{ sections.section1.title }}<br>
-            <span class="bold">{{ sections.section1.tag }}</span>
-        </div>
-        <div class="line-3-70"></div>
-        <div class="lpbf-text-cont">
-            <ul>
-                {{ sections.section1.text }}
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="col-md-6" style="background-color: #FFFFFF;">
-    <div class="row">
-        <div class="lpbf-img equal-height"  <div class="lpbf-img equal-height" style="background-image: url('{{ sections.section1.img }}');"></div>
-
-            <!-- Image or content goes here -->
-        </div>
-    </div>
-</div>
-{% endif %}
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
-
-<!-- SECTION 2 -->
-{% if sections.section2 %}
-
-<div class="page-section" style="background-color: #FFFFFF;">
-  <div class="container-fluid">
-      <div class="row">
-
-          <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
-              <div class="fdm-main-text-cont">
-                  <div class="title-fs-45">
-                      {{ sections.section2.title }}<br>
-                      <span class="bold">{{ sections.section2.tag }}</span>
-                  </div>
-                  <div class="line-3-100"></div>
-                  <div class="fdm-text-cont">
-                      <ul>
-                          {{ sections.section2.text }}
-                      </ul>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-6 right-50">
-              <div class="row">
-                  <div class="rt-img equal-height"  style="background-image: url('{{ sections.section2.img }}');"></div>
-
-                      <!-- Image or content goes here -->
-                  </div>
-              </div>
-          </div>
-
-      </div>
-  </div>
-</div>
-{% endif %}
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0">
-
-<!-- FUSED DEPOSITION MODELING -->
-{% if sections.section3 %}
-
-<div class="page-section" style="background-color: #FFFFFF;">
-    <div class="container-fluid">
-        <div class="row">
-
-            <div class="col-md-6 wow fadeInLeft equal-height section-align">
-                <div class="fdm-main-text-cont">
-                    <div class="title-fs-45">
-                        {{ sections.section3.title }}<br>
-                        <span class="bold">{{ sections.section3.tag }}</span>
-                    </div>
-                    <div class="line-3-70"></div>
-                    <div class="fdm-text-cont">
-                        <ul>
-                            {{ sections.section3.text }}
-                        </ul>
+    <div id="wrap" class="boxed">
+        <div class="grey-bg">
+            <!-- HEADER -->
+            {% include 'includes/index_header.html' with logo=logo index=index_url innovation=innovation_url infrastructure=infrastructure_url services=services_url contact=contact_url link_color=link_color link_hover_color=link_hover_color %}
+            <!-- PAGE TITLE SMALL -->
+            <div class="page-title-cont page-title-small grey-light-bg">
+                <div class="align-left container relative">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="fes4-box wow fadeIn">
+                                <h2 class="section-title">CREATION AND <span class="bold">INNOVATION</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="breadcrumbs">
+                                <a href="{% url 'home' %}">Home</a>
+                                <span class="slash-divider">/</span>
+                                <span class="bread-current">INNOVATION</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="fdm-img equal-height" style="background-image: url('{{ sections.section3.img }}');"></div>
+            <!-- CONTENT CONTAINER -->
+            <div class="page-section" style="background-color: #FFFFFF;">
+                <div class="container-fluid">
+                    <div class="row">
+                        {% if header1 %}
+                        <div class="mb-50" style="background-color: #FFFFFF;">
+                            <h2 class="section-title-2 pl-0 pr-0 text-center">{{header1.title_1}} <span class="bold">{{header1.title_2}}</span></h2>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
 
-                        <!-- Image or content goes here -->
+                        {% if sections.section1 %}
+                        <div class="col-md-6 wow fadeInLeft equal-height section-align" style="background-color: #FFFFFF;">
+                            <div class="fdm-main-text-cont">
+                                <div class="title-fs-45">
+                                    {{ sections.section1.title }}<br>
+                                    <span class="bold">{{ sections.section1.tag }}</span>
+                                </div>
+                                <div class="line-3-70"></div>
+                                <div class="lpbf-text-cont">
+                                    <ul>
+                                        {{ sections.section1.text }}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="background-color: #FFFFFF;">
+                            <div class="row">
+                                <div class="lpbf-img equal-height" style="background-image: url('{{ sections.section1.img }}');"></div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0" style="background-color: #FFFFFF;">
+
+                        {% if sections.section2 %}
+                        <div class="page-section" style="background-color: #FFFFFF;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
+                                        <div class="fdm-main-text-cont">
+                                            <div class="title-fs-45">
+                                                {{ sections.section2.title }}<br>
+                                                <span class="bold">{{ sections.section2.tag }}</span>
+                                            </div>
+                                            <div class="line-3-100"></div>
+                                            <div class="fdm-text-cont">
+                                                <ul>
+                                                    {{ sections.section2.text }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 right-50">
+                                        <div class="row">
+                                            <div class="rt-img equal-height" style="background-image: url('{{ sections.section2.img }}');"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0">
+
+                        {% if sections.section3 %}
+                        <div class="page-section" style="background-color: #FFFFFF;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 wow fadeInLeft equal-height section-align">
+                                        <div class="fdm-main-text-cont">
+                                            <div class="title-fs-45">
+                                                {{ sections.section3.title }}<br>
+                                                <span class="bold">{{ sections.section3.tag }}</span>
+                                            </div>
+                                            <div class="line-3-70"></div>
+                                            <div class="fdm-text-cont">
+                                                <ul>
+                                                    {{ sections.section3.text }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="fdm-img equal-height" style="background-image: url('{{ sections.section3.img }}');"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0">
+
+                        {% if sections.section4 %}
+                        <div class="page-section" style="background-color: #FFFFFF;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
+                                        <div class="fdm-main-text-cont">
+                                            <div class="title-fs-45">
+                                                {{ sections.section4.title }}<br>
+                                                <span class="bold">{{ sections.section4.tag }}</span>
+                                            </div>
+                                            <div class="line-3-100"></div>
+                                            <div class="fdm-text-cont">
+                                                <ul>
+                                                    {{ sections.section4.text }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 right-50">
+                                        <div class="row">
+                                            <div class="rt-img equal-height" style="background-image: url('{{ sections.section4.img }}');"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0">
+
+                        {% if sections.section10 %}
+                        <div class="page-section" style="background-color: #FFFFFF;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 wow fadeInRight equal-height section-align">
+                                        <div class="fdm-main-text-cont">
+                                            <div class="title-fs-45">
+                                                {{ sections.section10.title }}<br>
+                                                <span class="bold">{{ sections.section10.tag }}</span>
+                                            </div>
+                                            <div class="line-3-100"></div>
+                                            <div class="fdm-text-cont">
+                                                <ul>
+                                                    {{ sections.section10.text }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="sim-img equal-height" style="background-image: url('{{ sections.section10.img }}');"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0">
+
+
+                        <!-- WORK PROCESS 1 -->
+                        <div class="page-section work-proc-1-bg-SAI">
+                            <div class="fes4-cont container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <!-- Content goes here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SEPARATOR -->
+                         {% if header4 %}
+                        <div class="mb-50">
+                            <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header4.title_1 }}<span class="bold">{{ header4.title_2 }}</span></h2>
+                        </div>
+                        {% endif %}
+                        
+                        <hr class="mt-0 mb-0">
+                        {% if sections.section9 %}
+                        <div class="page-section" style="background-color: #FFFFFF;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
+                                        <div class="fdm-main-text-cont">
+                                            <div class="title-fs-45">
+                                                {{ sections.section9.title }}<br>
+                                                <span class="bold">{{ sections.section9.tag }}</span>
+                                            </div>
+                                            <div class="line-3-100"></div>
+                                            <div class="fdm-text-cont">
+                                                <ul>
+                                                    {{ sections.section9.text }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 right-50">
+                                        <div class="row">
+                                            <div class="rt-img equal-height" style="background-image: url('{{ sections.section9.img }}');"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0">
+
+                        {% if sections.section11 %}
+                        <div class="page-section" style="background-color: #FFFFFF;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 wow fadeInLeft equal-height section-align">
+                                        <div class="fdm-main-text-cont">
+                                            <div class="title-fs-45">
+                                                {{ sections.section11.title }}<br>
+                                                <span class="bold">{{ sections.section11.tag }}</span>
+                                            </div>
+                                            <div class="line-3-70"></div>
+                                            <div class="fdm-text-cont">
+                                                <ul>
+                                                    {{ sections.section11.text }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="fdm-img equal-height" style="background-image: url('{{ sections.section11.img }}');"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0">
+
+                        {% if sections.section12 %}
+                        <div class="page-section" style="background-color: #FFFFFF;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
+                                        <div class="fdm-main-text-cont">
+                                            <div class="title-fs-45">
+                                                {{ sections.section12.title }}<br>
+                                                <span class="bold">{{ sections.section12.tag }}</span>
+                                            </div>
+                                            <div class="line-3-100"></div>
+                                            <div class="fdm-text-cont">
+                                                <ul>
+                                                    {{ sections.section12.text }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 right-50">
+                                        <div class="row">
+                                            <div class="rt-img equal-height" style="background-image: url('{{ sections.section12.img }}');"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0">
+
+
+                        <div class="page-section" style="background-color: #FFFFFF;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    {% if header2 %}
+                                    <div class="mb-50">
+                                        <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header2.title_1 }}<span class="bold">{{ header2.title_2 }}</span></h2>
+                                    </div>
+                                    {% endif %}
+                                    <hr class="mt-0 mb-0">
+
+                                    {% if sections.section5 %}
+                                    <div class="col-md-6 wow fadeInLeft equal-height section-align" style="background-color: #FFFFFF;">
+                                        <div class="fdm-main-text-cont">
+                                            <div class="title-fs-45">
+                                                {{ sections.section5.title }}<br>
+                                                <span class="bold">{{ sections.section5.tag }}</span>
+                                            </div>
+                                            <div class="line-3-70"></div>
+                                            <div class="fdm-text-cont">
+                                                <ul>
+                                                    {{ sections.section5.text }}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="background-color: #FFFFFF;">
+                                        <div class="row">
+                                            <div class="cnc-img equal-height" style="background-image: url('{{ sections.section5.img }}');"></div>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </div>
-</div>
-{% endif %}
+            <hr class="mt-0 mb-0">
 
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0">
-
-<!-- SECTION 4 -->
-{% if sections.section4 %}
-
-<div class="page-section" style="background-color: #FFFFFF;">
-    <div class="container-fluid">
-        <div class="row">
-
-            <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
-                <div class="fdm-main-text-cont">
-                    <div class="title-fs-45">
-                        {{ sections.section4.title }}<br>
-                        <span class="bold">{{ sections.section4.tag }}</span>
-                    </div>
-                    <div class="line-3-100"></div>
-                    <div class="fdm-text-cont">
-                        <ul>
-                            {{ sections.section4.text }}
-                        </ul>
+            {% if sections.section6 %}
+            <div class="page-section" style="background-color: #FFFFFF;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
+                            <div class="fdm-main-text-cont">
+                                <div class="title-fs-45">
+                                    {{ sections.section6.title }}<br>
+                                    <span class="bold">{{ sections.section6.tag }}</span>
+                                </div>
+                                <div class="line-3-100"></div>
+                                <div class="fdm-text-cont">
+                                    <ul>
+                                        {{ sections.section6.text }}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 right-50">
+                            <div class="row">
+                                <div class="rt-img equal-height" style="background-image: url('{{ sections.section6.img }}');"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-6 right-50">
-                <div class="row">
-                    <div class="rt-img equal-height" style="background-image: url('{{ sections.section4.img }}');"></div>
-
-                        <!-- Image or content goes here -->
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-{% endif %}
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0">
-
-<!-- WORK PROCESS 1 -->
-<div class="page-section work-proc-1-bg-SAI">
-    <div class="fes4-cont container">
-        <div class="row">
-            <div class="col-md-4">
-                <!-- Content goes here -->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- seperator-->
- 
-
-
-<!-- SUBTRACTIVE MANUFACTURING -->
-<div class="page-section" style="background-color: #FFFFFF;">
-    <div class="container-fluid">
-        <div class="row">
-            {% if header2 %}
-
-            <div class="mb-50">
-                <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header2.title_1 }}<span class="bold">{{ header2.title_2 }}</span></h2>
             </div>
             {% endif %}
 
-            <!-- DIVIDER -->
-            <hr class="mt-0 mb-0">
-            {% if sections.section5 %}
-
-            <div class="col-md-6 wow fadeInLeft equal-height section-align" style="background-color: #FFFFFF;">
-                <div class="fdm-main-text-cont">
-                    <div class="title-fs-45">
-                        {{ sections.section5.title }}<br>
-                        <span class="bold">{{ sections.section5.tag }}</span>
-                    </div>
-                    <div class="line-3-70"></div>
-                    <div class="fdm-text-cont">
-                        <ul>
-                            {{ sections.section5.text }}
-                        </ul>
+            <div class="page-section work-proc-1-bg-SAI">
+                <div class="fes4-cont container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- Content goes here -->
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6" style="background-color: #FFFFFF;">
-                <div class="row">
-                    <div class="cnc-img equal-height" style="background-image: url('{{ sections.section5.img }}');"></div>
+            {% if header3 %}
+            <div class="page-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="mb-50">
+                            <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
+                        </div>
+                        {% endif %}
+                        <hr class="mt-0 mb-0">
 
-                        <!-- Image or content goes here -->
+                        {% if sections.section7 %}
+                        <div class="col-md-6 wow fadeInLeft equal-height section-align" style="background-color: #FFFFFF;">
+                            <div class="fdm-main-text-cont">
+                                <div class="title-fs-45">
+                                    {{ sections.section7.title }}<br>
+                                    <span class="bold">{{ sections.section7.tag }}</span>
+                                </div>
+                                <div class="line-3-70"></div>
+                                <div class="fdm-text-cont">
+                                    <ul>
+                                        {{ sections.section7.text }}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="background-color: #FFFFFF;">
+                            <div class="row">
+                                <div class="cnc-img equal-height" style="background-image: url('{{ sections.section7.img }}');"></div>
+                            </div>
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
 
-        </div>
-    </div>
-</div>
-{% endif %}
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0">
-
-<!--- section 6-->
-{% if sections.section6 %}
-
-<div class="page-section" style="background-color: #FFFFFF;">
-  <div class="container-fluid">
-      <div class="row">
-
-          <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
-              <div class="fdm-main-text-cont">
-                  <div class="title-fs-45">
-                      {{ sections.section6.title }}<br>
-                      <span class="bold">{{ sections.section6.tag }}</span>
-                  </div>
-                  <div class="line-3-100"></div>
-                  <div class="fdm-text-cont">
-                      <ul>
-                          {{ sections.section6.text }}
-                      </ul>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-6 right-50">
-              <div class="row">
-                  <div class="rt-img equal-height" style="background-image: url('{{ sections.section6.img }}');"></div>
-
-                      <!-- Image or content goes here -->
-                  </div>
-              </div>
-          </div>
-
-      </div>
-  </div>
-</div>
-{% endif %}
-
-<div class="page-section work-proc-1-bg-SAI">
-  <div class="fes4-cont container">
-      <div class="row">
-          <div class="col-md-4">
-              <!-- Content goes here -->
-          </div>
-      </div>
-  </div>
-</div>
-<!-- COMPOSITE MATERIALS -->
-{% if header3 %}
-
-<div class="page-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="mb-50">
-              <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header3.title_1 }}<span class="bold">{{ header3.title_2 }}</span></h2>
-            </div>
-            {% endif %}
-
-            <!-- DIVIDER -->
-            <hr class="mt-0 mb-0">
-
-            <!--- section 7-->
-            <hr class="mt-0 mb-0">
-            {% if sections.section7 %}
-
-            <div class="col-md-6 wow fadeInLeft equal-height section-align" style="background-color: #FFFFFF;">
-                <div class="fdm-main-text-cont">
-                    <div class="title-fs-45">
-                        {{ sections.section7.title }}<br>
-                        <span class="bold">{{ sections.section7.tag }}</span>
-                    </div>
-                    <div class="line-3-70"></div>
-                    <div class="fdm-text-cont">
-                        <ul>
-                            {{ sections.section7.text }}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6" style="background-color: #FFFFFF;">
-                <div class="row">
-                    <div class="cnc-img equal-height" style="background-image: url('{{ sections.section7.img }}');"></div>
-
-                        <!-- Image or content goes here -->
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-{% endif %}
-
-          <!--section 8-->
-          {% if sections.section8 %}
-
+            {% if sections.section8 %}
             <div class="col-md-6 left-50 wow fadeInRight equal-height section-align">
                 <div class="fdm-main-text-cont">
                     <div class="title-fs-45">
@@ -460,166 +498,33 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-6 right-50">
                 <div class="row">
                     <div class="fdm-img equal-height" style="background-image: url('{{ sections.section8.img }}');"></div>
-
-                        <!-- Image or content goes here -->
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-</div>
-{% endif %}
+            {% endif %}
+          
 
-<div class="page-section work-proc-1-bg-SAI">
-  <div class="fes4-cont container">
-      <div class="row">
-          <div class="col-md-4">
-              <!-- Content goes here -->
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Calibration Section Title and Divider -->
-{% if header4 %}
-<div class="mb-50">
-    <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header4.title_1 }}<span class="bold">{{ header4.title_2 }}</span></h2>
-</div>
-{% endif %}
+            <!-- FOOTER -->
+            {% include 'includes/footer.html' %}
 
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0">
-
-<!-- Calibration Section -->
-{% if sections.section9 %}
-<div class="page-section" style="background-color: #FFFFFF;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 wow fadeInLeft equal-height section-align">
-                <div class="fdm-main-text-cont">
-                    <div class="title-fs-45">
-                        {{ sections.section9.title }}<br>
-                        <span class="bold">{{ sections.section9.tag }}</span>
-                    </div>
-                    <div class="line-3-70"></div>
-                    <div class="fdm-text-cont">
-                        <ul>
-                            {{ sections.section9.text }}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="fdm-img equal-height" style="background-image: url('{{ sections.section9.img }}');"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{% endif %}
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0">
-<div class="page-section work-proc-1-bg-SAI">
-  <div class="fes4-cont container">
-      <div class="row">
-          <div class="col-md-4">
-              <!-- Content goes here -->
-          </div>
-      </div>
-  </div>
-</div>
-<!-- System Simulation Section Title and Divider -->
-{% if header5 %}
-<div class="mb-50">
-    <h2 class="section-title-2 pl-0 pr-0 text-center">{{ header5.title_1 }}<span class="bold">{{ header5.title_2 }}</span></h2>
-</div>
-{% endif %}
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0">
-
-<!-- System Simulation Section -->
-{% if sections.section10 %}
-<div class="page-section" style="background-color: #FFFFFF;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 wow fadeInRight equal-height section-align">
-                <div class="fdm-main-text-cont">
-                    <div class="title-fs-45">
-                        {{ sections.section10.title }}<br>
-                        <span class="bold">{{ sections.section10.tag }}</span>
-                    </div>
-                    <div class="line-3-100"></div>
-                    <div class="fdm-text-cont">
-                        <ul>
-                            {{ sections.section10.text }}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="sim-img equal-height" style="background-image: url('{{ sections.section10.img }}');"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{% endif %}
-
-<!-- DIVIDER -->
-<hr class="mt-0 mb-0">
-
-
-
-        <!-- FOOTER 4 BLACK -->
-        {% include 'includes/footer.html' %}
-
-        <!-- BACK TO TOP -->
-        <p id="back-top">
-          <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
-        </p>
-
+            <!-- BACK TO TOP -->
+            <p id="back-top">
+                <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+            </p>
         </div><!-- End BG -->
-        </div><!-- End wrap -->
-			</div><!-- End BG -->
-		</div><!-- End wrap -->
+    </div><!-- End wrap -->
 
-<!-- JS begin -->
-
-		<!-- jQuery  -->
-		<script src="../../static/js/jquery-1.11.2.min.js"></script>
-
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- JS begin -->
+    <script src="../../static/js/jquery-1.11.2.min.js"></script>
     <script src="../../static/js/bootstrap.min.js"></script>
-
-		<!-- MAGNIFIC POPUP -->
-		<script src='../../static/js/jquery.magnific-popup.min.js'></script>
-
-    <!-- PORTFOLIO SCRIPTS -->
+    <script src='../../static/js/jquery.magnific-popup.min.js'></script>
     <script src="../../static/js/imagesloaded.pkgd.min.js"></script>
-
-    <!-- COUNTER -->
     <script src="../../static/js/jquery.countTo.js"></script>
-
-    <!-- APPEAR -->
     <script src="../../static/js/jquery.appear.js"></script>
-
-    <!-- OWL CAROUSEL -->
     <script src="../../static/js/owl.carousel.min.js"></script>
-
-    <!-- MAIN SCRIPT -->
-		<script src="../../static/js/main.js"></script>
-
-<!-- JS end -->
-
-	</body>
+    <script src="../../static/js/main.js"></script>
+    <!-- JS end -->
+</body>
 </html>

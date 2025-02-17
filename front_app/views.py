@@ -489,9 +489,10 @@ def AIDE_innovation(request):
             'title_2': ' REALITY',
         },
         'header3': {
-            'title_1': 'Collaborative ',
-            'title_2': ' ROBOTICS',
+            'title_1': 'Data ',
+            'title_2': ' ENGINEERING',
         },
+        
         'sections': {
             'section1': {
                 'title': 'Deep Learning Algorithms',
@@ -522,19 +523,22 @@ def AIDE_innovation(request):
                 'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno5.jpg'
             },
             'section6': {
-                'title': 'Robotic Assistance Using Humanoids',
-                'text': 'We specialize in developing humanoid robots that provide assistance in various settings, such as healthcare, customer service, and domestic environments. These humanoids are designed to interact naturally with humans, performing tasks that enhance daily living and improve quality of life.',
-                'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno6.jpg'
+                'title': 'System Simulation',
+                'tag': '',
+                'text': 'We use simulation tools such as LabVIEW and MATLAB to model and test sensor systems. This helps in designing accurate and effective solutions, predicting performance, and optimizing system integration.',
+                'img': '../../static/images/platforms/sai/innovation_sai/inno9.jpg'
             },
             'section7': {
-                'title': 'Mobile Robotics',
-                'text': 'Our expertise includes developing algorithms for mobile robotics, enabling robots to navigate and operate autonomously in diverse environments. These mobile robots are used in applications ranging from logistics and warehouse management to exploration and surveillance.',
-                'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno7.jpg'
+                'title': 'Embedded Systems',
+                'tag': '',
+                'text': 'We integrate advanced embedded systems for efficient data acquisition from various sensors. These systems manage real-time data collection and processing, ensuring accurate and reliable information for further analysis.',
+                'img': '../../static/images/platforms/sai/innovation_sai/inno5.jpg'
             },
             'section8': {
-                'title': 'Aerial Robotics',
-                'text': 'We focus on the navigation of drones in complex spaces, developing advanced algorithms to ensure precise and safe operation. These aerial robots are utilized in applications such as surveillance, environmental monitoring, and delivery services.',
-                'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno8.jpg'
+                'title': 'Data Integration and Management',
+                'tag': '',
+                'text': 'Our platform utilizes sophisticated methods for integrating and managing sensor data. This includes filtering, analyzing, and presenting data to support informed decision-making and enhance system performance.',
+                'img': '../../static/images/platforms/sai/innovation_sai/inno6.jpg'
             }
         },
          #header
@@ -838,20 +842,12 @@ def SAI_innovation(request):
             'title_1': 'Sensor Technologies',
             'title_2': '',
         },
-        'header2': {
-            'title_1': 'Data Acquisition',
-            'title_2': '',
-        },
         'header3': {
             'title_1': 'Data Processing',
             'title_2': '',
         },
         'header4': {
-            'title_1': 'Simulation and Modeling',
-            'title_2': '',
-        },
-        'header5': {
-            'title_1': 'Calibration',
+            'title_1': 'Robotics',
             'title_2': '',
         },
         'sections': {
@@ -879,17 +875,11 @@ def SAI_innovation(request):
                 'text': 'Acoustic sensors use sound waves to detect and measure various parameters such as distance, velocity, and material properties. This technology is applied in fields such as automotive safety systems, industrial inspection, and environmental studies.',
                 'img': '../../static/images/platforms/sai/innovation_sai/inno4.jpg'
             },
-            'section5': {
-                'title': 'Embedded Systems',
+            'section10': {
+                'title': 'Sensor Calibration',
                 'tag': '',
-                'text': 'We integrate advanced embedded systems for efficient data acquisition from various sensors. These systems manage real-time data collection and processing, ensuring accurate and reliable information for further analysis.',
-                'img': '../../static/images/platforms/sai/innovation_sai/inno5.jpg'
-            },
-            'section6': {
-                'title': 'Data Integration and Management',
-                'tag': '',
-                'text': 'Our platform utilizes sophisticated methods for integrating and managing sensor data. This includes filtering, analyzing, and presenting data to support informed decision-making and enhance system performance.',
-                'img': '../../static/images/platforms/sai/innovation_sai/inno6.jpg'
+                'text': 'We offer comprehensive calibration services for mechatronic sensors, ensuring they meet the highest standards of accuracy and reliability. Our calibration processes are designed to enhance sensor performance and maintain consistency in measurements.',
+                'img': '../../static/images/platforms/sai/innovation_sai/inno10.jpg'
             },
             'section7': {
                 'title': 'Signal Processing',
@@ -904,16 +894,19 @@ def SAI_innovation(request):
                 'img': '../../static/images/platforms/sai/innovation_sai/inno8.jpg'
             },
             'section9': {
-                'title': 'System Simulation',
-                'tag': '',
-                'text': 'We use simulation tools such as LabVIEW and MATLAB to model and test sensor systems. This helps in designing accurate and effective solutions, predicting performance, and optimizing system integration.',
-                'img': '../../static/images/platforms/sai/innovation_sai/inno9.jpg'
+                'title': 'Robotic Assistance Using Humanoids',
+                'text': 'We specialize in developing humanoid robots that provide assistance in various settings, such as healthcare, customer service, and domestic environments. These humanoids are designed to interact naturally with humans, performing tasks that enhance daily living and improve quality of life.',
+                'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno6.jpg'
             },
-            'section10': {
-                'title': 'Sensor Calibration',
-                'tag': '',
-                'text': 'We offer comprehensive calibration services for mechatronic sensors, ensuring they meet the highest standards of accuracy and reliability. Our calibration processes are designed to enhance sensor performance and maintain consistency in measurements.',
-                'img': '../../static/images/platforms/sai/innovation_sai/inno10.jpg'
+            'section11': {
+                'title': 'Mobile Robotics',
+                'text': 'Our expertise includes developing algorithms for mobile robotics, enabling robots to navigate and operate autonomously in diverse environments. These mobile robots are used in applications ranging from logistics and warehouse management to exploration and surveillance.',
+                'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno7.jpg'
+            },
+            'section12': {
+                'title': 'Aerial Robotics',
+                'text': 'We focus on the navigation of drones in complex spaces, developing advanced algorithms to ensure precise and safe operation. These aerial robots are utilized in applications such as surveillance, environmental monitoring, and delivery services.',
+                'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno8.jpg'
             }
         },
         'logo': '../../static/images/logo-black.png',
@@ -1020,26 +1013,11 @@ def AIDE_services(request):
             'img': '../../../static/images/platforms/AIDE/services_AIDE/srv3.png'
 
         },
-        'section_4': {
-            'title_line1': 'Event',
-            'title_line2': 'Deployment',
-            'text': 'Robot deployment services for special events, trade fairs, exhibitions or product launches.',
-            'img': '../../../static/images/platforms/AIDE/services_AIDE/srv4.jpg'
-            
-
-        },
         'section_5': {
             'title_line1': 'Customer Service',
             'title_line2': 'And Marketing',
             'text': 'Use robots to improve customer service by providing information, answering questions and collecting feedback. Robots can also be used for interactive marketing campaigns.',
             'img': '../../../static/images/platforms/AIDE/services_AIDE/srv5.jpg'
-
-        },
-        'section_6': {
-            'title_line1': 'Health',
-            'title_line2': 'And Wellness',
-            'text': 'Proposing solutions for healthcare facilities, using robots to entertain patients, encourage physical activity, or provide medical reminders.',
-            'img': '../../../static/images/platforms/AIDE/services_AIDE/srv6.jpg'
 
         },
         'section_7': {
@@ -1365,6 +1343,21 @@ def SAI_services(request):
             'title_line2': 'SERVICES',
             'text': 'We provide calibration services for mechatronic sensors to ensure they perform with the highest accuracy and reliability. This includes fine-tuning sensors to meet specific application requirements and standards.',
             'img': '../../static/images/Serv/7.jpeg'
+        },
+        'section_7': {
+            'title_line1': 'Event',
+            'title_line2': 'Deployment',
+            'text': 'Robot deployment services for special events, trade fairs, exhibitions or product launches.',
+            'img': '../../../static/images/platforms/AIDE/services_AIDE/srv4.jpg'
+            
+
+        },
+        'section_6': {
+            'title_line1': 'Health',
+            'title_line2': 'And Wellness',
+            'text': 'Proposing solutions for healthcare facilities, using robots to entertain patients, encourage physical activity, or provide medical reminders.',
+            'img': '../../../static/images/platforms/AIDE/services_AIDE/srv6.jpg'
+
         },
     },
     }
@@ -1811,12 +1804,12 @@ def SAI_index(request):
         
         "header": {
         "video": "../../static/video/SAI.mp4",
-        "title": "Sensors and Instrumentation Platform",
+        "title": "Sensors, Robotics and Instrumentation",
         "description": "Precision technology, innovative sensors, and reliable instrumentation in one place"
     },
     "about": {
-        "text_1": "Our Sensors and Instrumentation Platform plays a pivotal role in the SMART FACTORY initiative, providing cutting-edge capabilities for sensor development and calibration essential to data acquisition. By collaborating with all Euromed research platforms, it drives innovation and supports advanced research across a range of applications.",
-        "text_2": "Our platform specializes in advanced sensor technologies, offering end-to-end solutions from design and prototyping to testing and implementation. Leveraging cutting-edge materials and methods, we deliver high-precision sensors and reliable systems for industrial automation, environmental monitoring, healthcare, and beyond."
+        "text_1": "Our sensors, robotics and instrumentation platform is integral to the SMART FACTORY initiative, advancing sensor development, calibration, and integration. With other Euromed research platforms, it drives innovation in robotics, data engineering, and diverse industrial and scientific applications.",
+        "text_2": "Our platform develops advanced sensor technologies, providing end-to-end solutions from design to deployment. Using cutting-edge sensing and robotics, we deliver high-precision, reliable systems for industrial automation, environmental monitoring, healthcare, and beyond."
     },
     "third_section": {
         "title": "The critical role of sensor technology",
@@ -1912,8 +1905,8 @@ def AIDE_index(request):
         "description": "Empowering innovation through immersive technologies and intelligent collaboration."
         },
        "about": {
-        "text_1": "Our digital platform integrates three essential components, each meticulously designed to meet the highest standards of modern industry. First, our AI infrastructure is purpose-built to deliver exceptional computational power, crucial for running deep learning algorithms efficiently. Second, our virtual and augmented reality lab enables the development of immersive programs tailored to various sectors, from education to industrial training. Lastly, our robotics lab allows for the programming and simulation of diverse types of robots, including humanoids, paving the way for innovative human-machine collaboration.",
-        "text_2": "Our platform seamlessly integrates advanced artificial intelligence, virtual reality, and collaborative robotics to revolutionize various industrial sectors. We specialize in leveraging cutting-edge AI algorithms, creating immersive VR and AR experiences, and developing sophisticated robotics solutions, including humanoids. Our multidisciplinary approach ensures that we deliver innovative, practical, and impactful solutions tailored to meet the specific needs of each industry."
+        "text_1": "Our digital platform integrates three essential components, each meticulously designed to meet the highest standards of modern industry. First, our AI infrastructure is purpose-built to deliver exceptional computational power, crucial for running deep learning algorithms efficiently. Second, our virtual and augmented reality lab enables the development of immersive programs tailored to various sectors, from education to industrial training.",
+        "text_2": "Our platform seamlessly integrates advanced artificial intelligence, virtual reality, and digital engineering to revolutionize various industrial sectors. We specialize in leveraging cutting-edge AI algorithms, creating immersive VR and AR experiences, and developing sophisticated digital solutions. Our multidisciplinary approach ensures that we deliver innovative, practical, and impactful solutions tailored to meet the specific needs of each industry."
     },
     "third_section": {
         "title": "Artificial intelligence and robotics",
