@@ -571,13 +571,13 @@ def RESEE_innovation(request):
             'section1': {
                 'title': 'CSP Technology',
                 'tag': '',
-                'text': 'Our CSP research focuses on driving innovation in concentrating solar power through advancedmodelling, material breakthroughs, cost optimization strategies, and rigorous environmentalassessments',
+                'text': 'Our CSP research focuses on driving innovation in concentrating solar power through advanced modelling, material breakthroughs, cost optimization strategies, and rigorous environmental assessments',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno1.jpg'
             },
             'section2': {
                 'title': 'Photovoltaics',
                 'tag': '',
-                'text': 'Our PV technology research encompasses enhancing system performance, evaluating materialdurability, predicting system output, grid integration, and analyzing economic/policy impacts.',
+                'text': 'Our PV technology research encompasses enhancing system performance, evaluating material durability, predicting system output, grid integration, and analyzing economic/policy impacts.',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno2.jpg'
             },
             'section3': {
@@ -595,19 +595,19 @@ def RESEE_innovation(request):
             'section5': {
                 'title': 'Electrode Materials Research',
                 'tag': '',
-                'text': 'We are at the forefront of developing cutting-edge electrode materials and components foradvanced battery systems, employing innovative manufacturing methods to achieve superiorperformance, safety, and sustainability.',
+                'text': 'We are at the forefront of developing cutting-edge electrode materials and components for advanced battery systems, employing innovative manufacturing methods to achieve superior performance, safety, and sustainability.',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno5.jpg'
             },
             'section6': {
                 'title': 'Water Desalination',
                 'tag': '',
-                'text': 'We focus on developing innovative, cost-effective water desalination solutions. Our researchaddresses industry challenges by creating novel materials and technologies, integratingrenewable energy with advanced membrane processes for efficient and sustainable waterdesalination.',
+                'text': 'We focus on developing innovative, cost-effective water desalination solutions. Our research addresses industry challenges by creating novel materials and technologies, integrating renewable energy with advanced membrane processes for efficient and sustainable water desalination.',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno6.jpg'
             },
             'section7': {
                 'title': 'Industrial Energy Efficiency',
                 'tag': '',
-                'text': 'We specialize in developing sustainable industrial solutions, focusing on optimizing energyconsumption and increasing production output. Our expertise includes developing predictivemodels to control and optimize energy requirements and production in industrial proces.',
+                'text': 'We specialize in developing sustainable industrial solutions, focusing on optimizing energy consumption and increasing production output. Our expertise includes developing predictive models to control and optimize energy requirements and production in industrial proces.',
                 'img': '../../static/images/platforms/RESEE/innovation_RESEE/inno7.jpg'
             }
         },
