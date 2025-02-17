@@ -1905,8 +1905,8 @@ def AIDE_index(request):
         "description": "Empowering innovation through immersive technologies and intelligent collaboration."
         },
        "about": {
-        "text_1": "Our digital platform integrates three essential components, each meticulously designed to meet the highest standards of modern industry. First, our AI infrastructure is purpose-built to deliver exceptional computational power, crucial for running deep learning algorithms efficiently. Second, our virtual and augmented reality lab enables the development of immersive programs tailored to various sectors, from education to industrial training.",
-        "text_2": "Our platform seamlessly integrates advanced artificial intelligence, virtual reality, and digital engineering to revolutionize various industrial sectors. We specialize in leveraging cutting-edge AI algorithms, creating immersive VR and AR experiences, and developing sophisticated digital solutions. Our multidisciplinary approach ensures that we deliver innovative, practical, and impactful solutions tailored to meet the specific needs of each industry."
+        "text_1": "Our digital platform integrates three key components to meet modern industry standards. Our AI infrastructure delivers high-performance computing for deep learning and data engineering, while our virtual and augmented reality lab creates immersive applications for education and industrial training.",
+        "text_2": "Our platform integrates AI, virtual reality, and digital engineering to transform industrial sectors. We leverage advanced AI, immersive VR/AR, and sophisticated digital solutions to deliver innovative, practical, and industry-specific advancements."
     },
     "third_section": {
         "title": "Artificial intelligence and robotics",
