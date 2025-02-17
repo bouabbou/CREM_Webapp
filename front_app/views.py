@@ -529,7 +529,7 @@ def AIDE_innovation(request):
             'section7': {
                 'title': 'Mobile Robotics',
                 'text': 'Our expertise includes developing algorithms for mobile robotics, enabling robots to navigate and operate autonomously in diverse environments. These mobile robots are used in applications ranging from logistics and warehouse management to exploration and surveillance.',
-                'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno8.png'
+                'img': '../../static/images/platforms/AIDE/innovation_AIDE/inno7.jpg'
             },
             'section8': {
                 'title': 'Aerial Robotics',
