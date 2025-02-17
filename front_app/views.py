@@ -1803,7 +1803,7 @@ def SAI_index(request):
         'link_color': 'white', 
         
         "header": {
-        "video": "../../static/video/SAI.mp4",
+        "video": "../../static/video/SAI1.mp4",
         "title": "Sensors, Robotics and Instrumentation",
         "description": "Precision technology, innovative sensors, and reliable instrumentation in one place"
     },
@@ -1900,7 +1900,7 @@ def AIDE_index(request):
         'logo': '../../static/images/logo-white.png',
         'link_color': 'white', 
         "header": {
-        "video": "../../static/video/AIDE.mp4",
+        "video": "../../static/video/AIDE1.mp4",
         "title": "AI AND DIGITAL ENGINEERING PLATFORM",
         "description": "Empowering innovation through immersive technologies and intelligent collaboration."
         },
