@@ -323,7 +323,7 @@ def SAI_infrastructure(request):
                 'subtitle': "Laboratory",
             },
             'section_3': {
-                'title': "Electronics",
+                'title': "Robotics and Electronics",
                 'subtitle': "Laboratory",
             },
         },
