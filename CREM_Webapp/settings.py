@@ -1,4 +1,3 @@
-
 """
 Django settings for CREM_Webapp project.
 
@@ -30,8 +29,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'a.bouabbou@ueuromed.org'
-EMAIL_HOST_PASSWORD = 'xkgb syxd bsmv qxel'
+EMAIL_HOST_USER = 'bouabbou@gmail.com'
+EMAIL_HOST_PASSWORD = 'bmir xvwm pajf ufap'
 
 ALLOWED_HOSTS = ['labs.ueuromed.org','196.200.182.16','172.16.80.130','127.0.0.1']
 
@@ -137,5 +136,31 @@ MEDIA_ROOT = BASE_DIR / "media"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',  # Log file location
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
 
 

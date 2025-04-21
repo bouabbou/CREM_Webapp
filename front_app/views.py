@@ -1992,3 +1992,4 @@ def presentation(request):
         'link_color': 'white', 
     }
     return render( request , 'index.html',context)
+
