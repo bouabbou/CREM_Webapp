@@ -149,7 +149,7 @@ EMAIL_HOST_PASSWORD ='bmir xvwm pajf ufap'
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-LOGGING = {
+""" LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'formatters': {
@@ -173,6 +173,6 @@ LOGGING = {
             'propagate': True,
         },
     },
-}
+} """
 
 
