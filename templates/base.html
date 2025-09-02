@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    <!-- Dynamic Meta Tags -->
+    <title>{% block title %}Euromed Research Center - Advanced Research Platforms{% endblock %}</title>
+    <meta name="description" content="{% block description %}Euromed University Research Center offers cutting-edge research platforms in additive manufacturing, biotechnology, materials science, energy engineering, and digital technologies.{% endblock %}" />
+    <meta name="keywords" content="{% block keywords %}research, innovation, technology, manufacturing, biotechnology, materials science, energy engineering, digital engineering, sensors, instrumentation{% endblock %}" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://labs.ueuromed.org{% block canonical_url %}{{ request.path }}{% endblock %}" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{% block og_title %}{% block title %}Euromed Research Center{% endblock %}{% endblock %}" />
+    <meta property="og:description" content="{% block og_description %}{% block description %}Advanced research platforms and innovative technologies at Euromed University Research Center{% endblock %}{% endblock %}" />
+    <meta property="og:url" content="https://labs.ueuromed.org{{ request.path }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Euromed Research Center" />
+    <meta property="og:image" content="{% block og_image %}https://labs.ueuromed.org{% static 'images/logo-black.png' %}{% endblock %}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@EuromedU" />
+    <meta name="twitter:title" content="{% block twitter_title %}{% block title %}Euromed Research Center{% endblock %}{% endblock %}" />
+    <meta name="twitter:description" content="{% block twitter_description %}{% block description %}Advanced research platforms and innovative technologies{% endblock %}{% endblock %}" />
+    <meta name="twitter:image" content="{% block twitter_image %}https://crem.uemf.ma{% static 'images/logo-black.png' %}{% endblock %}" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ResearchOrganization",
+        "name": "Euromed Research Center",
+        "url": "https://labs.ueuromed.org",
+        "logo": "https://labs.ueuromed.org{% static 'images/logo-black.png' %}",
+        "description": "Advanced research platforms in additive manufacturing, biotechnology, materials science, energy engineering, and digital technologies",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Morocco",
+            "addressLocality": "Fez"
+        },
+        "sameAs": [
+            "https://www.uemf.ma"
+        ]
+    }
+    </script>
+    
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="{% static 'images/favicon/favicon.ico' %}" />
+    <link rel="apple-touch-icon" href="{% static 'images/favicon/favicon.ico' %}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/favicon/favicon.ico' %}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/favicon/favicon.ico' %}" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/icons-fonts.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- LOADER -->
+    <div id="loader-overflow">
+        <div id="loader3">Please enable JS</div>
+    </div>
+    
+    <div id="wrap" class="boxed">
+        <div class="grey-bg">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countTo.js' %}"></script>
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

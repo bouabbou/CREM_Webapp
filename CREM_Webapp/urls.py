@@ -17,4 +17,12 @@ urlpatterns = [
     path('instrumentation/', include('instrumentation.urls')),  # URLs for 'instrumentation' app
     path('contact/', include('contact.urls')),
 
- ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
+
+# Robots.txt - serve static file directly
+from django.views.static import serve
+from django.conf import settings
+
+urlpatterns += [
+    path('robots.txt', serve, {'document_root': settings.STATICFILES_DIRS[0], 'path': 'robots.txt'}),
+]

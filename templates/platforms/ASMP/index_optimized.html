@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Additive/Subtractive Manufacturing & Prototyping Platform - Euromed Research Center{% endblock %}
+{% block description %}Advanced additive and subtractive manufacturing technologies including 3D printing, CNC machining, composites, and rapid prototyping services at Euromed University Research Center.{% endblock %}
+{% block keywords %}additive manufacturing, 3D printing, CNC machining, rapid prototyping, composites, subtractive manufacturing, laser powder bed fusion, SLS, FDM, stereolithography{% endblock %}
+
+{% block og_image %}https://labs.ueuromed.org{% static 'images/platforms/ASMP/index_ASMP/3S_AM.png' %}{% endblock %}
+
+{% block extra_css %}
+<style>
+    :root {
+        --link-color: {{ link_color }};
+        --link-hover-color: {{ link_hover_color }};
+    }
+    .header .main-menu-container .nav a {
+        color: var(--link-color);
+    }
+    .header.sticky .main-menu-container .nav a {
+        color: black;
+    }
+    .header.sticky {
+        background-color: black;
+        transition: background-color 0.3s ease;
+    }
+    
+    #video-thumbnail {
+        width: 100%;
+        height: auto;
+    }
+    #video-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+        border: none;
+    }
+    #video-player {
+        width: 90%;
+        height: auto;
+    }
+    .video-background {
+        background-image: url('images/play.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        cursor: pointer;
+        object-fit: cover;
+    }
+    #close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="header-transporent-bg-black">
+    {% include 'includes/index_header.html' %}
+
+    <!-- STATIC MEDIA IMAGE -->
+    <div class="sm-video-bg">
+        <div class="sm-content-cont js-height-fullscr container text-left">
+            <!-- VIDEO BG -->
+            <div class="sm-video-wrapper">
+                <div class="sm-video">
+                    <video autoplay muted loop playsinline class="video-background">
+                        <source src="{{header.video}}" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="sm-cont-middle">
+                <h1 class="font-white light-72-wide sm-mb-15 sm-mt-20 relative">
+                    <span class="bold">{{header.title}}</span>
+                </h1>
+                <div class="font-white norm-32-wide hide-0-736 sm-mb-50 relative">
+                    {{header.description}}
+                </div>
+            </div>
+        </div>
+
+        <div class="local-scroll-cont font-white">
+            <a href="#about" class="scroll-down smooth-scroll">
+                <div class="icon icon-arrows-down"></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- FEATURES 5 & TESTIMONIALS 1 -->
+<div id="about" class="page-section p-110-cont">
+    <div class="container">
+        <div class="row">
+            <!-- TESTIMONIALS -->
+            <div class="col-md-6 pb-4">
+                <div class="mb-50">
+                    <h2 class="section-title">About the<span class="bold"> Platform</span></h2>
+                </div>
+                <blockquote class="quote mb-0 pr-50-min-1169">
+                    <p>{{about.text_1}}</p>
+                </blockquote>
+            </div>
+            <div class="col-md-6 pb-4">
+                <div class="mb-50">
+                    <h2 class="section-title">Our <span class="bold"> Expertise</span></h2>
+                </div>
+                <blockquote class="quote mb-0 pr-50-min-1169">
+                    <p>{{about.text_2}}</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FEATURES 7 -->
+<div class="page-section grey-light-bg clearfix">
+    <div class="fes7-img-cont col-md-5">
+        <div class="fes7-img" style="background-image: url({{third_section.image}})"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
+                <h1><span class="font-light">{{third_section.title}}</span></h1>
+                <p class="mb-60">{{third_section.description}}</p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="fes7-box wow fadeIn">
+                            <div class="fes7-box-icon">
+                                <div class="icon icon-arrows-right"></div>
+                            </div>
+                            <h3>{{third_section.point_1.title}}</h3>
+                            <p>{{third_section.point_1.description}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="fes7-box wow fadeIn" data-wow-delay="200ms">
+                            <div class="fes7-box-icon">
+                                <div class="icon icon-arrows-right"></div>
+                            </div>
+                            <h3>{{third_section.point_2.title}}</h3>
+                            <p>{{third_section.point_2.description}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="fes7-box wow fadeIn" data-wow-delay="400ms">
+                            <div class="fes7-box-icon">
+                                <div class="icon icon-arrows-right"></div>
+                            </div>
+                            <h3>{{third_section.point_3.title}}</h3>
+                            <p>{{third_section.point_3.description}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="fes7-box wow fadeIn" data-wow-delay="600ms">
+                            <div class="fes7-box-icon">
+                                <div class="icon icon-arrows-right"></div>
+                            </div>
+                            <h3>{{third_section.point_4.title}}</h3>
+                            <p>{{third_section.point_4.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="local-scroll-cont font-black">
+        <a href="#video-bg" class="scroll-down smooth-scroll">
+            <div class="icon icon-arrows-down"></div>
+        </a>
+    </div>
+</div>
+
+<!-- VIDEO ADS 1 -->
+<div id="video-bg" class="page-section video-ads-bg">
+    <div class="container">
+        <div class="video-ads-text-cont clearfix">
+            <span class="video-ads-text">{{video.title_l}}</span>
+            <span class="video-ads-a">
+                <img id="video-thumbnail" src="{{video.bg_img}}" alt="Video Thumbnail - Additive Manufacturing Process" style="cursor: pointer; width: 5%; height: auto;" />
+                <div id="video-container">
+                    <button id="close-button">X</button>
+                    <video id="video-player" controls>
+                        <source src="{{video.video}}" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </span>
+            <span class="video-ads-text">{{video.title_r}}</span>
+        </div>
+    </div>
+</div>
+
+<!-- DETAILS SECTION -->
+<div class="mb-100 container">
+    <div class="mt-60 mb-80">
+        <h2 class="section-title">{{ details_section.title }}</h2>
+        <p>{{ details_section.description}}</p>
+    </div>
+
+    <div class="tabs-3">
+        <ul class="nav nav-tabs xs-tabs-transform bootstrap-tabs">
+            <li class="active">
+                <a href="#one" data-toggle="tab">{{ details_section.tab_1.header }}</a>
+            </li>
+            <li>
+                <a href="#two" data-toggle="tab">{{ details_section.tab_2.header }}</a>
+            </li>
+            <li>
+                <a href="#three" data-toggle="tab">{{ details_section.tab_3.header }}</a>
+            </li>
+            <li>
+                <a href="#four" data-toggle="tab">{{ details_section.tab_4.header }}</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="one">
+                <div class="grey-light-bg leave-comment-cont">
+                    <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_1.title }}</h3>
+                    <p>{{ details_section.tab_1.description }}</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="two">
+                <div class="grey-light-bg leave-comment-cont">
+                    <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_2.title }}</h3>
+                    <p>{{ details_section.tab_2.description }}</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="three">
+                <div class="grey-light-bg leave-comment-cont">
+                    <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_3.title }}</h3>
+                    <p>{{ details_section.tab_3.description }}</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="four">
+                <div class="grey-light-bg leave-comment-cont">
+                    <h3 class="blog-page-title mt-50 mb-25">{{ details_section.tab_4.title }}</h3>
+                    <p>{{ details_section.tab_4.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'includes/footer.html' %}
+
+<p id="back-top">
+    <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+</p>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.getElementById("video-thumbnail").addEventListener("click", function () {
+        var videoContainer = document.getElementById("video-container");
+        var videoPlayer = document.getElementById("video-player");
+        videoContainer.style.display = "block";
+        videoPlayer.play();
+    });
+
+    document.getElementById("close-button").addEventListener("click", function () {
+        var videoContainer = document.getElementById("video-container");
+        var videoPlayer = document.getElementById("video-player");
+        videoPlayer.pause();
+        videoPlayer.currentTime = 0;
+        videoContainer.style.display = "none";
+    });
+
+    window.onscroll = function () {
+        var header = document.getElementById("nav");
+        var logo = document.querySelector(".logo-img");
+    
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+            logo.src = "../../static/images/logo-black.png";
+        } else {
+            header.classList.remove("scrolled");
+            logo.src = "../../static/images/logo-white.png";
+        }
+    };
+</script>
+{% endblock %}

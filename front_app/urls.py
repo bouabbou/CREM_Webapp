@@ -8,8 +8,9 @@ from . import views
 PLATFORMS = ['AIDE', 'ASMP', 'BIO', 'MSC', 'PCE', 'RESEE', 'SAI']
 
 urlpatterns = [
-    path('', views.home, name='home'), 
+    path('', views.home, name='home'),
     path('contact/', views.contact, name='contact'),
+    path('sitemap.xml', views.sitemap, name='sitemap'),
 ]
 
 # Generate URLs for each platform
