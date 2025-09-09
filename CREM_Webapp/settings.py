@@ -20,19 +20,33 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-+p17dfg%tdw5o(5#l%(@82)wu*vz%0o55kl-k%xku95gc7%31*"
+# Use environment variables for production
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-development-key-change-in-production')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'
 
+# Email configuration for Gmail SMTP
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'  # Gmail SMTP server
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'bouabbou@gmail.com'
-EMAIL_HOST_PASSWORD = 'bmir xvwm pajf ufap'
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'labscrem@gmail.com')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
+DEFAULT_FROM_EMAIL = 'labs@ueuromed.org'  # Your sender email
+SERVER_EMAIL = 'labs@ueuromed.org'  # For error notifications
 
-ALLOWED_HOSTS = ['labs.ueuromed.org','196.200.182.16','172.16.80.130','127.0.0.1']
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'labs.ueuromed.org,196.200.182.16,172.16.80.130,127.0.0.1,localhost,testserver').split(',')
+
+# CSRF trusted origins for form submissions
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'http://localhost:8000',
+    'https://labs.ueuromed.org',
+    'http://196.200.182.16',
+    'http://172.16.80.130',
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -136,14 +150,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'labscrem@gmail.com'
-# EMAIL_HOST_PASSWORD = 'qciw olhf jiwy oiwz'
-EMAIL_HOST_PASSWORD ='bmir xvwm pajf ufap'
+# Remove duplicate email configuration
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -177,3 +184,58 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 } """
 
 
+
+# Security headers
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
+SECURE_REFERRER_POLICY = 'same-origin'
+
+# For development, these should be False. Set to True in production.
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+SECURE_HSTS_SECONDS = 0  # Set to 31536000 in production
+
+# Session settings
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_AGE = 1209600  # 2 weeks
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+# CSRF settings
+CSRF_COOKIE_HTTPONLY = True
+CSRF_FAILURE_VIEW = 'django.views.csrf.csrf_failure'
+
+# Password validation - enhanced
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "OPTIONS": {
+            "user_attributes": ("username", "email", "first_name", "last_name"),
+            "max_similarity": 0.7,
+        }
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+        "OPTIONS": {
+            "min_length": 12,
+        }
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    },
+]
+
+# File upload security
+FILE_UPLOAD_MAX_MEMORY_SIZE = 26214400  # 25MB
+DATA_UPLOAD_MAX_MEMORY_SIZE = 26214400  # 25MB
+FILE_UPLOAD_PERMISSIONS = 0o644
+FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o755
+
+# Static files security
+STATIC_ROOT = BASE_DIR / "staticfiles"
+os.makedirs(STATIC_ROOT, exist_ok=True)
+os.makedirs(MEDIA_ROOT, exist_ok=True)

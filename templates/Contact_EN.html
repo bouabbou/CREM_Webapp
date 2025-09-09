@@ -10,6 +10,7 @@
 		<meta name="author" content="AB">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="csrf-token" content="{{ csrf_token }}">
 		
 		<!-- FAVICONS -->
     <link rel="shortcut icon" href="../static/images/favicon/favicon.ico">
@@ -137,7 +138,7 @@
                     </div>       
                     <!-- CONTACT FORM -->
                     <div>
-                      <form method="POST" action="{% url 'contact' %}">
+                      <form id="contact-form" method="POST" action="{% url 'contact' %}">
                                 {% csrf_token %}
                                 <div class="row">
                                     <div class="col-md-12 mb-30">
@@ -157,6 +158,22 @@
                                     </div>
                                 </div>
                                 
+                      {% if request.GET.status == 'success' %}
+                                <div class="alert alert-success animated fadeIn">
+                                    <strong>Thank you!</strong> Your message has been sent successfully.
+                                    A confirmation email has been sent to your email address.
+                                </div>
+                            {% elif request.GET.status == 'error' %}
+                                <div class="alert alert-danger animated shake">
+                                    <strong>Error!</strong> There was an error processing your message.
+                                    Please make sure you agree to the terms of service and try again.
+                                    If the problem persists, contact us directly at labs@ueuromed.org.
+                                </div>
+                            {% elif request.GET.status == 'invalid_email' %}
+                                <div class="alert alert-warning animated shake">
+                                    <strong>Invalid Email!</strong> Please provide a valid email address.
+                                </div>
+                            {% endif %}
                                 <div class="row">
                                     <div class="col-md-12 text-center-xxs">
                                         <input type="submit" value="SEND MESSAGE" class="button medium gray" data-loading-text="Loading...">
@@ -170,15 +187,6 @@
                                     </div>
                                 </div>
                             </form>
-                      {% if request.GET.status == 'success' %}
-                                <div class="alert alert-success animated fadeIn">
-                                    Thanks, your message has been sent to us.
-                                </div>
-                            {% elif request.GET.status == 'error' %}
-                                <div class="alert alert-danger animated shake">
-                                    <strong>Error!</strong> There was an error sending your message.
-                                </div>
-                            {% endif %}
                     </div>
                   </div>
                 </div>
@@ -214,7 +222,7 @@
                     </div>
                     <div class="cis-text">
                       <h3><span class="bold">EMAIL</span></h3>
-                      <p><a class="a-text" href="crem@ueuromed.org">crem@ueuromed.org</a></p>
+                      <p><a class="a-text" href="mailto:labs@ueuromed.org">labs@ueuromed.org</a></p>
                     </div>
                   </div>
                 </div>
@@ -268,12 +276,12 @@
     <!-- OWL CAROUSEL -->    
     <script src="../static/js/owl.carousel.min.js"></script>
     
-    <!-- FORMS VALIDATION	-->
-		<script src="../static/js/jquery.validate.min.js"></script>
-		<script src="../static/js/contact-form-validation.js"></script>    
+    <!-- FORMS VALIDATION DISABLED - Using simple form submission -->
+    <!-- <script src="../static/js/jquery.validate.min.js"></script> -->
+    <!-- <script src="../static/js/contact-form-validation-fixed.js"></script> -->
     
     <!-- MAIN SCRIPT -->
-		<script src="../static/js/main.js"></script>
+  <script src="../static/js/main.js"></script>
     
 <!-- JS end -->	
 	
