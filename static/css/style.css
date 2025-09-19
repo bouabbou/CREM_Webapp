@@ -1122,7 +1122,7 @@ support for no js
 	margin-top:30px;
 }
 .lpbf-img {
-  background: url(../images/Innovation/lpbf.png) 50% 50% no-repeat;
+  background: url(../images/platforms/AIDE/index_AIDE/first.jpeg) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1146,7 +1146,7 @@ support for no js
 	margin-top:30px;
 }
 .sls-img {
-  background: url(../images/Innovation/sls.png) 50% 50% no-repeat;
+  background: url(../images/platforms/AIDE/index_AIDE/second.jpeg) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1170,7 +1170,7 @@ support for no js
 	margin-top:30px;
 }
 .sla-img {
-  background: url(../images/Innovation/SLA.png) 50% 50% no-repeat;
+  background: url(../images/platforms/ASMP/index_ASMP/3S_AM.png) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1193,7 +1193,7 @@ support for no js
 	margin-top:30px;
 }
 .cnc-img {
-  background: url(../images/Innovation/CNC.png) 50% 50% no-repeat;
+  background: url(../images/platforms/ASMP/index_ASMP/3s.png) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1217,7 +1217,7 @@ support for no js
 	margin-top:30px;
 }
 .rt-img {
-  background: url(../images/Innovation/RP.png) 50% 50% no-repeat;
+  background: url(../images/platforms/BIO/index_BIO/section3.jpg) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1241,7 +1241,7 @@ support for no js
 	margin-top:30px;
 }
 .tr-img {
-  background: url(../images/Innovation/TP.png) 50% 50% no-repeat;
+  background: url(../images/platforms/MSC/index_MSC/sec3.png) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1265,7 +1265,7 @@ support for no js
 	margin-top:30px;
 }
 .cf-img {
-  background: url(../images/Innovation/CF.png) 50% 50% no-repeat;
+  background: url(../images/platforms/PCE/index_PCE/section3.jpg) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1288,7 +1288,7 @@ support for no js
 	margin-top:30px;
 }
 .fdm-img {
-  background: url(../images/Innovation/FDM.png) 50% 50% no-repeat;
+  background: url(../images/platforms/RESEE/index_RESEE/section3.jpg) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1303,7 +1303,7 @@ support for no js
 }
 
 .fes21-img {
-  background: url(../images/recherche/IM.jpg) 50% 50% no-repeat;
+  background: url(../images/platforms/AIDE/innovation_AIDE/inno1.jpg) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1338,7 +1338,7 @@ support for no js
   background-position: center center;
 }
 .fes11-img {
-  background: url(../images/recherche/FAM.jpg) 50% 50% no-repeat;
+  background: url(../images/platforms/AIDE/innovation_AIDE/inno2.jpg) 50% 50% no-repeat;
   width: 100%;
   display: block;
   position: relative;
@@ -1367,7 +1367,7 @@ support for no js
   background-position: center center;
 }
 .fes31-img {
-  background: url(../images/recherche/FDM.jpg) 50% 50% no-repeat;
+  background: url(../images/platforms/AIDE/innovation_AIDE/inno3.jpg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
   display: block;
@@ -1395,7 +1395,7 @@ support for no js
   background-position: center center;
 }
 .fes41-img {
-  background: url(../images/recherche/MP.jpg) 50% 50% no-repeat;
+  background: url(../images/platforms/AIDE/innovation_AIDE/inno4.jpg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
   display: block;
@@ -1423,7 +1423,7 @@ support for no js
   background-position: center center;
 }
 .fes51-img {
-  background: url(../images/recherche/CM.jpg) 50% 50% no-repeat;
+  background: url(../images/platforms/AIDE/innovation_AIDE/inno5.jpg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
   display: block;
@@ -1452,7 +1452,7 @@ support for no js
 }
 
 .fes61-img {
-  background: url(../images/recherche/FAE.jpg) 50% 50% no-repeat;
+  background: url(../images/platforms/AIDE/innovation_AIDE/inno6.jpg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
   display: block;
@@ -2395,7 +2395,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/FAB2.jpg');
+  background-image: url('../images/platformes/FAB2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2412,7 +2412,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/FAB1.jpg');
+  background-image: url('../images/platformes/FAB1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2431,7 +2431,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/MTR2.jpg');
+  background-image: url('../images/platformes/MTR2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2448,7 +2448,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/MTR1.jpg');
+  background-image: url('../images/platformes/MTR1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2467,7 +2467,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/BIO2.jpg');
+  background-image: url('../images/platformes/BIO2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2485,7 +2485,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/BIO1.jpg');
+  background-image: url('../images/platformes/BIO1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2503,7 +2503,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/PGC2.jpg');
+  background-image: url('../images/platformes/PGC2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2521,7 +2521,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/PGC1.jpg');
+  background-image: url('../images/platformes/PGC1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2539,7 +2539,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/CI2.jpg');
+  background-image: url('../images/platformes/CI2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2557,7 +2557,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/CI1.jpg');
+  background-image: url('../images/platformes/CI1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2575,7 +2575,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/IDIA2.jpg');
+  background-image: url('../images/platformes/IDIA2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2593,7 +2593,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/IDIA1.jpg');
+  background-image: url('../images/platformes/IDIA1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2611,7 +2611,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/ENG2.jpg');
+  background-image: url('../images/platformes/ENG2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2629,7 +2629,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  background-image: url('images/platformes/ENG1.jpg');
+  background-image: url('../images/platformes/ENG1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2923,7 +2923,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background:#2c2c2c url(../images/platforms/BIO/index_BIO/work-proc-bg.jpg) fixed;
+  background:#2c2c2c url(../images/platforms/BIO/index_BIO/BIO-bg.jpeg) fixed;
 }
 
 .video-ads-bg-RESEE {
@@ -2937,7 +2937,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background:#2c2c2c url(../images/platforms/AIDE/index_AIDE/work-proc-bg.jpg) fixed;
+  background:#2c2c2c url(../images/platforms/AIDE/index_AIDE/AIDE-bg.jpg) fixed;
 }
 
 .video-ads-bg-SAI {
@@ -4270,7 +4270,7 @@ background:none;
 }
 .header .primary .navbar .nav .parent .parent > a,
 .header .primary .navbar .nav .parent:hover .parent > a{
-  background-image: url("../images/caret.png");
+  background-image: url("../images/map-line.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
@@ -10116,7 +10116,7 @@ img.mfp-img {
     display: none;
     position: relative;
     margin: 0;
-    padding: 0;#header-left
+    padding: 0;
     background: #3e4045;
     -webkit-box-shadow: none;
     box-shadow: none;

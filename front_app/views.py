@@ -865,14 +865,14 @@ def ASMP_services(request):
             'title_line1': 'SUBTRACTIVE',
             'title_line2': 'MANUFACTURING',
             'text': 'Unlock precision and excellence with our subtractive manufacturing services. Our advanced technologies create parts with impeccable tolerances and exceptional finishes, ensuring your designs come to life flawlessly.',
-            'img': static('images/platforms/ASMP/services_ASMP/srv3.jpg')
+            'img': static('images/platforms/ASMP/services_ASMP/srv4.jpg')
 
         },
         'section_4': {
             'title_line1': 'COMPOSITE',
             'title_line2': 'MATERIALS',
             'text': 'Our specialists guide material selection and optimization. Whether for aerospace, automotive, or high-performance applications, our services ensure impeccable precision and exceptional surface finishes in advanced components.',
-            'img': static('images/platforms/ASMP/services_ASMP/srv4.jpg')
+            'img': static('images/platforms/ASMP/services_ASMP/srv6.jpg')
 
         },
         'section_5': {
@@ -886,7 +886,7 @@ def ASMP_services(request):
             'title_line1': 'R&D',
             'title_line2': 'SPECIFIC',
             'text': 'Partner with our dedicated research and development team. We thrive on challenges, turning your innovative ideas into reality. Explore our full range of services and let’s create something extraordinary together.',
-            'img': static('images/platforms/ASMP/services_ASMP/srv6.jpg')
+            'img': static('images/platforms/ASMP/services_ASMP/srv7.jpg')
 
         },
     },
@@ -1255,13 +1255,13 @@ def SAI_services(request):
             'title_line1': 'OTHER',
             'title_line2': 'SERVICES',
             'text': 'We provide calibration services for mechatronic sensors to ensure they perform with the highest accuracy and reliability. This includes fine-tuning sensors to meet specific application requirements and standards.',
-            'img': static('images/platforms/sai/services_sai/srv5.jpg')
+            'img': static('images/platforms/sai/services_sai/srv7.jpg')
         },
         'section_7': {
             'title_line1': 'Event',
             'title_line2': 'Deployment',
             'text': 'Robot deployment services for special events, trade fairs, exhibitions or product launches.',
-            'img': static('images/platforms/sai/services_sai/srv6.jpg')
+            'img': static('images/platforms/sai/services_sai/srv5.jpg')
             
 
         },
@@ -1269,7 +1269,7 @@ def SAI_services(request):
             'title_line1': 'Health',
             'title_line2': 'And Wellness',
             'text': 'Proposing solutions for healthcare facilities, using robots to entertain patients, encourage physical activity, or provide medical reminders.',
-            'img': static('images/platforms/sai/services_sai/srv7.jpg')
+            'img': static('images/platforms/sai/services_sai/srv6.jpg')
 
         },
     },
